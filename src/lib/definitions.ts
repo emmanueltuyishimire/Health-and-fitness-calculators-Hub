@@ -231,3 +231,16 @@ export const ProteinIntakeSchema = z.object({
 });
 
 export type ProteinIntakeFormValues = z.infer<typeof ProteinIntakeSchema>;
+
+export const CarbIntakeSchema = z.object({
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  activityLevel: z.enum([
+    'light',
+    'moderate',
+    'high',
+    'very_high',
+  ]),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type CarbIntakeFormValues = z.infer<typeof CarbIntakeSchema>;

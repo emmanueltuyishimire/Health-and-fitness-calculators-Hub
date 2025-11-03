@@ -4,6 +4,7 @@
 import { usePathname } from 'next/navigation';
 import {
   Anchor,
+  BrainCircuit,
   Calculator,
   Flame,
   GitCommitHorizontal,
@@ -65,6 +66,7 @@ const links = [
   { href: '/calorie-maintenance', label: 'Calorie Maintenance', icon: Anchor },
   { href: '/macronutrient-ratio', label: 'Macronutrient Ratio', icon: PieChart },
   { href: '/protein-intake', label: 'Protein Intake', icon: Egg },
+  { href: '/carb-intake', label: 'Carb Intake', icon: BrainCircuit },
   { href: '/weight-loss-goal', label: 'Weight Loss Goal', icon: Flag },
   { href: '/weight-gain-goal', label: 'Weight Gain Goal', icon: Flag },
   { href: '/goal-weight-estimator', label: 'Goal Weight Estimator', icon: CalendarClock },
