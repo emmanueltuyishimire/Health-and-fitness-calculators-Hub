@@ -24,6 +24,7 @@ type State = {
     | 'very_active'
     | 'extra_active';
   deficit: 'mild' | 'standard' | 'aggressive';
+  surplus: 'mild' | 'standard' | 'aggressive';
   tdee: string;
   bodyFat?: number;
   bmi?: number;
@@ -57,6 +58,7 @@ const initialState: State = {
   activityLevel: 'sedentary',
   bodyFat: 15,
   deficit: 'standard',
+  surplus: 'standard',
   tdee: '',
 };
 
