@@ -25,7 +25,8 @@ const calculatorGroups = [
     calculators: [
       { name: 'BMR Calculator', href: '/bmr' },
       { name: 'TDEE Calculator', href: '/tdee' },
-      { name: 'Calorie Adjustment for Weight Goals', href: '/calorie-adjustment-for-weight-loss' },
+      { name: 'Calorie Adjustment for Weight Loss', href: '/calorie-adjustment-for-weight-loss' },
+      { name: 'Calorie Adjustment for Weight Gain', href: '/calorie-adjustment-for-weight-gain' },
       { name: 'Calorie Maintenance Calculator', href: '/calorie-maintenance' },
       { name: 'Weight Loss Goal Calculator', href: '/weight-loss-goal' },
       { name: 'Weight Gain Goal Calculator', href: '/weight-gain-goal' },
