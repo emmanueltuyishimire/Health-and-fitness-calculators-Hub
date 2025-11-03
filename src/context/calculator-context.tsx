@@ -37,14 +37,15 @@ type Action =
 
 const initialState: State = {
   unitSystem: 'metric',
-  height: '',
-  weight: '',
+  height: '175',
+  weight: '70',
   gender: 'female',
-  age: '',
-  waist: '',
-  hip: '',
-  neck: '',
+  age: '30',
+  waist: '80',
+  hip: '95',
+  neck: '38',
   activityLevel: 'sedentary',
+  bodyFat: 15,
 };
 
 const CalculatorContext = createContext<{
@@ -55,8 +56,15 @@ const CalculatorContext = createContext<{
 function calculatorReducer(state: State, action: Action): State {
   switch (action.type) {
     case 'SET_UNIT_SYSTEM':
+      // Keep user data but clear results when switching units
+      const { bmi, bodyFat, idealWeight, bmr, calorieNeeds, leanBodyMass, ffmi, ...userData } = state;
       return {
-        ...initialState, // Reset all fields on unit change
+        ...userData,
+        height: '',
+        weight: '',
+        waist: '',
+        hip: '',
+        neck: '',
         unitSystem: action.payload,
       };
     case 'SET_USER_DATA':
