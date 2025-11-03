@@ -1,4 +1,4 @@
-
+// src/context/calculator-context.tsx
 'use client';
 
 import type { ReactNode } from 'react';
@@ -33,6 +33,7 @@ type State = {
   waistToHeightRatio?: number;
   waistToHipRatio?: number;
   bodyShape?: string;
+  bodyDensity?: number;
 };
 
 type Action =
@@ -63,7 +64,21 @@ function calculatorReducer(state: State, action: Action): State {
   switch (action.type) {
     case 'SET_UNIT_SYSTEM':
       // Keep user data but clear results when switching units
-      const { bmi, bodyFat, idealWeight, bmr, calorieNeeds, leanBodyMass, ffmi, bsa, waistToHeightRatio, waistToHipRatio, bodyShape, ...userData } = state;
+      const {
+        bmi,
+        bodyFat,
+        idealWeight,
+        bmr,
+        calorieNeeds,
+        leanBodyMass,
+        ffmi,
+        bsa,
+        waistToHeightRatio,
+        waistToHipRatio,
+        bodyShape,
+        bodyDensity,
+        ...userData
+      } = state;
       return {
         ...userData,
         height: '',

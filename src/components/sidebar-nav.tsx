@@ -15,6 +15,7 @@ import {
   Target,
   Weight,
   PersonStanding,
+  Database,
 } from 'lucide-react';
 import { PiPersonArmsSpread } from "react-icons/pi";
 
@@ -46,6 +47,7 @@ const links = [
   { href: '/waist-to-height-ratio', label: 'Waist-to-Height Ratio', icon: Ruler },
   { href: '/waist-to-hip-ratio', label: 'Waist-to-Hip Ratio', icon: GitCommitHorizontal },
   { href: '/body-shape', label: 'Body Shape', icon: PersonStanding },
+  { href: '/body-density', label: 'Body Density', icon: Database },
   { href: '/bmr', label: 'BMR Calculator', icon: Flame },
   { href: '/calorie-needs', label: 'Calorie Needs', icon: Calculator },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },

@@ -113,3 +113,9 @@ export const BodyShapeSchema = z.object({
 });
 
 export type BodyShapeFormValues = z.infer<typeof BodyShapeSchema>;
+
+export const BodyDensitySchema = z.object({
+  bodyFat: z.string().min(1, { message: 'Body fat percentage is required.' }),
+});
+
+export type BodyDensityFormValues = z.infer<typeof BodyDensitySchema>;
