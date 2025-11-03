@@ -187,7 +187,7 @@ export default function CarbIntakePage() {
             <ol className="list-decimal list-inside space-y-2">
               <li><strong>Enter Your Body Weight:</strong> Provide your current weight in either kilograms (kg) or pounds (lbs).</li>
               <li><strong>Select Your Activity Level:</strong> Choose the option that best reflects your daily and weekly training volume.</li>
-              <li><strong>Calculate:</strong> The tool will display a recommended range of daily carbohydrate intake in grams.</li>
+              <li><strong>Calculate:</strong> The tool will display a recommended range of daily carbohydrate intake in grams. This range helps you plan your meals to support your energy needs, which can be further broken down with the <Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio Calculator</Link>.</li>
             </ol>
           </CardContent>
         </Card>
@@ -211,11 +211,11 @@ export default function CarbIntakePage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Activity Level</TableCell>
-                  <TableCell>Moderately Active (1-3 hours/day)</TableCell>
+                  <TableCell>Moderate Activity (~1h/day)</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-bold">Recommended Carbs</TableCell>
-                  <TableCell className="font-bold">340 - 476 g/day</TableCell>
+                  <TableCell className="font-bold">345 - 480 g/day</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
@@ -232,12 +232,13 @@ export default function CarbIntakePage() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <h3 className="font-semibold text-lg text-foreground">Carbs: Your Body's Primary Fuel Source</h3>
-            <p>Carbohydrates are the most important source of energy for your body. Your digestive system changes carbohydrates into glucose (blood sugar). Your body uses this sugar for energy for your cells, tissues and organs. It stores any extra sugar in your liver and muscles for when it is needed.</p>
+            <p>Carbohydrates are the most important source of energy for your body. Your digestive system changes carbohydrates into glucose (blood sugar). Your body uses this sugar for energy for your cells, tissues and organs. It stores any extra sugar in your liver and muscles (as glycogen) for when it is needed.</p>
             <p>For active individuals, adequate carbohydrate intake is crucial for:</p>
             <ul className="list-disc list-inside space-y-2">
-                <li><strong>Performance:</strong> Carbs are the main fuel for moderate-to-high intensity exercise. Depleted muscle glycogen (stored carbohydrate) leads to fatigue and a drop in performance.</li>
+                <li><strong>Performance:</strong> Carbs are the main fuel for moderate-to-high intensity exercise. Depleted muscle glycogen leads to fatigue and a drop in performance.</li>
                 <li><strong>Recovery:</strong> Replenishing glycogen stores after a workout is essential for muscle recovery and preparing for your next session.</li>
-                <li><strong>Brain Function:</strong> Your brain relies almost exclusively on glucose for energy.</li>
+                <li><strong>Brain Function:</strong> Your brain relies almost exclusively on glucose for energy. Low carb availability can lead to mental fog and reduced concentration.</li>
+                <li><strong>Muscle Sparing:</strong> When carbohydrate availability is too low, your body can break down protein (muscle tissue) to create glucose. Eating enough carbs prevents this.</li>
             </ul>
 
             <h3 className="font-semibold text-lg text-foreground">Carb Needs for Different Activity Levels</h3>
@@ -291,6 +292,18 @@ export default function CarbIntakePage() {
         </Card>
 
         <Card>
+            <CardHeader><CardTitle>Pro Tips & Quick Hacks</CardTitle></CardHeader>
+            <CardContent>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li><strong>Time Your Carbs Around Workouts:</strong> Consume a carb-rich meal 1-3 hours before your workout for energy, and another within 2 hours after to replenish glycogen stores.</li>
+                    <li><strong>Choose High-Fiber Carbs:</strong> Fiber slows digestion, providing a more sustained energy release and promoting gut health. Oats, beans, and whole-wheat bread are great choices.</li>
+                    <li><strong>Use Simple Carbs Strategically:</strong> Quick-digesting carbs like a banana or a sports drink can be beneficial immediately before or during a long, intense workout for fast energy.</li>
+                    <li><strong>Listen to Your Body:</strong> The right carb intake is individual. If you feel sluggish and your performance is suffering, you may need more carbs. If you're gaining unwanted fat, you might need to slightly reduce them within your calorie budget from the <Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit Calculator</Link>.</li>
+                </ul>
+            </CardContent>
+        </Card>
+        
+        <Card>
           <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
           </CardHeader>
@@ -320,6 +333,40 @@ export default function CarbIntakePage() {
           </CardContent>
         </Card>
 
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+             <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Endurance Athletes</TableCell>
+                  <TableCell>Ensure adequate glycogen stores for long runs, rides, or swims.</TableCell>
+                  <TableCell><Link href="/calorie-surplus" className="text-primary hover:underline">Calorie Surplus</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Bodybuilders</TableCell>
+                  <TableCell>Fuel intense lifting sessions and replenish glycogen to maximize muscle growth.</TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                </TableRow>
+                 <TableRow>
+                  <TableCell>General Fitness Enthusiast</TableCell>
+                  <TableCell>Optimize energy levels for workouts and daily life.</TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+
          <Card>
           <CardHeader>
             <CardTitle>Related Calculators</CardTitle>
@@ -337,9 +384,9 @@ export default function CarbIntakePage() {
               <h3 className="font-semibold">Protein Intake Calculator</h3>
               <p className="text-sm text-muted-foreground">Calculate your protein needs to complement your carb intake.</p>
             </Link>
-            <Link href="/calorie-surplus" className="p-4 border rounded-lg hover:bg-muted">
-              <h3 className="font-semibold">Calorie Surplus Calculator</h3>
-              <p className="text-sm text-muted-foreground">If your goal is performance, ensure you are in an appropriate calorie surplus.</p>
+            <Link href="/calorie-deficit" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Calorie Deficit Calculator</h3>
+              <p className="text-sm text-muted-foreground">If fat loss is the goal, set your total calorie target here.</p>
             </Link>
           </CardContent>
         </Card>
