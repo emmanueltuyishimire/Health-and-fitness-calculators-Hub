@@ -42,6 +42,19 @@ export const BmrSchema = z.object({
 
 export type BmrFormValues = z.infer<typeof BmrSchema>;
 
+export const TdeeSchema = z.object({
+  bmr: z.string().min(1, { message: 'BMR is required. Please calculate it first.' }),
+  activityLevel: z.enum([
+    'sedentary',
+    'lightly_active',
+    'moderately_active',
+    'very_active',
+    'extra_active',
+  ]),
+});
+
+export type TdeeFormValues = z.infer<typeof TdeeSchema>;
+
 export const CalorieNeedsSchema = z.object({
   bmr: z.string().min(1, { message: 'BMR is required. Please calculate it first.' }),
   activityLevel: z.enum([
