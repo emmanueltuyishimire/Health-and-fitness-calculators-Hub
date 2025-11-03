@@ -179,7 +179,62 @@ export default function WeeklyWorkoutLoadPage() {
             <WeeklyWorkoutLoadCalculatorForm />
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>How to Use the Workout Load Calculator</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4 text-muted-foreground">
+            <p>
+              This calculator uses the Session RPE (sRPE) method to quantify your training stress. It's a simple way to monitor your volume and ensure you're making progress.
+            </p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li><strong>Enter Your Weekly Sessions:</strong> How many times do you work out in a typical week?</li>
+              <li><strong>Enter Average Duration:</strong> What is the average length of your workout sessions in minutes?</li>
+              <li><strong>Enter Average RPE:</strong> Using the scale below, what is the average intensity of your sessions? Be honest.</li>
+              <li><strong>Calculate Your Load:</strong> The tool will provide a single number representing your weekly training load.</li>
+            </ol>
+          </CardContent>
+        </Card>
         
+        <Card>
+          <CardHeader>
+            <CardTitle>Worked Example</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Variable</TableHead>
+                  <TableHead>Example Data</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Sessions / Week</TableCell>
+                  <TableCell>4</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Avg. Duration (min)</TableCell>
+                  <TableCell>75</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Avg. RPE (1-10)</TableCell>
+                  <TableCell>8</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-bold">Total Weekly Load</TableCell>
+                  <TableCell className="font-bold">2400</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Interpretation & Next Step</TableCell>
+                  <TableCell>This person has a weekly load of 2400 arbitrary units (AU). To progress, next week they could aim for a slightly higher load (e.g., 2500) by adding a few minutes to their sessions or increasing the intensity slightly. To fuel this, they can check their <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>.</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+
         <Card>
           <CardHeader>
             <CardTitle>Understanding Workout Load & RPE</CardTitle>
@@ -212,6 +267,34 @@ export default function WeeklyWorkoutLoadPage() {
         </Card>
 
         <Card>
+          <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Ego Lifting RPE:</strong> Being dishonest about how hard a workout felt. If you could have done many more reps, the RPE was not a 9.</li>
+              <li><strong>Increasing Load Too Quickly:</strong> A good rule of thumb is to increase your total weekly load by no more than 10% per week to avoid injury and overtraining.</li>
+              <li><strong>Only Increasing One Variable:</strong> You can increase load by adding duration, frequency, or intensity. Varying these can keep training interesting.</li>
+              <li><strong>Ignoring Recovery:</strong> A higher training load requires more sleep and better nutrition. Ensure your recovery matches your workload. Check your nutrition with the <Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio Calculator</Link>.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Plan a "Deload" Week:</strong> After 3-4 weeks of increasing load, plan a "deload" week where you reduce your load by 40-50% to allow for full recovery.</li>
+              <li><strong>Track Load in a Spreadsheet:</strong> Keep a simple spreadsheet to track your weekly load over time. This makes it easy to visualize your progression.</li>
+              <li><strong>Listen to Your Body:</strong> If you're feeling beaten down, it's okay to have a lower-load week. Consistency over time is more important than a single perfect week.</li>
+              <li><strong>Compare Different Training Styles:</strong> Use this tool to see how a week of long, slow cardio compares in load to a week of short, intense HIIT sessions.</li>
+            </ul>
+          </CardContent>
+        </Card>
+        
+        <Card>
             <CardHeader><CardTitle>Frequently Asked Questions (FAQ)</CardTitle></CardHeader>
             <CardContent>
                  <Accordion type="single" collapsible className="w-full">
@@ -237,6 +320,64 @@ export default function WeeklyWorkoutLoadPage() {
                     </AccordionItem>
                  </Accordion>
             </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Athletes</TableCell>
+                  <TableCell>Systematically plan training cycles, including overload and deload weeks, to peak for competition.</TableCell>
+                  <TableCell><Link href="/strength-to-weight-ratio" className="text-primary hover:underline">Strength-to-Weight Ratio</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Fitness Coaches</TableCell>
+                  <TableCell>Objectively monitor a client's training volume to ensure they are progressing safely.</TableCell>
+                  <TableCell>N/A</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>General Fitness Enthusiasts</TableCell>
+                  <TableCell>Break through plateaus by ensuring their training load is progressively increasing over time.</TableCell>
+                  <TableCell><Link href="/one-rep-max" className="text-primary hover:underline">1RM Calculator</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Related Calculators</CardTitle>
+          </CardHeader>
+          <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Link href="/one-rep-max" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">One Rep Max (1RM) Calculator</h3>
+              <p className="text-sm text-muted-foreground">Estimate your 1RM to better gauge intensity for your RPE ratings.</p>
+            </Link>
+            <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Calorie Burn by Activity</h3>
+              <p className="text-sm text-muted-foreground">Understand the energy cost of your workouts, which complements training load.</p>
+            </Link>
+            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Protein Intake Calculator</h3>
+              <p className="text-sm text-muted-foreground">Ensure your protein intake is high enough to recover from your training load.</p>
+            </Link>
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">TDEE Calculator</h3>
+              <p className="text-sm text-muted-foreground">Make sure your total calorie intake supports your weekly workout volume.</p>
+            </Link>
+          </CardContent>
         </Card>
 
       </div>
