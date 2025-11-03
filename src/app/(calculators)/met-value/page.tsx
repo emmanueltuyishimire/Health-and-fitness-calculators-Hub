@@ -204,6 +204,32 @@ export default function MetValuePage() {
             <p>This provides a simple, standardized way to measure the intensity of a physical activity. Your resting state is your baseline, or 1 MET, which is roughly equivalent to your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>.</p>
           </CardContent>
         </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Misjudging Intensity:</strong> Selecting "vigorous" when your effort was moderate. Be honest about your intensity to get a useful number for the <Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn Calculator</Link>.</li>
+              <li><strong>Applying it to All Body Types:</strong> MET values are standardized and don't account for individual differences in fitness level or body composition. A very fit person will burn fewer calories than a less fit person doing the same activity.</li>
+              <li><strong>Confusing METs with Calories:</strong> A MET value is a multiplier, not a direct measure of calories burned.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Compare Activities:</strong> Use this tool to compare the relative intensity of different workouts to help you plan your week.</li>
+              <li><strong>Understand NEAT:</strong> Look up MET values for non-exercise activities like "walking for pleasure" (3.5 METs) to understand how much daily movement contributes to your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>.</li>
+              <li><strong>Contextualize Your Workouts:</strong> Knowing the MET value helps you understand why a 30-minute HIIT class (e.g., 8-12 METs) feels much harder and burns more calories than a 30-minute walk (3-4 METs).</li>
+            </ul>
+          </CardContent>
+        </Card>
 
         <Card>
           <CardHeader>
@@ -235,10 +261,50 @@ export default function MetValuePage() {
                   1 MET is roughly equivalent to your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>. The MET values of your daily activities are a component of your <Link href="/tdee" className="text-primary hover:underline">Total Daily Energy Expenditure (TDEE)</Link>.
                 </AccordionContent>
               </AccordionItem>
+               <AccordionItem value="item-5">
+                <AccordionTrigger>Why do some activities have multiple MET values?</AccordionTrigger>
+                <AccordionContent>
+                  The energy cost of an activity often depends on its intensity. For example, "running" can range from a slow jog (low MET) to a fast sprint (high MET). This calculator lists different intensities to provide a more accurate value.
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </CardContent>
         </Card>
 
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Fitness Enthusiasts</TableCell>
+                  <TableCell>Compare the intensity of different workouts to plan a varied training week.</TableCell>
+                  <TableCell><Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Health Professionals</TableCell>
+                  <TableCell>Prescribe exercise of a certain intensity level to patients.</TableCell>
+                  <TableCell>N/A</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Curious Individuals</TableCell>
+                  <TableCell>Understand how much more energy daily activities like cleaning or gardening burn compared to sitting.</TableCell>
+                  <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+        
         <Card>
           <CardHeader>
             <CardTitle>Related Calculators</CardTitle>
