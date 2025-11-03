@@ -87,3 +87,11 @@ export const BsaSchema = z.object({
 });
 
 export type BsaFormValues = z.infer<typeof BsaSchema>;
+
+export const WaistToHeightRatioSchema = z.object({
+  height: z.string().min(1, { message: 'Height is required.' }),
+  waist: z.string().min(1, { message: 'Waist is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type WaistToHeightRatioFormValues = z.infer<typeof WaistToHeightRatioSchema>;

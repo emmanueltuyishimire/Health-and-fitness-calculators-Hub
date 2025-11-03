@@ -28,6 +28,7 @@ type State = {
   leanBodyMass?: number;
   ffmi?: number;
   bsa?: number;
+  waistToHeightRatio?: number;
 };
 
 type Action =
