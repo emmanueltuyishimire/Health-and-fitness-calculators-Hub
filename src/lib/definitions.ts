@@ -79,6 +79,10 @@ export const CalorieNeedsSchema = z.object({
 
 export type CalorieNeedsFormValues = z.infer<typeof CalorieNeedsSchema>;
 
+export const DailyActivityLevelEstimatorSchema = z.object({});
+export type DailyActivityLevelEstimatorFormValues = z.infer<typeof DailyActivityLevelEstimatorSchema>;
+
+
 export const RecommendationsSchema = z.object({
   preferences: z.string().min(10, { message: 'Please describe your preferences in at least 10 characters.' }),
 });

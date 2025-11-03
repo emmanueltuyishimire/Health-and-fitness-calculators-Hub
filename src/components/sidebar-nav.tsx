@@ -74,6 +74,7 @@ const links = [
   { href: '/rmr', label: 'RMR Calculator', icon: BedDouble },
   { href: '/tdee', label: 'TDEE Calculator', icon: Bike },
   { href: '/daily-calorie-needs', label: 'Daily Calorie Needs', icon: Calculator },
+  { href: '/activity-level-estimator', label: 'Daily Activity Level Estimator', icon: Bike },
   { href: '/calorie-adjustment-for-weight-loss', label: 'Calorie Adjustment (Loss)', icon: TrendingDown },
   { href: '/calorie-adjustment-for-weight-gain', label: 'Calorie Adjustment (Gain)', icon: TrendingUp },
   { href: '/calorie-maintenance', label: 'Calorie Maintenance', icon: Anchor },
