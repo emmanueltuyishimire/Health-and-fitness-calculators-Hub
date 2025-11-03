@@ -1,32 +1,8 @@
 
-'use client';
-
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { Percent, Terminal } from 'lucide-react';
+import { Percent } from 'lucide-react';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { useCalculator } from '@/context/calculator-context';
-import { BodyFatSchema, type BodyFatFormValues } from '@/lib/definitions';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import { cn } from '@/lib/utils';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import {
@@ -51,225 +27,18 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { BodyFatCalculatorForm } from '@/components/body-fat-calculator-form';
 
-function BodyFatCalculatorForm() {
-  const { state, dispatch } = useCalculator();
-  const [bodyFatResult, setBodyFatResult] = useState<number | null>(null);
-
-  const form = useForm<BodyFatFormValues>({
-    resolver: zodResolver(BodyFatSchema),
-    defaultValues: {
-      gender: state.gender,
-      height: state.height,
-      waist: state.waist,
-      neck: state.neck,
-      hip: state.hip,
-      unitSystem: state.unitSystem,
+export const metadata: Metadata = {
+    title: 'Body Fat Percentage Calculator – Estimate Body Composition',
+    description: 'Estimate your body fat percentage with our free, accurate calculator using the U.S. Navy method. Understand your body composition for better health, fitness, and weight management.',
+    openGraph: {
+        title: 'Body Fat Percentage Calculator – Estimate Body Composition',
+        description: 'Estimate your body fat percentage with our free, accurate calculator using the U.S. Navy method. Understand your body composition for better health, fitness, and weight management.',
+        type: 'website',
     },
-    values: {
-      gender: state.gender,
-      height: state.height,
-      waist: state.waist,
-      neck: state.neck,
-      hip: state.hip,
-      unitSystem: state.unitSystem,
-    },
-  });
+};
 
-  const gender = form.watch('gender');
-
-  function onSubmit(data: BodyFatFormValues) {
-    const height = parseFloat(data.height);
-    const waist = parseFloat(data.waist);
-    const neck = parseFloat(data.neck);
-    const hip = data.hip ? parseFloat(data.hip) : 0;
-
-    let bodyFat: number;
-
-    const toInches = (cm: number) => cm / 2.54;
-    const heightIn = data.unitSystem === 'metric' ? toInches(height) : height;
-    const waistIn = data.unitSystem === 'metric' ? toInches(waist) : waist;
-    const neckIn = data.unitSystem === 'metric' ? toInches(neck) : neck;
-    const hipIn = data.unitSystem === 'metric' ? toInches(hip) : hip;
-
-    if (data.gender === 'male') {
-      bodyFat =
-        86.01 * Math.log10(waistIn - neckIn) -
-        70.041 * Math.log10(heightIn) +
-        36.76;
-    } else {
-      bodyFat =
-        163.205 * Math.log10(waistIn + hipIn - neckIn) -
-        97.684 * Math.log10(heightIn) -
-        78.387;
-    }
-
-    const result = Math.max(0, bodyFat);
-    setBodyFatResult(result);
-    dispatch({
-      type: 'SET_USER_DATA',
-      payload: {
-        gender: data.gender,
-        height: data.height,
-        waist: data.waist,
-        neck: data.neck,
-        hip: data.hip,
-      },
-    });
-    dispatch({ type: 'SET_RESULTS', payload: { bodyFat: result } });
-  }
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    form.setValue(name as keyof BodyFatFormValues, value);
-    dispatch({ type: 'SET_USER_DATA', payload: { [name]: value } });
-  };
-
-  const handleSelectChange =
-    (name: keyof BodyFatFormValues) => (value: string) => {
-      form.setValue(name, value);
-      dispatch({ type: 'SET_USER_DATA', payload: { [name]: value } });
-    };
-
-  return (
-    <div className='p-6 pt-0'>
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <FormField
-            control={form.control}
-            name="gender"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Gender</FormLabel>
-                <Select
-                  onValueChange={handleSelectChange('gender')}
-                  value={field.value}
-                >
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select your gender" />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    <SelectItem value="female">Female</SelectItem>
-                    <SelectItem value="male">Male</SelectItem>
-                  </SelectContent>
-                </Select>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <FormField
-              control={form.control}
-              name="height"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>
-                    Height ({state.unitSystem === 'metric' ? 'cm' : 'in'})
-                  </FormLabel>
-                  <FormControl>
-                    <Input
-                      type="number"
-                      placeholder="e.g., 175"
-                      {...field}
-                      onChange={handleInputChange}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="waist"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>
-                    Waist ({state.unitSystem === 'metric' ? 'cm' : 'in'})
-                  </FormLabel>
-                  <FormControl>
-                    <Input
-                      type="number"
-                      placeholder="e.g., 80"
-                      {...field}
-                      onChange={handleInputChange}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="neck"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>
-                    Neck ({state.unitSystem === 'metric' ? 'cm' : 'in'})
-                  </FormLabel>
-                  <FormControl>
-                    <Input
-                      type="number"
-                      placeholder="e.g., 38"
-                      {...field}
-                      onChange={handleInputChange}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <div className={cn(gender === 'female' ? 'block' : 'hidden')}>
-              <FormField
-                control={form.control}
-                name="hip"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>
-                      Hip ({state.unitSystem === 'metric' ? 'cm' : 'in'})
-                    </FormLabel>
-                    <FormControl>
-                      <Input
-                        type="number"
-                        placeholder="e.g., 95"
-                        {...field}
-                        onChange={handleInputChange}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
-          </div>
-          <Button type="submit" className="w-full sm:w-auto">
-            Calculate Body Fat
-          </Button>
-        </form>
-      </Form>
-      {bodyFatResult !== null && (
-        <>
-          <Separator className="my-6" />
-          <div className="space-y-2 text-center md:text-left">
-            <h3 className="font-semibold text-foreground">
-              Your Estimated Body Fat
-            </h3>
-            <p className="text-3xl font-bold text-primary">
-              {bodyFatResult.toFixed(1)}%
-            </p>
-            <p className="text-xs text-muted-foreground pt-2">
-              This estimation, based on the U.S. Navy method, is a valuable
-              starting point. For a complete health assessment, consult a
-              healthcare professional.
-            </p>
-          </div>
-        </>
-      )}
-    </div>
-  );
-}
 
 export default function BodyFatPage() {
   const jsonLd = {
@@ -387,15 +156,15 @@ export default function BodyFatPage() {
         name: 'Does my <a href="/bmr">BMR</a> decrease as I lose body fat?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, typically. As you lose weight (both fat and some muscle), your body requires fewer calories at rest, causing your BMR to drop. This is why you may need to recalculate your <a href="/calorie-needs">Daily Calorie Needs</a> periodically during a weight loss journey.',
+          text: 'Yes, as you lose weight (both fat and sometimes muscle), your Basal Metabolic Rate (BMR) will decrease because your body requires fewer calories to maintain a smaller size. It is important to recalculate your <a href="/bmr">BMR</a> periodically during your weight loss journey.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Is there an ideal body fat percentage for athletic performance?',
+        name: 'Which is better, the BMI or Body Fat Percentage?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, it varies by sport. Endurance athletes often have very low body fat (e.g., 6-13% for men, 14-20% for women), while strength athletes might have higher percentages. Reaching a specific body fat percentage can be a goal set using a tool like our <a href="/all">Goal Weight Estimator</a>.',
+          text: 'Body Fat Percentage is a more accurate indicator of health than <a href="/bmi">BMI</a> because it distinguishes between fat and muscle. However, BMI is a simpler, more accessible screening tool. Using both provides a more comprehensive view.',
         },
       },
     ],
@@ -403,34 +172,18 @@ export default function BodyFatPage() {
 
   return (
     <>
-      <head>
-        <title>Body Fat Percentage Calculator – Estimate Body Composition</title>
-        <meta
-          name="description"
-          content="Estimate your body fat percentage with our free, accurate calculator using the U.S. Navy method. Understand your body composition for better health, fitness, and weight management."
-        />
-        <meta
-          property="og:title"
-          content="Body Fat Percentage Calculator – Estimate Body Composition"
-        />
-        <meta
-          property="og:description"
-          content="Estimate your body fat percentage with our free, accurate calculator using the U.S. Navy method. Understand your body composition for better health, fitness, and weight management."
-        />
-        <meta property="og:type" content="website" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      </head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 space-y-8">
         <Breadcrumb>
           <BreadcrumbList>
@@ -448,7 +201,6 @@ export default function BodyFatPage() {
           </BreadcrumbList>
         </Breadcrumb>
 
-        {/* Main Calculator Card */}
         <Card>
           <CardHeader>
             <div className="flex items-start gap-4">
@@ -460,223 +212,43 @@ export default function BodyFatPage() {
                   Body Fat Percentage Calculator
                 </h1>
                 <p className="text-muted-foreground">
-                  Estimate your body fat percentage using the U.S. Navy method.
+                  Estimate your body fat percentage using the U.S. Navy method to understand your body composition.
                 </p>
               </div>
             </div>
           </CardHeader>
-          <BodyFatCalculatorForm />
+          <CardContent>
+            <BodyFatCalculatorForm />
+          </CardContent>
         </Card>
-
-        {/* How to Use Section */}
+        
         <Card>
           <CardHeader>
             <CardTitle>How to Use the Body Fat Calculator</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <p>
-              This calculator uses the U.S. Navy formula, which relies on body
-              measurements to estimate body composition. Follow these steps for
-              the most accurate estimation:
+              This calculator uses the U.S. Navy method, which requires gender and a few simple body measurements. Follow these steps for an accurate estimation.
             </p>
             <ol className="list-decimal list-inside space-y-2">
-              <li>
-                <strong>Select Your Gender:</strong> The formulas for men and
-                women are different.
-              </li>
-              <li>
-                <strong>Choose Your Units:</strong> Select "Metric" (cm) or
-                "Imperial" (inches).
-              </li>
-              <li>
-                <strong>Take Accurate Measurements:</strong> Use a flexible
-                measuring tape.
-                <ul className="list-disc list-inside ml-4 mt-2">
-                  <li>
-                    <strong>Height:</strong> Stand straight without shoes.
-                  </li>
-                  <li>
-                    <strong>Waist:</strong> Measure at the narrowest point of
-                    your abdomen, usually just above your belly button.
-                  </li>
-                  <li>
-                    <strong>Neck:</strong> Measure just below your Adam's apple.
-                  </li>
-                  <li>
-                    <strong>Hips (Females Only):</strong> Measure at the widest
-                    part of your hips and buttocks.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Calculate:</strong> Click the "Calculate Body Fat"
-                button to get your result. The calculator will provide your
-                estimated body fat percentage, a key indicator of your body
-                composition.
-              </li>
+              <li><strong>Select Your Gender:</strong> The formula is different for men and women.</li>
+              <li><strong>Choose Units:</strong> Select "Metric" (cm) or "Imperial" (inches).</li>
+              <li><strong>Enter Height:</strong> Stand straight and measure from head to toe.</li>
+              <li><strong>Measure Waist:</strong> For men, measure at the navel. For women, measure at the narrowest point.</li>
+              <li><strong>Measure Neck:</strong> Measure the circumference of your neck below the Adam's apple.</li>
+              <li><strong>Measure Hip (Females Only):</strong> Measure the widest part of your hips.</li>
+              <li><strong>Calculate:</strong> Click the button to see your estimated body fat percentage. After getting your result, you can use the <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link> to see how you compare.</li>
             </ol>
-            <p>
-              Once you know your body fat percentage, you can calculate your{' '}
-              <Link
-                href="/bmr"
-                className="text-primary hover:underline"
-              >
-                Basal Metabolic Rate (BMR)
-              </Link>{' '}
-              to better understand your energy needs.
-            </p>
           </CardContent>
         </Card>
-
-        {/* Worked Examples */}
+        
         <Card>
           <CardHeader>
-            <CardTitle>Worked Examples</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Variable</TableHead>
-                  <TableHead>Example 1 (Female)</TableHead>
-                  <TableHead>Example 2 (Male)</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                <TableRow>
-                  <TableCell>Gender</TableCell>
-                  <TableCell>Female</TableCell>
-                  <TableCell>Male</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Height</TableCell>
-                  <TableCell>165 cm (65 in)</TableCell>
-                  <TableCell>180 cm (71 in)</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Waist</TableCell>
-                  <TableCell>70 cm (27.5 in)</TableCell>
-                  <TableCell>85 cm (33.5 in)</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Neck</TableCell>
-                  <TableCell>33 cm (13 in)</TableCell>
-                  <TableCell>38 cm (15 in)</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Hip</TableCell>
-                  <TableCell>95 cm (37.4 in)</TableCell>
-                  <TableCell>N/A</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className="font-bold">
-                    Estimated Body Fat %
-                  </TableCell>
-                  <TableCell className="font-bold">25.4%</TableCell>
-                  <TableCell className="font-bold">18.2%</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Next Step</TableCell>
-                  <TableCell>
-                    Determine her{' '}
-                    <Link
-                      href="/ideal-weight"
-                      className="text-primary hover:underline"
-                    >
-                      Ideal Weight
-                    </Link>
-                    .
-                  </TableCell>
-                  <TableCell>
-                    Calculate his{' '}
-                    <Link
-                      href="/calorie-needs"
-                      className="text-primary hover:underline"
-                    >
-                      Daily Calorie Needs
-                    </Link>
-                    .
-                  </TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
-          </CardContent>
-        </Card>
-
-        {/* Educational Content */}
-        <Card>
-          <CardHeader>
-            <CardTitle>
-              Understanding Body Composition: Beyond the Scale
-            </CardTitle>
+            <CardTitle>Understanding Your Body Fat Percentage</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
-            <h3 className="font-semibold text-lg text-foreground">
-              What is Body Fat Percentage?
-            </h3>
             <p>
-              Body Fat Percentage (BFP) is the total mass of fat divided by
-              total body mass, multiplied by 100. Your body contains two main
-              types of fat: essential fat and storage fat. Essential fat is
-              vital for normal physiological function, found in organs, bone
-              marrow, and nerve cells. Storage fat is the energy reserve under
-              your skin (subcutaneous) and around your organs (visceral). While some
-              storage fat is healthy, excessive amounts, particularly visceral fat,
-              are linked to health risks.
-            </p>
-            <p>
-              Unlike the{' '}
-              <Link href="/bmi" className="text-primary hover:underline">
-                BMI Calculator
-              </Link>
-              , which only considers height and weight, the BFP calculator
-              provides insight into your body composition—the ratio of fat mass
-              to lean mass (muscles, bones, organs, and water). This makes it a
-              superior metric for athletes, bodybuilders, and anyone serious
-              about their health, as it distinguishes between weight from muscle
-              and weight from fat.
-            </p>
-
-            <h3 className="font-semibold text-lg text-foreground">
-              Why Body Composition Matters More Than Weight
-            </h3>
-            <p>
-              Two individuals can have the same height and weight—and therefore
-              the same BMI—but vastly different body compositions and health
-              profiles. One might have a high percentage of muscle and low fat,
-              while the other could have low muscle and high fat. The latter is
-              at a higher risk for metabolic diseases, even if their weight seems
-              "normal."
-            </p>
-            <p>
-              Knowing your body fat percentage helps you set more intelligent
-              fitness goals. Instead of just "losing weight," you can aim to
-              "reduce body fat while preserving lean muscle." This is a much
-              healthier and more sustainable approach. To do this effectively,
-              you need to understand your energy balance. Start by finding your{' '}
-              <Link href="/bmr" className="text-primary hover:underline">
-                Basal Metabolic Rate (BMR)
-              </Link>
-              , the calories your body burns at rest. Then, use the{' '}
-              <Link
-                href="/calorie-needs"
-                className="text-primary hover:underline"
-              >
-                Daily Calorie Needs Calculator
-              </Link>{' '}
-              to determine your total daily energy expenditure (TDEE). With this
-              information, you can create a targeted calorie plan for fat loss or
-              muscle gain.
-            </p>
-
-            <h3 className="font-semibold text-lg text-foreground">
-              Healthy Body Fat Ranges
-            </h3>
-            <p>
-              Healthy body fat percentages vary based on gender and age. Women
-              naturally have a higher percentage of essential fat than men.
-              Here are the general classifications according to the American
-              Council on Exercise (ACE):
+              Body fat percentage is a more telling indicator of health than body weight or even <Link href="/bmi" className="text-primary hover:underline">BMI</Link> alone. It reveals the proportion of your body that is fat versus lean mass (muscle, bone, water). Knowing this number helps you tailor your fitness and nutrition plans more effectively.
             </p>
             <Table>
               <TableHeader>
@@ -714,66 +286,12 @@ export default function BodyFatPage() {
                 </TableRow>
               </TableBody>
             </Table>
-            <p>
-              Falling into the "obese" category increases the risk of various
-              health issues. However, having a body fat percentage that is too
-              low can also be dangerous, leading to hormonal imbalances and other
-              complications. Aim for the "Fitness" or "Acceptable" range for
-              general health. You can compare your current weight to a
-              recommended range using the{' '}
-              <Link
-                href="/ideal-weight"
-                className="text-primary hover:underline"
-              >
-                Ideal Weight Calculator
-              </Link>
-              .
+             <p className="text-sm mt-4">
+              These ranges are guidelines from the American Council on Exercise. To understand the energy your body requires, check the <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link>.
             </p>
           </CardContent>
         </Card>
 
-        {/* Pro Tips */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li>
-                <strong>Measure Consistently:</strong> For reliable tracking,
-                measure yourself at the same time of day and under the same
-                conditions, preferably in the morning before eating or drinking.
-              </li>
-              <li>
-                <strong>Don't Chase Daily Changes:</strong> Body fat percentage
-                doesn't change overnight. Track your progress every 2-4 weeks to
-                see meaningful trends.
-              </li>
-              <li>
-                <strong>Combine with Other Metrics:</strong> Use this calculator alongside the{' '}
-                <Link href="/bmi" className="text-primary hover:underline">
-                  BMI Calculator
-                </Link>{' '}
-                and Waist-to-Hip Ratio calculator for a 360-degree view of your
-                health.
-              </li>
-              <li>
-                <strong>Focus on Fat Loss, Not Just Weight Loss:</strong> To
-                preserve muscle while losing fat, consume adequate protein and
-                incorporate strength training. Our{' '}
-                <Link
-                  href="/calorie-needs"
-                  className="text-primary hover:underline"
-                >
-                  Daily Calorie Needs
-                </Link>{' '}
-                tool can help you set a moderate deficit.
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        {/* FAQ Section */}
         <Card>
           <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
@@ -781,140 +299,53 @@ export default function BodyFatPage() {
           <CardContent>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
-                <AccordionTrigger>
-                  What is a healthy body fat percentage?
-                </AccordionTrigger>
-                <AccordionContent>
-                  A healthy body fat percentage varies by age and gender. For
-                  men, 10-20% is generally considered fit, while for women,
-                  20-30% is a healthy range. To see how your weight compares,
-                  check our{' '}
-                  <Link
-                    href="/ideal-weight"
-                    className="text-primary hover:underline"
-                  >
-                    Ideal Weight Calculator
-                  </Link>
-                  .
-                </AccordionContent>
+                <AccordionTrigger>What is a healthy body fat percentage?</AccordionTrigger>
+                <AccordionContent>A healthy body fat percentage varies by age and gender. For men, 10-20% is generally considered fit, while for women, 20-30% is a healthy range. To see how your weight compares, check our <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger>
-                  Why is body fat percentage a better metric than BMI?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Body fat percentage distinguishes between fat mass and lean
-                  mass, whereas{' '}
-                  <Link href="/bmi" className="text-primary hover:underline">
-                    BMI
-                  </Link>{' '}
-                  does not. An athlete might have a high BMI due to muscle but a
-                  low body fat percentage, making them metabolically healthy.
-                </AccordionContent>
+                <AccordionTrigger>Why is body fat percentage a better metric than BMI?</AccordionTrigger>
+                <AccordionContent>Body fat percentage distinguishes between fat mass and lean mass, whereas <Link href="/bmi" className="text-primary hover:underline">BMI</Link> does not. An athlete might have a high BMI due to muscle but a low body fat percentage, making them metabolically healthy.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger>
-                  How can I lower my body fat percentage?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Lowering body fat requires a combination of a calorie deficit
-                  and exercise. Use the{' '}
-                  <Link
-                    href="/calorie-needs"
-                    className="text-primary hover:underline"
-                  >
-                    Daily Calorie Needs Calculator
-                  </Link>{' '}
-                  to find your maintenance calories and create a deficit, and
-                  consider using the{' '}
-                  <Link href="/bmr" className="text-primary hover:underline">
-                    BMR Calculator
-                  </Link>{' '}
-                  to understand your baseline.
-                </AccordionContent>
+                <AccordionTrigger>How do I accurately measure my waist, neck, and hip?</AccordionTrigger>
+                <AccordionContent>Use a flexible measuring tape. For the waist, measure at the narrowest point, typically just above the navel. For the neck, measure just below the larynx (Adam's apple). For hips (females only), measure at the widest part of your buttocks. Consistency is key for tracking changes.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-                <AccordionTrigger>
-                  How accurate is the U.S. Navy method?
-                </AccordionTrigger>
-                <AccordionContent>
-                  The U.S. Navy method is a reliable estimation, often within
-                  1-3% of clinical methods. However, it is still an estimation.
-                  For precise measurements, consult a professional.
-                </AccordionContent>
+                <AccordionTrigger>How can I lower my body fat percentage?</AccordionTrigger>
+                <AccordionContent>Lowering body fat requires a combination of a calorie deficit and exercise. Use the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to find your maintenance calories and create a deficit, and consider using the <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link> to understand your baseline metabolic rate.</AccordionContent>
               </AccordionItem>
-              <AccordionItem value="item-5">
-                <AccordionTrigger>
-                  Does my BMR decrease as I lose body fat?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Yes, typically. As you lose weight, your body requires fewer
-                  calories at rest. This is why you should periodically
-                  recalculate your{' '}
-                  <Link href="/bmr" className="text-primary hover:underline">
-                    BMR
-                  </Link>{' '}
-                  and{' '}
-                  <Link
-                    href="/calorie-needs"
-                    className="text-primary hover:underline"
-                  >
-                    Daily Calorie Needs
-                  </Link>
-                  .
-                </AccordionContent>
+               <AccordionItem value="item-5">
+                <AccordionTrigger>How accurate is the U.S. Navy method?</AccordionTrigger>
+                <AccordionContent>The U.S. Navy method is a reliable estimation for most people, often within 1-3% of clinical methods like DEXA scans. However, it is still an estimation. For precise measurements, consult a professional.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
         </Card>
 
-        {/* Related Calculators */}
         <Card>
           <CardHeader>
-            <CardTitle>Continue Your Analysis</CardTitle>
+            <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link
-              href="/bmi"
-              className="p-4 border rounded-lg hover:bg-muted"
-            >
+            <Link href="/bmi" className="p-4 border rounded-lg hover:bg-muted">
               <h3 className="font-semibold">BMI Calculator</h3>
-              <p className="text-sm text-muted-foreground">
-                Get a quick overview of your weight status in relation to your
-                height.
-              </p>
+              <p className="text-sm text-muted-foreground">Calculate your Body Mass Index to get a general overview of your weight status.</p>
             </Link>
-            <Link
-              href="/ideal-weight"
-              className="p-4 border rounded-lg hover:bg-muted"
-            >
+            <Link href="/ideal-weight" className="p-4 border rounded-lg hover:bg-muted">
               <h3 className="font-semibold">Ideal Weight Calculator</h3>
-              <p className="text-sm text-muted-foreground">
-                Find your healthy weight range based on various formulas.
-              </p>
+              <p className="text-sm text-muted-foreground">Determine your ideal weight range based on your height and gender.</p>
             </Link>
-            <Link
-              href="/bmr"
-              className="p-4 border rounded-lg hover:bg-muted"
-            >
+            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted">
               <h3 className="font-semibold">BMR Calculator</h3>
-              <p className="text-sm text-muted-foreground">
-                Learn the baseline number of calories your body needs to
-                function.
-              </p>
+              <p className="text-sm text-muted-foreground">Find out how many calories your body burns at rest.</p>
             </Link>
-            <Link
-              href="/calorie-needs"
-              className="p-4 border rounded-lg hover:bg-muted"
-            >
+            <Link href="/calorie-needs" className="p-4 border rounded-lg hover:bg-muted">
               <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
-              <p className="text-sm text-muted-foreground">
-                Estimate your total daily calorie needs to maintain, lose, or
-                gain weight.
-              </p>
+              <p className="text-sm text-muted-foreground">Estimate your daily calorie needs for maintaining, losing, or gaining weight.</p>
             </Link>
           </CardContent>
         </Card>
+
       </div>
     </>
   );
