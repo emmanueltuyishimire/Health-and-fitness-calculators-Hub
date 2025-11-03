@@ -171,3 +171,13 @@ export const WeightLossGoalSchema = z.object({
 });
 
 export type WeightLossGoalFormValues = z.infer<typeof WeightLossGoalSchema>;
+
+export const WeightGainGoalSchema = z.object({
+    tdee: z.string().min(1, { message: 'TDEE is required. Please calculate it first.' }),
+    currentWeight: z.string().min(1, { message: 'Current weight is required.' }),
+    goalWeight: z.string().min(1, { message: 'Goal weight is required.' }),
+    weeklyGain: z.string(),
+    unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type WeightGainGoalFormValues = z.infer<typeof WeightGainGoalSchema>;

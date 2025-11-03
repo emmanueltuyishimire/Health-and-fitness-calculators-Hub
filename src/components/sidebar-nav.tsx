@@ -59,6 +59,7 @@ const links = [
   { href: '/calorie-surplus', label: 'Calorie Surplus', icon: TrendingUp },
   { href: '/calorie-maintenance', label: 'Calorie Maintenance', icon: Anchor },
   { href: '/weight-loss-goal', label: 'Weight Loss Goal', icon: Flag },
+  { href: '/weight-gain-goal', label: 'Weight Gain Goal', icon: Flag },
   { href: '/calorie-needs', label: 'Calorie Needs', icon: Calculator },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },
   { href: '/all', label: 'All Calculators', icon: List },
