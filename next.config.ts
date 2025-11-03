@@ -1,14 +1,7 @@
 
 import type {NextConfig} from 'next';
 
-const repo = 'Health-and-fitness-calculators-Hub'
-const assetPrefix = `/${repo}/`
-const basePath = `/${repo}`
-
 const nextConfig: NextConfig = {
-  output: 'export',
-  assetPrefix: assetPrefix,
-  basePath: basePath,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -21,7 +14,6 @@ const nextConfig: NextConfig = {
     ],
   },
   images: {
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
