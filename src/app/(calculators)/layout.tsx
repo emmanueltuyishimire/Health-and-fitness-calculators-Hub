@@ -12,9 +12,7 @@ export default function CalculatorsLayout({
       <SidebarProvider>
         <SidebarNav />
         <SidebarInset>
-            <div className="p-4 sm:p-6 lg:p-8">
-                {children}
-            </div>
+            {children}
         </SidebarInset>
       </SidebarProvider>
     </CalculatorProvider>

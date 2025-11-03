@@ -3,24 +3,11 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Calculator, CheckCircle, HeartPulse, Scale, SlidersHorizontal } from 'lucide-react';
-import { Logo } from '@/components/logo';
 import { calculatorGroups } from '@/lib/calculator-groups';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
-          <Logo />
-          <Link href="/all">
-            <Button>
-              View All Calculators <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
-        </div>
-      </header>
-
-      <main className="flex-1">
+    <>
         {/* Hero Section */}
         <section className="w-full py-24 md:py-32 lg:py-40">
           <div className="container px-4 md:px-6">
@@ -115,31 +102,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
-
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted-foreground">&copy; 2025 <a href="https://calculation.site" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">calculation.site</a>. All rights reserved.</p>
-        <nav className="sm:ml-auto flex flex-wrap gap-4 sm:gap-6">
-          <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/about" target="_blank" rel="nofollow noopener noreferrer">
-            About
-          </a>
-          <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/contact" target="_blank" rel="nofollow noopener noreferrer">
-            Contact
-          </a>
-          <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/privacy-policy" target="_blank" rel="nofollow noopener noreferrer">
-            Privacy Policy
-          </a>
-           <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/terms-and-conditions" target="_blank" rel="nofollow noopener noreferrer">
-            Terms and Conditions
-          </a>
-          <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/disclaimer" target="_blank" rel="nofollow noopener noreferrer">
-            Disclaimer
-          </a>
-           <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site" target="_blank" rel="noopener noreferrer">
-            Central Hub
-          </a>
-        </nav>
-      </footer>
-    </div>
+    </>
   );
 }
