@@ -5,6 +5,7 @@ import {
   Calculator,
   Flame,
   HeartPulse,
+  List,
   Percent,
   Scale,
   Sparkles,
@@ -35,6 +36,7 @@ const links = [
   { href: '/bmr', label: 'BMR Calculator', icon: Flame },
   { href: '/calorie-needs', label: 'Calorie Needs', icon: Calculator },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },
+  { href: '/all', label: 'All Calculators', icon: List },
 ];
 
 export function SidebarNav() {
