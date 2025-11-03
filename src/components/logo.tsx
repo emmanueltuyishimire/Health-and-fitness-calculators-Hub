@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 
-const assetPrefix = process.env.NODE_ENV === 'production' ? '/Health-and-fitness-calculators-Hub' : '';
+const assetPrefix = process.env.NODE_ENV === 'production' ? '' : '';
 
 export function Logo() {
   return (

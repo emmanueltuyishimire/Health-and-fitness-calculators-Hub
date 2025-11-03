@@ -1,13 +1,8 @@
 
 import type {NextConfig} from 'next';
 
-const isProd = process.env.NODE_ENV === 'production';
-const assetPrefix = isProd ? '/Health-and-fitness-calculators-Hub' : '';
-
 const nextConfig: NextConfig = {
   output: 'export',
-  assetPrefix,
-  basePath: assetPrefix,
   typescript: {
     ignoreBuildErrors: true,
   },

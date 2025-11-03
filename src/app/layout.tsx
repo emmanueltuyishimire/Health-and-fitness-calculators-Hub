@@ -15,7 +15,7 @@ const ptSans = PT_Sans({
   variable: '--font-pt-sans',
 });
 
-const assetPrefix = process.env.NODE_ENV === 'production' ? '/Health-and-fitness-calculators-Hub' : '';
+const assetPrefix = process.env.NODE_ENV === 'production' ? '' : '';
 
 export const metadata: Metadata = {
   title: 'Health and Fitness Calculators Hub',
