@@ -244,7 +244,7 @@ export default function CalorieBurnByActivityPage() {
             <h3 className="font-semibold text-lg text-foreground">What is a MET?</h3>
             <p>MET stands for Metabolic Equivalent of Task. It's a standardized measure used to express the energy cost of physical activities. One MET is defined as the amount of oxygen consumed while sitting at rest, which is approximately 3.5 milliliters of oxygen per kilogram of body weight per minute. In simpler terms:</p>
             <ul className="list-disc list-inside space-y-2">
-                <li><strong>1 MET:</strong> The energy you use when you are at complete rest.</li>
+                <li><strong>1 MET:</strong> The energy you use when you are at complete rest. This is your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>.</li>
                 <li><strong>3 METs:</strong> The activity requires three times the energy of resting.</li>
                 <li><strong>8 METs:</strong> The activity requires eight times the energy of resting.</li>
             </ul>
@@ -310,6 +310,40 @@ export default function CalorieBurnByActivityPage() {
                 <AccordionContent>Fitness trackers use heart rate and motion sensors, which can be inconsistent. The MET value method is a standardized physiological formula, often more reliable, though less personalized than a lab test.</AccordionContent>
               </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>General Users</TableCell>
+                  <TableCell>Compare different activities to find the most time-efficient workout for their schedule.</TableCell>
+                  <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Fitness Coaches</TableCell>
+                  <TableCell>Estimate the calorie expenditure of a client's workout plan to help refine their diet.</TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Weight Loss Planners</TableCell>
+                  <TableCell>Quantify how much extra activity is needed to reach a specific calorie deficit goal.</TableCell>
+                  <TableCell><Link href="/weight-loss-goal" className="text-primary hover:underline">Weight Loss Goal</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
 
