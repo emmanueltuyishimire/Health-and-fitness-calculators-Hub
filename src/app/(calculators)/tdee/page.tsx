@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Bike } from 'lucide-react';
@@ -320,6 +321,18 @@ export default function TdeePage() {
             </ul>
           </CardContent>
         </Card>
+        
+        <Card>
+            <CardHeader><CardTitle>Pro Tips &amp; Quick Hacks</CardTitle></CardHeader>
+            <CardContent>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li><strong>Prioritize Protein to Protect BMR:</strong> When in a calorie deficit, a higher protein intake helps preserve muscle mass, which in turn helps keep your BMR from dropping as much. Use a Protein Intake Calculator to find your target.</li>
+                    <li><strong>Use BMR to Set Your "Non-Negotiable" Floor:</strong> As a general rule, avoid dieting on calorie levels at or below your BMR for extended periods, as this can negatively impact metabolism and lead to nutrient deficiencies.</li>
+                    <li><strong>Reverse Dieting with BMR:</strong> After a long diet, you can use your TDEE to slowly increase calories back to a new, higher maintenance level, which helps restore metabolic rate.</li>
+                    <li><strong>Cycle Your Calories:</strong> Instead of eating the same deficit every day, try eating closer to your TDEE on training days and a larger deficit on rest days. This can help with workout performance and adherence.</li>
+                </ul>
+            </CardContent>
+        </Card>
 
         <Card>
           <CardHeader>
@@ -349,6 +362,43 @@ export default function TdeePage() {
               </AccordionItem>
             </Accordion>
           </CardContent>
+        </Card>
+
+        <Card>
+            <CardHeader><CardTitle>Real-Life Applications</CardTitle></CardHeader>
+            <CardContent>
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead>Audience</TableHead>
+                            <TableHead>Use Case</TableHead>
+                            <TableHead>Next Step (Tool)</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        <TableRow>
+                            <TableCell>General Users</TableCell>
+                            <TableCell>Determine daily maintenance calories to prevent unintentional weight gain or loss.</TableCell>
+                            <TableCell><Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit Calculator</Link></TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>Fitness Coaches</TableCell>
+                            <TableCell>Create precise calorie targets for client fat loss or muscle gain phases.</TableCell>
+                             <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio Calculator</Link></TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>Nutritionists</TableCell>
+                            <TableCell>Design meal plans that are perfectly aligned with a client's energy needs.</TableCell>
+                            <TableCell>Meal Calorie Split Calculator</TableCell>
+                        </TableRow>
+                         <TableRow>
+                            <TableCell>Athletes</TableCell>
+                            <TableCell>Fuel performance and recovery by ensuring adequate energy intake.</TableCell>
+                            <TableCell><Link href="/carb-intake" className="text-primary hover:underline">Carb Intake Calculator</Link></TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+            </CardContent>
         </Card>
 
         <Card>
