@@ -182,6 +182,60 @@ export default function BodyDensityPage() {
 
         <Card>
           <CardHeader>
+            <CardTitle>How to Use the Body Density Calculator</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4 text-muted-foreground">
+            <p>
+              This tool estimates your body density using a value derived from another key metric: your body fat percentage.
+            </p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li><strong>Find Your Body Fat Percentage:</strong> Before you begin, you need your body fat percentage. Use our{' '}
+                  <Link href="/body-fat" className="text-primary hover:underline">
+                    Body Fat Percentage Calculator
+                  </Link>{' '}
+                  for a reliable estimate.</li>
+              <li><strong>Enter Your Body Fat Percentage:</strong> Input the value into the field provided.</li>
+              <li><strong>Calculate:</strong> Click the "Calculate Body Density" button to see your result.</li>
+            </ol>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Worked Examples</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Variable</TableHead>
+                  <TableHead>Example 1 (Athlete)</TableHead>
+                  <TableHead>Example 2 (Average Person)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Body Fat %</TableCell>
+                  <TableCell>12%</TableCell>
+                  <TableCell>25%</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-bold">Calculated Body Density</TableCell>
+                  <TableCell className="font-bold">1.071 g/cm³</TableCell>
+                  <TableCell className="font-bold">1.037 g/cm³</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Interpretation & Next Step</TableCell>
+                  <TableCell>The higher density reflects a leaner body composition. This individual can track their muscularity with the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link>.</TableCell>
+                  <TableCell>The lower density indicates a higher proportion of fat mass. The next step would be to focus on a fat loss plan, using the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> calculator.</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
             <CardTitle>Understanding Body Density</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
@@ -196,11 +250,11 @@ export default function BodyDensityPage() {
                 <strong>Fat Mass Density:</strong> Approximately 0.9 g/cm³
               </li>
               <li>
-                <strong>Fat-Free Mass Density:</strong> Approximately 1.1 g/cm³
+                <strong>Fat-Free Mass Density:</strong> Approximately 1.1 g/cm³ (this includes muscle, bone, organs, and water)
               </li>
             </ul>
             <p>
-              Because fat is less dense than muscle and bone, a person with a higher body fat percentage will have a lower overall body density, and vice-versa. This principle is the basis for gold-standard measurement techniques like underwater weighing.
+              Because fat is less dense than muscle and bone, a person with a higher body fat percentage will have a lower overall body density, and vice-versa. This principle is the basis for gold-standard measurement techniques like hydrostatic (underwater) weighing.
             </p>
 
             <h3 className="font-semibold text-lg text-foreground">
@@ -217,11 +271,37 @@ export default function BodyDensityPage() {
               <Link href="/body-fat" className="text-primary hover:underline">
                 Body Fat Calculator
               </Link>
-              , this tool solves for the "Body Density" variable, helping you understand the direct relationship between these two key body composition metrics.
+              , this tool solves for the "Body Density" variable, helping you understand the direct relationship between these two key body composition metrics. While not a metric to track for fitness goals, it provides a fascinating look "under the hood" of how body composition is calculated.
             </p>
           </CardContent>
         </Card>
         
+        <Card>
+          <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Inaccurate Body Fat Input:</strong> The accuracy of this calculator is entirely dependent on the accuracy of the body fat percentage you provide. Use our <Link href="/body-fat" className="text-primary hover:underline">Body Fat Calculator</Link> for a good estimate.</li>
+              <li><strong>Treating It as a Goal:</strong> Body density is an abstract clinical measure, not a fitness goal. Focus on actionable metrics like improving your <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> or <Link href="/ffmi" className="text-primary hover:underline">FFMI</Link>.</li>
+              <li><strong>Ignoring the Context:</strong> Body density is part of a two-compartment model (fat and fat-free mass). It doesn't differentiate between muscle and bone within the fat-free mass component.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Educational Tool:</strong> Use this calculator to understand why your body fat percentage is what it is. As you lose fat and gain muscle, your body literally becomes denser.</li>
+              <li><strong>Connect to BMR:</strong> Denser bodies (more muscle) are more metabolically active. A higher body density usually correlates with a higher <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate</Link>.</li>
+              <li><strong>Understand Lab Methods:</strong> If you ever get a lab assessment like a DEXA scan or underwater weighing, this calculator helps you understand the underlying density data they use to generate your results.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
         <Card>
           <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
@@ -259,7 +339,56 @@ export default function BodyDensityPage() {
                   </Link>.
                 </AccordionContent>
               </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger>What is a typical body density value?</AccordionTrigger>
+                <AccordionContent>
+                  The density of fat is about 0.9 g/cm³, while the density of fat-free mass is about 1.1 g/cm³. Your overall body density will fall between these two values. A person with lower body fat will have a body density closer to 1.1 g/cm³. To see how this relates to total mass, check the{' '}
+                  <Link href="/ideal-weight" className="text-primary hover:underline">
+                    Ideal Weight Calculator
+                  </Link>.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger>How does this relate to underwater weighing?</AccordionTrigger>
+                <AccordionContent>
+                  Underwater weighing (hydrodensitometry) is a lab method to determine body density directly by applying Archimedes' principle. Once body density is found, it is plugged into the Siri or Brozek equation to find body fat percentage. This calculator helps you understand the density value that corresponds to your estimated body fat.
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+             <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Students & Health Enthusiasts</TableCell>
+                  <TableCell>Understand the scientific principles behind body fat calculations.</TableCell>
+                  <TableCell><Link href="/body-fat" className="text-primary hover:underline">Body Fat % Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Fitness Professionals</TableCell>
+                  <TableCell>Explain to clients how body composition affects overall density.</TableCell>
+                  <TableCell><Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass Calculator</Link></TableCell>
+                </TableRow>
+                 <TableRow>
+                  <TableCell>Researchers</TableCell>
+                  <TableCell>Convert body fat percentages from studies back to density for re-analysis.</TableCell>
+                  <TableCell>N/A (Academic Use)</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
 
