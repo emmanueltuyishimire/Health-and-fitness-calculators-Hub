@@ -13,6 +13,8 @@ import {
   Target,
   Weight
 } from 'lucide-react';
+import { PiPersonArmsSpread } from "react-icons/pi";
+
 
 import {
   Sidebar,
@@ -36,6 +38,7 @@ const links = [
   { href: '/body-fat', label: 'Body Fat %', icon: Percent },
   { href: '/ideal-weight', label: 'Ideal Weight', icon: Target },
   { href: '/lean-body-mass', label: 'Lean Body Mass', icon: Weight },
+  { href: '/ffmi', label: 'FFMI Calculator', icon: PiPersonArmsSpread },
   { href: '/bmr', label: 'BMR Calculator', icon: Flame },
   { href: '/calorie-needs', label: 'Calorie Needs', icon: Calculator },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },

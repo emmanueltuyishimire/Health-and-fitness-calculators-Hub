@@ -27,6 +27,7 @@ type State = {
   bmr?: number;
   calorieNeeds?: number;
   leanBodyMass?: number;
+  ffmi?: number;
 };
 
 type Action =

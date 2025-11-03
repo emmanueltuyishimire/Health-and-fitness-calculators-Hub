@@ -70,3 +70,13 @@ export const LeanBodyMassSchema = z.object({
 });
 
 export type LeanBodyMassFormValues = z.infer<typeof LeanBodyMassSchema>;
+
+export const FfmiSchema = z.object({
+  gender: z.enum(['male', 'female']),
+  height: z.string().min(1, { message: 'Height is required.' }),
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  bodyFat: z.string().min(1, { message: 'Body fat percentage is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type FfmiFormValues = z.infer<typeof FfmiSchema>;
