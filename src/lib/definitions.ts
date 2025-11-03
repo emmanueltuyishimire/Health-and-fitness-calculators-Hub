@@ -260,3 +260,12 @@ export const CalorieBurnByActivitySchema = z.object({
 });
 
 export type CalorieBurnByActivityFormValues = z.infer<typeof CalorieBurnByActivitySchema>;
+
+export const CalorieAdjustmentSchema = z.object({
+  tdee: z.string().min(1, { message: 'TDEE is required. Please calculate it first.' }),
+  goal: z.enum(['loss', 'gain']),
+  rate: z.string(),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type CalorieAdjustmentFormValues = z.infer<typeof CalorieAdjustmentSchema>;

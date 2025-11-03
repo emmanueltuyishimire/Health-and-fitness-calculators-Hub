@@ -25,8 +25,7 @@ const calculatorGroups = [
     calculators: [
       { name: 'BMR Calculator', href: '/bmr' },
       { name: 'TDEE Calculator', href: '/tdee' },
-      { name: 'Calorie Deficit Calculator', href: '/calorie-deficit' },
-      { name: 'Calorie Surplus Calculator', href: '/calorie-surplus' },
+      { name: 'Calorie Adjustment for Weight Goals', href: '/calorie-adjustment-for-weight-loss' },
       { name: 'Calorie Maintenance Calculator', href: '/calorie-maintenance' },
       { name: 'Weight Loss Goal Calculator', href: '/weight-loss-goal' },
       { name: 'Weight Gain Goal Calculator', href: '/weight-gain-goal' },
@@ -44,8 +43,6 @@ const calculatorGroups = [
       { name: 'Carb Intake Calculator', href: '/carb-intake' },
       { name: 'Fat Intake Calculator', href: '/fat-intake' },
       { name: 'Calorie Burn by Activity Calculator', href: '/calorie-burn-by-activity' },
-      { name: 'Calorie Adjustment for Weight Goals', href: '/calorie-adjustment' },
-      { name: 'Meal Calorie Split Calculator', href: '/meal-calorie-split' },
       { name: 'Water Intake Calculator', href: '/water-intake' },
       { name: 'Hydration Tracker', href: '/hydration-tracker' },
     ],

@@ -28,11 +28,11 @@ import {
 import { CalorieDeficitCalculatorForm } from '@/components/calorie-deficit-calculator-form';
 
 export const metadata: Metadata = {
-  title: 'Calorie Deficit Calculator – Plan Your Weight Loss',
+  title: 'Calorie Adjustment for Weight Loss – Plan Your Deficit',
   description:
     'Calculate your ideal calorie deficit for sustainable weight loss. Understand how to set safe and effective calorie targets based on your TDEE without sacrificing muscle mass or energy.',
   openGraph: {
-    title: 'Calorie Deficit Calculator – Plan Your Weight Loss',
+    title: 'Calorie Adjustment for Weight Loss – Plan Your Deficit',
     description:
       'Calculate your ideal calorie deficit for sustainable weight loss. Understand how to set safe and effective calorie targets based on your TDEE without sacrificing muscle mass or energy.',
     type: 'website',
@@ -43,7 +43,7 @@ export default function CalorieDeficitPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'Calorie Deficit Calculator',
+    name: 'Calorie Adjustment for Weight Loss Calculator',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: {
@@ -151,7 +151,7 @@ export default function CalorieDeficitPage() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Calorie Deficit Calculator</BreadcrumbPage>
+              <BreadcrumbPage>Calorie Adjustment for Weight Loss</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -164,7 +164,7 @@ export default function CalorieDeficitPage() {
               </div>
               <div>
                 <h1 className="text-2xl md:text-3xl font-bold">
-                  Calorie Deficit Calculator
+                  Calorie Adjustment for Weight Loss
                 </h1>
                 <p className="text-muted-foreground">
                   The most critical step for weight loss is creating a calorie deficit. This tool helps you set a safe and effective daily calorie target. First, ensure you have your maintenance calories from the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.
