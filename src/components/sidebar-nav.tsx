@@ -1,4 +1,3 @@
-
 'use client';
 
 import { usePathname } from 'next/navigation';
@@ -22,6 +21,7 @@ import {
   TrendingUp,
   Flag,
   AreaChart,
+  CalendarClock,
 } from 'lucide-react';
 import { PiPersonArmsSpread } from "react-icons/pi";
 
@@ -61,6 +61,7 @@ const links = [
   { href: '/calorie-maintenance', label: 'Calorie Maintenance', icon: Anchor },
   { href: '/weight-loss-goal', label: 'Weight Loss Goal', icon: Flag },
   { href: '/weight-gain-goal', label: 'Weight Gain Goal', icon: Flag },
+  { href: '/goal-weight-estimator', label: 'Goal Weight Estimator', icon: CalendarClock },
   { href: '/weight-change-tracker', label: 'Weekly Weight Tracker', icon: AreaChart },
   { href: '/fat-loss-tracker', label: 'Fat Loss Tracker', icon: Target },
   { href: '/calorie-needs', label: 'Calorie Needs', icon: Calculator },
