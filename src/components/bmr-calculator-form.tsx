@@ -88,17 +88,6 @@ export function BmrCalculatorForm() {
     dispatch({ type: 'SET_USER_DATA', payload: { [name]: value } });
   };
   
-  const handleUnitSystemChange = (value: 'metric' | 'imperial') => {
-    dispatch({ type: 'SET_UNIT_SYSTEM', payload: value });
-    form.reset({
-      ...form.getValues(),
-      height: '',
-      weight: '',
-      unitSystem: value,
-    });
-    setBmrResult(null);
-  };
-
   return (
     <div>
       <Form {...form}>

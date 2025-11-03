@@ -87,7 +87,7 @@ export default function CalorieDeficitPage() {
         name: 'What is a calorie deficit?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A calorie deficit is a state in which you consume fewer calories than your body expends. This is the fundamental requirement for weight loss. Your total expenditure is calculated by our <a href="/tdee">TDEE Calculator</a>.',
+          text: 'A calorie deficit is a state in which you consume fewer calories than your body expends. This is the fundamental requirement for weight loss. Your total expenditure is calculated by our <a href="/tdee" aria-label="TDEE Calculator">TDEE Calculator</a>.',
         },
       },
       {
@@ -103,7 +103,7 @@ export default function CalorieDeficitPage() {
         name: 'How much weight can I lose with a 500-calorie deficit?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A 500-calorie daily deficit creates a 3500-calorie weekly deficit, which is roughly equivalent to 1 pound of fat loss per week. This is a widely recommended rate. The <a href="/tdee">TDEE Calculator</a> provides targets for this goal.',
+          text: 'A 500-calorie daily deficit creates a 3500-calorie weekly deficit, which is roughly equivalent to 1 pound of fat loss per week. This is a widely recommended rate. The <a href="/tdee" aria-label="TDEE Calculator">TDEE Calculator</a> provides targets for this goal.',
         },
       },
       {
@@ -111,7 +111,7 @@ export default function CalorieDeficitPage() {
         name: 'Should I eat below my BMR?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'It is generally not recommended to eat below your <a href="/bmr">Basal Metabolic Rate (BMR)</a> for extended periods. Your BMR represents the calories needed for basic survival. A diet below BMR can lead to metabolic slowdown and nutrient deficiencies.',
+          text: 'It is generally not recommended to eat below your <a href="/bmr" aria-label="BMR Calculator">Basal Metabolic Rate (BMR)</a> for extended periods. Your BMR represents the calories needed for basic survival. A diet below BMR can lead to metabolic slowdown and nutrient deficiencies.',
         },
       },
       {
@@ -119,7 +119,7 @@ export default function CalorieDeficitPage() {
         name: 'Why do I need my TDEE before using this calculator?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Your <a href="/tdee">TDEE</a> is your maintenance calorie level. A deficit must be calculated *from* this number. Without knowing your TDEE, any deficit is just a guess and will likely be ineffective or unsustainable.',
+          text: 'Your <a href="/tdee" aria-label="TDEE Calculator">TDEE</a> is your maintenance calorie level. A deficit must be calculated *from* this number. Without knowing your TDEE, any deficit is just a guess and will likely be ineffective or unsustainable.',
         },
       },
     ],
@@ -167,7 +167,7 @@ export default function CalorieDeficitPage() {
                   Calorie Adjustment for Weight Loss
                 </h1>
                 <p className="text-muted-foreground">
-                  The most critical step for weight loss is creating a calorie deficit. This tool helps you set a safe and effective daily calorie target. First, ensure you have your maintenance calories from the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.
+                  The most critical step for weight loss is creating a calorie deficit. This tool helps you set a safe and effective daily calorie target. First, ensure you have your maintenance calories from the <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link>.
                 </p>
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function CalorieDeficitPage() {
               This calculator makes it easy to plan your weight loss by turning your TDEE into an actionable daily calorie goal.
             </p>
             <ol className="list-decimal list-inside space-y-2">
-              <li><strong>Get Your TDEE:</strong> First, visit our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to find your daily maintenance calories. This value will be auto-filled for you.</li>
+              <li><strong>Get Your TDEE:</strong> First, visit our <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> to find your daily maintenance calories. This value will be auto-filled for you.</li>
               <li><strong>Enter Your TDEE:</strong> If not auto-filled, enter your maintenance calories into the form.</li>
               <li><strong>Choose Your Goal:</strong> Select how aggressively you want to lose weight. A "Mild" or "Standard" deficit is recommended for sustainability.</li>
               <li><strong>Calculate Your Target:</strong> The calculator will show you your precise daily calorie intake to achieve your desired rate of weight loss.</li>
@@ -230,8 +230,8 @@ export default function CalorieDeficitPage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation</TableCell>
-                  <TableCell>A slow and highly sustainable rate of weight loss, ideal for preserving muscle and energy levels. Best paired with tracking from the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link>.</TableCell>
-                  <TableCell>A standard, effective rate of weight loss. This person should ensure adequate protein intake to protect their <Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass</Link>.</TableCell>
+                  <TableCell>A slow and highly sustainable rate of weight loss, ideal for preserving muscle and energy levels. Best paired with tracking from the <Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link>.</TableCell>
+                  <TableCell>A standard, effective rate of weight loss. This person should ensure adequate protein intake to protect their <Link href="/lean-body-mass" className="text-primary hover:underline" aria-label="Lean Body Mass Calculator">Lean Body Mass</Link>.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -245,12 +245,12 @@ export default function CalorieDeficitPage() {
           <CardContent className="space-y-4 text-muted-foreground">
             <h3 className="font-semibold text-lg text-foreground">The Science of Energy Balance</h3>
             <p>Weight loss follows the first law of thermodynamics: energy cannot be created or destroyed. When you provide your body with less energy (calories) than it uses, it must get the missing energy from its stored reserves—primarily body fat. This is what's known as a calorie deficit.</p>
-            <p>Your total daily energy needs are calculated by the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>. This calculator takes that TDEE value and helps you create a deficit in a controlled, predictable way. A deficit of 3,500 calories is approximately equal to one pound of body fat.</p>
+            <p>Your total daily energy needs are calculated by the <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link>. This calculator takes that TDEE value and helps you create a deficit in a controlled, predictable way. A deficit of 3,500 calories is approximately equal to one pound of body fat.</p>
 
             <h3 className="font-semibold text-lg text-foreground">Why a Moderate Deficit is Key</h3>
             <p>While it might be tempting to create a huge deficit for faster results, this often backfires. A very aggressive deficit can lead to:</p>
             <ul className="list-disc list-inside space-y-2">
-              <li><strong>Muscle Loss:</strong> Your body may break down metabolically active muscle tissue for energy, which lowers your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>.</li>
+              <li><strong>Muscle Loss:</strong> Your body may break down metabolically active muscle tissue for energy, which lowers your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</Link>.</li>
               <li><strong>Metabolic Adaptation:</strong> Your metabolism can slow down to conserve energy, making further weight loss harder.</li>
               <li><strong>Nutrient Deficiencies:</strong> It's difficult to get all essential vitamins and minerals on very low calories.</li>
               <li><strong>Fatigue and Poor Performance:</strong> Lack of energy can impact your workouts and daily life.</li>
@@ -266,8 +266,8 @@ export default function CalorieDeficitPage() {
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Being Too Aggressive:</strong> A massive deficit leads to muscle loss, nutrient deficiencies, and burnout. Start with a 10-15% deficit.</li>
-              <li><strong>Forgetting Protein:</strong> Not eating enough protein during a deficit can accelerate muscle loss, which lowers your metabolism. Use the <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link> to find your target.</li>
-              <li><strong>Not Adjusting TDEE:</strong> As you lose weight, your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> will decrease. You must recalculate it every 10-15 lbs to keep your deficit accurate.</li>
+              <li><strong>Forgetting Protein:</strong> Not eating enough protein during a deficit can accelerate muscle loss, which lowers your metabolism. Use the <Link href="/protein-intake" className="text-primary hover:underline" aria-label="Protein Intake Calculator">Protein Intake Calculator</Link> to find your target.</li>
+              <li><strong>Not Adjusting TDEE:</strong> As you lose weight, your <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link> will decrease. You must recalculate it every 10-15 lbs to keep your deficit accurate.</li>
               <li><strong>Ignoring Food Quality:</strong> 500 calories of junk food is not the same as 500 calories of whole foods. Prioritize nutrient-dense foods for better health and satiety.</li>
             </ul>
           </CardContent>
@@ -282,7 +282,7 @@ export default function CalorieDeficitPage() {
               <li><strong>Use Calorie Cycling:</strong> Eat in a larger deficit on rest days and a smaller deficit (or at maintenance) on training days to fuel performance.</li>
               <li><strong>Schedule Diet Breaks:</strong> After 8-12 weeks in a deficit, consider taking 1-2 weeks to eat at your maintenance TDEE. This can help normalize hormones and provide a psychological break.</li>
               <li><strong>Focus on High-Volume Foods:</strong> Vegetables, fruits, and lean proteins are less calorie-dense, allowing you to eat more food and feel fuller while staying in your deficit.</li>
-              <li><strong>Stay Hydrated:</strong> Drinking plenty of water can help with satiety and overall metabolic function. Use the <Link href="/water-intake" className="text-primary hover:underline">Water Intake Calculator</Link> to find your target.</li>
+              <li><strong>Stay Hydrated:</strong> Drinking plenty of water can help with satiety and overall metabolic function. Use the <Link href="/water-intake" className="text-primary hover:underline" aria-label="Water Intake Calculator">Water Intake Calculator</Link> to find your target.</li>
             </ul>
           </CardContent>
         </Card>
@@ -295,7 +295,7 @@ export default function CalorieDeficitPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>What is a safe calorie deficit?</AccordionTrigger>
-                <AccordionContent>A safe deficit is typically 10-20% below your TDEE, or about 250-500 calories per day. This promotes fat loss while minimizing muscle loss. Use the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to find your starting point.</AccordionContent>
+                <AccordionContent>A safe deficit is typically 10-20% below your TDEE, or about 250-500 calories per day. This promotes fat loss while minimizing muscle loss. Use the <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> to find your starting point.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>How much weight will I lose with a 500-calorie deficit?</AccordionTrigger>
@@ -303,15 +303,15 @@ export default function CalorieDeficitPage() {
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Should I ever eat below my BMR?</AccordionTrigger>
-                <AccordionContent>It's generally advised not to eat below your <Link href="/bmr" className="text-primary hover:underline">BMR</Link> for long periods. Your BMR is the energy your body needs for essential functions. A prolonged, extreme deficit can harm your metabolism.</AccordionContent>
+                <AccordionContent>It's generally advised not to eat below your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</Link> for long periods. Your BMR is the energy your body needs for essential functions. A prolonged, extreme deficit can harm your metabolism.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>Do I need to be in a deficit every day?</AccordionTrigger>
-                <AccordionContent>The weekly average deficit is what matters most. Some people find success with "calorie cycling," where they eat at maintenance (TDEE) on workout days and in a larger deficit on rest days. Our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> helps you find your maintenance level.</AccordionContent>
+                <AccordionContent>The weekly average deficit is what matters most. Some people find success with "calorie cycling," where they eat at maintenance (TDEE) on workout days and in a larger deficit on rest days. Our <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> helps you find your maintenance level.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>What happens if I stop losing weight?</AccordionTrigger>
-                <AccordionContent>This is called a plateau. It's normal. It may happen because your TDEE has decreased as you've lost weight. It's time to recalculate your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> and adjust your deficit accordingly.</AccordionContent>
+                <AccordionContent>This is called a plateau. It's normal. It may happen because your TDEE has decreased as you've lost weight. It's time to recalculate your <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link> and adjust your deficit accordingly.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -334,17 +334,17 @@ export default function CalorieDeficitPage() {
                 <TableRow>
                   <TableCell>General Users</TableCell>
                   <TableCell>Create a simple, effective plan for steady weight loss.</TableCell>
-                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio Calculator</Link></TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline" aria-label="Macronutrient Ratio Calculator">Macronutrient Ratio Calculator</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Fitness Coaches</TableCell>
                   <TableCell>Set precise calorie targets for clients' fat loss phases.</TableCell>
-                  <TableCell><Link href="/weight-change-tracker" className="text-primary hover:underline">Weekly Weight Change Tracker</Link></TableCell>
+                  <TableCell><Link href="/weight-change-tracker" className="text-primary hover:underline" aria-label="Weekly Weight Change Tracker">Weekly Weight Change Tracker</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Bodybuilders</TableCell>
                   <TableCell>Plan a "cutting" phase to reduce body fat while preserving muscle.</TableCell>
-                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -356,19 +356,19 @@ export default function CalorieDeficitPage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted" aria-label="TDEE Calculator">
               <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">The essential first step. Find your maintenance calories here.</p>
             </Link>
-            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted" aria-label="BMR Calculator">
               <h3 className="font-semibold">BMR Calculator</h3>
               <p className="text-sm text-muted-foreground">Understand your body's baseline calorie needs at rest.</p>
             </Link>
-            <Link href="/macronutrient-ratio" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/macronutrient-ratio" className="p-4 border rounded-lg hover:bg-muted" aria-label="Macronutrient Ratio Calculator">
               <h3 className="font-semibold">Macronutrient Ratio Calculator</h3>
               <p className="text-sm text-muted-foreground">Turn your calorie target into protein, carb, and fat goals.</p>
             </Link>
-            <Link href="/body-fat" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/body-fat" className="p-4 border rounded-lg hover:bg-muted" aria-label="Body Fat Percentage Calculator">
               <h3 className="font-semibold">Body Fat Percentage Calculator</h3>
               <p className="text-sm text-muted-foreground">Track your progress by monitoring changes in body composition.</p>
             </Link>

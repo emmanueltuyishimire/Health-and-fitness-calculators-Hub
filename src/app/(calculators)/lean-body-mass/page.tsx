@@ -86,7 +86,7 @@ export default function LeanBodyMassPage() {
         name: 'What is Lean Body Mass (LBM)?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Lean Body Mass is the total weight of your body minus all the weight due to your fat mass. It includes the weight of your organs, skin, bones, and muscles. It is a better indicator of health than total body weight, which you can compare using our <a href="/ideal-weight">Ideal Weight Calculator</a>.',
+          text: 'Lean Body Mass is the total weight of your body minus all the weight due to your fat mass. It includes the weight of your organs, skin, bones, and muscles. It is a better indicator of health than total body weight, which you can compare using our <a href="/ideal-weight" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</a>.',
         },
       },
       {
@@ -94,7 +94,7 @@ export default function LeanBodyMassPage() {
         name: 'Why is LBM important?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'LBM is the most metabolically active tissue in your body. A higher LBM means a higher resting metabolism. Tracking LBM helps you ensure you are losing fat, not muscle, during weight loss. It is a more precise metric than <a href="/bmi">BMI</a> for assessing fitness progress.',
+          text: 'LBM is the most metabolically active tissue in your body. A higher LBM means a higher resting metabolism. Tracking LBM helps you ensure you are losing fat, not muscle, during weight loss. It is a more precise metric than <a href="/bmi" aria-label="BMI Calculator">BMI</a> for assessing fitness progress.',
         },
       },
       {
@@ -110,7 +110,7 @@ export default function LeanBodyMassPage() {
         name: 'Is this calculator accurate?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'This calculator uses the Boer formula, which is a widely accepted estimation. However, it is still an estimate. For the most accurate measurement, you would need a clinical assessment like a DEXA scan. For another useful estimate, use our <a href="/body-fat">Body Fat Percentage Calculator</a>.',
+          text: 'This calculator uses the Boer formula, which is a widely accepted estimation. However, it is still an estimate. For the most accurate measurement, you would need a clinical assessment like a DEXA scan. For another useful estimate, use our <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a>.',
         },
       },
       {
@@ -118,7 +118,7 @@ export default function LeanBodyMassPage() {
         name: 'How does LBM relate to my BMR?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Your Lean Body Mass is the primary driver of your Basal Metabolic Rate (BMR). The more LBM you have, the more calories your body burns at rest. You can calculate your <a href="/bmr">BMR</a> to see this in action.',
+          text: 'Your Lean Body Mass is the primary driver of your Basal Metabolic Rate (BMR). The more LBM you have, the more calories your body burns at rest. You can calculate your <a href="/bmr" aria-label="BMR Calculator">BMR</a> to see this in action.',
         },
       },
       {
@@ -126,7 +126,7 @@ export default function LeanBodyMassPage() {
         name: 'Can I lose weight without losing LBM?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, this is the goal of a well-structured fat loss plan. It involves a moderate calorie deficit, sufficient protein, and resistance training. Use our <a href="/tdee">TDEE Calculator</a> to set an appropriate target.',
+          text: 'Yes, this is the goal of a well-structured fat loss plan. It involves a moderate calorie deficit, sufficient protein, and resistance training. Use our <a href="/tdee" aria-label="TDEE Calculator">TDEE Calculator</a> to set an appropriate target.',
         },
       },
       {
@@ -134,7 +134,7 @@ export default function LeanBodyMassPage() {
         name: 'What is a good LBM to have?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'There is no single "good" LBM, as it depends on your height, gender, and genetics. Instead of focusing on a specific number, aim to maintain or increase your LBM over time. A related metric to track is the Fat-Free Mass Index (FFMI), which you can find on our <a href="/ffmi">FFMI Calculator</a> page.',
+          text: 'There is no single "good" LBM, as it depends on your height, gender, and genetics. Instead of focusing on a specific number, aim to maintain or increase your LBM over time. A related metric to track is the Fat-Free Mass Index (FFMI), which you can find on our <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a> page.',
         },
       },
       {
@@ -142,7 +142,7 @@ export default function LeanBodyMassPage() {
         name: 'Do women have less LBM than men?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'On average, yes. Men naturally have a higher percentage of muscle mass due to hormonal differences, primarily testosterone. This is why ideal weight ranges, which you can check with our <a href="/ideal-weight">Ideal Weight Calculator</a>, are different for men and women.',
+          text: 'On average, yes. Men naturally have a higher percentage of muscle mass due to hormonal differences, primarily testosterone. This is why ideal weight ranges, which you can check with our <a href="/ideal-weight" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</a>, are different for men and women.',
         },
       },
       {
@@ -150,7 +150,7 @@ export default function LeanBodyMassPage() {
         name: 'How often should I calculate my LBM?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Since LBM changes slowly, calculating it once every 4-6 weeks is sufficient to track progress. Daily weight fluctuations are mostly water and will not give an accurate picture of your LBM changes. For a more complete picture, pair this with our <a href="/body-fat">Body Fat Percentage Calculator</a>.',
+          text: 'Since LBM changes slowly, calculating it once every 4-6 weeks is sufficient to track progress. Daily weight fluctuations are mostly water and will not give an accurate picture of your LBM changes. For a more complete picture, pair this with our <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a>.',
         },
       },
       {
@@ -158,7 +158,7 @@ export default function LeanBodyMassPage() {
         name: 'Can I have a high LBM but still be overweight?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, this is common in athletes and bodybuilders. Their <a href="/bmi">BMI</a> might classify them as "overweight," but their high LBM and low body fat percentage mean they are very healthy. This is a key limitation of BMI.',
+          text: 'Yes, this is common in athletes and bodybuilders. Their <a href="/bmi" aria-label="BMI Calculator">BMI</a> might classify them as "overweight," but their high LBM and low body fat percentage mean they are very healthy. This is a key limitation of BMI.',
         },
       },
     ],
@@ -209,7 +209,7 @@ export default function LeanBodyMassPage() {
                   Estimate your Lean Body Mass (LBM)—the total weight of your
                   body minus fat. LBM is a crucial metric for tracking fitness
                   progress, as it represents your muscle, bone, and organ
-                  mass. Unlike <Link href="/bmi" className="text-primary hover:underline">BMI</Link>, focusing on LBM helps ensure you're losing fat, not
+                  mass. Unlike <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI</Link>, focusing on LBM helps ensure you're losing fat, not
                   muscle.
                 </p>
               </div>
@@ -246,7 +246,7 @@ export default function LeanBodyMassPage() {
                 <strong>Calculate:</strong> Click the button to see your
                 estimated LBM. This number is the foundation of your
                 metabolism, which you can explore further with the{' '}
-                <Link href="/bmr" className="text-primary hover:underline">
+                <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">
                   BMR Calculator
                 </Link>
                 .
@@ -295,7 +295,7 @@ export default function LeanBodyMassPage() {
                     Her body consists of 47.3 kg of non-fat mass. She can
                     compare this to her total weight to estimate her body fat
                     using the{' '}
-                    <Link href="/body-fat" className="text-primary hover:underline">
+                    <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">
                       Body Fat Calculator
                     </Link>
                     .
@@ -303,7 +303,7 @@ export default function LeanBodyMassPage() {
                   <TableCell>
                     His 69.9 kg of LBM is the primary driver of his metabolism.
                     He can use this insight to set goals with the{' '}
-                    <Link href="/tdee" className="text-primary hover:underline">
+                    <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">
                       TDEE Calculator
                     </Link>
                     .
@@ -336,7 +336,7 @@ export default function LeanBodyMassPage() {
               indicative of real physiological changes. For anyone serious
               about fitness, preserving or increasing LBM is a primary goal. It
               is a much better metric for health than{' '}
-              <Link href="/bmi" className="text-primary hover:underline">BMI</Link>, which can be misleading for active individuals.
+              <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI</Link>, which can be misleading for active individuals.
             </p>
 
             <h3 className="font-semibold text-lg text-foreground">
@@ -356,7 +356,7 @@ export default function LeanBodyMassPage() {
               significantly more metabolically active than fat tissue, meaning
               it burns more calories at rest. The more LBM you have, the higher
               your{' '}
-              <Link href="/bmr" className="text-primary hover:underline">
+              <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">
                 Basal Metabolic Rate (BMR)
               </Link>
               . This is why two people of the same weight can have vastly
@@ -395,7 +395,7 @@ export default function LeanBodyMassPage() {
                 <strong>Ignoring Body Fat:</strong> LBM is one half of the
                 picture. You must also consider your fat mass, which you can
                 estimate with the{' '}
-                <Link href="/body-fat" className="text-primary hover:underline">
+                <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">
                   Body Fat Percentage Calculator
                 </Link>
                 .
@@ -414,7 +414,7 @@ export default function LeanBodyMassPage() {
                 <strong>Track LBM During a Diet:</strong> If your LBM is
                 decreasing, you may be losing muscle. Consider increasing your
                 protein intake or adjusting your calorie deficit with the{' '}
-                <Link href="/tdee" className="text-primary hover:underline">
+                <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">
                   TDEE Calculator
                 </Link>
                 .
@@ -428,7 +428,7 @@ export default function LeanBodyMassPage() {
               <li>
                 <strong>Combine with FFMI:</strong> For advanced athletes, the
                 Fat-Free Mass Index (FFMI) is a great next step. It normalizes
-                your LBM to your height. Use our <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link>.
+                your LBM to your height. Use our <Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link>.
               </li>
             </ul>
           </CardContent>
@@ -448,7 +448,7 @@ export default function LeanBodyMassPage() {
                   organs, skin, bones, and muscles. It is a better indicator of
                   health than total body weight, which you can compare using
                   our{' '}
-                  <Link href="/ideal-weight" className="text-primary hover:underline">
+                  <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">
                     Ideal Weight Calculator
                   </Link>
                   .
@@ -461,7 +461,7 @@ export default function LeanBodyMassPage() {
                   higher LBM means a higher resting metabolism. Tracking LBM
                   helps you ensure you are losing fat, not muscle, during
                   weight loss. It is a more precise metric than{' '}
-                  <Link href="/bmi" className="text-primary hover:underline">BMI</Link> for
+                  <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI</Link> for
                   assessing fitness progress.
                 </AccordionContent>
               </AccordionItem>
@@ -480,43 +480,43 @@ export default function LeanBodyMassPage() {
                <AccordionItem value="item-4">
                 <AccordionTrigger>Is this calculator accurate?</AccordionTrigger>
                 <AccordionContent>
-                  This calculator uses the Boer formula, which is a widely accepted estimation. However, it is still an estimate. For the most accurate measurement, you would need a clinical assessment like a DEXA scan. For another useful estimate, use our <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link>.
+                  This calculator uses the Boer formula, which is a widely accepted estimation. However, it is still an estimate. For the most accurate measurement, you would need a clinical assessment like a DEXA scan. For another useful estimate, use our <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link>.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>How does LBM relate to my BMR?</AccordionTrigger>
                 <AccordionContent>
-                  Your Lean Body Mass is the primary driver of your Basal Metabolic Rate (BMR). The more LBM you have, the more calories your body burns at rest. You can calculate your <Link href="/bmr" className="text-primary hover:underline">BMR</Link> to see this in action.
+                  Your Lean Body Mass is the primary driver of your Basal Metabolic Rate (BMR). The more LBM you have, the more calories your body burns at rest. You can calculate your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</Link> to see this in action.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
                 <AccordionTrigger>Can I lose weight without losing LBM?</AccordionTrigger>
                 <AccordionContent>
-                  Yes, this is the goal of a well-structured fat loss plan. It involves a moderate calorie deficit, sufficient protein, and resistance training. Use our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to set an appropriate target.
+                  Yes, this is the goal of a well-structured fat loss plan. It involves a moderate calorie deficit, sufficient protein, and resistance training. Use our <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> to set an appropriate target.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-7">
                 <AccordionTrigger>What is a good LBM to have?</AccordionTrigger>
                 <AccordionContent>
-                  There is no single "good" LBM, as it depends on your height, gender, and genetics. Instead of focusing on a specific number, aim to maintain or increase your LBM over time. A related metric to track is the Fat-Free Mass Index (FFMI), which you can find on our <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link> page.
+                  There is no single "good" LBM, as it depends on your height, gender, and genetics. Instead of focusing on a specific number, aim to maintain or increase your LBM over time. A related metric to track is the Fat-Free Mass Index (FFMI), which you can find on our <Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link> page.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-8">
                 <AccordionTrigger>Do women have less LBM than men?</AccordionTrigger>
                 <AccordionContent>
-                  On average, yes. Men naturally have a higher percentage of muscle mass due to hormonal differences, primarily testosterone. This is why ideal weight ranges, which you can check with our <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link>, are different for men and women.
+                  On average, yes. Men naturally have a higher percentage of muscle mass due to hormonal differences, primarily testosterone. This is why ideal weight ranges, which you can check with our <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</Link>, are different for men and women.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-9">
                 <AccordionTrigger>How often should I calculate my LBM?</AccordionTrigger>
                 <AccordionContent>
-                  Since LBM changes slowly, calculating it once every 4-6 weeks is sufficient to track progress. Daily weight fluctuations are mostly water and will not give an accurate picture of your LBM changes. For a more complete picture, pair this with our <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link>.
+                  Since LBM changes slowly, calculating it once every 4-6 weeks is sufficient to track progress. Daily weight fluctuations are mostly water and will not give an accurate picture of your LBM changes. For a more complete picture, pair this with our <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link>.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger>Can I have a high LBM but still be overweight?</AccordionTrigger>
                 <AccordionContent>
-                  Yes, this is common in athletes and bodybuilders. Their <Link href="/bmi" className="text-primary hover:underline">BMI</Link> might classify them as "overweight," but their high LBM and low body fat percentage mean they are very healthy. This is a key limitation of BMI.
+                  Yes, this is common in athletes and bodybuilders. Their <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI</Link> might classify them as "overweight," but their high LBM and low body fat percentage mean they are very healthy. This is a key limitation of BMI.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -531,6 +531,7 @@ export default function LeanBodyMassPage() {
             <Link
               href="/body-fat"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Body Fat Percentage Calculator"
             >
               <h3 className="font-semibold">Body Fat Percentage Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -538,13 +539,13 @@ export default function LeanBodyMassPage() {
                 composition.
               </p>
             </Link>
-            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted" aria-label="BMR Calculator">
               <h3 className="font-semibold">BMR Calculator</h3>
               <p className="text-sm text-muted-foreground">
                 See how your LBM contributes to your resting metabolism.
               </p>
             </Link>
-            <Link href="/bmi" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/bmi" className="p-4 border rounded-lg hover:bg-muted" aria-label="BMI Calculator">
               <h3 className="font-semibold">BMI Calculator</h3>
               <p className="text-sm text-muted-foreground">
                 Compare your LBM results to the more general BMI metric.
@@ -553,6 +554,7 @@ export default function LeanBodyMassPage() {
             <Link
               href="/tdee"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="TDEE Calculator"
             >
               <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">

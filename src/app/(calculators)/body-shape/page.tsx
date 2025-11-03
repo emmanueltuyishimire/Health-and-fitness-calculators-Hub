@@ -91,7 +91,7 @@ export default function BodyShapePage() {
         name: 'Does body shape have health implications?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, body shape can be linked to health risks. An "apple" shape (Inverted Triangle), with more weight carried around the abdomen, is often associated with higher risks for metabolic diseases. Our <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio Calculator</a> provides more specific risk assessment.',
+          text: 'Yes, body shape can be linked to health risks. An "apple" shape (Inverted Triangle), with more weight carried around the abdomen, is often associated with higher risks for metabolic diseases. Our <a href="/waist-to-hip-ratio" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio Calculator</a> provides more specific risk assessment.',
         },
       },
       {
@@ -107,7 +107,7 @@ export default function BodyShapePage() {
         name: 'Can I change my body shape?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Your basic bone structure is genetic, but you can alter your body composition through diet and exercise. For example, building muscle in certain areas can create a more hourglass-like figure. Our <a href="/ffmi">FFMI Calculator</a> helps track muscle gains.',
+          text: 'Your basic bone structure is genetic, but you can alter your body composition through diet and exercise. For example, building muscle in certain areas can create a more hourglass-like figure. Our <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a> helps track muscle gains.',
         },
       },
       {
@@ -115,7 +115,7 @@ export default function BodyShapePage() {
         name: 'Is body shape the same as body size?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No. Body shape refers to the proportional structure of your body, while body size refers to your overall mass (weight and height). You can be any shape at any size. The <a href="/bmi">BMI Calculator</a> is a tool for assessing size.',
+          text: 'No. Body shape refers to the proportional structure of your body, while body size refers to your overall mass (weight and height). You can be any shape at any size. The <a href="/bmi" aria-label="BMI Calculator">BMI Calculator</a> is a tool for assessing size.',
         },
       },
       {
@@ -131,7 +131,7 @@ export default function BodyShapePage() {
         name: 'Is one body shape "better" than another?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No. All body shapes are normal and natural. This calculator is a tool for understanding your proportions, which can be useful for fashion, fitness, and health awareness, not for judgment. A healthy <a href="/body-fat">Body Fat Percentage</a> is more important than a specific shape.',
+          text: 'No. All body shapes are normal and natural. This calculator is a tool for understanding your proportions, which can be useful for fashion, fitness, and health awareness, not for judgment. A healthy <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage</a> is more important than a specific shape.',
         },
       },
       {
@@ -139,7 +139,7 @@ export default function BodyShapePage() {
         name: 'How does this relate to the Waist-to-Hip Ratio (WHR)?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'WHR is a key component in determining body shape. Our <a href="/waist-to-hip-ratio">WHR Calculator</a> focuses specifically on the ratio as a health risk indicator, while this calculator uses WHR along with bust measurements to classify your overall shape.',
+          text: 'WHR is a key component in determining body shape. Our <a href="/waist-to-hip-ratio" aria-label="Waist-to-Hip Ratio Calculator">WHR Calculator</a> focuses specifically on the ratio as a health risk indicator, while this calculator uses WHR along with bust measurements to classify your overall shape.',
         },
       },
       {
@@ -155,7 +155,7 @@ export default function BodyShapePage() {
         name: 'How can I use my body shape information for fitness?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Knowing your body shape can help you tailor your workout plan. For example, a "pear" shape might want to focus on building upper body muscle to create a more balanced silhouette. A proper nutrition plan, guided by our <a href="/calorie-needs">Daily Calorie Needs Calculator</a>, is also essential.',
+          text: 'Knowing your body shape can help you tailor your workout plan. For example, a "pear" shape might want to focus on building upper body muscle to create a more balanced silhouette. A proper nutrition plan, guided by our <a href="/daily-calorie-needs" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</a>, is also essential.',
         },
       },
     ],
@@ -203,7 +203,7 @@ export default function BodyShapePage() {
                   Body Shape Calculator
                 </h1>
                 <p className="text-muted-foreground">
-                  Determine your body shape by entering your bust, waist, and hip measurements. Understanding your body's proportions can be useful for fashion, fitness, and general self-awareness. This tool is a great companion to the <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio Calculator</Link>.
+                  Determine your body shape by entering your bust, waist, and hip measurements. Understanding your body's proportions can be useful for fashion, fitness, and general self-awareness. This tool is a great companion to the <Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio Calculator</Link>.
                 </p>
               </div>
             </div>
@@ -226,7 +226,7 @@ export default function BodyShapePage() {
               <li><strong>Measure Your Bust:</strong> Measure around the fullest part of your bust, keeping the tape parallel to the floor.</li>
               <li><strong>Measure Your Waist:</strong> Measure the narrowest part of your torso, usually just above the navel.</li>
               <li><strong>Measure Your Hips:</strong> Measure the widest part of your hips and buttocks.</li>
-              <li><strong>Calculate:</strong> Click the button to discover your body shape. This provides a different perspective from metrics like <Link href="/bmi" className="text-primary hover:underline">BMI</Link>, which only considers overall size.</li>
+              <li><strong>Calculate:</strong> Click the button to discover your body shape. This provides a different perspective from metrics like <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI</Link>, which only considers overall size.</li>
             </ol>
           </CardContent>
         </Card>
@@ -267,8 +267,8 @@ export default function BodyShapePage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
-                  <TableCell>This person has wider hips than bust, a classic "pear" shape. For fitness, they might focus on building upper body muscle. Their <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">WHR</Link> would be low.</TableCell>
-                  <TableCell>This person's measurements are relatively similar, indicating a "rectangle" shape. Their next step might be checking their <Link href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</Link> to assess health risk.</TableCell>
+                  <TableCell>This person has wider hips than bust, a classic "pear" shape. For fitness, they might focus on building upper body muscle. Their <Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio Calculator">WHR</Link> would be low.</TableCell>
+                  <TableCell>This person's measurements are relatively similar, indicating a "rectangle" shape. Their next step might be checking their <Link href="/waist-to-height-ratio" className="text-primary hover:underline" aria-label="Waist-to-Height Ratio Calculator">Waist-to-Height Ratio</Link> to assess health risk.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -295,7 +295,7 @@ export default function BodyShapePage() {
                 <TableRow>
                   <TableCell className="font-semibold">Rectangle</TableCell>
                   <TableCell>Shoulders, bust, and hips are of a similar width, with a less defined waist.</TableCell>
-                   <TableCell>Generally associated with lower health risk, but a high <Link href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</Link> is still a concern.</TableCell>
+                   <TableCell>Generally associated with lower health risk, but a high <Link href="/waist-to-height-ratio" className="text-primary hover:underline" aria-label="Waist-to-Height Ratio Calculator">Waist-to-Height Ratio</Link> is still a concern.</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-semibold">Triangle (Pear)</TableCell>
@@ -305,12 +305,12 @@ export default function BodyShapePage() {
                 <TableRow>
                   <TableCell className="font-semibold">Inverted Triangle</TableCell>
                   <TableCell>Bust and/or shoulders are wider than the hips. Often described as "top-heavy."</TableCell>
-                  <TableCell>This shape can indicate more abdominal fat, similar to an "apple" shape, which is a key risk factor assessed by the <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link>.</TableCell>
+                  <TableCell>This shape can indicate more abdominal fat, similar to an "apple" shape, which is a key risk factor assessed by the <Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio</Link>.</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-semibold">Hourglass</TableCell>
                   <TableCell>Bust and hips are of a similar width, with a significantly narrower, well-defined waist.</TableCell>
-                  <TableCell>Considered to have a balanced fat distribution, which is generally healthy. Maintaining a healthy <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> is key.</TableCell>
+                  <TableCell>Considered to have a balanced fat distribution, which is generally healthy. Maintaining a healthy <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage</Link> is key.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -326,7 +326,7 @@ export default function BodyShapePage() {
               <li><strong>Inaccurate Measurements:</strong> Not measuring at the fullest part of the bust/hips or the narrowest part of the waist can change the result.</li>
               <li><strong>Loose Tape:</strong> Ensure the measuring tape is snug against the body but not compressing the skin.</li>
               <li><strong>Taking it as a Final Verdict:</strong> Body shape is a general classification. Many people are a combination of types.</li>
-              <li><strong>Ignoring Overall Health:</strong> Don't forget that metrics like <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> and cardiovascular fitness are more important than your shape category.</li>
+              <li><strong>Ignoring Overall Health:</strong> Don't forget that metrics like <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage</Link> and cardiovascular fitness are more important than your shape category.</li>
             </ul>
           </CardContent>
         </Card>
@@ -339,7 +339,7 @@ export default function BodyShapePage() {
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Fitness Planning:</strong> Use your shape to guide workouts. Pear shapes might focus on upper body workouts, while Inverted Triangles might build their glutes to create a more balanced look.</li>
               <li><strong>Fashion Choices:</strong> Knowing your shape can make clothes shopping easier, as you can look for styles that flatter your natural proportions.</li>
-              <li><strong>Combine with WHR:</strong> Use this calculator for your general shape and the <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link> calculator for a more specific health risk assessment.</li>
+              <li><strong>Combine with WHR:</strong> Use this calculator for your general shape and the <Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio</Link> calculator for a more specific health risk assessment.</li>
             </ul>
           </CardContent>
         </Card>
@@ -356,7 +356,7 @@ export default function BodyShapePage() {
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Does body shape have health implications?</AccordionTrigger>
-                <AccordionContent>Yes, body shape can be linked to health risks. An "apple" shape (Inverted Triangle), with more weight carried around the abdomen, is often associated with higher risks for metabolic diseases. Our <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio Calculator</a> provides more specific risk assessment.</AccordionContent>
+                <AccordionContent>Yes, body shape can be linked to health risks. An "apple" shape (Inverted Triangle), with more weight carried around the abdomen, is often associated with higher risks for metabolic diseases. Our <a href="/waist-to-hip-ratio" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio Calculator</a> provides more specific risk assessment.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>How do I measure my bust, waist, and hips accurately?</AccordionTrigger>
@@ -364,11 +364,11 @@ export default function BodyShapePage() {
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>Can I change my body shape?</AccordionTrigger>
-                <AccordionContent>Your basic bone structure is genetic, but you can alter your body composition through diet and exercise. For example, building muscle in certain areas can create a more hourglass-like figure. Our <a href="/ffmi">FFMI Calculator</a> helps track muscle gains.</AccordionContent>
+                <AccordionContent>Your basic bone structure is genetic, but you can alter your body composition through diet and exercise. For example, building muscle in certain areas can create a more hourglass-like figure. Our <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a> helps track muscle gains.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>Is body shape the same as body size?</AccordionTrigger>
-                <AccordionContent>No. Body shape refers to the proportional structure of your body, while body size refers to your overall mass (weight and height). You can be any shape at any size. The <a href="/bmi">BMI Calculator</a> is a tool for assessing size.</AccordionContent>
+                <AccordionContent>No. Body shape refers to the proportional structure of your body, while body size refers to your overall mass (weight and height). You can be any shape at any size. The <a href="/bmi" aria-label="BMI Calculator">BMI Calculator</a> is a tool for assessing size.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -391,12 +391,12 @@ export default function BodyShapePage() {
                 <TableRow>
                   <TableCell>General Users</TableCell>
                   <TableCell>Understand their body's natural proportions for self-awareness and fashion.</TableCell>
-                  <TableCell><Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link></TableCell>
+                  <TableCell><Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Fitness Enthusiasts</TableCell>
                   <TableCell>Tailor workout programs to create a more balanced physique.</TableCell>
-                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Personal Stylists</TableCell>
@@ -413,19 +413,19 @@ export default function BodyShapePage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/waist-to-hip-ratio" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/waist-to-hip-ratio" className="p-4 border rounded-lg hover:bg-muted" aria-label="Waist-to-Hip Ratio Calculator">
               <h3 className="font-semibold">Waist-to-Hip Ratio</h3>
               <p className="text-sm text-muted-foreground">Focus specifically on the health risks associated with your fat distribution.</p>
             </Link>
-            <Link href="/body-fat" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/body-fat" className="p-4 border rounded-lg hover:bg-muted" aria-label="Body Fat Percentage Calculator">
               <h3 className="font-semibold">Body Fat Percentage</h3>
               <p className="text-sm text-muted-foreground">Understand your overall body composition, beyond just proportions.</p>
             </Link>
-            <Link href="/bmi" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/bmi" className="p-4 border rounded-lg hover:bg-muted" aria-label="BMI Calculator">
               <h3 className="font-semibold">BMI Calculator</h3>
               <p className="text-sm text-muted-foreground">Assess your overall body size in relation to your height.</p>
             </Link>
-            <Link href="/ideal-weight" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/ideal-weight" className="p-4 border rounded-lg hover:bg-muted" aria-label="Ideal Weight Calculator">
               <h3 className="font-semibold">Ideal Weight Calculator</h3>
               <p className="text-sm text-muted-foreground">Get a general guideline for a healthy weight range for your height.</p>
             </Link>

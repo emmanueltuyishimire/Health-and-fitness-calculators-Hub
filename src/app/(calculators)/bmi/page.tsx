@@ -213,7 +213,7 @@ export default function BmiPage() {
                 </h1>
                 <p className="text-muted-foreground">
                   Calculate your Body Mass Index (BMI) based on your height and
-                  weight. It's a quick way to gauge if your weight is healthy, but it's most powerful when used with other tools like the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Calculator</Link>.
+                  weight. It's a quick way to gauge if your weight is healthy, but it's most powerful when used with other tools like the <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Calculator">Body Fat Calculator</Link>.
                 </p>
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function BmiPage() {
               <li><strong>Calculate:</strong> Click the "Calculate BMI" button. Your BMI will be displayed, along with your weight category according to WHO standards.</li>
             </ol>
             <p>
-              Once you have your BMI, you can use it as a starting point. For a deeper dive into your metabolic health, we recommend calculating your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link> next.
+              Once you have your BMI, you can use it as a starting point. For a deeper dive into your metabolic health, we recommend calculating your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">Basal Metabolic Rate (BMR)</Link> next.
             </p>
           </CardContent>
         </Card>
@@ -288,13 +288,13 @@ export default function BmiPage() {
                   <TableCell>Interpretation</TableCell>
                   <TableCell>Falls within the healthy range.</TableCell>
                   <TableCell>Falls within the healthy range.</TableCell>
-                  <TableCell>High BMI due to muscle. A <Link href="/body-fat" className="text-primary hover:underline">Body Fat Calculator</Link> is recommended.</TableCell>
+                  <TableCell>High BMI due to muscle. A <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Calculator">Body Fat Calculator</Link> is recommended.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
             <p className="text-sm text-muted-foreground mt-4">
               The first two examples fall within the "Normal Weight" range. The third example shows why athletes should use BMI with caution. To understand the energy this body requires, check the{' '}
-              <Link href="/bmr" className="text-primary hover:underline">
+              <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">
                 BMR Calculator
               </Link>
               .
@@ -313,7 +313,7 @@ export default function BmiPage() {
               Body Mass Index (BMI) is a measure that uses your height and weight to work out if your weight is healthy. It was created in the 19th century by the Belgian mathematician Adolphe Quetelet and has become a standard health screening tool used by healthcare professionals worldwide. The formula is simple: BMI = weight (kg) / [height (m)]². For imperial units, it's BMI = (weight (lbs) / [height (in)]²) * 703.
             </p>
             <p>
-              While BMI is a useful indicator for the general population, it has significant limitations. Its main drawback is that it doesn't distinguish between fat and muscle mass. Since muscle is denser than fat, a very muscular person, like an athlete, could be classified as "overweight" or "obese" despite having very low body fat. This is why it's crucial to see BMI as a starting point, not a final diagnosis. For a more comprehensive analysis, you should combine it with other tools like the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link> and the <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link>.
+              While BMI is a useful indicator for the general population, it has significant limitations. Its main drawback is that it doesn't distinguish between fat and muscle mass. Since muscle is denser than fat, a very muscular person, like an athlete, could be classified as "overweight" or "obese" despite having very low body fat. This is why it's crucial to see BMI as a starting point, not a final diagnosis. For a more comprehensive analysis, you should combine it with other tools like the <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link> and the <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</Link>.
             </p>
 
             <h3 className="font-semibold text-lg text-foreground">The Role of BMI in Health Assessment</h3>
@@ -327,7 +327,7 @@ export default function BmiPage() {
               <li><strong>30.0 and Above:</strong> Obese</li>
             </ul>
             <p>
-              It’s important to remember these are population-level categories. An individual's health depends on many factors, including genetics, lifestyle, and diet. If your BMI falls into the overweight or obese category, it’s a signal to investigate further. A good next step is to measure your waist circumference, which can be assessed with the <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio Calculator</Link>. Central obesity (excess fat around the abdomen) is a stronger predictor of health risk than BMI alone.
+              It’s important to remember these are population-level categories. An individual's health depends on many factors, including genetics, lifestyle, and diet. If your BMI falls into the overweight or obese category, it’s a signal to investigate further. A good next step is to measure your waist circumference, which can be assessed with the <Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio Calculator</Link>. Central obesity (excess fat around the abdomen) is a stronger predictor of health risk than BMI alone.
             </p>
 
             <h3 className="font-semibold text-lg text-foreground">Beyond BMI: A Holistic Approach to Body Composition</h3>
@@ -335,7 +335,7 @@ export default function BmiPage() {
               To truly understand your health, you need to look at your body composition—the proportion of fat, muscle, bone, and water in your body. While BMI provides a two-dimensional view (height and weight), a holistic approach is three-dimensional.
             </p>
             <p>
-             Start by calculating your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>, which is the number of calories your body burns at rest. This is the foundation of your energy expenditure. From there, you can use the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to estimate your Total Daily Energy Expenditure (TDEE) based on your activity level. Understanding your TDEE is the key to managing your weight. To lose weight, you need a <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline" aria-label="Calorie Adjustment for Weight Loss">calorie deficit</Link>; to gain muscle, you need a <Link href="/calorie-adjustment-for-weight-gain" className="text-primary hover:underline" aria-label="Calorie Adjustment for Weight Gain">calorie surplus</Link>.
+             Start by calculating your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">Basal Metabolic Rate (BMR)</Link>, which is the number of calories your body burns at rest. This is the foundation of your energy expenditure. From there, you can use the <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> to estimate your Total Daily Energy Expenditure (TDEE) based on your activity level. Understanding your TDEE is the key to managing your weight. To lose weight, you need a <Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit">calorie deficit</Link>; to gain muscle, you need a <Link href="/calorie-surplus" className="text-primary hover:underline" aria-label="Calorie Surplus">calorie surplus</Link>.
             </p>
              <p>By combining insights from the BMI, Body Fat, BMR, and Daily Calorie Needs calculators, you create a powerful, personalized health dashboard that empowers you to make informed decisions about your diet and exercise.
             </p>
@@ -349,10 +349,10 @@ export default function BmiPage() {
           </CardHeader>
           <CardContent className="space-y-2">
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Ignoring Body Composition:</strong> Relying solely on BMI without considering muscle mass. An athlete may be "overweight" but very healthy. Use the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link> for a better picture.</li>
+              <li><strong>Ignoring Body Composition:</strong> Relying solely on BMI without considering muscle mass. An athlete may be "overweight" but very healthy. Use the <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link> for a better picture.</li>
               <li><strong>Unit Conversion Errors:</strong> Mixing up pounds with kilograms or inches with centimeters. Our calculator toggles units automatically to prevent this.</li>
               <li><strong>Taking it as a Diagnosis:</strong> BMI is a screening tool, not a medical diagnosis. Consult a healthcare professional for personalized advice.</li>
-              <li><strong>Not Re-calculating:</strong> Your BMI changes as your weight changes. Re-calculate it periodically to track your progress towards your <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight</Link>.</li>
+              <li><strong>Not Re-calculating:</strong> Your BMI changes as your weight changes. Re-calculate it periodically to track your progress towards your <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">Ideal Weight</Link>.</li>
             </ul>
           </CardContent>
         </Card>
@@ -364,8 +364,8 @@ export default function BmiPage() {
           </CardHeader>
           <CardContent className="space-y-2">
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Combine with Waist Measurement:</strong> A high BMI and a large waist circumference significantly increase health risk. Use our <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link> tool to check.</li>
-              <li><strong>Context is Key:</strong> Use your BMI result to guide your next step. If it's high, focus on creating a sustainable calorie deficit with the help of our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</li>
+              <li><strong>Combine with Waist Measurement:</strong> A high BMI and a large waist circumference significantly increase health risk. Use our <Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio</Link> tool to check.</li>
+              <li><strong>Context is Key:</strong> Use your BMI result to guide your next step. If it's high, focus on creating a sustainable calorie deficit with the help of our <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</Link>.</li>
               <li><strong>Track Over Time:</strong> Don't obsess over daily fluctuations. Measure your BMI monthly to see long-term trends.</li>
               <li><strong>Look Beyond the Scale:</strong> Pay attention to how you feel, your energy levels, and how your clothes fit. These are often better indicators of progress than BMI alone.</li>
             </ul>
@@ -381,43 +381,43 @@ export default function BmiPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>What is a healthy BMI?</AccordionTrigger>
-                <AccordionContent>A BMI between 18.5 and 24.9 is considered healthy for most adults. However, this is a general guideline. For a more personalized assessment, use our <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link> to understand your optimal weight range.</AccordionContent>
+                <AccordionContent>A BMI between 18.5 and 24.9 is considered healthy for most adults. However, this is a general guideline. For a more personalized assessment, use our <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</Link> to understand your optimal weight range.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Why is BMI not always accurate for athletes?</AccordionTrigger>
-                <AccordionContent>BMI cannot distinguish between fat and muscle. Athletes often have high muscle mass, which can result in a high BMI even with low body fat. For a more accurate measure of body composition, use the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link>.</AccordionContent>
+                <AccordionContent>BMI cannot distinguish between fat and muscle. Athletes often have high muscle mass, which can result in a high BMI even with low body fat. For a more accurate measure of body composition, use the <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>What does my BMI score mean?</AccordionTrigger>
-                <AccordionContent>According to the WHO, a BMI under 18.5 is underweight, 18.5-24.9 is normal, 25-29.9 is overweight, and 30 or above is obese. These categories help assess potential health risks. To understand the calories your body needs, check the <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link>.</AccordionContent>
+                <AccordionContent>According to the WHO, a BMI under 18.5 is underweight, 18.5-24.9 is normal, 25-29.9 is overweight, and 30 or above is obese. These categories help assess potential health risks. To understand the calories your body needs, check the <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>How do I lower my BMI?</AccordionTrigger>
-                <AccordionContent>To lower your BMI, you typically need to lose weight by creating a calorie deficit. Use our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine your maintenance calories and then create a sustainable plan for weight loss.</AccordionContent>
+                <AccordionContent>To lower your BMI, you typically need to lose weight by creating a calorie deficit. Use our <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</Link> to determine your maintenance calories and then create a sustainable plan for weight loss.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>Does a high BMI mean I am unhealthy?</AccordionTrigger>
-                <AccordionContent>Not necessarily. A high BMI is a risk indicator, not a diagnosis. Factors like muscle mass and fat distribution matter. Use the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link> and <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio calculator</Link> to get a more complete picture.</AccordionContent>
+                <AccordionContent>Not necessarily. A high BMI is a risk indicator, not a diagnosis. Factors like muscle mass and fat distribution matter. Use the <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link> and <Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio calculator">Waist-to-Hip Ratio calculator</Link> to get a more complete picture.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
                  <AccordionTrigger>Is the BMI calculation different for men and women?</AccordionTrigger>
-                 <AccordionContent>The BMI formula is the same for adult men and women. However, body composition differs. Women naturally have a higher body fat percentage. Our <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link> considers gender for a more tailored result.</AccordionContent>
+                 <AccordionContent>The BMI formula is the same for adult men and women. However, body composition differs. Women naturally have a higher body fat percentage. Our <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link> considers gender for a more tailored result.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-7">
                  <AccordionTrigger>How does age affect BMI?</AccordionTrigger>
-                 <AccordionContent>The standard BMI calculation does not factor in age for adults. However, as people age, they tend to lose muscle and gain fat, which can change their health risk even if BMI stays the same. To see how your metabolism changes with age, use the <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link>.</AccordionContent>
+                 <AccordionContent>The standard BMI calculation does not factor in age for adults. However, as people age, they tend to lose muscle and gain fat, which can change their health risk even if BMI stays the same. To see how your metabolism changes with age, use the <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-8">
                  <AccordionTrigger>What are the limitations of BMI?</AccordionTrigger>
-                 <AccordionContent>BMI doesn't account for body composition (muscle vs. fat), fat distribution, or ethnic differences in body-fat-to-BMI relationships. It's a screening tool, not a definitive health assessment. For a better view, use it with our <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link>.</AccordionContent>
+                 <AccordionContent>BMI doesn't account for body composition (muscle vs. fat), fat distribution, or ethnic differences in body-fat-to-BMI relationships. It's a screening tool, not a definitive health assessment. For a better view, use it with our <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-9">
                  <AccordionTrigger>Can I be "overweight" but still healthy?</AccordionTrigger>
-                 <AccordionContent>Yes, it's possible, especially for individuals with high muscle mass. This is why it's crucial to look beyond BMI. Check your <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> and <Link href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</Link> to better assess your health risks.</AccordionContent>
+                 <AccordionContent>Yes, it's possible, especially for individuals with high muscle mass. This is why it's crucial to look beyond BMI. Check your <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage">Body Fat Percentage</Link> and <Link href="/waist-to-height-ratio" className="text-primary hover:underline" aria-label="Waist-to-Height Ratio">Waist-to-Height Ratio</Link> to better assess your health risks.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
                  <AccordionTrigger>Where does the BMI formula come from?</AccordionTrigger>
-                 <AccordionContent>The formula was developed by Adolphe Quetelet in the 19th century. While it's a long-standing metric, modern tools provide a more complete health picture. Start with BMI, then explore your <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight</Link> and <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link>.</AccordionContent>
+                 <AccordionContent>The formula was developed by Adolphe Quetelet in the 19th century. While it's a long-standing metric, modern tools provide a more complete health picture. Start with BMI, then explore your <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight">Ideal Weight</Link> and <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs">Daily Calorie Needs</Link>.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -441,22 +441,22 @@ export default function BmiPage() {
                 <TableRow>
                   <TableCell>General Users</TableCell>
                   <TableCell>Get a quick snapshot of weight status and health risk.</TableCell>
-                  <TableCell><Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link></TableCell>
+                  <TableCell><Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Fitness Coaches</TableCell>
                   <TableCell>Benchmark a new client's starting point before creating a fitness plan.</TableCell>
-                  <TableCell><Link href="/body-fat" className="text-primary hover:underline">Body Fat % Calculator</Link></TableCell>
+                  <TableCell><Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat % Calculator</Link></TableCell>
                 </TableRow>
                  <TableRow>
                   <TableCell>Nutritionists</TableCell>
                   <TableCell>Assess overall weight category to inform dietary recommendations.</TableCell>
-                  <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                  <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Medical Professionals</TableCell>
                   <TableCell>Screen for potential weight-related health issues like obesity.</TableCell>
-                  <TableCell><Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link></TableCell>
+                  <TableCell><Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -472,6 +472,7 @@ export default function BmiPage() {
             <Link
               href="/body-fat"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Body Fat Percentage Calculator"
             >
               <h3 className="font-semibold">Body Fat Percentage Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -481,6 +482,7 @@ export default function BmiPage() {
             <Link
               href="/ideal-weight"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Ideal Weight Calculator"
             >
               <h3 className="font-semibold">Ideal Weight Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -490,6 +492,7 @@ export default function BmiPage() {
             <Link
               href="/bmr"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="BMR Calculator"
             >
               <h3 className="font-semibold">BMR Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -499,6 +502,7 @@ export default function BmiPage() {
             <Link
               href="/tdee"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="TDEE Calculator"
             >
               <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">

@@ -87,7 +87,7 @@ export default function CalorieMaintenancePage() {
         name: 'What are maintenance calories?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Maintenance calories are the total number of calories you need to consume in a day to keep your body weight stable. This value is also known as your <a href="/tdee">Total Daily Energy Expenditure (TDEE)</a>.',
+          text: 'Maintenance calories are the total number of calories you need to consume in a day to keep your body weight stable. This value is also known as your <a href="/tdee" aria-label="TDEE Calculator">Total Daily Energy Expenditure (TDEE)</a>.',
         },
       },
       {
@@ -95,7 +95,7 @@ export default function CalorieMaintenancePage() {
         name: 'Why is it important to know my maintenance calories?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Knowing your maintenance calories is the essential first step for any weight management goal. To lose weight, you eat below this number (<a href="/calorie-deficit">calorie deficit</a>). To gain weight, you eat above it (<a href="/calorie-surplus">calorie surplus</a>).',
+          text: 'Knowing your maintenance calories is the essential first step for any weight management goal. To lose weight, you eat below this number (<a href="/calorie-deficit" aria-label="Calorie Deficit Calculator">calorie deficit</a>). To gain weight, you eat above it (<a href="/calorie-surplus" aria-label="Calorie Surplus Calculator">calorie surplus</a>).',
         },
       },
       {
@@ -103,7 +103,7 @@ export default function CalorieMaintenancePage() {
         name: 'How is this different from the TDEE calculator?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Functionally, it is not different. This calculator focuses specifically on the concept of maintenance, while the <a href="/tdee">TDEE Calculator</a> provides a broader overview of targets for weight loss and gain. Both use the same core value.',
+          text: 'Functionally, it is not different. This calculator focuses specifically on the concept of maintenance, while the <a href="/tdee" aria-label="TDEE Calculator">TDEE Calculator</a> provides a broader overview of targets for weight loss and gain. Both use the same core value.',
         },
       },
       {
@@ -119,7 +119,7 @@ export default function CalorieMaintenancePage() {
         name: 'Should I recalculate my maintenance calories?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. As your weight, age, or activity level changes, so will your TDEE. It is wise to recalculate your <a href="/tdee">TDEE</a> every few months or after a significant change in weight (10-15 lbs) to ensure your targets are still accurate.',
+          text: 'Yes. As your weight, age, or activity level changes, so will your TDEE. It is wise to recalculate your <a href="/tdee" aria-label="TDEE Calculator">TDEE</a> every few months or after a significant change in weight (10-15 lbs) to ensure your targets are still accurate.',
         },
       },
     ],
@@ -167,7 +167,7 @@ export default function CalorieMaintenancePage() {
                   Calorie Maintenance Calculator
                 </h1>
                 <p className="text-muted-foreground">
-                  Determine the daily calorie intake required to maintain your current weight. This value, your Total Daily Energy Expenditure (TDEE), is the foundation of any nutritional plan. First, find your TDEE with the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.
+                  Determine the daily calorie intake required to maintain your current weight. This value, your Total Daily Energy Expenditure (TDEE), is the foundation of any nutritional plan. First, find your TDEE with the <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link>.
                 </p>
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function CalorieMaintenancePage() {
               This calculator helps you find your body's "equilibrium" point for calories.
             </p>
             <ol className="list-decimal list-inside space-y-2">
-              <li><strong>Find Your TDEE:</strong> First, visit our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to get your maintenance calorie number.</li>
+              <li><strong>Find Your TDEE:</strong> First, visit our <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> to get your maintenance calorie number.</li>
               <li><strong>Enter Your TDEE:</strong> Input your TDEE (maintenance calories) into the form.</li>
               <li><strong>View Your Goal:</strong> The calculator will confirm your maintenance calorie target, the amount you should eat to keep your weight stable.</li>
             </ol>
@@ -216,7 +216,7 @@ export default function CalorieMaintenancePage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation</TableCell>
-                  <TableCell>To maintain their current weight, this individual should consume approximately 2250 calories per day. This is the baseline from which a <Link href="/calorie-deficit" className="text-primary hover:underline">deficit</Link> or <Link href="/calorie-surplus" className="text-primary hover:underline">surplus</Link> can be calculated.</TableCell>
+                  <TableCell>To maintain their current weight, this individual should consume approximately 2250 calories per day. This is the baseline from which a <Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">deficit</Link> or <Link href="/calorie-surplus" className="text-primary hover:underline" aria-label="Calorie Surplus Calculator">surplus</Link> can be calculated.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -229,12 +229,12 @@ export default function CalorieMaintenancePage() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <h3 className="font-semibold text-lg text-foreground">The Concept of Energy Balance</h3>
-            <p>Maintenance calories represent the state of "energy balance." This is where the calories you consume (energy in) are equal to the calories your body expends (energy out). Your total energy expenditure is your TDEE, which accounts for your resting metabolism (<a href="/bmr" className="text-primary hover:underline">BMR</a>), daily activities, and the energy used to digest food.</p>
+            <p>Maintenance calories represent the state of "energy balance." This is where the calories you consume (energy in) are equal to the calories your body expends (energy out). Your total energy expenditure is your TDEE, which accounts for your resting metabolism (<a href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</a>), daily activities, and the energy used to digest food.</p>
             
             <h3 className="font-semibold text-lg text-foreground">Why and When to Eat at Maintenance</h3>
             <p>While many people focus on weight loss or gain, eating at maintenance is a crucial skill and a phase everyone should be comfortable with. It's useful for:</p>
             <ul className="list-disc list-inside space-y-2">
-              <li><strong>Taking a "Diet Break":</strong> After a prolonged <a href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</a>, spending a few weeks at maintenance can help normalize hormones and provide a psychological reset.</li>
+              <li><strong>Taking a "Diet Break":</strong> After a prolonged <a href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">calorie deficit</a>, spending a few weeks at maintenance can help normalize hormones and provide a psychological reset.</li>
               <li><strong>Sustaining Results:</strong> After reaching a weight goal, slowly increasing calories back to your new maintenance level helps sustain your results long-term.</li>
               <li><strong>Performance Goals:</strong> If your primary goal is athletic performance rather than weight change, eating at maintenance provides enough energy to fuel workouts and recover effectively.</li>
             </ul>
@@ -248,10 +248,10 @@ export default function CalorieMaintenancePage() {
           </CardHeader>
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Confusing Maintenance with BMR:</strong> Eating only your BMR is significant undereating for anyone who is not bed-ridden. Your maintenance calories are your TDEE, not your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>.</li>
-              <li><strong>Not Recalculating:</strong> Your maintenance calories will decrease as you lose weight and increase as you gain muscle. Recalculate your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> after every 10-15 lbs of weight change.</li>
+              <li><strong>Confusing Maintenance with BMR:</strong> Eating only your BMR is significant undereating for anyone who is not bed-ridden. Your maintenance calories are your TDEE, not your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</Link>.</li>
+              <li><strong>Not Recalculating:</strong> Your maintenance calories will decrease as you lose weight and increase as you gain muscle. Recalculate your <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link> after every 10-15 lbs of weight change.</li>
               <li><strong>Treating the Number as Exact:</strong> TDEE is an estimate. Use it as a starting point, monitor your weight for 2-3 weeks, and adjust your intake if your weight is not stable.</li>
-              <li><strong>Ignoring Body Composition:</strong> You can stay at the same weight but change your body composition (lose fat, gain muscle). Use the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> calculator to track this.</li>
+              <li><strong>Ignoring Body Composition:</strong> You can stay at the same weight but change your body composition (lose fat, gain muscle). Use the <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage</Link> calculator to track this.</li>
             </ul>
           </CardContent>
         </Card>
@@ -278,15 +278,15 @@ export default function CalorieMaintenancePage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>What are maintenance calories?</AccordionTrigger>
-                <AccordionContent>Maintenance calories are the total number of calories you need to consume in a day to keep your body weight stable. This value is also known as your <a href="/tdee" className="text-primary hover:underline">Total Daily Energy Expenditure (TDEE)</a>.</AccordionContent>
+                <AccordionContent>Maintenance calories are the total number of calories you need to consume in a day to keep your body weight stable. This value is also known as your <a href="/tdee" aria-label="TDEE Calculator">Total Daily Energy Expenditure (TDEE)</a>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Why is it important to know my maintenance calories?</AccordionTrigger>
-                <AccordionContent>Knowing your maintenance calories is the essential first step for any weight management goal. To lose weight, you eat below this number (<a href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</a>). To gain weight, you eat above it (<a href="/calorie-surplus" className="text-primary hover:underline">calorie surplus</a>).</AccordionContent>
+                <AccordionContent>Knowing your maintenance calories is the essential first step for any weight management goal. To lose weight, you eat below this number (<a href="/calorie-deficit" aria-label="Calorie Deficit Calculator">calorie deficit</a>). To gain weight, you eat above it (<a href="/calorie-surplus" aria-label="Calorie Surplus Calculator">calorie surplus</a>).</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>How is this different from the TDEE calculator?</AccordionTrigger>
-                <AccordionContent>Functionally, it is not different. This calculator focuses specifically on the concept of maintenance, while the <a href="/tdee" className="text-primary hover:underline">TDEE Calculator</a> provides a broader overview of targets for weight loss and gain. Both use the same core value.</AccordionContent>
+                <AccordionContent>Functionally, it is not different. This calculator focuses specifically on the concept of maintenance, while the <a href="/tdee" aria-label="TDEE Calculator">TDEE Calculator</a> provides a broader overview of targets for weight loss and gain. Both use the same core value.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>What happens if I eat at maintenance?</AccordionTrigger>
@@ -294,7 +294,7 @@ export default function CalorieMaintenancePage() {
               </AccordionItem>
                <AccordionItem value="item-5">
                 <AccordionTrigger>Should I recalculate my maintenance calories?</AccordionTrigger>
-                <AccordionContent>Yes. As your weight, age, or activity level changes, so will your TDEE. It is wise to recalculate your <a href="/tdee" className="text-primary hover:underline">TDEE</a> every few months or after a significant change in weight (10-15 lbs) to ensure your targets are still accurate.</AccordionContent>
+                <AccordionContent>Yes. As your weight, age, or activity level changes, so will your TDEE. It is wise to recalculate your <a href="/tdee" aria-label="TDEE Calculator">TDEE</a> every few months or after a significant change in weight (10-15 lbs) to ensure your targets are still accurate.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -317,17 +317,17 @@ export default function CalorieMaintenancePage() {
                 <TableRow>
                   <TableCell>General Users</TableCell>
                   <TableCell>Find a baseline calorie intake to avoid unintentional weight changes.</TableCell>
-                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline" aria-label="Macronutrient Ratio Calculator">Macronutrient Ratio</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Athletes</TableCell>
                   <TableCell>Ensure adequate energy intake for peak performance without gaining excess weight.</TableCell>
-                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>People Post-Diet</TableCell>
                   <TableCell>Establish a new, stable calorie target to maintain weight loss results.</TableCell>
-                  <TableCell><Link href="/body-fat" className="text-primary hover:underline">Body Fat % Calculator</Link></TableCell>
+                  <TableCell><Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat % Calculator</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -339,19 +339,19 @@ export default function CalorieMaintenancePage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted" aria-label="TDEE Calculator">
               <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">The essential first step. Find your maintenance calories here.</p>
             </Link>
-            <Link href="/calorie-deficit" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/calorie-deficit" className="p-4 border rounded-lg hover:bg-muted" aria-label="Calorie Deficit Calculator">
               <h3 className="font-semibold">Calorie Deficit Calculator</h3>
               <p className="text-sm text-muted-foreground">Plan your weight loss by subtracting from your maintenance calories.</p>
             </Link>
-            <Link href="/calorie-surplus" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/calorie-surplus" className="p-4 border rounded-lg hover:bg-muted" aria-label="Calorie Surplus Calculator">
               <h3 className="font-semibold">Calorie Surplus Calculator</h3>
               <p className="text-sm text-muted-foreground">Plan your weight gain by adding to your maintenance calories.</p>
             </Link>
-            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted" aria-label="BMR Calculator">
               <h3 className="font-semibold">BMR Calculator</h3>
               <p className="text-sm text-muted-foreground">Understand the baseline of your metabolism that contributes to your maintenance level.</p>
             </Link>

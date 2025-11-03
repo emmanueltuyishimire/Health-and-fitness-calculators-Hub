@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -84,7 +85,7 @@ export function TdeeCalculatorForm() {
           <Terminal className="h-4 w-4" />
           <AlertTitle>BMR Not Found</AlertTitle>
           <AlertDescription>
-            Please <Link href="/bmr" className="font-semibold underline">calculate your BMR</Link> first to estimate your TDEE.
+            Please <Link href="/bmr" className="font-semibold underline" aria-label="BMR Calculator">calculate your BMR</Link> first to estimate your TDEE.
           </AlertDescription>
         </Alert>
       )}

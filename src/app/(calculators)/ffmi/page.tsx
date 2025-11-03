@@ -86,7 +86,7 @@ export default function FfmiPage() {
             name: 'What is FFMI and why is it better than BMI for athletes?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'FFMI (Fat-Free Mass Index) measures your muscle mass relative to your height, ignoring fat. This makes it far superior to the <a href="/bmi">BMI Calculator</a> for athletes and bodybuilders, as it accurately reflects muscular development instead of just total weight.'
+                text: 'FFMI (Fat-Free Mass Index) measures your muscle mass relative to your height, ignoring fat. This makes it far superior to the <a href="/bmi" aria-label="BMI Calculator">BMI Calculator</a> for athletes and bodybuilders, as it accurately reflects muscular development instead of just total weight.'
             }
         },
         {
@@ -94,7 +94,7 @@ export default function FfmiPage() {
             name: 'What is a good FFMI score?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'For men, an FFMI of 21-23 is considered muscular, and over 25 is exceptional, often suggesting steroid use. For women, 17-19 is muscular. It provides a more meaningful goal than simply aiming for a number on the scale from an <a href="/ideal-weight">Ideal Weight Calculator</a>.'
+                text: 'For men, an FFMI of 21-23 is considered muscular, and over 25 is exceptional, often suggesting steroid use. For women, 17-19 is muscular. It provides a more meaningful goal than simply aiming for a number on the scale from an <a href="/ideal-weight" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</a>.'
             }
         },
         {
@@ -102,7 +102,7 @@ export default function FfmiPage() {
             name: 'How do I get an accurate body fat percentage for this calculation?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'For an easy at-home estimate, use our <a href="/body-fat">Body Fat Percentage Calculator</a>, which uses the U.S. Navy method. For higher accuracy, consider methods like DEXA scans or hydrostatic weighing.'
+                text: 'For an easy at-home estimate, use our <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a>, which uses the U.S. Navy method. For higher accuracy, consider methods like DEXA scans or hydrostatic weighing.'
             }
         },
         {
@@ -110,7 +110,7 @@ export default function FfmiPage() {
             name: 'Can I increase my FFMI? How?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes. Increasing FFMI means gaining muscle. This requires consistent resistance training and a calorie surplus with adequate protein. Use our <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a> to determine the right surplus for you.'
+                text: 'Yes. Increasing FFMI means gaining muscle. This requires consistent resistance training and a calorie surplus with adequate protein. Use our <a href="/daily-calorie-needs" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</a> to determine the right surplus for you.'
             }
         },
         {
@@ -118,7 +118,7 @@ export default function FfmiPage() {
             name: 'What does "normalized FFMI" mean?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Taller individuals naturally have a higher FFMI. The normalized FFMI adjusts your score to what it would be if you were 1.8 meters (5\'11") tall, allowing for a more standardized comparison across different heights. It gives a better context than just knowing your <a href="/lean-body-mass">Lean Body Mass</a> alone.'
+                text: 'Taller individuals naturally have a higher FFMI. The normalized FFMI adjusts your score to what it would be if you were 1.8 meters (5\'11") tall, allowing for a more standardized comparison across different heights. It gives a better context than just knowing your <a href="/lean-body-mass" aria-label="Lean Body Mass Calculator">Lean Body Mass</a> alone.'
             }
         },
         {
@@ -134,7 +134,7 @@ export default function FfmiPage() {
             name: 'Does FFMI change as I lose fat?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'If you lose only fat and maintain your muscle mass, your FFMI will remain the same because your <a href="/lean-body-mass">Lean Body Mass</a> hasn\'t changed. This is the primary goal of a successful cutting phase.'
+                text: 'If you lose only fat and maintain your muscle mass, your FFMI will remain the same because your <a href="/lean-body-mass" aria-label="Lean Body Mass Calculator">Lean Body Mass</a> hasn\'t changed. This is the primary goal of a successful cutting phase.'
             }
         },
         {
@@ -142,7 +142,7 @@ export default function FfmiPage() {
             name: 'How does FFMI relate to my BMR?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'A higher FFMI means more muscle mass, which is the primary driver of your resting metabolism. Therefore, increasing your FFMI will also increase your <a href="/bmr">Basal Metabolic Rate (BMR)</a>, allowing you to eat more calories.'
+                text: 'A higher FFMI means more muscle mass, which is the primary driver of your resting metabolism. Therefore, increasing your FFMI will also increase your <a href="/bmr" aria-label="BMR Calculator">Basal Metabolic Rate (BMR)</a>, allowing you to eat more calories.'
             }
         },
         {
@@ -150,7 +150,7 @@ export default function FfmiPage() {
             name: 'Why do you need my body fat percentage?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'FFMI is calculated from your fat-free mass. We determine this by first calculating your fat mass from your total weight and body fat percentage, then subtracting it. You can estimate your body fat with our <a href="/body-fat">Body Fat Calculator</a>.'
+                text: 'FFMI is calculated from your fat-free mass. We determine this by first calculating your fat mass from your total weight and body fat percentage, then subtracting it. You can estimate your body fat with our <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Calculator</a>.'
             }
         },
         {
@@ -158,7 +158,7 @@ export default function FfmiPage() {
             name: 'Is FFMI useful for women?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Absolutely. While the rating scales are different, FFMI is an excellent tool for women to track muscle-building progress, far more so than the scale or <a href="/bmi">BMI</a>. It helps quantify gains in lean tissue.'
+                text: 'Absolutely. While the rating scales are different, FFMI is an excellent tool for women to track muscle-building progress, far more so than the scale or <a href="/bmi" aria-label="BMI Calculator">BMI</a>. It helps quantify gains in lean tissue.'
             }
         }
     ]
@@ -206,7 +206,7 @@ export default function FfmiPage() {
                   Fat-Free Mass Index (FFMI) Calculator
                 </h1>
                 <p className="text-muted-foreground">
-                  FFMI is a powerful metric for athletes and fitness enthusiasts that measures muscularity relative to height, offering a much clearer picture of your physique than the standard <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link>. Use it to track muscle growth, set realistic goals, and even estimate your natural genetic potential.
+                  FFMI is a powerful metric for athletes and fitness enthusiasts that measures muscularity relative to height, offering a much clearer picture of your physique than the standard <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI Calculator</Link>. Use it to track muscle growth, set realistic goals, and even estimate your natural genetic potential.
                 </p>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function FfmiPage() {
               <li><strong>Select Your Gender:</strong> The FFMI scale differs for men and women.</li>
               <li><strong>Choose Your Units:</strong> Select "Metric" (kg, cm) or "Imperial" (lbs, in).</li>
               <li><strong>Enter Height and Weight:</strong> Provide your current stats.</li>
-              <li><strong>Enter Body Fat Percentage:</strong> This is crucial for the calculation. If you don't know it, use our <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link> first.</li>
+              <li><strong>Enter Body Fat Percentage:</strong> This is crucial for the calculation. If you don't know it, use our <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link> first.</li>
               <li><strong>Calculate:</strong> The tool will compute your Lean Body Mass, your FFMI, and your normalized FFMI.</li>
             </ol>
           </CardContent>
@@ -278,7 +278,7 @@ export default function FfmiPage() {
                         </TableRow>
                          <TableRow>
                             <TableCell>Interpretation & Next Step</TableCell>
-                            <TableCell>This individual is considered to have average to good muscularity. The next step is to use the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> calculator to aim for a surplus to increase LBM.</TableCell>
+                            <TableCell>This individual is considered to have average to good muscularity. The next step is to use the <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs</Link> calculator to aim for a surplus to increase LBM.</TableCell>
                             <TableCell>This individual has an average level of muscularity for a female. To increase FFMI, she could focus on a resistance training program and adequate protein intake.</TableCell>
                         </TableRow>
                     </TableBody>
@@ -292,8 +292,8 @@ export default function FfmiPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <h3 className="font-semibold text-lg text-foreground">What is Fat-Free Mass Index (FFMI)?</h3>
-            <p>Fat-Free Mass Index (FFMI) is an index that tracks the amount of your muscle mass in proportion to your height. Unlike the widely known <Link href="/bmi" className="text-primary hover:underline">BMI</Link>, which can't differentiate between fat and muscle, FFMI isolates your fat-free mass, giving a true indication of your muscularity. This makes it an indispensable tool for bodybuilders, athletes, and anyone serious about tracking their physique progress.</p>
-            <p>FFMI is calculated by taking your <Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass (LBM)</Link> in kilograms and dividing it by your height in meters squared. The result is a number that can be compared against established norms to determine your level of muscularity.</p>
+            <p>Fat-Free Mass Index (FFMI) is an index that tracks the amount of your muscle mass in proportion to your height. Unlike the widely known <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI</Link>, which can't differentiate between fat and muscle, FFMI isolates your fat-free mass, giving a true indication of your muscularity. This makes it an indispensable tool for bodybuilders, athletes, and anyone serious about tracking their physique progress.</p>
+            <p>FFMI is calculated by taking your <Link href="/lean-body-mass" className="text-primary hover:underline" aria-label="Lean Body Mass Calculator">Lean Body Mass (LBM)</Link> in kilograms and dividing it by your height in meters squared. The result is a number that can be compared against established norms to determine your level of muscularity.</p>
 
             <h3 className="font-semibold text-lg text-foreground">Normalized FFMI and Genetic Limits</h3>
             <p>One of the most fascinating applications of FFMI is in estimating natural muscular potential. Taller individuals will naturally have a higher FFMI simply because they have larger frames. To correct for this, the "normalized FFMI" is calculated, which adjusts your score as if you were 1.8 meters (about 5'11") tall.</p>
@@ -341,7 +341,7 @@ export default function FfmiPage() {
                     </TableRow>
                 </TableBody>
             </Table>
-            <p className="text-sm mt-4">These scores are a general guide. To build muscle and increase your FFMI, you need to consume more calories than you burn. Find your target with the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</p>
+            <p className="text-sm mt-4">These scores are a general guide. To build muscle and increase your FFMI, you need to consume more calories than you burn. Find your target with the <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</Link>.</p>
           </CardContent>
         </Card>
         
@@ -349,7 +349,7 @@ export default function FfmiPage() {
             <CardHeader><CardTitle>Common Mistakes</CardTitle></CardHeader>
             <CardContent>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li><strong>Inaccurate Body Fat %:</strong> FFMI is highly sensitive to your body fat input. A small error in body fat can significantly change your FFMI. Use our <Link href="/body-fat" className="text-primary hover:underline">Body Fat Calculator</Link> for a reliable estimate.</li>
+                    <li><strong>Inaccurate Body Fat %:</strong> FFMI is highly sensitive to your body fat input. A small error in body fat can significantly change your FFMI. Use our <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Calculator</Link> for a reliable estimate.</li>
                     <li><strong>Comparing Raw FFMI:</strong> Don't compare your raw FFMI with someone of a different height. Always use the normalized FFMI for a fair comparison.</li>
                     <li><strong>Ignoring Progress:</strong> Don't just calculate FFMI once. Track it over months to see if your training is effectively building muscle.</li>
                 </ul>
@@ -360,7 +360,7 @@ export default function FfmiPage() {
             <CardHeader><CardTitle>Pro Tips & Quick Hacks</CardTitle></CardHeader>
             <CardContent>
                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li><strong>Track FFMI During a Cut:</strong> If your FFMI drops during a diet, you are losing muscle. This could mean your calorie deficit is too aggressive or your protein is too low. Adjust using the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</li>
+                    <li><strong>Track FFMI During a Cut:</strong> If your FFMI drops during a diet, you are losing muscle. This could mean your calorie deficit is too aggressive or your protein is too low. Adjust using the <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</Link>.</li>
                     <li><strong>Combine with Strength Metrics:</strong> A rising FFMI should correlate with increased strength. If you're getting more muscular (higher FFMI) but not stronger, you might be overemphasizing hypertrophy work at the expense of strength.</li>
                     <li><strong>Use FFMI to Set Realistic Goals:</strong> Knowing the natural limits (around 25 for men) can help you set achievable goals and avoid the disappointment of chasing an unnatural physique.</li>
                 </ul>
@@ -375,23 +375,23 @@ export default function FfmiPage() {
             <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                     <AccordionTrigger>What is FFMI and why is it better than BMI for athletes?</AccordionTrigger>
-                    <AccordionContent>FFMI (Fat-Free Mass Index) measures your muscle mass relative to your height, ignoring fat. This makes it far superior to the <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link> for athletes and bodybuilders, as it accurately reflects muscular development instead of just total weight.</AccordionContent>
+                    <AccordionContent>FFMI (Fat-Free Mass Index) measures your muscle mass relative to your height, ignoring fat. This makes it far superior to the <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI Calculator</Link> for athletes and bodybuilders, as it accurately reflects muscular development instead of just total weight.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                     <AccordionTrigger>What is a good FFMI score?</AccordionTrigger>
-                    <AccordionContent>For men, an FFMI of 21-23 is considered muscular, and over 25 is exceptional, often suggesting steroid use. For women, 17-19 is muscular. It provides a more meaningful goal than simply aiming for a number on the scale from an <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link>.</AccordionContent>
+                    <AccordionContent>For men, an FFMI of 21-23 is considered muscular, and over 25 is exceptional, often suggesting steroid use. For women, 17-19 is muscular. It provides a more meaningful goal than simply aiming for a number on the scale from an <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</Link>.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                     <AccordionTrigger>How do I get an accurate body fat percentage for this calculation?</AccordionTrigger>
-                    <AccordionContent>For an easy at-home estimate, use our <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link>, which uses the U.S. Navy method. For higher accuracy, consider methods like DEXA scans or hydrostatic weighing.</AccordionContent>
+                    <AccordionContent>For an easy at-home estimate, use our <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link>, which uses the U.S. Navy method. For higher accuracy, consider methods like DEXA scans or hydrostatic weighing.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
                     <AccordionTrigger>Can I increase my FFMI? How?</AccordionTrigger>
-                    <AccordionContent>Yes. Increasing FFMI means gaining muscle. This requires consistent resistance training and a calorie surplus with adequate protein. Use our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine the right surplus for you.</AccordionContent>
+                    <AccordionContent>Yes. Increasing FFMI means gaining muscle. This requires consistent resistance training and a calorie surplus with adequate protein. Use our <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</Link> to determine the right surplus for you.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
                     <AccordionTrigger>What does "normalized FFMI" mean?</AccordionTrigger>
-                    <AccordionContent>Taller individuals naturally have a higher FFMI. The normalized FFMI adjusts your score to what it would be if you were 1.8 meters (5'11") tall, allowing for a more standardized comparison across different heights. It gives a better context than just knowing your <Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass</Link> alone.</AccordionContent>
+                    <AccordionContent>Taller individuals naturally have a higher FFMI. The normalized FFMI adjusts your score to what it would be if you were 1.8 meters (5'11") tall, allowing for a more standardized comparison across different heights. It gives a better context than just knowing your <Link href="/lean-body-mass" className="text-primary hover:underline" aria-label="Lean Body Mass Calculator">Lean Body Mass</Link> alone.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-6">
                     <AccordionTrigger>Is an FFMI of 25+ naturally possible?</AccordionTrigger>
@@ -399,19 +399,19 @@ export default function FfmiPage() {
                 </AccordionItem>
                 <AccordionItem value="item-7">
                     <AccordionTrigger>Does FFMI change as I lose fat?</AccordionTrigger>
-                    <AccordionContent>If you lose only fat and maintain your muscle mass, your FFMI will remain the same because your <Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass</Link> hasn't changed. This is the primary goal of a successful cutting phase.</AccordionContent>
+                    <AccordionContent>If you lose only fat and maintain your muscle mass, your FFMI will remain the same because your <Link href="/lean-body-mass" className="text-primary hover:underline" aria-label="Lean Body Mass Calculator">Lean Body Mass</Link> hasn't changed. This is the primary goal of a successful cutting phase.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-8">
                     <AccordionTrigger>How does FFMI relate to my BMR?</AccordionTrigger>
-                    <AccordionContent>A higher FFMI means more muscle mass, which is the primary driver of your resting metabolism. Therefore, increasing your FFMI will also increase your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>, allowing you to eat more calories.</AccordionContent>
+                    <AccordionContent>A higher FFMI means more muscle mass, which is the primary driver of your resting metabolism. Therefore, increasing your FFMI will also increase your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">Basal Metabolic Rate (BMR)</Link>, allowing you to eat more calories.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-9">
                     <AccordionTrigger>Why do you need my body fat percentage?</AccordionTrigger>
-                    <AccordionContent>FFMI is calculated from your fat-free mass. We determine this by first calculating your fat mass from your total weight and body fat percentage, then subtracting it. You can estimate your body fat with our <Link href="/body-fat" className="text-primary hover:underline">Body Fat Calculator</Link>.</AccordionContent>
+                    <AccordionContent>FFMI is calculated from your fat-free mass. We determine this by first calculating your fat mass from your total weight and body fat percentage, then subtracting it. You can estimate your body fat with our <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Calculator</Link>.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-10">
                     <AccordionTrigger>Is FFMI useful for women?</AccordionTrigger>
-                    <AccordionContent>Absolutely. While the rating scales are different, FFMI is an excellent tool for women to track muscle-building progress, far more so than the scale or <Link href="/bmi" className="text-primary hover:underline">BMI</Link>. It helps quantify gains in lean tissue.</AccordionContent>
+                    <AccordionContent>Absolutely. While the rating scales are different, FFMI is an excellent tool for women to track muscle-building progress, far more so than the scale or <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI</Link>. It helps quantify gains in lean tissue.</AccordionContent>
                 </AccordionItem>
             </Accordion>
           </CardContent>
@@ -432,17 +432,17 @@ export default function FfmiPage() {
                         <TableRow>
                             <TableCell>Bodybuilders</TableCell>
                             <TableCell>Track muscular gains during a bulk or cut.</TableCell>
-                            <TableCell>Strength-to-Weight Ratio</TableCell>
+                            <TableCell><Link href="/strength-to-weight-ratio" className="text-primary hover:underline" aria-label="Strength-to-Weight Ratio Calculator">Strength-to-Weight Ratio</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Fitness Coaches</TableCell>
                             <TableCell>Objectively measure a client's muscular progress.</TableCell>
-                             <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                             <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>General Users</TableCell>
                             <TableCell>Gauge muscularity beyond what the mirror shows.</TableCell>
-                            <TableCell><Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass</Link></TableCell>
+                            <TableCell><Link href="/lean-body-mass" className="text-primary hover:underline" aria-label="Lean Body Mass Calculator">Lean Body Mass</Link></TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>
@@ -457,19 +457,20 @@ export default function FfmiPage() {
             <Link
               href="/lean-body-mass"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Lean Body Mass Calculator"
             >
               <h3 className="font-semibold">Lean Body Mass Calculator</h3>
               <p className="text-sm text-muted-foreground">
                 Calculate the total weight of your body minus fat.
               </p>
             </Link>
-            <Link href="/body-fat" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/body-fat" className="p-4 border rounded-lg hover:bg-muted" aria-label="Body Fat Percentage Calculator">
               <h3 className="font-semibold">Body Fat Percentage Calculator</h3>
               <p className="text-sm text-muted-foreground">
                 Get the required body fat percentage for this calculation.
               </p>
             </Link>
-            <Link href="/bmi" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/bmi" className="p-4 border rounded-lg hover:bg-muted" aria-label="BMI Calculator">
               <h3 className="font-semibold">BMI Calculator</h3>
               <p className="text-sm text-muted-foreground">
                 Compare your FFMI to the more traditional BMI metric.
@@ -478,6 +479,7 @@ export default function FfmiPage() {
             <Link
               href="/daily-calorie-needs"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Daily Calorie Needs Calculator"
             >
               <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
               <p className="text-sm text-muted-foreground">

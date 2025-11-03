@@ -92,7 +92,7 @@ export default function TdeePage() {
         name: 'What is TDEE?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'TDEE (Total Daily Energy Expenditure) is an estimation of how many calories you burn per day when exercise and other activities are taken into account. It is the key to setting your calorie intake for weight management. TDEE is calculated from your <a href="/bmr">BMR (Basal Metabolic Rate)</a>.',
+          text: 'TDEE (Total Daily Energy Expenditure) is an estimation of how many calories you burn per day when exercise and other activities are taken into account. It is the key to setting your calorie intake for weight management. TDEE is calculated from your <a href="/bmr" aria-label="BMR Calculator">BMR (Basal Metabolic Rate)</a>.',
         },
       },
       {
@@ -100,7 +100,7 @@ export default function TdeePage() {
         name: 'How do I use my TDEE for weight loss?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'To lose weight, you need to consume fewer calories than your TDEE. This is called a calorie deficit. A common deficit is 500 calories per day to lose about 1 pound per week. You can plan this with the <a href="/calorie-adjustment-for-weight-loss">Calorie Adjustment for Weight Loss</a>.',
+          text: 'To lose weight, you need to consume fewer calories than your TDEE. This is called a calorie deficit. A common deficit is 500 calories per day to lose about 1 pound per week. You can plan this with the <a href="/calorie-adjustment-for-weight-loss" aria-label="Calorie Adjustment for Weight Loss">Calorie Adjustment for Weight Loss</a>.',
         },
       },
       {
@@ -108,7 +108,7 @@ export default function TdeePage() {
         name: 'How do I use my TDEE for muscle gain?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'To gain muscle, you need to consume more calories than your TDEE (a <a href="/calorie-adjustment-for-weight-gain">calorie surplus</a>) and engage in resistance training. A surplus of 250-500 calories is a good starting point to promote muscle growth while minimizing fat gain. You can track muscle growth with the <a href="/ffmi">FFMI Calculator</a>.',
+          text: 'To gain muscle, you need to consume more calories than your TDEE (a <a href="/calorie-adjustment-for-weight-gain" aria-label="calorie surplus calculator">calorie surplus</a>) and engage in resistance training. A surplus of 250-500 calories is a good starting point to promote muscle growth while minimizing fat gain. You can track muscle growth with the <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a>.',
         },
       },
       {
@@ -124,7 +124,7 @@ export default function TdeePage() {
         name: 'Why is my BMR required for this calculation?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Your <a href="/bmr">BMR</a> is the foundation of your metabolism—the calories you burn at rest. TDEE is calculated by multiplying your BMR by an activity factor, so BMR must be determined first.',
+          text: 'Your <a href="/bmr" aria-label="BMR Calculator">BMR</a> is the foundation of your metabolism—the calories you burn at rest. TDEE is calculated by multiplying your BMR by an activity factor, so BMR must be determined first.',
         },
       },
        {
@@ -140,7 +140,7 @@ export default function TdeePage() {
         name: 'Should I recalculate my TDEE as I lose weight?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, absolutely. As your body weight changes, both your <a href="/bmr">BMR</a> and TDEE will change. It\'s a good idea to recalculate your TDEE after every 10-15 pounds of weight loss to ensure your calorie targets remain accurate.',
+          text: 'Yes, absolutely. As your body weight changes, both your <a href="/bmr" aria-label="BMR Calculator">BMR</a> and TDEE will change. It\'s a good idea to recalculate your TDEE after every 10-15 pounds of weight loss to ensure your calorie targets remain accurate.',
         },
       },
       {
@@ -156,7 +156,7 @@ export default function TdeePage() {
         name: 'What if my weight isn\'t changing on my calculated TDEE?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'TDEE is an estimate. If you eat at your calculated maintenance calories for 2-3 weeks and your weight is stable, your estimate is accurate. If you are gaining or losing weight, adjust your calorie intake by 100-200 calories and monitor again. Real-world results always trump calculator estimates. Use our <a href="/weight-change-tracker">Weekly Weight Change Tracker</a> to get precise data.',
+          text: 'TDEE is an estimate. If you eat at your calculated maintenance calories for 2-3 weeks and your weight is stable, your estimate is accurate. If you are gaining or losing weight, adjust your calorie intake by 100-200 calories and monitor again. Real-world results always trump calculator estimates. Use our <a href="/weight-change-tracker" aria-label="Weekly Weight Change Tracker">Weekly Weight Change Tracker</a> to get precise data.',
         },
       },
       {
@@ -212,7 +212,7 @@ export default function TdeePage() {
                   TDEE Calculator
                 </h1>
                 <p className="text-muted-foreground">
-                  Your TDEE (Total Daily Energy Expenditure) is the total number of calories you burn in a day. It's the most crucial starting point for any weight management goal. First, calculate your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>, then use this tool to find your maintenance calories and set precise targets for your goals.
+                  Your TDEE (Total Daily Energy Expenditure) is the total number of calories you burn in a day. It's the most crucial starting point for any weight management goal. First, calculate your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</Link>, then use this tool to find your maintenance calories and set precise targets for your goals.
                 </p>
               </div>
             </div>
@@ -231,10 +231,10 @@ export default function TdeePage() {
               This calculator determines your daily calorie needs by multiplying your Basal Metabolic Rate (BMR) by an activity factor. It's the essential second step after finding your BMR.
             </p>
             <ol className="list-decimal list-inside space-y-2">
-              <li><strong>Calculate Your BMR:</strong> If you haven't already, go to our <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link>. The result will be automatically imported here.</li>
+              <li><strong>Calculate Your BMR:</strong> If you haven't already, go to our <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR Calculator</Link>. The result will be automatically imported here.</li>
               <li><strong>Select Your Activity Level:</strong> Choose the option that most accurately reflects your typical week. Be honest—overestimating is a common mistake.</li>
               <li><strong>Calculate TDEE:</strong> The tool will display your estimated TDEE, which is your maintenance calories.</li>
-              <li><strong>Set Your Goals:</strong> The results section also shows calorie targets for various rates of weight loss and gain, giving you a clear path forward. From here, you can even explore your <Link href="/macronutrient-ratio" className="text-primary hover:underline">macronutrient needs</Link>.</li>
+              <li><strong>Set Your Goals:</strong> The results section also shows calorie targets for various rates of weight loss and gain, giving you a clear path forward. From here, you can even explore your <Link href="/macronutrient-ratio" className="text-primary hover:underline" aria-label="Macronutrient Ratio Calculator">macronutrient needs</Link>.</li>
             </ol>
           </CardContent>
         </Card>
@@ -291,7 +291,7 @@ export default function TdeePage() {
             <h3 className="font-semibold text-lg text-foreground">What Is Total Daily Energy Expenditure?</h3>
             <p>Your TDEE is the grand total of all the energy you expend in a 24-hour period. It's composed of three main components:</p>
             <ol className="list-decimal list-inside space-y-2">
-                <li><strong>Basal Metabolic Rate (BMR):</strong> The energy used for basic life-sustaining functions at rest. This is the largest component, and you can calculate it with our <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link>.</li>
+                <li><strong>Basal Metabolic Rate (BMR):</strong> The energy used for basic life-sustaining functions at rest. This is the largest component, and you can calculate it with our <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR Calculator</Link>.</li>
                 <li><strong>Thermic Effect of Food (TEF):</strong> The energy used to digest, absorb, and metabolize the food you eat. It accounts for about 10% of your daily energy expenditure.</li>
                 <li><strong>Activity Energy Expenditure (AEE):</strong> The energy used during physical activity. This is the most variable component and includes everything from walking to the store to intense exercise.</li>
             </ol>
@@ -300,11 +300,11 @@ export default function TdeePage() {
             <h3 className="font-semibold text-lg text-foreground">The Law of Energy Balance</h3>
             <p>Your TDEE is the cornerstone of the law of energy balance, which governs weight change:</p>
             <ul className="list-disc list-inside space-y-1">
-                <li><strong>Calorie Deficit:</strong> If you consistently consume fewer calories than your TDEE, you will lose weight. This can be planned with the <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment for Weight Loss</Link>.</li>
-                <li><strong>Calorie Surplus:</strong> If you consistently consume more calories than your TDEE, you will gain weight. This can be planned with the <Link href="/calorie-adjustment-for-weight-gain" className="text-primary hover:underline">Calorie Adjustment for Weight Gain</Link>.</li>
-                <li><strong>Energy Balance:</strong> If you consistently consume the same number of calories as your TDEE, your weight will remain stable. This is your goal with the <Link href="/calorie-maintenance" className="text-primary hover:underline">Calorie Maintenance Calculator</Link>.</li>
+                <li><strong>Calorie Deficit:</strong> If you consistently consume fewer calories than your TDEE, you will lose weight. This can be planned with the <Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">Calorie Adjustment for Weight Loss</Link>.</li>
+                <li><strong>Calorie Surplus:</strong> If you consistently consume more calories than your TDEE, you will gain weight. This can be planned with the <Link href="/calorie-surplus" className="text-primary hover:underline" aria-label="Calorie Surplus Calculator">Calorie Adjustment for Weight Gain</Link>.</li>
+                <li><strong>Energy Balance:</strong> If you consistently consume the same number of calories as your TDEE, your weight will remain stable. This is your goal with the <Link href="/calorie-maintenance" className="text-primary hover:underline" aria-label="Calorie Maintenance Calculator">Calorie Maintenance Calculator</Link>.</li>
             </ul>
-            <p>By getting an accurate TDEE estimate, you transform weight management from a guessing game into a predictable science. You can then create a precise plan to reach your goal, whether it's shedding fat, building muscle by targeting a specific <Link href="/ideal-weight" className="text-primary hover:underline">ideal weight</Link>, or simply maintaining a healthy body composition, which you can track with the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Calculator</Link>.</p>
+            <p>By getting an accurate TDEE estimate, you transform weight management from a guessing game into a predictable science. You can then create a precise plan to reach your goal, whether it's shedding fat, building muscle by targeting a specific <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">ideal weight</Link>, or simply maintaining a healthy body composition, which you can track with the <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Calculator</Link>.</p>
           </CardContent>
         </Card>
         
@@ -317,7 +317,7 @@ export default function TdeePage() {
               <li><strong>Overestimating Activity Level:</strong> This is the most common error. People often overestimate how active they are, leading to a TDEE that is too high and stalled weight loss. When in doubt, choose the lower activity level.</li>
               <li><strong>Forgetting to Recalculate:</strong> Your TDEE is not static. As you lose weight, your TDEE will decrease. You must recalculate it every 10-15 lbs to keep your targets accurate.</li>
               <li><strong>"Eating Back" Exercise Calories:</strong> Fitness trackers often overestimate calories burned. Your activity multiplier already accounts for exercise. Do not add extra calories back in after a workout.</li>
-              <li><strong>Treating it as Gospel:</strong> TDEE is a powerful estimate, but it's still an estimate. Use it as a starting point, track your weight for 2-3 weeks with the <Link href="/weight-change-tracker" className="text-primary hover:underline">Weekly Weight Change Tracker</Link>, and if your progress doesn't match your goal, adjust your calorie intake by 100-200 per day.</li>
+              <li><strong>Treating it as Gospel:</strong> TDEE is a powerful estimate, but it's still an estimate. Use it as a starting point, track your weight for 2-3 weeks with the <Link href="/weight-change-tracker" className="text-primary hover:underline" aria-label="Weekly Weight Change Tracker">Weekly Weight Change Tracker</Link>, and if your progress doesn't match your goal, adjust your calorie intake by 100-200 per day.</li>
             </ul>
           </CardContent>
         </Card>
@@ -326,7 +326,7 @@ export default function TdeePage() {
             <CardHeader><CardTitle>Pro Tips &amp; Quick Hacks</CardTitle></CardHeader>
             <CardContent>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li><strong>Prioritize Protein to Protect BMR:</strong> When in a calorie deficit, a higher protein intake helps preserve muscle mass, which in turn helps keep your BMR from dropping as much. Use a <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link> to find your target.</li>
+                    <li><strong>Prioritize Protein to Protect BMR:</strong> When in a calorie deficit, a higher protein intake helps preserve muscle mass, which in turn helps keep your BMR from dropping as much. Use a <Link href="/protein-intake" className="text-primary hover:underline" aria-label="Protein Intake Calculator">Protein Intake Calculator</Link> to find your target.</li>
                     <li><strong>Use BMR to Set Your "Non-Negotiable" Floor:</strong> As a general rule, avoid dieting on calorie levels at or below your BMR for extended periods, as this can negatively impact metabolism and lead to nutrient deficiencies.</li>
                     <li><strong>Reverse Dieting with BMR:</strong> After a long diet, you can use your TDEE to slowly increase calories back to a new, higher maintenance level, which helps restore metabolic rate.</li>
                     <li><strong>Cycle Your Calories:</strong> Instead of eating the same deficit every day, try eating closer to your TDEE on training days and a larger deficit on rest days. This can help with workout performance and adherence.</li>
@@ -342,15 +342,15 @@ export default function TdeePage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>What is TDEE?</AccordionTrigger>
-                <AccordionContent>TDEE (Total Daily Energy Expenditure) is an estimate of your total daily calorie burn, including all activities. It is calculated from your <Link href="/bmr" className="text-primary hover:underline">BMR</Link> and is the key to managing your weight.</AccordionContent>
+                <AccordionContent>TDEE (Total Daily Energy Expenditure) is an estimate of your total daily calorie burn, including all activities. It is calculated from your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</Link> and is the key to managing your weight.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>How do I use my TDEE for weight loss?</AccordionTrigger>
-                <AccordionContent>To lose weight, create a calorie deficit by eating fewer calories than your TDEE. A 500-calorie deficit per day typically leads to about 1 pound of weight loss per week. You can plan this with the <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment for Weight Loss</Link>.</AccordionContent>
+                <AccordionContent>To lose weight, create a calorie deficit by eating fewer calories than your TDEE. A 500-calorie deficit per day typically leads to about 1 pound of weight loss per week. You can plan this with the <Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">Calorie Adjustment for Weight Loss</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>How do I use my TDEE for muscle gain?</AccordionTrigger>
-                <AccordionContent>To gain muscle, create a small calorie surplus by eating 250-500 calories more than your TDEE, combined with resistance training. You can track your muscle gains with the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link>.</AccordionContent>
+                <AccordionContent>To gain muscle, create a small calorie surplus by eating 250-500 calories more than your TDEE, combined with resistance training. You can track your muscle gains with the <Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>Which activity level should I choose?</AccordionTrigger>
@@ -358,7 +358,7 @@ export default function TdeePage() {
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>Should I recalculate my TDEE as I lose weight?</AccordionTrigger>
-                <AccordionContent>Yes. As your weight changes, your metabolism changes. Recalculate your <Link href="/bmr" className="text-primary hover:underline">BMR</Link> and TDEE after every 10-15 lbs of weight change to keep your calorie targets accurate.</AccordionContent>
+                <AccordionContent>Yes. As your weight changes, your metabolism changes. Recalculate your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</Link> and TDEE after every 10-15 lbs of weight change to keep your calorie targets accurate.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -379,22 +379,22 @@ export default function TdeePage() {
                         <TableRow>
                             <TableCell>General Users</TableCell>
                             <TableCell>Determine daily maintenance calories to prevent unintentional weight gain or loss.</TableCell>
-                            <TableCell><Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment (Loss)</Link></TableCell>
+                            <TableCell><Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">Calorie Adjustment (Loss)</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Fitness Coaches</TableCell>
                             <TableCell>Create precise calorie targets for client fat loss or muscle gain phases.</TableCell>
-                             <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                             <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline" aria-label="Macronutrient Ratio Calculator">Macronutrient Ratio</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Nutritionists</TableCell>
                             <TableCell>Design meal plans that are perfectly aligned with a client's energy needs.</TableCell>
-                            <TableCell><Link href="/meal-calorie-split" className="text-primary hover:underline">Meal Calorie Split</Link></TableCell>
+                            <TableCell><Link href="/meal-calorie-split" className="text-primary hover:underline" aria-label="Meal Calorie Split Calculator">Meal Calorie Split</Link></TableCell>
                         </TableRow>
                          <TableRow>
                             <TableCell>Athletes</TableCell>
                             <TableCell>Fuel performance and recovery by ensuring adequate energy intake.</TableCell>
-                            <TableCell><Link href="/carb-intake" className="text-primary hover:underline">Carb Intake Calculator</Link></TableCell>
+                            <TableCell><Link href="/carb-intake" className="text-primary hover:underline" aria-label="Carb Intake Calculator">Carb Intake Calculator</Link></TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>
@@ -409,6 +409,7 @@ export default function TdeePage() {
             <Link
               href="/bmr"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="BMR Calculator"
             >
               <h3 className="font-semibold">BMR Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -416,8 +417,9 @@ export default function TdeePage() {
               </p>
             </Link>
             <Link
-              href="/calorie-adjustment-for-weight-loss"
+              href="/calorie-deficit"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Calorie Deficit Calculator"
             >
               <h3 className="font-semibold">Calorie Adjustment (Loss)</h3>
               <p className="text-sm text-muted-foreground">
@@ -427,6 +429,7 @@ export default function TdeePage() {
             <Link
               href="/macronutrient-ratio"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Macronutrient Ratio Calculator"
             >
               <h3 className="font-semibold">Macronutrient Ratio Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -436,6 +439,7 @@ export default function TdeePage() {
              <Link
               href="/ideal-weight"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Ideal Weight Calculator"
             >
               <h3 className="font-semibold">Ideal Weight Calculator</h3>
               <p className="text-sm text-muted-foreground">

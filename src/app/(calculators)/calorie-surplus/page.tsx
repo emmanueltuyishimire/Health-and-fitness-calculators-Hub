@@ -88,7 +88,7 @@ export default function CalorieSurplusPage() {
         name: 'What is a calorie surplus?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A calorie surplus is when you consume more calories than your body expends. This is necessary for gaining weight, ideally muscle mass. Your total expenditure is your <a href="/tdee">TDEE</a>.',
+          text: 'A calorie surplus is when you consume more calories than your body expends. This is necessary for gaining weight, ideally muscle mass. Your total expenditure is your <a href="/tdee" aria-label="TDEE Calculator">TDEE</a>.',
         },
       },
       {
@@ -96,7 +96,7 @@ export default function CalorieSurplusPage() {
         name: 'What is a safe calorie surplus for lean muscle gain?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A safe and effective surplus is typically 10-20% above your TDEE, which is about 250-500 calories per day. This promotes muscle growth while minimizing fat gain. Track your progress with the <a href="/ffmi">FFMI Calculator</a>.',
+          text: 'A safe and effective surplus is typically 10-20% above your TDEE, which is about 250-500 calories per day. This promotes muscle growth while minimizing fat gain. Track your progress with the <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a>.',
         },
       },
       {
@@ -112,7 +112,7 @@ export default function CalorieSurplusPage() {
         name: 'Why is a small surplus better for "clean bulking"?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A small, controlled surplus (lean bulking) helps maximize the ratio of muscle to fat gained. A huge surplus will lead to rapid weight gain, but a much larger portion of it will be fat, which you can monitor with the <a href="/body-fat">Body Fat Percentage Calculator</a>.',
+          text: 'A small, controlled surplus (lean bulking) helps maximize the ratio of muscle to fat gained. A huge surplus will lead to rapid weight gain, but a much larger portion of it will be fat, which you can monitor with the <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a>.',
         },
       },
       {
@@ -120,7 +120,7 @@ export default function CalorieSurplusPage() {
         name: 'Why do I need my TDEE before using this calculator?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Your <a href="/tdee">TDEE</a> is your maintenance calorie level. A surplus must be calculated *from* this number. Without knowing your TDEE, you cannot accurately plan a muscle-building phase.',
+          text: 'Your <a href="/tdee" aria-label="TDEE Calculator">TDEE</a> is your maintenance calorie level. A surplus must be calculated *from* this number. Without knowing your TDEE, you cannot accurately plan a muscle-building phase.',
         },
       },
     ],
@@ -168,7 +168,7 @@ export default function CalorieSurplusPage() {
                   Calorie Adjustment for Weight Gain
                 </h1>
                 <p className="text-muted-foreground">
-                  To build muscle, you need a calorie surplus. This tool helps you set a controlled daily calorie target for lean gains. First, ensure you have your maintenance calories from the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.
+                  To build muscle, you need a calorie surplus. This tool helps you set a controlled daily calorie target for lean gains. First, ensure you have your maintenance calories from the <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link>.
                 </p>
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function CalorieSurplusPage() {
               This calculator makes it easy to plan your muscle-building phase by turning your TDEE into an actionable daily calorie goal.
             </p>
             <ol className="list-decimal list-inside space-y-2">
-              <li><strong>Get Your TDEE:</strong> First, visit our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to find your daily maintenance calories. This value is the foundation.</li>
+              <li><strong>Get Your TDEE:</strong> First, visit our <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> to find your daily maintenance calories. This value is the foundation.</li>
               <li><strong>Enter Your TDEE:</strong> If not auto-filled, enter your maintenance calories into the form.</li>
               <li><strong>Choose Your Goal:</strong> Select how aggressively you want to gain weight. A "Mild" or "Standard" surplus is best for lean gains.</li>
               <li><strong>Calculate Your Target:</strong> The calculator will show you your precise daily calorie intake to achieve your desired rate of weight gain.</li>
@@ -231,8 +231,8 @@ export default function CalorieSurplusPage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation</TableCell>
-                  <TableCell>A slow, controlled "lean bulk" to maximize muscle gain while minimizing fat. Progress should be tracked with the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link>.</TableCell>
-                  <TableCell>A standard bulking phase for steady muscle and strength gains. This person should ensure they are lifting heavy and eating enough protein, calculated with the <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link>.</TableCell>
+                  <TableCell>A slow, controlled "lean bulk" to maximize muscle gain while minimizing fat. Progress should be tracked with the <Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link>.</TableCell>
+                  <TableCell>A standard bulking phase for steady muscle and strength gains. This person should ensure they are lifting heavy and eating enough protein, calculated with the <Link href="/protein-intake" className="text-primary hover:underline" aria-label="Protein Intake Calculator">Protein Intake Calculator</Link>.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -246,11 +246,11 @@ export default function CalorieSurplusPage() {
           <CardContent className="space-y-4 text-muted-foreground">
             <h3 className="font-semibold text-lg text-foreground">Energy Balance for Muscle Growth</h3>
             <p>Just as weight loss requires a calorie deficit, weight gain requires a calorie surplus. This means consuming more energy (calories) than your body burns. This extra energy provides the fuel needed for muscle protein synthesis, the process of repairing and building new muscle tissue after resistance training.</p>
-            <p>Your baseline energy need is your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>. This calculator helps you add a controlled surplus to that number. A surplus of 3,500 calories roughly equates to one pound of gained body weight.</p>
+            <p>Your baseline energy need is your <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link>. This calculator helps you add a controlled surplus to that number. A surplus of 3,500 calories roughly equates to one pound of gained body weight.</p>
 
             <h3 className="font-semibold text-lg text-foreground">"Clean" vs. "Dirty" Bulking</h3>
             <p>The size of your surplus matters greatly. A "dirty bulk" involves eating a very large surplus, leading to rapid weight gain, but much of this weight will be body fat. A "clean bulk" or "lean bulk" uses a small, controlled surplus (10-20%) to promote muscle growth while minimizing fat gain. This is a much more efficient and healthier approach.</p>
-            <p>A small surplus allows your body to direct the extra energy primarily towards muscle repair and growth, rather than storing it as fat. This leads to higher quality weight gain and means you'll have less fat to lose later. To ensure you're gaining quality mass, it's essential to track changes in your <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> and <Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass</Link>.</p>
+            <p>A small surplus allows your body to direct the extra energy primarily towards muscle repair and growth, rather than storing it as fat. This leads to higher quality weight gain and means you'll have less fat to lose later. To ensure you're gaining quality mass, it's essential to track changes in your <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage</Link> and <Link href="/lean-body-mass" className="text-primary hover:underline" aria-label="Lean Body Mass Calculator">Lean Body Mass</Link>.</p>
           </CardContent>
         </Card>
 
@@ -261,7 +261,7 @@ export default function CalorieSurplusPage() {
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Being Too Aggressive:</strong> A huge surplus will lead to excessive fat gain, not more muscle. Stick to a 10-20% surplus for lean gains.</li>
-              <li><strong>Not Eating Enough Protein:</strong> A calorie surplus without enough protein means you're just gaining fat. Use a <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link> to find your target.</li>
+              <li><strong>Not Eating Enough Protein:</strong> A calorie surplus without enough protein means you're just gaining fat. Use a <Link href="/protein-intake" className="text-primary hover:underline" aria-label="Protein Intake Calculator">Protein Intake Calculator</Link> to find your target.</li>
               <li><strong>Not Training Hard Enough:</strong> A calorie surplus without a stimulus (resistance training) will result in fat storage. You must give your body a reason to build muscle.</li>
               <li><strong>"Dirty Bulking":</strong> Relying on junk food for calories leads to poor health, nutrient deficiencies, and excessive fat gain. Focus on calorie-dense whole foods.</li>
             </ul>
@@ -275,7 +275,7 @@ export default function CalorieSurplusPage() {
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Focus on Calorie-Dense Foods:</strong> Nuts, seeds, healthy oils, avocados, and whole grains make it easier to reach your calorie target without feeling overly full.</li>
-              <li><strong>Track Your Progress:</strong> Weigh yourself weekly and take measurements. If you're gaining much more than 1 lb per week, you may be gaining too much fat. Adjust your surplus from the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> down slightly.</li>
+              <li><strong>Track Your Progress:</strong> Weigh yourself weekly and take measurements. If you're gaining much more than 1 lb per week, you may be gaining too much fat. Adjust your surplus from the <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> down slightly.</li>
               <li><strong>Time Your Nutrients:</strong> Consuming a mix of protein and carbs around your workout can help with recovery and muscle growth.</li>
               <li><strong>Be Patient:</strong> Building muscle is a slow process. A realistic rate of muscle gain for most natural lifters is 0.25-0.5 lbs per week. Trust the process.</li>
             </ul>
@@ -290,7 +290,7 @@ export default function CalorieSurplusPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>What is a safe calorie surplus for lean muscle gain?</AccordionTrigger>
-                <AccordionContent>A 10-20% surplus above your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> (about 250-500 calories) is ideal for maximizing muscle gain while minimizing fat gain.
+                <AccordionContent>A 10-20% surplus above your <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link> (about 250-500 calories) is ideal for maximizing muscle gain while minimizing fat gain.
 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
@@ -303,11 +303,11 @@ export default function CalorieSurplusPage() {
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>What happens if I stop gaining weight?</AccordionTrigger>
-                <AccordionContent>Your metabolism adapts. As you gain weight, your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> increases. You'll need to periodically recalculate your TDEE and adjust your surplus to continue gaining.</AccordionContent>
+                <AccordionContent>Your metabolism adapts. As you gain weight, your <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link> increases. You'll need to periodically recalculate your TDEE and adjust your surplus to continue gaining.</AccordionContent>
               </AccordionItem>
                <AccordionItem value="item-5">
                 <AccordionTrigger>Can I build muscle without a calorie surplus?</AccordionTrigger>
-                <AccordionContent>Beginners or those returning from a long break can sometimes build muscle while eating at maintenance (body recomposition), but for experienced lifters, a surplus is necessary for significant muscle growth. Track your muscularity with the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link> to see your progress.</AccordionContent>
+                <AccordionContent>Beginners or those returning from a long break can sometimes build muscle while eating at maintenance (body recomposition), but for experienced lifters, a surplus is necessary for significant muscle growth. Track your muscularity with the <Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link> to see your progress.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -328,17 +328,17 @@ export default function CalorieSurplusPage() {
                         <TableRow>
                             <TableCell>Bodybuilders / Athletes</TableCell>
                             <TableCell>Plan a "bulking" phase to build muscle mass effectively.</TableCell>
-                            <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                            <TableCell><Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Underweight Individuals</TableCell>
                             <TableCell>Create a structured plan for healthy weight gain.</TableCell>
-                             <TableCell><Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link></TableCell>
+                             <TableCell><Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Fitness Enthusiasts</TableCell>
                             <TableCell>Fuel strength gains and improve workout performance.</TableCell>
-                            <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio Calculator</Link></TableCell>
+                            <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline" aria-label="Macronutrient Ratio Calculator">Macronutrient Ratio Calculator</Link></TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>
@@ -350,19 +350,19 @@ export default function CalorieSurplusPage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted" aria-label="TDEE Calculator">
               <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">The essential first step. Find your maintenance calories here.</p>
             </Link>
-            <Link href="/ffmi" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/ffmi" className="p-4 border rounded-lg hover:bg-muted" aria-label="FFMI Calculator">
               <h3 className="font-semibold">FFMI Calculator</h3>
               <p className="text-sm text-muted-foreground">Track your muscle gain progress and assess your muscularity.</p>
             </Link>
-            <Link href="/macronutrient-ratio" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/macronutrient-ratio" className="p-4 border rounded-lg hover:bg-muted" aria-label="Macronutrient Ratio Calculator">
               <h3 className="font-semibold">Macronutrient Ratio Calculator</h3>
               <p className="text-sm text-muted-foreground">Turn your calorie target into protein, carb, and fat goals.</p>
             </Link>
-            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted" aria-label="Protein Intake Calculator">
               <h3 className="font-semibold">Protein Intake Calculator</h3>
               <p className="text-sm text-muted-foreground">Ensure you're eating enough protein to support muscle growth.</p>
             </Link>

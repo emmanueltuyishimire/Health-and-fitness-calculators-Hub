@@ -86,7 +86,7 @@ export default function WaistToHeightRatioPage() {
         name: 'What is a good Waist-to-Height Ratio?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A good WHtR is generally considered to be below 0.5. A value of 0.5 or higher suggests increased risk of obesity-related cardiovascular diseases. The simple message is "keep your waist circumference to less than half your height." Compare this with other metrics using the <a href="/bmi">BMI Calculator</a>.',
+          text: 'A good WHtR is generally considered to be below 0.5. A value of 0.5 or higher suggests increased risk of obesity-related cardiovascular diseases. The simple message is "keep your waist circumference to less than half your height." Compare this with other metrics using the <a href="/bmi" aria-label="BMI Calculator">BMI Calculator</a>.',
         },
       },
       {
@@ -94,7 +94,7 @@ export default function WaistToHeightRatioPage() {
         name: 'Why is WHtR considered better than BMI?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'WHtR is often considered a better predictor of health risk because it specifically accounts for central (abdominal) fat, which is more metabolically dangerous than fat stored elsewhere. The <a href="/bmi">BMI Calculator</a> cannot distinguish between fat and muscle, nor where fat is stored.',
+          text: 'WHtR is often considered a better predictor of health risk because it specifically accounts for central (abdominal) fat, which is more metabolically dangerous than fat stored elsewhere. The <a href="/bmi" aria-label="BMI Calculator">BMI Calculator</a> cannot distinguish between fat and muscle, nor where fat is stored.',
         },
       },
       {
@@ -102,7 +102,7 @@ export default function WaistToHeightRatioPage() {
         name: 'How do I measure my waist circumference accurately?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Measure at the midpoint between your lowest rib and the top of your hip bone (iliac crest), roughly in line with your navel. Breathe out normally and don\'t pull the tape too tight. For more measurement-based tools, check the <a href="/body-fat">Body Fat Percentage Calculator</a>.',
+          text: 'Measure at the midpoint between your lowest rib and the top of your hip bone (iliac crest), roughly in line with your navel. Breathe out normally and don\'t pull the tape too tight. For more measurement-based tools, check the <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a>.',
         },
       },
       {
@@ -110,7 +110,7 @@ export default function WaistToHeightRatioPage() {
         name: 'Does age or gender affect WHtR thresholds?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'One of the main advantages of WHtR is that the core threshold of 0.5 is largely independent of age and gender, making it a simple and universal screening tool. While body composition changes, which you can track with the <a href="/lean-body-mass">Lean Body Mass Calculator</a>, the risk associated with central fat remains consistent.',
+          text: 'One of the main advantages of WHtR is that the core threshold of 0.5 is largely independent of age and gender, making it a simple and universal screening tool. While body composition changes, which you can track with the <a href="/lean-body-mass" aria-label="Lean Body Mass Calculator">Lean Body Mass Calculator</a>, the risk associated with central fat remains consistent.',
         },
       },
       {
@@ -118,7 +118,7 @@ export default function WaistToHeightRatioPage() {
         name: 'Can I have a normal BMI but a high WHtR?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, this is a condition known as "normal weight obesity." You might have an acceptable weight for your height according to the <a href="/bmi">BMI Calculator</a>, but still carry an unhealthy amount of fat around your abdomen. This highlights the importance of using multiple metrics.',
+          text: 'Yes, this is a condition known as "normal weight obesity." You might have an acceptable weight for your height according to the <a href="/bmi" aria-label="BMI Calculator">BMI Calculator</a>, but still carry an unhealthy amount of fat around your abdomen. This highlights the importance of using multiple metrics.',
         },
       },
       {
@@ -126,7 +126,7 @@ export default function WaistToHeightRatioPage() {
         name: 'How do I lower my Waist-to-Height Ratio?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'To lower your WHtR, you need to reduce your waist circumference by losing abdominal fat. This is achieved through a combination of a calorie deficit and exercise. Use the <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a> to determine a sustainable deficit.',
+          text: 'To lower your WHtR, you need to reduce your waist circumference by losing abdominal fat. This is achieved through a combination of a calorie deficit and exercise. Use the <a href="/daily-calorie-needs" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</a> to determine a sustainable deficit.',
         },
       },
       {
@@ -134,7 +134,7 @@ export default function WaistToHeightRatioPage() {
         name: 'Is WHtR the same as Waist-to-Hip Ratio?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No. WHtR compares your waist to your height, assessing overall health risk. The <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio Calculator</a> compares waist to hip circumference, which is more indicative of body shape and fat distribution patterns (e.g., "apple" vs. "pear").',
+          text: 'No. WHtR compares your waist to your height, assessing overall health risk. The <a href="/waist-to-hip-ratio" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio Calculator</a> compares waist to hip circumference, which is more indicative of body shape and fat distribution patterns (e.g., "apple" vs. "pear").',
         },
       },
       {
@@ -142,7 +142,7 @@ export default function WaistToHeightRatioPage() {
         name: 'How does WHtR relate to my BMR?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A high WHtR indicates excess body fat, which is less metabolically active than muscle. Improving your WHtR by gaining muscle and losing fat can lead to a higher <a href="/bmr">Basal Metabolic Rate (BMR)</a> over time.',
+          text: 'A high WHtR indicates excess body fat, which is less metabolically active than muscle. Improving your WHtR by gaining muscle and losing fat can lead to a higher <a href="/bmr" aria-label="BMR Calculator">Basal Metabolic Rate (BMR)</a> over time.',
         },
       },
       {
@@ -150,7 +150,7 @@ export default function WaistToHeightRatioPage() {
         name: 'How often should I measure my WHtR?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Measuring once a month is sufficient to track meaningful progress. Daily fluctuations are normal and shouldn\'t cause concern. For a more detailed look at your body composition, use the <a href="/ffmi">FFMI Calculator</a> periodically.',
+          text: 'Measuring once a month is sufficient to track meaningful progress. Daily fluctuations are normal and shouldn\'t cause concern. For a more detailed look at your body composition, use the <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a> periodically.',
         },
       },
       {
@@ -158,7 +158,7 @@ export default function WaistToHeightRatioPage() {
         name: 'What if my WHtR is very low?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A WHtR below 0.4 may indicate being underweight, which can also carry health risks. It might be useful to compare this with results from the <a href="/ideal-weight">Ideal Weight Calculator</a> to ensure you are within a healthy range.',
+          text: 'A WHtR below 0.4 may indicate being underweight, which can also carry health risks. It might be useful to compare this with results from the <a href="/ideal-weight" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</a> to ensure you are within a healthy range.',
         },
       },
     ],
@@ -206,7 +206,7 @@ export default function WaistToHeightRatioPage() {
                   Waist-to-Height Ratio (WHtR) Calculator
                 </h1>
                 <p className="text-muted-foreground">
-                  The Waist-to-Height Ratio (WHtR) is a simple but powerful tool for assessing health risk. It measures your waist circumference relative to your height to screen for central obesity. Unlike the <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link>, WHtR is a better predictor of cardiometabolic risk across different populations.
+                  The Waist-to-Height Ratio (WHtR) is a simple but powerful tool for assessing health risk. It measures your waist circumference relative to your height to screen for central obesity. Unlike the <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI Calculator</Link>, WHtR is a better predictor of cardiometabolic risk across different populations.
                 </p>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function WaistToHeightRatioPage() {
               <li><strong>Select Your Units:</strong> Choose between "Metric" (cm) or "Imperial" (inches).</li>
               <li><strong>Enter Your Height:</strong> Input your current height.</li>
               <li><strong>Enter Your Waist Circumference:</strong> Measure your waist at the narrowest point, usually just above the navel. Do not pull the tape tight.</li>
-              <li><strong>Calculate:</strong> Click the button to get your ratio and what it means for your health. This ratio provides context to the data from the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link>.</li>
+              <li><strong>Calculate:</strong> Click the button to get your ratio and what it means for your health. This ratio provides context to the data from the <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link>.</li>
             </ol>
           </CardContent>
         </Card>
@@ -269,8 +269,8 @@ export default function WaistToHeightRatioPage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
-                  <TableCell>This person has a healthy waist size for their height. To maintain this, they can calculate their maintenance calories with the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</TableCell>
-                  <TableCell>This person carries excess abdominal fat, increasing health risk. The next step would be to aim for fat loss by creating a sustainable calorie deficit, which can be planned using the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> tool.</TableCell>
+                  <TableCell>This person has a healthy waist size for their height. To maintain this, they can calculate their maintenance calories with the <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</Link>.</TableCell>
+                  <TableCell>This person carries excess abdominal fat, increasing health risk. The next step would be to aim for fat loss by creating a sustainable calorie deficit, which can be planned using the <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs</Link> tool.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -284,7 +284,7 @@ export default function WaistToHeightRatioPage() {
           <CardContent className="space-y-4 text-muted-foreground">
             <h3 className="font-semibold text-lg text-foreground">Why WHtR is a Key Health Indicator</h3>
             <p>
-              For decades, the <Link href="/bmi" className="text-primary hover:underline">Body Mass Index (BMI)</Link> has been the standard for assessing healthy weight. However, its major flaw is its inability to account for body composition. The Waist-to-Height Ratio (WHtR) has emerged as a superior, yet equally simple, alternative for predicting cardiometabolic risk. Its power lies in its focus on central (visceral) adiposity—the fat stored around your abdominal organs.
+              For decades, the <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">Body Mass Index (BMI)</Link> has been the standard for assessing healthy weight. However, its major flaw is its inability to account for body composition. The Waist-to-Height Ratio (WHtR) has emerged as a superior, yet equally simple, alternative for predicting cardiometabolic risk. Its power lies in its focus on central (visceral) adiposity—the fat stored around your abdominal organs.
             </p>
             <p>
               Visceral fat is more hormonally active and inflammatory than subcutaneous fat (the fat under your skin). High levels of visceral fat are strongly linked to insulin resistance, type 2 diabetes, heart disease, and other metabolic complications. Because WHtR directly measures abdominal circumference relative to height, it provides a more accurate proxy for this dangerous central fat than BMI. The core message of WHtR is simple and actionable: <strong>"Keep your waist circumference to less than half your height."</strong>
@@ -319,7 +319,7 @@ export default function WaistToHeightRatioPage() {
               </TableBody>
             </Table>
             <p className="mt-4">
-              If your WHtR is 0.5 or above, it's a strong signal to prioritize lifestyle changes aimed at reducing abdominal fat. This doesn't just mean doing sit-ups; it means focusing on overall fat loss through a proper diet, which starts with understanding your energy balance via the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>, and a consistent exercise routine.
+              If your WHtR is 0.5 or above, it's a strong signal to prioritize lifestyle changes aimed at reducing abdominal fat. This doesn't just mean doing sit-ups; it means focusing on overall fat loss through a proper diet, which starts with understanding your energy balance via the <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</Link>, and a consistent exercise routine.
             </p>
           </CardContent>
         </Card>
@@ -333,7 +333,7 @@ export default function WaistToHeightRatioPage() {
               <li><strong>Incorrect Measurement Spot:</strong> Measuring too high or too low on the abdomen can skew results. Find the midway point between your bottom rib and hip bone.</li>
               <li><strong>Sucking In Your Stomach:</strong> Be sure to measure after a normal exhale without holding your stomach in.</li>
               <li><strong>Using Different Units:</strong> Always measure your waist and height in the same unit (either all cm or all inches). Our calculator requires this consistency.</li>
-              <li><strong>Relying on It Alone:</strong> While powerful, WHtR is still just one metric. Use it with the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link> for a complete picture.</li>
+              <li><strong>Relying on It Alone:</strong> While powerful, WHtR is still just one metric. Use it with the <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link> for a complete picture.</li>
             </ul>
           </CardContent>
         </Card>
@@ -346,7 +346,7 @@ export default function WaistToHeightRatioPage() {
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>The String Test:</strong> A simple, visual way to check your WHtR. Cut a piece of string that is the same length as your height. Fold it in half. If the halved string doesn't fit comfortably around your waist, your WHtR is likely over 0.5.</li>
               <li><strong>Track Trends, Not Numbers:</strong> Don't panic over a single measurement. Track your WHtR monthly to see the trend. A downward trend is a sign of great progress.</li>
-              <li><strong>Combine with <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link>:</strong> Use WHtR to assess overall central obesity risk and the Waist-to-Hip Ratio to understand your body shape and fat distribution pattern.</li>
+              <li><strong>Combine with <Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio</Link>:</strong> Use WHtR to assess overall central obesity risk and the Waist-to-Hip Ratio to understand your body shape and fat distribution pattern. Together, they provide powerful insights.</li>
             </ul>
           </CardContent>
         </Card>
@@ -359,43 +359,43 @@ export default function WaistToHeightRatioPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>What is a good Waist-to-Height Ratio?</AccordionTrigger>
-                <AccordionContent>A good WHtR is generally considered to be below 0.5. A value of 0.5 or higher suggests increased risk of obesity-related cardiovascular diseases. The simple message is "keep your waist circumference to less than half your height." Compare this with other metrics using the <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link>.</AccordionContent>
+                <AccordionContent>A good WHtR is generally considered to be below 0.5. A value of 0.5 or higher suggests increased risk of obesity-related cardiovascular diseases. The simple message is "keep your waist circumference to less than half your height." Compare this with other metrics using the <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Why is WHtR considered better than BMI?</AccordionTrigger>
-                <AccordionContent>WHtR is often considered a better predictor of health risk because it specifically accounts for central (abdominal) fat, which is more metabolically dangerous than fat stored elsewhere. The <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link> cannot distinguish between fat and muscle, nor where fat is stored.</AccordionContent>
+                <AccordionContent>WHtR is often considered a better predictor of health risk because it specifically accounts for central (abdominal) fat, which is more metabolically dangerous than fat stored elsewhere. The <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI Calculator</Link> cannot distinguish between fat and muscle, nor where fat is stored.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>How do I measure my waist circumference accurately?</AccordionTrigger>
-                <AccordionContent>Measure at the midpoint between your lowest rib and the top of your hip bone (iliac crest), roughly in line with your navel. Breathe out normally and don't pull the tape too tight. For more measurement-based tools, check the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link>.</AccordionContent>
+                <AccordionContent>Measure at the midpoint between your lowest rib and the top of your hip bone (iliac crest), roughly in line with your navel. Breathe out normally and don't pull the tape too tight. For more measurement-based tools, check the <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>Does age or gender affect WHtR thresholds?</AccordionTrigger>
-                <AccordionContent>One of the main advantages of WHtR is that the core threshold of 0.5 is largely independent of age and gender, making it a simple and universal screening tool. While body composition changes, which you can track with the <Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass Calculator</Link>, the risk associated with central fat remains consistent.</AccordionContent>
+                <AccordionContent>One of the main advantages of WHtR is that the core threshold of 0.5 is largely independent of age and gender, making it a simple and universal screening tool. While body composition changes, which you can track with the <Link href="/lean-body-mass" className="text-primary hover:underline" aria-label="Lean Body Mass Calculator">Lean Body Mass Calculator</Link>, the risk associated with central fat remains consistent.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>Can I have a normal BMI but a high WHtR?</AccordionTrigger>
-                <AccordionContent>Yes, this is a condition known as "normal weight obesity." You might have an acceptable weight for your height according to the <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link>, but still carry an unhealthy amount of fat around your abdomen. This highlights the importance of using multiple metrics.</AccordionContent>
+                <AccordionContent>Yes, this is a condition known as "normal weight obesity." You might have an acceptable weight for your height according to the <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI Calculator</Link>, but still carry an unhealthy amount of fat around your abdomen. This highlights the importance of using multiple metrics.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
                 <AccordionTrigger>How do I lower my Waist-to-Height Ratio?</AccordionTrigger>
-                <AccordionContent>To lower your WHtR, you need to reduce your waist circumference by losing abdominal fat. This is achieved through a combination of a calorie deficit and exercise. Use the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine a sustainable deficit.</AccordionContent>
+                <AccordionContent>To lower your WHtR, you need to reduce your waist circumference by losing abdominal fat. This is achieved through a combination of a calorie deficit and exercise. Use the <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</Link> to determine a sustainable deficit.</AccordionContent>
               </AccordionItem>
                <AccordionItem value="item-7">
                 <AccordionTrigger>Is WHtR the same as Waist-to-Hip Ratio?</AccordionTrigger>
-                <AccordionContent>No. WHtR compares your waist to your height, assessing overall health risk. The <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio Calculator</Link> compares waist to hip circumference, which is more indicative of body shape and fat distribution patterns (e.g., "apple" vs. "pear").</AccordionContent>
+                <AccordionContent>No. WHtR compares your waist to your height, assessing overall health risk. The <Link href="/waist-to-hip-ratio" className="text-primary hover:underline" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio Calculator</Link> compares waist to hip circumference, which is more indicative of body shape and fat distribution patterns (e.g., "apple" vs. "pear").</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-8">
                 <AccordionTrigger>How does WHtR relate to my BMR?</AccordionTrigger>
-                <AccordionContent>A high WHtR indicates excess body fat, which is less metabolically active than muscle. Improving your WHtR by gaining muscle and losing fat can lead to a higher <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link> over time.</AccordionContent>
+                <AccordionContent>A high WHtR indicates excess body fat, which is less metabolically active than muscle. Improving your WHtR by gaining muscle and losing fat can lead to a higher <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">Basal Metabolic Rate (BMR)</Link> over time.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-9">
                 <AccordionTrigger>How often should I measure my WHtR?</AccordionTrigger>
-                <AccordionContent>Measuring once a month is sufficient to track meaningful progress. Daily fluctuations are normal and shouldn't cause concern. For a more detailed look at your body composition, use the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link> periodically.</AccordionContent>
+                <AccordionContent>Measuring once a month is sufficient to track meaningful progress. Daily fluctuations are normal and shouldn't cause concern. For a more detailed look at your body composition, use the <Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link> periodically.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger>What if my WHtR is very low?</AccordionTrigger>
-                <AccordionContent>A WHtR below 0.4 may indicate being underweight, which can also carry health risks. It might be useful to compare this with results from the <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link> to ensure you are within a healthy range.</AccordionContent>
+                <AccordionContent>A WHtR below 0.4 may indicate being underweight, which can also carry health risks. It might be useful to compare this with results from the <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</Link> to ensure you are within a healthy range.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -418,17 +418,17 @@ export default function WaistToHeightRatioPage() {
                  <TableRow>
                   <TableCell>Medical Professionals</TableCell>
                   <TableCell>Quickly screen patients for cardiometabolic risk.</TableCell>
-                  <TableCell><Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link></TableCell>
+                  <TableCell><Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI Calculator</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>General Users</TableCell>
                   <TableCell>Get a simple, clear indicator of abdominal fat and health risk.</TableCell>
-                  <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                  <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Fitness Coaches</TableCell>
                   <TableCell>Track client progress in reducing central obesity, which is a key health marker.</TableCell>
-                  <TableCell><Link href="/body-fat" className="text-primary hover:underline">Body Fat % Calculator</Link></TableCell>
+                  <TableCell><Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat % Calculator</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -443,6 +443,7 @@ export default function WaistToHeightRatioPage() {
             <Link
               href="/bmi"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="BMI Calculator"
             >
               <h3 className="font-semibold">BMI Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -452,6 +453,7 @@ export default function WaistToHeightRatioPage() {
             <Link
               href="/body-fat"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Body Fat Percentage Calculator"
             >
               <h3 className="font-semibold">Body Fat Percentage Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -461,6 +463,7 @@ export default function WaistToHeightRatioPage() {
             <Link
               href="/waist-to-hip-ratio"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Waist-to-Hip Ratio Calculator"
             >
               <h3 className="font-semibold">Waist-to-Hip Ratio Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -470,6 +473,7 @@ export default function WaistToHeightRatioPage() {
              <Link
               href="/daily-calorie-needs"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Daily Calorie Needs Calculator"
             >
               <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
               <p className="text-sm text-muted-foreground">

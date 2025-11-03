@@ -105,7 +105,7 @@ export function FfmiCalculatorForm() {
                 <Terminal className="h-4 w-4" />
                 <AlertTitle>Body Fat % Not Found</AlertTitle>
                 <AlertDescription>
-                    For an accurate FFMI, first use the <Link href="/body-fat" className="font-semibold underline">Body Fat Calculator</Link>. You can also enter a manual value.
+                    For an accurate FFMI, first use the <Link href="/body-fat" className="font-semibold underline" aria-label="Body Fat Calculator">Body Fat Calculator</Link>. You can also enter a manual value.
                 </AlertDescription>
             </Alert>
         )}

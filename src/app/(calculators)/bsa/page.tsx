@@ -86,7 +86,7 @@ export default function BsaPage() {
         name: 'What is Body Surface Area (BSA) and why is it important?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Body Surface Area (BSA) is the total surface area of the human body. It\'s a critical parameter in medicine, especially for calculating chemotherapy drug dosages and assessing kidney function, as it often correlates better with metabolic rate than body weight alone. You can compare this to your metabolic rate using our <a href="/bmr">BMR Calculator</a>.',
+          text: 'Body Surface Area (BSA) is the total surface area of the human body. It\'s a critical parameter in medicine, especially for calculating chemotherapy drug dosages and assessing kidney function, as it often correlates better with metabolic rate than body weight alone. You can compare this to your metabolic rate using our <a href="/bmr" aria-label="BMR Calculator">BMR Calculator</a>.',
         },
       },
       {
@@ -94,7 +94,7 @@ export default function BsaPage() {
         name: 'How does BSA differ from BMI?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'BSA measures the total surface area of your body, while the <a href="/bmi">BMI Calculator</a> provides a ratio of your weight to the square of your height. BSA is used for clinical and physiological assessments, whereas BMI is a general screening tool for weight categories.',
+          text: 'BSA measures the total surface area of your body, while the <a href="/bmi" aria-label="BMI Calculator">BMI Calculator</a> provides a ratio of your weight to the square of your height. BSA is used for clinical and physiological assessments, whereas BMI is a general screening tool for weight categories.',
         },
       },
       {
@@ -110,7 +110,7 @@ export default function BsaPage() {
         name: 'Can I use BSA for fitness purposes?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'While BSA is primarily a medical metric, it can provide context about your body size. For fitness-focused goals like muscle gain or fat loss, metrics from the <a href="/ffmi">FFMI Calculator</a> or <a href="/body-fat">Body Fat Percentage Calculator</a> are more practical.',
+          text: 'While BSA is primarily a medical metric, it can provide context about your body size. For fitness-focused goals like muscle gain or fat loss, metrics from the <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a> or <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a> are more practical.',
         },
       },
       {
@@ -118,7 +118,7 @@ export default function BsaPage() {
         name: 'Does a higher BSA mean I need more calories?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Generally, yes. A larger body surface area often corresponds to a higher metabolic rate, meaning you burn more calories at rest. This is reflected in the formulas used by our <a href="/bmr">BMR Calculator</a>, which also considers height and weight.',
+          text: 'Generally, yes. A larger body surface area often corresponds to a higher metabolic rate, meaning you burn more calories at rest. This is reflected in the formulas used by our <a href="/bmr" aria-label="BMR Calculator">BMR Calculator</a>, which also considers height and weight.',
         },
       },
       {
@@ -126,7 +126,7 @@ export default function BsaPage() {
         name: 'What is a "normal" BSA value?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'An average adult male has a BSA of about 1.9 m², and an average adult female about 1.6 m². However, there isn\'t a "normal" range in the same way as BMI or body fat. It is a direct measure of size. Your <a href="/ideal-weight">Ideal Weight Calculator</a> result can give you context on average weight for your height.',
+          text: 'An average adult male has a BSA of about 1.9 m², and an average adult female about 1.6 m². However, there isn\'t a "normal" range in the same way as BMI or body fat. It is a direct measure of size. Your <a href="/ideal-weight" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</a> result can give you context on average weight for your height.',
         },
       },
       {
@@ -142,7 +142,7 @@ export default function BsaPage() {
         name: 'Is BSA useful for tracking weight loss progress?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'As you lose weight, your BSA will decrease. However, for tracking body composition changes, the <a href="/lean-body-mass">Lean Body Mass Calculator</a> and <a href="/body-fat">Body Fat Percentage Calculator</a> are far more effective tools.',
+          text: 'As you lose weight, your BSA will decrease. However, for tracking body composition changes, the <a href="/lean-body-mass" aria-label="Lean Body Mass Calculator">Lean Body Mass Calculator</a> and <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a> are far more effective tools.',
         },
       },
       {
@@ -150,7 +150,7 @@ export default function BsaPage() {
         name: 'Why is BSA used for drug dosages?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'BSA is used because it provides a better estimate of metabolic mass than body weight alone, which can be skewed by fat. This allows for more precise dosing of sensitive medications, especially in oncology. This relates to how your body uses energy, a concept explored in our <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a>.',
+          text: 'BSA is used because it provides a better estimate of metabolic mass than body weight alone, which can be skewed by fat. This allows for more precise dosing of sensitive medications, especially in oncology. This relates to how your body uses energy, a concept explored in our <a href="/daily-calorie-needs" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</a>.',
         },
       },
       {
@@ -205,7 +205,7 @@ export default function BsaPage() {
                   Body Surface Area (BSA) Calculator
                 </h1>
                 <p className="text-muted-foreground">
-                  Estimate your Body Surface Area (BSA), a key anthropometric measurement used primarily in medicine for calculating drug dosages and assessing physiological functions. While less common in fitness, it provides another layer of understanding your body size beyond metrics like <Link href="/bmi" className="text-primary hover:underline">BMI</Link>.
+                  Estimate your Body Surface Area (BSA), a key anthropometric measurement used primarily in medicine for calculating drug dosages and assessing physiological functions. While less common in fitness, it provides another layer of understanding your body size beyond metrics like <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI</Link>.
                 </p>
               </div>
             </div>
@@ -226,7 +226,7 @@ export default function BsaPage() {
             <ol className="list-decimal list-inside space-y-2">
               <li><strong>Select Your Units:</strong> Choose between "Metric" (cm, kg) or "Imperial" (in, lbs).</li>
               <li><strong>Enter Your Height and Weight:</strong> Input your current height and weight into the designated fields.</li>
-              <li><strong>Calculate BSA:</strong> Click the button to get your estimated Body Surface Area in square meters (m²). This value can provide context for your energy needs, which you can explore with the <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link>.</li>
+              <li><strong>Calculate BSA:</strong> Click the button to get your estimated Body Surface Area in square meters (m²). This value can provide context for your energy needs, which you can explore with the <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR Calculator</Link>.</li>
             </ol>
           </CardContent>
         </Card>
@@ -262,8 +262,8 @@ export default function BsaPage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
-                  <TableCell>This person has a BSA of 1.94 m², typical for an average adult male. This larger surface area is a factor in their total energy expenditure, which can be estimated with the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</TableCell>
-                  <TableCell>The result of 1.93 m² is very similar. While BSA is a clinical measure, for fitness, a more useful next step is to calculate <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> to understand body composition.</TableCell>
+                  <TableCell>This person has a BSA of 1.94 m², typical for an average adult male. This larger surface area is a factor in their total energy expenditure, which can be estimated with the <Link href="/daily-calorie-needs" className="text-primary hover:underline" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</Link>.</TableCell>
+                  <TableCell>The result of 1.93 m² is very similar. While BSA is a clinical measure, for fitness, a more useful next step is to calculate <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage</Link> to understand body composition.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -277,7 +277,7 @@ export default function BsaPage() {
           <CardContent className="space-y-4 text-muted-foreground">
             <h3 className="font-semibold text-lg text-foreground">What is BSA?</h3>
             <p>
-              Body Surface Area (BSA) is the measured or calculated surface area of a human body. For many physiological and clinical purposes, BSA is a better indicator of metabolic mass than body weight because it is less affected by abnormal adipose mass. While metrics like <Link href="/bmi" className="text-primary hover:underline">BMI</Link> are used for population-level health screening, BSA provides a more nuanced measure used in specific clinical contexts.
+              Body Surface Area (BSA) is the measured or calculated surface area of a human body. For many physiological and clinical purposes, BSA is a better indicator of metabolic mass than body weight because it is less affected by abnormal adipose mass. While metrics like <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI</Link> are used for population-level health screening, BSA provides a more nuanced measure used in specific clinical contexts.
             </p>
 
             <h3 className="font-semibold text-lg text-foreground">The Du Bois Formula</h3>
@@ -287,12 +287,12 @@ export default function BsaPage() {
 
             <h3 className="font-semibold text-lg text-foreground">Clinical and Physiological Significance</h3>
             <p>
-              BSA's primary application is in medicine. For example, chemotherapy drug doses are often prescribed per square meter (mg/m²) of BSA. This is because BSA is a better proxy for cardiac output, glomerular filtration rate, and other key physiological parameters than body weight alone. A person with a higher <Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass</Link> will generally have a higher metabolic rate, and BSA helps to account for this.
+              BSA's primary application is in medicine. For example, chemotherapy drug doses are often prescribed per square meter (mg/m²) of BSA. This is because BSA is a better proxy for cardiac output, glomerular filtration rate, and other key physiological parameters than body weight alone. A person with a higher <Link href="/lean-body-mass" className="text-primary hover:underline" aria-label="Lean Body Mass Calculator">Lean Body Mass</Link> will generally have a higher metabolic rate, and BSA helps to account for this.
             </p>
             <p>
-              In physiology, BSA is related to thermoregulation, as the body's surface is where heat is exchanged with the environment. A larger surface area can mean greater heat loss in cold environments and greater heat gain in hot environments. This is one reason why your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate</Link> is influenced by your overall body size.
+              In physiology, BSA is related to thermoregulation, as the body's surface is where heat is exchanged with the environment. A larger surface area can mean greater heat loss in cold environments and greater heat gain in hot environments. This is one reason why your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">Basal Metabolic Rate</Link> is influenced by your overall body size.
             </p>
-            <p>While not a primary tool for fitness, understanding your BSA can add to a holistic view of your body. For instance, a change in BSA over time directly reflects a change in your physical size, though it doesn't specify whether that change is muscle or fat. For that level of detail, the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link> is a superior tool.
+            <p>While not a primary tool for fitness, understanding your BSA can add to a holistic view of your body. For instance, a change in BSA over time directly reflects a change in your physical size, though it doesn't specify whether that change is muscle or fat. For that level of detail, the <Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link> is a superior tool.
             </p>
           </CardContent>
         </Card>
@@ -304,8 +304,8 @@ export default function BsaPage() {
           <CardContent className="space-y-2">
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Unit Errors:</strong> Mixing up metric and imperial units is a common mistake. Ensure your height and weight are entered in the correct system.</li>
-              <li><strong>Using it for Fitness Goals:</strong> BSA is not a goal-oriented metric for fitness. Don't try to increase or decrease your BSA. Instead, focus on metrics like <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link>.</li>
-              <li><strong>Over-interpreting the Result:</strong> Unlike BMI, there's no "overweight" or "underweight" category for BSA. It's simply a measure of size. Context is better provided by the <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link>.</li>
+              <li><strong>Using it for Fitness Goals:</strong> BSA is not a goal-oriented metric for fitness. Don't try to increase or decrease your BSA. Instead, focus on metrics like <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">Body Fat Percentage</Link>.</li>
+              <li><strong>Over-interpreting the Result:</strong> Unlike BMI, there's no "overweight" or "underweight" category for BSA. It's simply a measure of size. Context is better provided by the <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</Link>.</li>
             </ul>
           </CardContent>
         </Card>
@@ -317,8 +317,8 @@ export default function BsaPage() {
           <CardContent className="space-y-2">
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Clinical Context is Key:</strong> The primary value of BSA is for healthcare providers. If a doctor mentions your BSA, it's likely in the context of a specific medical calculation.</li>
-              <li><strong>Pair with BMR:</strong> Use your BSA result to conceptually understand why your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate</Link> is what it is. A larger body (higher BSA) requires more energy.</li>
-              <li><strong>For Athletes:</strong> While <Link href="/ffmi" className="text-primary hover:underline">FFMI</Link> is a better tool for muscularity, BSA can be interesting for endurance athletes, as it relates to heat dissipation during long events.</li>
+              <li><strong>Pair with BMR:</strong> Use your BSA result to conceptually understand why your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">Basal Metabolic Rate</Link> is what it is. A larger body (higher BSA) requires more energy.</li>
+              <li><strong>For Athletes:</strong> While <Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI</Link> is a better tool for muscularity, BSA can be interesting for endurance athletes, as it relates to heat dissipation during long events.</li>
             </ul>
           </CardContent>
         </Card>
@@ -331,11 +331,11 @@ export default function BsaPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>What is Body Surface Area (BSA) and why is it important?</AccordionTrigger>
-                <AccordionContent>Body Surface Area (BSA) is the total surface area of the human body. It's a critical parameter in medicine, especially for calculating chemotherapy drug dosages and assessing kidney function, as it often correlates better with metabolic rate than body weight alone. You can compare this to your metabolic rate using our <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link>.</AccordionContent>
+                <AccordionContent>Body Surface Area (BSA) is the total surface area of the human body. It's a critical parameter in medicine, especially for calculating chemotherapy drug dosages and assessing kidney function, as it often correlates better with metabolic rate than body weight alone. You can compare this to your metabolic rate using our <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>How does BSA differ from BMI?</AccordionTrigger>
-                <AccordionContent>BSA measures the total surface area of your body, while the <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link> provides a ratio of your weight to the square of your height. BSA is used for clinical and physiological assessments, whereas BMI is a general screening tool for weight categories.</AccordionContent>
+                <AccordionContent>BSA measures the total surface area of your body, while the <Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI Calculator</Link> provides a ratio of your weight to the square of your height. BSA is used for clinical and physiological assessments, whereas BMI is a general screening tool for weight categories.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Which formula does this calculator use?</AccordionTrigger>
@@ -343,15 +343,15 @@ export default function BsaPage() {
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>Can I use BSA for fitness purposes?</AccordionTrigger>
-                <AccordionContent>While BSA is primarily a medical metric, it can provide context about your body size. For fitness-focused goals like muscle gain or fat loss, metrics from the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link> or <a href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</a> are more practical.</AccordionContent>
+                <AccordionContent>While BSA is primarily a medical metric, it can provide context about your body size. For fitness-focused goals like muscle gain or fat loss, metrics from the <Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link> or <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a> are more practical.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>Does a higher BSA mean I need more calories?</AccordionTrigger>
-                <AccordionContent>Generally, yes. A larger body surface area often corresponds to a higher metabolic rate, meaning you burn more calories at rest. This is reflected in the formulas used by our <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link>, which also considers height and weight.</AccordionContent>
+                <AccordionContent>Generally, yes. A larger body surface area often corresponds to a higher metabolic rate, meaning you burn more calories at rest. This is reflected in the formulas used by our <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR Calculator</Link>, which also considers height and weight.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
                 <AccordionTrigger>What is a "normal" BSA value?</AccordionTrigger>
-                <AccordionContent>An average adult male has a BSA of about 1.9 m², and an average adult female about 1.6 m². However, there isn't a "normal" range in the same way as BMI or body fat. It is a direct measure of size. Your <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link> result can give you context on average weight for your height.</AccordionContent>
+                <AccordionContent>An average adult male has a BSA of about 1.9 m², and an average adult female about 1.6 m². However, there isn't a "normal" range in the same way as BMI or body fat. It is a direct measure of size. Your <Link href="/ideal-weight" className="text-primary hover:underline" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</Link> result can give you context on average weight for your height.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-7">
                 <AccordionTrigger>How does body shape affect BSA?</AccordionTrigger>
@@ -359,11 +359,11 @@ export default function BsaPage() {
               </AccordionItem>
               <AccordionItem value="item-8">
                 <AccordionTrigger>Is BSA useful for tracking weight loss progress?</AccordionTrigger>
-                <AccordionContent>As you lose weight, your BSA will decrease. However, for tracking body composition changes, the <Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass Calculator</Link> and <a href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</a> are far more effective tools.</AccordionContent>
+                <AccordionContent>As you lose weight, your BSA will decrease. However, for tracking body composition changes, the <Link href="/lean-body-mass" className="text-primary hover:underline" aria-label="Lean Body Mass Calculator">Lean Body Mass Calculator</Link> and <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a> are far more effective tools.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-9">
                 <AccordionTrigger>Why is BSA used for drug dosages?</AccordionTrigger>
-                <AccordionContent>BSA is used because it provides a better estimate of metabolic mass than body weight alone, which can be skewed by fat. This allows for more precise dosing of sensitive medications, especially in oncology. This relates to how your body uses energy, a concept explored in our <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a>.</AccordionContent>
+                <AccordionContent>BSA is used because it provides a better estimate of metabolic mass than body weight alone, which can be skewed by fat. This allows for more precise dosing of sensitive medications, especially in oncology. This relates to how your body uses energy, a concept explored in our <a href="/daily-calorie-needs" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</a>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger>Does age or gender affect the BSA formula?</AccordionTrigger>
@@ -387,20 +387,20 @@ export default function BsaPage() {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                <TableRow>
+                 <TableRow>
                   <TableCell>Medical Professionals</TableCell>
                   <TableCell>Calculate drug dosages, particularly in chemotherapy.</TableCell>
-                  <TableCell>N/A (Clinical Use)</TableCell>
+                  <TableCell><Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI Calculator</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Physiologists</TableCell>
                   <TableCell>Assess metabolic rate and thermoregulation in research.</TableCell>
-                  <TableCell><Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link></TableCell>
+                  <TableCell><Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR Calculator</Link></TableCell>
                 </TableRow>
                  <TableRow>
                   <TableCell>Health Enthusiasts</TableCell>
                   <TableCell>Gain a deeper understanding of overall body size.</TableCell>
-                  <TableCell><Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link></TableCell>
+                  <TableCell><Link href="/bmi" className="text-primary hover:underline" aria-label="BMI Calculator">BMI Calculator</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -415,6 +415,7 @@ export default function BsaPage() {
             <Link
               href="/bmi"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="BMI Calculator"
             >
               <h3 className="font-semibold">BMI Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -424,6 +425,7 @@ export default function BsaPage() {
             <Link
               href="/bmr"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="BMR Calculator"
             >
               <h3 className="font-semibold">BMR Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -433,6 +435,7 @@ export default function BsaPage() {
             <Link
               href="/lean-body-mass"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Lean Body Mass Calculator"
             >
               <h3 className="font-semibold">Lean Body Mass Calculator</h3>
               <p className="text-sm text-muted-foreground">
@@ -442,6 +445,7 @@ export default function BsaPage() {
              <Link
               href="/ideal-weight"
               className="p-4 border rounded-lg hover:bg-muted"
+              aria-label="Ideal Weight Calculator"
             >
               <h3 className="font-semibold">Ideal Weight Calculator</h3>
               <p className="text-sm text-muted-foreground">

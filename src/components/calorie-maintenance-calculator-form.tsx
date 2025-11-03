@@ -52,7 +52,7 @@ export function CalorieMaintenanceCalculatorForm() {
           <Terminal className="h-4 w-4" />
           <AlertTitle>TDEE Not Found</AlertTitle>
           <AlertDescription>
-            Please <Link href="/tdee" className="font-semibold underline">calculate your TDEE</Link> first to determine your maintenance calories.
+            Please <Link href="/tdee" className="font-semibold underline" aria-label="TDEE Calculator">calculate your TDEE</Link> first to determine your maintenance calories.
           </AlertDescription>
         </Alert>
       )}

@@ -68,7 +68,7 @@ export function BodyDensityCalculatorForm() {
           <AlertTitle>Body Fat % Not Found</AlertTitle>
           <AlertDescription>
             Please use the{' '}
-            <Link href="/body-fat" className="font-semibold underline">
+            <Link href="/body-fat" className="font-semibold underline" aria-label="Body Fat Calculator">
               Body Fat Calculator
             </Link>{' '}
             first or enter a value manually.

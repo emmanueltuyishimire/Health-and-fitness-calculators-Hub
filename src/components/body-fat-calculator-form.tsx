@@ -245,5 +245,3 @@ export function BodyFatCalculatorForm() {
     </div>
   );
 }
-
-    

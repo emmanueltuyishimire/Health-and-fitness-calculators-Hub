@@ -99,7 +99,7 @@ export default function CalorieBurnByActivityPage() {
         name: 'How are calories burned calculated?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The formula used is: Calories Burned = (MET Value × Body Weight in kg × 3.5) / 200 × Duration in minutes. This calculator handles the conversions for you. This value contributes to your overall <a href="/tdee">TDEE</a>.',
+          text: 'The formula used is: Calories Burned = (MET Value × Body Weight in kg × 3.5) / 200 × Duration in minutes. This calculator handles the conversions for you. This value contributes to your overall <a href="/tdee" aria-label="TDEE Calculator">TDEE</a>.',
         },
       },
       {
@@ -107,7 +107,7 @@ export default function CalorieBurnByActivityPage() {
         name: 'Are these calculations accurate?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'This method provides a standardized and reliable estimate. However, actual calories burned can vary based on individual factors like age, gender, body composition, and intensity. Use it as a strong guideline. For body composition, see our <a href="/body-fat">Body Fat Percentage Calculator</a>.',
+          text: 'This method provides a standardized and reliable estimate. However, actual calories burned can vary based on individual factors like age, gender, body composition, and intensity. Use it as a strong guideline. For body composition, see our <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a>.',
         },
       },
       {
@@ -115,7 +115,7 @@ export default function CalorieBurnByActivityPage() {
         name: 'Should I eat back the calories I burn from exercise?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Generally, no. If you are using a <a href="/tdee">TDEE Calculator</a> with an activity multiplier, your exercise is already accounted for. "Eating back" exercise calories is a common mistake that can negate a <a href="/calorie-deficit">calorie deficit</a>.',
+          text: 'Generally, no. If you are using a <a href="/tdee" aria-label="TDEE Calculator">TDEE Calculator</a> with an activity multiplier, your exercise is already accounted for. "Eating back" exercise calories is a common mistake that can negate a <a href="/calorie-deficit" aria-label="Calorie Deficit Calculator">calorie deficit</a>.',
         },
       },
       {
@@ -171,7 +171,7 @@ export default function CalorieBurnByActivityPage() {
                   Calorie Burn by Activity Calculator
                 </h1>
                 <p className="text-muted-foreground">
-                  Estimate the number of calories burned during your favorite activities. This tool uses MET values to provide a scientific estimate of your energy expenditure, helping you better understand your overall <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>.
+                  Estimate the number of calories burned during your favorite activities. This tool uses MET values to provide a scientific estimate of your energy expenditure, helping you better understand your overall <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link>.
                 </p>
               </div>
             </div>
@@ -229,7 +229,7 @@ export default function CalorieBurnByActivityPage() {
                 </TableRow>
                  <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
-                  <TableCell>A 30-minute run at this pace burns a significant number of calories. This expenditure is a component of the user's <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>. Knowing this helps in creating an accurate <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link> for fat loss.</TableCell>
+                  <TableCell>A 30-minute run at this pace burns a significant number of calories. This expenditure is a component of the user's <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link>. Knowing this helps in creating an accurate <Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">calorie deficit</Link> for fat loss.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -244,7 +244,7 @@ export default function CalorieBurnByActivityPage() {
             <h3 className="font-semibold text-lg text-foreground">What is a MET?</h3>
             <p>MET stands for Metabolic Equivalent of Task. It's a standardized measure used to express the energy cost of physical activities. One MET is defined as the amount of oxygen consumed while sitting at rest, which is approximately 3.5 milliliters of oxygen per kilogram of body weight per minute. In simpler terms:</p>
             <ul className="list-disc list-inside space-y-2">
-                <li><strong>1 MET:</strong> The energy you use when you are at complete rest. This is your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>.</li>
+                <li><strong>1 MET:</strong> The energy you use when you are at complete rest. This is your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</Link>.</li>
                 <li><strong>3 METs:</strong> The activity requires three times the energy of resting.</li>
                 <li><strong>8 METs:</strong> The activity requires eight times the energy of resting.</li>
             </ul>
@@ -253,7 +253,7 @@ export default function CalorieBurnByActivityPage() {
             <h3 className="font-semibold text-lg text-foreground">The Calculation Formula</h3>
             <p>This calculator uses a standard scientific formula to estimate calorie burn:</p>
             <p className="font-mono text-center p-4 bg-muted rounded-md">Total Calories Burned = Duration (min) × [(MET × 3.5 × Weight (kg)) / 200]</p>
-            <p>This formula accurately converts the oxygen consumption represented by the MET value into the calories burned for a person of a specific weight over a specific time. While it's a powerful estimation, remember that individual factors like age, gender, and <Link href="/body-fat" className="text-primary hover:underline">body composition</Link> can cause slight variations.</p>
+            <p>This formula accurately converts the oxygen consumption represented by the MET value into the calories burned for a person of a specific weight over a specific time. While it's a powerful estimation, remember that individual factors like age, gender, and <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">body composition</Link> can cause slight variations.</p>
           </CardContent>
         </Card>
         
@@ -264,7 +264,7 @@ export default function CalorieBurnByActivityPage() {
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Overestimating Intensity:</strong> Choosing an activity with a higher MET value than what you actually performed (e.g., selecting "vigorous running" for a light jog).</li>
-              <li><strong>"Eating Back" Calories:</strong> Subtracting these burned calories from your diet. Your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> already accounts for your general activity level. Use this tool for information, not as a license to eat more.</li>
+              <li><strong>"Eating Back" Calories:</strong> Subtracting these burned calories from your diet. Your <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link> already accounts for your general activity level. Use this tool for information, not as a license to eat more.</li>
               <li><strong>Ignoring Warm-up/Cool-down:</strong> Only include the time you were performing the activity at the specified intensity, not the rest periods or lower-intensity parts.</li>
             </ul>
           </CardContent>
@@ -277,7 +277,7 @@ export default function CalorieBurnByActivityPage() {
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Focus on NEAT:</strong> Don't forget about Non-Exercise Activity Thermogenesis (NEAT), like walking, fidgeting, or taking the stairs. These small activities add up and contribute significantly to your daily burn.</li>
-              <li><strong>Prioritize Resistance Training:</strong> While cardio burns calories during the activity, building muscle through resistance training increases your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>, helping you burn more calories 24/7.</li>
+              <li><strong>Prioritize Resistance Training:</strong> While cardio burns calories during the activity, building muscle through resistance training increases your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</Link>, helping you burn more calories 24/7.</li>
               <li><strong>Use for Comparison:</strong> This tool is excellent for comparing the energy expenditure of different activities to help you choose the most efficient workouts for your goals.</li>
             </ul>
           </CardContent>
@@ -295,15 +295,15 @@ export default function CalorieBurnByActivityPage() {
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>How are calories burned calculated?</AccordionTrigger>
-                <AccordionContent>The formula is: Calories Burned = (MET Value × Body Weight in kg × 3.5) / 200 × Duration in minutes. This value contributes to your overall <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>.</AccordionContent>
+                <AccordionContent>The formula is: Calories Burned = (MET Value × Body Weight in kg × 3.5) / 200 × Duration in minutes. This value contributes to your overall <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Are these calculations accurate?</AccordionTrigger>
-                <AccordionContent>This method provides a standardized and reliable estimate. However, actual calories burned can vary based on individual factors like age, gender, and <Link href="/body-fat" className="text-primary hover:underline">body composition</Link>. Use it as a strong guideline.</AccordionContent>
+                <AccordionContent>This method provides a standardized and reliable estimate. However, actual calories burned can vary based on individual factors like age, gender, and <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">body composition</Link>. Use it as a strong guideline.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>Should I "eat back" calories burned from exercise?</AccordionTrigger>
-                <AccordionContent>Generally, no. If you use a <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> with an activity multiplier, your exercise is already factored in. "Eating back" calories can cancel out a <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>.</AccordionContent>
+                <AccordionContent>Generally, no. If you use a <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> with an activity multiplier, your exercise is already factored in. "Eating back" calories can cancel out a <Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">calorie deficit</Link>.</AccordionContent>
               </AccordionItem>
                <AccordionItem value="item-5">
                 <AccordionTrigger>How does this differ from my fitness tracker?</AccordionTrigger>
@@ -330,17 +330,17 @@ export default function CalorieBurnByActivityPage() {
                 <TableRow>
                   <TableCell>General Users</TableCell>
                   <TableCell>Compare different activities to find the most time-efficient workout for their schedule.</TableCell>
-                  <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
+                  <TableCell><Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Fitness Coaches</TableCell>
                   <TableCell>Estimate the calorie expenditure of a client's workout plan to help refine their diet.</TableCell>
-                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline" aria-label="Macronutrient Ratio Calculator">Macronutrient Ratio</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Weight Loss Planners</TableCell>
                   <TableCell>Quantify how much extra activity is needed to reach a specific calorie deficit goal.</TableCell>
-                  <TableCell><Link href="/weight-loss-goal" className="text-primary hover:underline">Weight Loss Goal</Link></TableCell>
+                  <TableCell><Link href="/weight-loss-goal" className="text-primary hover:underline" aria-label="Weight Loss Goal Calculator">Weight Loss Goal</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -352,19 +352,19 @@ export default function CalorieBurnByActivityPage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted" aria-label="TDEE Calculator">
               <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">Understand your total daily calorie burn, including your activities.</p>
             </Link>
-            <Link href="/calorie-deficit" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/calorie-deficit" className="p-4 border rounded-lg hover:bg-muted" aria-label="Calorie Deficit Calculator">
               <h3 className="font-semibold">Calorie Deficit Calculator</h3>
               <p className="text-sm text-muted-foreground">Plan your fat loss using the insights from your activity expenditure.</p>
             </Link>
-            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted" aria-label="BMR Calculator">
               <h3 className="font-semibold">BMR Calculator</h3>
               <p className="text-sm text-muted-foreground">Calculate your resting metabolism, the baseline for all energy calculations.</p>
             </Link>
-             <Link href="/macronutrient-ratio" className="p-4 border rounded-lg hover:bg-muted">
+             <Link href="/macronutrient-ratio" className="p-4 border rounded-lg hover:bg-muted" aria-label="Macronutrient Ratio Calculator">
               <h3 className="font-semibold">Macronutrient Ratio Calculator</h3>
               <p className="text-sm text-muted-foreground">Plan your meals to properly fuel your workouts and recovery.</p>
             </Link>
