@@ -1,6 +1,5 @@
 
 import { CalculatorCard } from '@/components/calculator-card';
-import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { List } from 'lucide-react';
 
@@ -8,91 +7,79 @@ const calculatorGroups = [
   {
     title: 'Core Body Composition',
     calculators: [
-      { name: 'BMI Calculator', demand: 'Very High' },
-      { name: 'Body Fat Percentage Calculator', demand: 'Very High' },
-      { name: 'Lean Body Mass Calculator', demand: 'High' },
-      { name: 'Fat-Free Mass Index (FFMI)', demand: 'High' },
-      { name: 'Ideal Body Weight (IBW)', demand: 'High' },
-      { name: 'Body Surface Area (BSA)', demand: 'Medium' },
-      { name: 'Waist-to-Height Ratio', demand: 'High' },
-      { name: 'Waist-to-Hip Ratio', demand: 'High' },
-      { name: 'Body Shape Type Calculator', demand: 'Medium' },
-      { name: 'Body Density Calculator', demand: 'Medium' },
+      { name: 'BMI Calculator' },
+      { name: 'Body Fat Percentage Calculator' },
+      { name: 'Lean Body Mass Calculator' },
+      { name: 'Fat-Free Mass Index (FFMI)' },
+      { name: 'Ideal Body Weight (IBW)' },
+      { name: 'Body Surface Area (BSA)' },
+      { name: 'Waist-to-Height Ratio' },
+      { name: 'Waist-to-Hip Ratio' },
+      { name: 'Body Shape Type Calculator' },
+      { name: 'Body Density Calculator' },
     ],
   },
   {
     title: 'Weight Management & Goal Setting',
     calculators: [
-      { name: 'Calorie Deficit Calculator', demand: 'Very High' },
-      { name: 'Calorie Surplus Calculator', demand: 'High' },
-      { name: 'TDEE Calculator', demand: 'Very High' },
-      { name: 'BMR Calculator', demand: 'Very High' },
-      { name: 'Weight Loss Goal Calculator', demand: 'High' },
-      { name: 'Weight Gain Goal Calculator', demand: 'Medium' },
-      { name: 'Calorie Maintenance Calculator', demand: 'Very High' },
-      { name: 'Weekly Weight Change Tracker', demand: 'Medium' },
-      { name: 'Fat Loss Progress Tracker', demand: 'Medium' },
-      { name: 'Goal Weight Estimator by Date', demand: 'Medium' },
+      { name: 'Calorie Deficit Calculator' },
+      { name: 'Calorie Surplus Calculator' },
+      { name: 'TDEE Calculator' },
+      { name: 'BMR Calculator' },
+      { name: 'Weight Loss Goal Calculator' },
+      { name: 'Weight Gain Goal Calculator' },
+      { name: 'Calorie Maintenance Calculator' },
+      { name: 'Weekly Weight Change Tracker' },
+      { name: 'Fat Loss Progress Tracker' },
+      { name: 'Goal Weight Estimator by Date' },
     ],
   },
   {
     title: 'Nutrition & Energy Balance',
     calculators: [
-      { name: 'Daily Calorie Needs', demand: 'High' },
-      { name: 'Macronutrient Ratio Calculator', demand: 'High' },
-      { name: 'Protein Intake Calculator', demand: 'High' },
-      { name: 'Carb Intake Calculator', demand: 'Medium' },
-      { name: 'Fat Intake Calculator', demand: 'Medium' },
-      { name: 'Calorie Burn by Activity Calculator', demand: 'High' },
-      { name: 'Calorie Adjustment for Weight Goals', demand: 'Medium' },
-      { name: 'Meal Calorie Split Calculator', demand: 'Medium' },
-      { name: 'Water Intake Calculator', demand: 'Very High' },
-      { name: 'Hydration Tracker', demand: 'Medium' },
+      { name: 'Daily Calorie Needs' },
+      { name: 'Macronutrient Ratio Calculator' },
+      { name: 'Protein Intake Calculator' },
+      { name: 'Carb Intake Calculator' },
+      { name: 'Fat Intake Calculator' },
+      { name: 'Calorie Burn by Activity Calculator' },
+      { name: 'Calorie Adjustment for Weight Goals' },
+      { name: 'Meal Calorie Split Calculator' },
+      { name: 'Water Intake Calculator' },
+      { name: 'Hydration Tracker' },
     ],
   },
   {
     title: 'Fitness & Performance',
     calculators: [
-      { name: 'One Rep Max (1RM) Calculator', demand: 'High' },
-      { name: 'Strength-to-Weight Ratio', demand: 'Medium' },
-      { name: 'VO2 Max Estimator', demand: 'Medium' },
-      { name: 'Resting Metabolic Rate (RMR)', demand: 'Medium' },
-      { name: 'Activity MET Value Calculator', demand: 'Medium' },
-      { name: 'Energy Expenditure per Step Calculator', demand: 'High' },
-      { name: 'Walking/Running Calorie Calculator', demand: 'Very High' },
-      { name: 'Daily Activity Level Estimator', demand: 'Medium' },
-      { name: 'Workout Calorie Tracker', demand: 'Medium' },
-      { name: 'Weekly Workout Load Calculator', demand: 'Medium' },
+      { name: 'One Rep Max (1RM) Calculator' },
+      { name: 'Strength-to-Weight Ratio' },
+      { name: 'VO2 Max Estimator' },
+      { name: 'Resting Metabolic Rate (RMR)' },
+      { name: 'Activity MET Value Calculator' },
+      { name: 'Energy Expenditure per Step Calculator' },
+      { name: 'Walking/Running Calorie Calculator' },
+      { name: 'Daily Activity Level Estimator' },
+      { name: 'Workout Calorie Tracker' },
+      { name: 'Weekly Workout Load Calculator' },
     ],
   },
   {
     title: 'Health Risk Assessment',
     calculators: [
-      { name: 'Obesity Risk Calculator', demand: 'High' },
-      { name: 'Metabolic Age Calculator', demand: 'Medium' },
-      { name: 'Heart Disease Risk (based on BMI)', demand: 'Medium' },
-      { name: 'Diabetes Risk by BMI', demand: 'Medium' },
-      { name: 'Body Fat Health Zone Classifier', demand: 'Medium' },
-      { name: 'Body Type Visualizer', demand: 'Medium' },
-      { name: 'Calorie-to-Weight Conversion', demand: 'Medium' },
-      { name: 'BMI Percentile for Age (Teens)', demand: 'Medium' },
-      { name: 'Pregnancy BMI Calculator', demand: 'Medium' },
-      { name: 'Postpartum Weight Recovery Calculator', demand: 'Medium' },
+      { name: 'Obesity Risk Calculator' },
+      { name: 'Metabolic Age Calculator' },
+      { name: 'Heart Disease Risk (based on BMI)' },
+      { name: 'Diabetes Risk by BMI' },
+      { name: 'Body Fat Health Zone Classifier' },
+      { name: 'Body Type Visualizer' },
+      { name: 'Calorie-to-Weight Conversion' },
+      { name: 'BMI Percentile for Age (Teens)' },
+      { name: 'Pregnancy BMI Calculator' },
+      { name: 'Postpartum Weight Recovery Calculator' },
     ],
   },
 ];
-
-const getDemandVariant = (demand: string) => {
-  switch (demand) {
-    case 'Very High':
-      return 'destructive';
-    case 'High':
-      return 'default';
-    default:
-      return 'secondary';
-  }
-};
-
 
 export default function AllCalculatorsPage() {
   return (
@@ -115,7 +102,6 @@ export default function AllCalculatorsPage() {
                     className="flex justify-between items-center"
                   >
                     <span>{calc.name}</span>
-                    <Badge variant={getDemandVariant(calc.demand)}>{calc.demand}</Badge>
                   </li>
                 ))}
               </ul>
