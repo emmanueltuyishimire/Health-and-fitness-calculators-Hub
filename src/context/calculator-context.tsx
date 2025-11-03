@@ -44,6 +44,7 @@ type State = {
   reps: string;
   bodyWeight: string;
   liftedWeight: string;
+  restingHeartRate: string;
   bodyFat?: number;
   bmi?: number;
   idealWeight?: string;
@@ -59,6 +60,7 @@ type State = {
   waterIntake?: number;
   oneRepMax?: number;
   strengthToWeightRatio?: number;
+  vo2Max?: number;
 };
 
 type Action =
@@ -98,6 +100,7 @@ const initialState: State = {
   reps: '5',
   bodyWeight: '70',
   liftedWeight: '100',
+  restingHeartRate: '60',
 };
 
 const CalculatorContext = createContext<{
@@ -125,6 +128,7 @@ function calculatorReducer(state: State, action: Action): State {
         waterIntake,
         oneRepMax,
         strengthToWeightRatio,
+        vo2Max,
         ...userData
       } = state;
       return {

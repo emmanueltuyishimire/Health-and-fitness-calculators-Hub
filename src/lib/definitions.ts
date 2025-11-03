@@ -303,3 +303,11 @@ export const StrengthToWeightRatioSchema = z.object({
 });
 
 export type StrengthToWeightRatioFormValues = z.infer<typeof StrengthToWeightRatioSchema>;
+
+export const Vo2MaxSchema = z.object({
+  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
+  age: z.string().min(1, { message: 'Age is required.' }),
+  restingHeartRate: z.string().min(1, { message: 'Resting Heart Rate is required.' }),
+});
+
+export type Vo2MaxFormValues = z.infer<typeof Vo2MaxSchema>;
