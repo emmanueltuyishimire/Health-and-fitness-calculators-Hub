@@ -1,10 +1,11 @@
+
 'use client';
 
 import { usePathname } from 'next/navigation';
 import {
   Calculator,
   Flame,
-  HeartPulse,
+  GitCommitHorizontal,
   List,
   Percent,
   Ruler,
@@ -42,6 +43,7 @@ const links = [
   { href: '/ffmi', label: 'FFMI Calculator', icon: PiPersonArmsSpread },
   { href: '/bsa', label: 'Body Surface Area', icon: Square },
   { href: '/waist-to-height-ratio', label: 'Waist-to-Height Ratio', icon: Ruler },
+  { href: '/waist-to-hip-ratio', label: 'Waist-to-Hip Ratio', icon: GitCommitHorizontal },
   { href: '/bmr', label: 'BMR Calculator', icon: Flame },
   { href: '/calorie-needs', label: 'Calorie Needs', icon: Calculator },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },
