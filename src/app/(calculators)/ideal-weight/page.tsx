@@ -422,7 +422,7 @@ export default function IdealWeightPage() {
         <Card>
           <CardHeader>
             <CardTitle>Continue Your Analysis</CardTitle>
-          </Header>
+          </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link href="/bmi" className="p-4 border rounded-lg hover:bg-muted">
               <h3 className="font-semibold">BMI Calculator</h3>
@@ -446,5 +446,3 @@ export default function IdealWeightPage() {
     </>
   );
 }
-
-    
