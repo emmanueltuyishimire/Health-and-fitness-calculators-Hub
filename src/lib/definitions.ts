@@ -336,3 +336,12 @@ export const StepsToCaloriesSchema = z.object({
 });
 
 export type StepsToCaloriesFormValues = z.infer<typeof StepsToCaloriesSchema>;
+
+export const WalkingRunningCaloriesSchema = z.object({
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  activity: z.string().min(1, { message: 'Please select an activity.' }),
+  duration: z.string().min(1, { message: 'Duration is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type WalkingRunningCaloriesFormValues = z.infer<typeof WalkingRunningCaloriesSchema>;

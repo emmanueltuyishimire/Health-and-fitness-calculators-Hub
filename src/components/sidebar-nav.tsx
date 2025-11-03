@@ -86,6 +86,7 @@ const links = [
   { href: '/calorie-burn-by-activity', label: 'Calorie Burn by Activity', icon: Zap },
   { href: '/met-value', label: 'Activity MET Value', icon: ClipboardList },
   { href: '/steps-to-calories', label: 'Steps to Calories', icon: Footprints },
+  { href: '/walking-running-calories', label: 'Walking/Running Calories', icon: Footprints },
   { href: '/meal-calorie-split', label: 'Meal Calorie Split', icon: Soup },
   { href: '/weight-loss-goal', label: 'Weight Loss Goal', icon: Flag },
   { href: '/weight-gain-goal', label: 'Weight Gain Goal', icon: Flag },
