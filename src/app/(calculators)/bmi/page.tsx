@@ -91,7 +91,7 @@ export default function BmiPage() {
         name: 'What is a healthy BMI?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A BMI between 18.5 and 24.9 is considered healthy for most adults. However, this is a general guideline. For a more personalized assessment, use our <a href="/ideal-weight">Ideal Weight Calculator</a> to understand your optimal weight range.',
+          text: 'A BMI between 18.5 and 24.9 is considered healthy for most adults. However, this is a general guideline. For a more personalized assessment, use our <a href="/ideal-weight" aria-label="Ideal Weight Calculator">Ideal Weight Calculator</a> to understand your optimal weight range.',
         },
       },
       {
@@ -99,7 +99,7 @@ export default function BmiPage() {
         name: 'Why is BMI not always accurate for athletes?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'BMI cannot distinguish between fat and muscle. Athletes often have high muscle mass, which can result in a high BMI even with low body fat. For a more accurate measure of body composition, use the <a href="/body-fat">Body Fat Percentage Calculator</a>.',
+          text: 'BMI cannot distinguish between fat and muscle. Athletes often have high muscle mass, which can result in a high BMI even with low body fat. For a more accurate measure of body composition, use the <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a>.',
         },
       },
       {
@@ -107,7 +107,7 @@ export default function BmiPage() {
         name: 'What does my BMI score mean?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'According to the WHO, a BMI under 18.5 is underweight, 18.5-24.9 is normal, 25-29.9 is overweight, and 30 or above is obese. These categories help assess potential health risks. To understand the calories your body needs, check the <a href="/bmr">BMR Calculator</a>.',
+          text: 'According to the WHO, a BMI under 18.5 is underweight, 18.5-24.9 is normal, 25-29.9 is overweight, and 30 or above is obese. These categories help assess potential health risks. To understand the calories your body needs, check the <a href="/bmr" aria-label="BMR Calculator">BMR Calculator</a>.',
         },
       },
       {
@@ -115,7 +115,7 @@ export default function BmiPage() {
         name: 'How do I lower my BMI?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'To lower your BMI, you typically need to lose weight by creating a calorie deficit. Use our <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a> to determine your maintenance calories and then create a sustainable plan for weight loss.',
+          text: 'To lower your BMI, you typically need to lose weight by creating a calorie deficit. Use our <a href="/daily-calorie-needs" aria-label="Daily Calorie Needs Calculator">Daily Calorie Needs Calculator</a> to determine your maintenance calories and then create a sustainable plan for weight loss.',
         },
       },
       {
@@ -123,7 +123,7 @@ export default function BmiPage() {
         name: 'Does a high BMI mean I am unhealthy?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Not necessarily. A high BMI is a risk indicator, not a diagnosis. Factors like muscle mass and fat distribution matter. Use the <a href="/body-fat">Body Fat Percentage Calculator</a> and <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio calculator</a> to get a more complete picture.',
+          text: 'Not necessarily. A high BMI is a risk indicator, not a diagnosis. Factors like muscle mass and fat distribution matter. Use the <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a> and <a href="/waist-to-hip-ratio" aria-label="Waist-to-Hip Ratio calculator">Waist-to-Hip Ratio calculator</a> to get a more complete picture.',
         },
       },
       {
@@ -131,7 +131,7 @@ export default function BmiPage() {
         name: 'Is the BMI calculation different for men and women?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The BMI formula is the same for adult men and women. However, body composition differs. Women naturally have a higher body fat percentage. Our <a href="/body-fat">Body Fat Percentage Calculator</a> considers gender for a more tailored result.',
+          text: 'The BMI formula is the same for adult men and women. However, body composition differs. Women naturally have a higher body fat percentage. Our <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a> considers gender for a more tailored result.',
         },
       },
       {
@@ -139,7 +139,7 @@ export default function BmiPage() {
         name: 'How does age affect BMI?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The standard BMI calculation does not factor in age for adults. However, as people age, they tend to lose muscle and gain fat, which can change their health risk even if BMI stays the same. To see how your metabolism changes with age, use the <a href="/bmr">BMR Calculator</a>.',
+          text: 'The standard BMI calculation does not factor in age for adults. However, as people age, they tend to lose muscle and gain fat, which can change their health risk even if BMI stays the same. To see how your metabolism changes with age, use the <a href="/bmr" aria-label="BMR Calculator">BMR Calculator</a>.',
         },
       },
       {
@@ -147,7 +147,7 @@ export default function BmiPage() {
         name: 'What are the limitations of BMI?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'BMI doesn\'t account for body composition (muscle vs. fat), fat distribution, or ethnic differences in body-fat-to-BMI relationships. It\'s a screening tool, not a definitive health assessment. For a better view, use it with our <a href="/body-fat">Body Fat Percentage Calculator</a>.',
+          text: 'BMI doesn\'t account for body composition (muscle vs. fat), fat distribution, or ethnic differences in body-fat-to-BMI relationships. It\'s a screening tool, not a definitive health assessment. For a better view, use it with our <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a>.',
         },
       },
       {
@@ -155,7 +155,7 @@ export default function BmiPage() {
         name: 'Can I be "overweight" but still healthy?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, it\'s possible, especially for individuals with high muscle mass. This is why it\'s crucial to look beyond BMI. Check your <a href="/body-fat">Body Fat Percentage</a> and <a href="/waist-to-height-ratio">Waist-to-Height Ratio</a> to better assess your health risks.',
+          text: 'Yes, it\'s possible, especially for individuals with high muscle mass. This is why it\'s crucial to look beyond BMI. Check your <a href="/body-fat" aria-label="Body Fat Percentage">Body Fat Percentage</a> and <a href="/waist-to-height-ratio" aria-label="Waist-to-Height Ratio">Waist-to-Height Ratio</a> to better assess your health risks.',
         },
       },
       {
@@ -163,7 +163,7 @@ export default function BmiPage() {
         name: 'Where does the BMI formula come from?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The formula was developed by Adolphe Quetelet in the 19th century. While it\'s a long-standing metric, modern tools provide a more complete health picture. Start with BMI, then explore your <a href="/ideal-weight">Ideal Weight</a> and <a href="/daily-calorie-needs">Daily Calorie Needs</a>.',
+          text: 'The formula was developed by Adolphe Quetelet in the 19th century. While it\'s a long-standing metric, modern tools provide a more complete health picture. Start with BMI, then explore your <a href="/ideal-weight" aria-label="Ideal Weight">Ideal Weight</a> and <a href="/daily-calorie-needs" aria-label="Daily Calorie Needs">Daily Calorie Needs</a>.',
         },
       },
     ],
@@ -335,7 +335,7 @@ export default function BmiPage() {
               To truly understand your health, you need to look at your body composition—the proportion of fat, muscle, bone, and water in your body. While BMI provides a two-dimensional view (height and weight), a holistic approach is three-dimensional.
             </p>
             <p>
-             Start by calculating your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>, which is the number of calories your body burns at rest. This is the foundation of your energy expenditure. From there, you can use the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to estimate your Total Daily Energy Expenditure (TDEE) based on your activity level. Understanding your TDEE is the key to managing your weight. To lose weight, you need a <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">calorie deficit</Link>; to gain muscle, you need a <Link href="/calorie-adjustment-for-weight-gain" className="text-primary hover:underline">calorie surplus</Link>.
+             Start by calculating your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>, which is the number of calories your body burns at rest. This is the foundation of your energy expenditure. From there, you can use the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to estimate your Total Daily Energy Expenditure (TDEE) based on your activity level. Understanding your TDEE is the key to managing your weight. To lose weight, you need a <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline" aria-label="Calorie Adjustment for Weight Loss">calorie deficit</Link>; to gain muscle, you need a <Link href="/calorie-adjustment-for-weight-gain" className="text-primary hover:underline" aria-label="Calorie Adjustment for Weight Gain">calorie surplus</Link>.
             </p>
              <p>By combining insights from the BMI, Body Fat, BMR, and Daily Calorie Needs calculators, you create a powerful, personalized health dashboard that empowers you to make informed decisions about your diet and exercise.
             </p>

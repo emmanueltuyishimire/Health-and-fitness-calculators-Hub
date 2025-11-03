@@ -1,7 +1,7 @@
 
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { PiPersonArmsSpread } from "react-icons/pi";
+import { PersonStanding } from 'lucide-react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -199,7 +199,7 @@ export default function FfmiPage() {
           <CardHeader>
             <div className="flex items-start gap-4">
               <div className="bg-primary/10 text-primary p-3 rounded-lg">
-                <PiPersonArmsSpread className="h-8 w-8" />
+                <PersonStanding className="h-8 w-8" />
               </div>
               <div>
                 <h1 className="text-2xl md:text-3xl font-bold">

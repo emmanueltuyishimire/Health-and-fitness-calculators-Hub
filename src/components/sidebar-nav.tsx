@@ -40,7 +40,6 @@ import {
   Footprints,
   Webhook,
 } from 'lucide-react';
-import { PiPersonArmsSpread } from "react-icons/pi";
 
 
 import {
@@ -65,7 +64,7 @@ const links = [
   { href: '/body-fat', label: 'Body Fat %', icon: Percent },
   { href: '/ideal-weight', label: 'Ideal Weight', icon: Target },
   { href: '/lean-body-mass', label: 'Lean Body Mass', icon: Weight },
-  { href: '/ffmi', label: 'FFMI Calculator', icon: PiPersonArmsSpread },
+  { href: '/ffmi', label: 'FFMI Calculator', icon: PersonStanding },
   { href: '/bsa', label: 'Body Surface Area', icon: Square },
   { href: '/waist-to-height-ratio', label: 'Waist-to-Height Ratio', icon: Ruler },
   { href: '/waist-to-hip-ratio', label: 'Waist-to-Hip Ratio', icon: GitCommitHorizontal },

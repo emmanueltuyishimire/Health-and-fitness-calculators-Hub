@@ -65,8 +65,8 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">Get a quick assessment of your weight status in relation to your height.</p>
-                   <Link href="/bmi" className="text-sm font-semibold text-primary mt-4 inline-block">
-                    Calculate Now <ArrowRight className="inline-block h-4 w-4" />
+                   <Link href="/bmi" className="text-sm font-semibold text-primary mt-4 inline-block" aria-label="Calculate Your BMI">
+                    Calculate Your BMI <ArrowRight className="inline-block h-4 w-4" />
                   </Link>
                 </CardContent>
               </Card>
@@ -77,8 +77,8 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">Go beyond the scale and estimate your body composition (fat vs. lean mass).</p>
-                   <Link href="/body-fat" className="text-sm font-semibold text-primary mt-4 inline-block">
-                    Estimate Now <ArrowRight className="inline-block h-4 w-4" />
+                   <Link href="/body-fat" className="text-sm font-semibold text-primary mt-4 inline-block" aria-label="Estimate Your Body Fat">
+                    Estimate Your Body Fat <ArrowRight className="inline-block h-4 w-4" />
                   </Link>
                 </CardContent>
               </Card>
@@ -89,7 +89,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">Discover your total daily calorie needs to plan for weight loss, gain, or maintenance.</p>
-                   <Link href="/tdee" className="text-sm font-semibold text-primary mt-4 inline-block">
+                   <Link href="/tdee" className="text-sm font-semibold text-primary mt-4 inline-block" aria-label="Find Your TDEE">
                     Find Your TDEE <ArrowRight className="inline-block h-4 w-4" />
                   </Link>
                 </CardContent>
@@ -100,7 +100,7 @@ export default function Home() {
       </main>
 
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted-foreground">&copy; 2024 <a href="https://calculation.site" target="_blank" rel="noopener noreferrer" className="hover:underline">calculation.site</a>. All rights reserved.</p>
+        <p className="text-xs text-muted-foreground">&copy; 2025 <a href="https://health.calculation.site" target="_blank" rel="noopener noreferrer" className="hover:underline">calculation.site</a>. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link className="text-xs hover:underline underline-offset-4" href="/all">
             Calculators
