@@ -37,7 +37,7 @@ const calculatorGroups = [
   {
     title: 'Nutrition & Energy Balance',
     calculators: [
-      { name: 'Daily Calorie Needs', href: '/calorie-needs' },
+      { name: 'Daily Calorie Needs', href: '/daily-calorie-needs' },
       { name: 'Macronutrient Ratio Calculator', href: '/macronutrient-ratio' },
       { name: 'Protein Intake Calculator', href: '/protein-intake' },
       { name: 'Carb Intake Calculator', href: '/carb-intake' },
