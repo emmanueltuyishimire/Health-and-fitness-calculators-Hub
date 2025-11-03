@@ -1,9 +1,10 @@
+
 'use client';
 
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Calculator } from 'lucide-react';
+import { Terminal } from 'lucide-react';
 import Link from 'next/link';
 
 import {
@@ -16,9 +17,8 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { CalculatorCard } from '@/components/calculator-card';
 import { useCalculator } from '@/context/calculator-context';
-import { CalorieNeedsSchema, type CalorieNeedsFormValues } from '@/lib/definitions';
+import { TdeeSchema, type TdeeFormValues } from '@/lib/definitions';
 import {
   Select,
   SelectContent,
@@ -27,7 +27,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Terminal } from 'lucide-react';
+import { Separator } from './ui/separator';
 
 const activityLevels = {
   sedentary: { label: 'Sedentary (little or no exercise)', value: 1.2 },
@@ -37,12 +37,12 @@ const activityLevels = {
   extra_active: { label: 'Extra active (very hard exercise/sports & physical job)', value: 1.9 },
 };
 
-export default function CalorieNeedsPage() {
+export function DailyCalorieNeedsCalculatorForm() {
   const { state, dispatch } = useCalculator();
-  const [calorieNeedsResult, setCalorieNeedsResult] = useState<Record<string, number> | null>(null);
+  const [tdeeResult, setTdeeResult] = useState<Record<string, number> | null>(null);
 
-  const form = useForm<CalorieNeedsFormValues>({
-    resolver: zodResolver(CalorieNeedsSchema),
+  const form = useForm<TdeeFormValues>({
+    resolver: zodResolver(TdeeSchema),
     defaultValues: {
       bmr: state.bmr?.toFixed(0) || '',
       activityLevel: state.activityLevel,
@@ -55,66 +55,37 @@ export default function CalorieNeedsPage() {
     }
   }, [state.bmr, form]);
 
-  function onSubmit(data: CalorieNeedsFormValues) {
+  function onSubmit(data: TdeeFormValues) {
     const bmr = parseFloat(data.bmr);
     const multiplier = activityLevels[data.activityLevel].value;
     const maintenance = bmr * multiplier;
 
-    setCalorieNeedsResult({
+    setTdeeResult({
       maintenance,
       mildWeightLoss: maintenance - 250,
       weightLoss: maintenance - 500,
+      extremeWeightLoss: maintenance - 1000,
       mildWeightGain: maintenance + 250,
       weightGain: maintenance + 500,
     });
     
     dispatch({ type: 'SET_USER_DATA', payload: { activityLevel: data.activityLevel } });
-    dispatch({ type: 'SET_RESULTS', payload: { calorieNeeds: maintenance, tdee: String(maintenance) } });
+    dispatch({ type: 'SET_RESULTS', payload: { calorieNeeds: maintenance } });
   }
 
-  const handleSelectChange = (name: keyof CalorieNeedsFormValues) => (value: string) => {
-    form.setValue(name, value as CalorieNeedsFormValues['activityLevel']);
+  const handleSelectChange = (name: keyof TdeeFormValues) => (value: string) => {
+    form.setValue(name, value as TdeeFormValues['activityLevel']);
     dispatch({ type: 'SET_USER_DATA', payload: { [name]: value } });
   };
 
   return (
-    <CalculatorCard
-      icon={<Calculator className="h-8 w-8" />}
-      title="Daily Calorie Needs Calculator"
-      description="Estimate your daily calorie needs for weight maintenance, loss, or gain based on your BMR and activity level. This is also known as your TDEE."
-      result={
-        calorieNeedsResult && (
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Your Daily Calorie Needs</h3>
-            <div className="grid grid-cols-2 gap-4 text-center">
-                <div className="bg-muted p-3 rounded-lg">
-                    <p className="text-xs text-muted-foreground">Maintenance</p>
-                    <p className="font-bold text-lg text-primary">{calorieNeedsResult.maintenance.toFixed(0)}</p>
-                </div>
-                <div className="bg-muted p-3 rounded-lg">
-                    <p className="text-xs text-muted-foreground">Weight Loss (0.5 lb/week)</p>
-                    <p className="font-bold text-lg text-yellow-600">{calorieNeedsResult.weightLoss.toFixed(0)}</p>
-                </div>
-                <div className="bg-muted p-3 rounded-lg">
-                    <p className="text-xs text-muted-foreground">Mild Weight Loss (0.25 lb/week)</p>
-                    <p className="font-bold text-lg text-yellow-500">{calorieNeedsResult.mildWeightLoss.toFixed(0)}</p>
-                </div>
-                <div className="bg-muted p-3 rounded-lg">
-                    <p className="text-xs text-muted-foreground">Weight Gain (0.5 lb/week)</p>
-                    <p className="font-bold text-lg text-red-500">{calorieNeedsResult.weightGain.toFixed(0)}</p>
-                </div>
-            </div>
-             <p className="text-xs">These are estimates. Consult a professional for personalized advice.</p>
-          </div>
-        )
-      }
-    >
+    <div>
       {!state.bmr && (
         <Alert className="mb-6">
           <Terminal className="h-4 w-4" />
           <AlertTitle>BMR Not Found</AlertTitle>
           <AlertDescription>
-            Please <Link href="/bmr" className="font-semibold underline">calculate your BMR</Link> first to estimate your daily calorie needs.
+            Please <Link href="/bmr" className="font-semibold underline">calculate your BMR</Link> first to estimate your TDEE.
           </AlertDescription>
         </Alert>
       )}
@@ -157,9 +128,42 @@ export default function CalorieNeedsPage() {
               )}
             />
           </div>
-          <Button type="submit" className="w-full sm:w-auto" disabled={!state.bmr}>Calculate Calorie Needs</Button>
+          <Button type="submit" className="w-full sm:w-auto" disabled={!state.bmr}>Calculate Daily Needs</Button>
         </form>
       </Form>
-    </CalculatorCard>
+      {tdeeResult && (
+        <>
+            <Separator className="my-6" />
+            <div className="space-y-4">
+                <h3 className="text-lg font-semibold text-foreground text-center md:text-left">Your Calorie Goals</h3>
+                <div className="p-4 bg-primary/10 rounded-lg border border-primary/20 text-center">
+                    <p className="text-sm font-semibold text-primary">Maintenance</p>
+                    <p className="text-3xl font-bold text-primary">{tdeeResult.maintenance.toFixed(0)}</p>
+                    <p className="text-xs text-primary/80">calories/day</p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="p-4 bg-muted rounded-lg">
+                        <h4 className="font-semibold text-center mb-2">Fat Loss</h4>
+                        <div className="space-y-2 text-sm">
+                            <div className="flex justify-between"><span>Mild (-0.5 lb/week)</span><span className="font-semibold">{tdeeResult.mildWeightLoss.toFixed(0)}</span></div>
+                            <div className="flex justify-between"><span>Weight Loss (-1 lb/week)</span><span className="font-semibold">{tdeeResult.weightLoss.toFixed(0)}</span></div>
+                             <div className="flex justify-between"><span>Extreme (-2 lb/week)</span><span className="font-semibold">{tdeeResult.extremeWeightLoss.toFixed(0)}</span></div>
+                        </div>
+                    </div>
+                     <div className="p-4 bg-muted rounded-lg">
+                        <h4 className="font-semibold text-center mb-2">Weight Gain</h4>
+                        <div className="space-y-2 text-sm">
+                            <div className="flex justify-between"><span>Mild (+0.5 lb/week)</span><span className="font-semibold">{tdeeResult.mildWeightGain.toFixed(0)}</span></div>
+                            <div className="flex justify-between"><span>Weight Gain (+1 lb/week)</span><span className="font-semibold">{tdeeResult.weightGain.toFixed(0)}</span></div>
+                        </div>
+                    </div>
+                </div>
+                <p className="text-xs text-muted-foreground pt-2">
+                    These are estimates based on the TDEE formula. Weight loss of 1-2 lbs per week is generally considered a safe and sustainable rate.
+                </p>
+            </div>
+        </>
+      )}
+    </div>
   );
 }

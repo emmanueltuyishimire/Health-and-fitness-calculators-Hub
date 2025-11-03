@@ -115,7 +115,7 @@ export default function BmiPage() {
         name: 'How do I lower my BMI?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'To lower your BMI, you typically need to lose weight by creating a calorie deficit. Use our <a href="/calorie-needs">Daily Calorie Needs Calculator</a> to determine your maintenance calories and then create a sustainable plan for weight loss.',
+          text: 'To lower your BMI, you typically need to lose weight by creating a calorie deficit. Use our <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a> to determine your maintenance calories and then create a sustainable plan for weight loss.',
         },
       },
       {
@@ -163,7 +163,7 @@ export default function BmiPage() {
         name: 'Where does the BMI formula come from?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The formula was developed by Adolphe Quetelet in the 19th century. While it\'s a long-standing metric, modern tools provide a more complete health picture. Start with BMI, then explore your <a href="/ideal-weight">Ideal Weight</a> and <a href="/calorie-needs">Daily Calorie Needs</a>.',
+          text: 'The formula was developed by Adolphe Quetelet in the 19th century. While it\'s a long-standing metric, modern tools provide a more complete health picture. Start with BMI, then explore your <a href="/ideal-weight">Ideal Weight</a> and <a href="/daily-calorie-needs">Daily Calorie Needs</a>.',
         },
       },
     ],
@@ -337,7 +337,7 @@ export default function BmiPage() {
             <p>
              Start by calculating your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>, which is the number of calories your body burns at rest. This is the foundation of your energy expenditure. From there, you can use the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to estimate your Total Daily Energy Expenditure (TDEE) based on your activity level. Understanding your TDEE is the key to managing your weight. To lose weight, you need a <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>; to gain muscle, you need a <Link href="/calorie-surplus" className="text-primary hover:underline">calorie surplus</Link>.
             </p>
-             <p>By combining insights from the BMI, Body Fat, BMR, and Calorie Needs calculators, you create a powerful, personalized health dashboard that empowers you to make informed decisions about your diet and exercise.
+             <p>By combining insights from the BMI, Body Fat, BMR, and Daily Calorie Needs calculators, you create a powerful, personalized health dashboard that empowers you to make informed decisions about your diet and exercise.
             </p>
           </CardContent>
         </Card>
@@ -365,7 +365,7 @@ export default function BmiPage() {
           <CardContent className="space-y-2">
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Combine with Waist Measurement:</strong> A high BMI and a large waist circumference significantly increase health risk. Use our <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link> tool to check.</li>
-              <li><strong>Context is Key:</strong> Use your BMI result to guide your next step. If it's high, focus on creating a sustainable calorie deficit with the help of our <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</li>
+              <li><strong>Context is Key:</strong> Use your BMI result to guide your next step. If it's high, focus on creating a sustainable calorie deficit with the help of our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</li>
               <li><strong>Track Over Time:</strong> Don't obsess over daily fluctuations. Measure your BMI monthly to see long-term trends.</li>
               <li><strong>Look Beyond the Scale:</strong> Pay attention to how you feel, your energy levels, and how your clothes fit. These are often better indicators of progress than BMI alone.</li>
             </ul>
@@ -393,7 +393,7 @@ export default function BmiPage() {
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>How do I lower my BMI?</AccordionTrigger>
-                <AccordionContent>To lower your BMI, you typically need to lose weight by creating a calorie deficit. Use our <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine your maintenance calories and then create a sustainable plan for weight loss.</AccordionContent>
+                <AccordionContent>To lower your BMI, you typically need to lose weight by creating a calorie deficit. Use our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine your maintenance calories and then create a sustainable plan for weight loss.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>Does a high BMI mean I am unhealthy?</AccordionTrigger>
@@ -417,7 +417,7 @@ export default function BmiPage() {
               </AccordionItem>
               <AccordionItem value="item-10">
                  <AccordionTrigger>Where does the BMI formula come from?</AccordionTrigger>
-                 <AccordionContent>The formula was developed by Adolphe Quetelet in the 19th century. While it's a long-standing metric, modern tools provide a more complete health picture. Start with BMI, then explore your <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight</Link> and <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link>.</AccordionContent>
+                 <AccordionContent>The formula was developed by Adolphe Quetelet in the 19th century. While it's a long-standing metric, modern tools provide a more complete health picture. Start with BMI, then explore your <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight</Link> and <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link>.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -451,7 +451,7 @@ export default function BmiPage() {
                  <TableRow>
                   <TableCell>Nutritionists</TableCell>
                   <TableCell>Assess overall weight category to inform dietary recommendations.</TableCell>
-                  <TableCell><Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                  <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Medical Professionals</TableCell>

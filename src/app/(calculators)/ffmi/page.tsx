@@ -110,7 +110,7 @@ export default function FfmiPage() {
             name: 'Can I increase my FFMI? How?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes. Increasing FFMI means gaining muscle. This requires consistent resistance training and a calorie surplus with adequate protein. Use our <a href="/calorie-needs">Daily Calorie Needs Calculator</a> to determine the right surplus for you.'
+                text: 'Yes. Increasing FFMI means gaining muscle. This requires consistent resistance training and a calorie surplus with adequate protein. Use our <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a> to determine the right surplus for you.'
             }
         },
         {
@@ -278,7 +278,7 @@ export default function FfmiPage() {
                         </TableRow>
                          <TableRow>
                             <TableCell>Interpretation & Next Step</TableCell>
-                            <TableCell>This individual is considered to have average to good muscularity. The next step is to use the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> calculator to aim for a surplus to increase LBM.</TableCell>
+                            <TableCell>This individual is considered to have average to good muscularity. The next step is to use the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> calculator to aim for a surplus to increase LBM.</TableCell>
                             <TableCell>This individual has an average level of muscularity for a female. To increase FFMI, she could focus on a resistance training program and adequate protein intake.</TableCell>
                         </TableRow>
                     </TableBody>
@@ -341,7 +341,7 @@ export default function FfmiPage() {
                     </TableRow>
                 </TableBody>
             </Table>
-            <p className="text-sm mt-4">These scores are a general guide. To build muscle and increase your FFMI, you need to consume more calories than you burn. Find your target with the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</p>
+            <p className="text-sm mt-4">These scores are a general guide. To build muscle and increase your FFMI, you need to consume more calories than you burn. Find your target with the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</p>
           </CardContent>
         </Card>
         
@@ -360,7 +360,7 @@ export default function FfmiPage() {
             <CardHeader><CardTitle>Pro Tips & Quick Hacks</CardTitle></CardHeader>
             <CardContent>
                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li><strong>Track FFMI During a Cut:</strong> If your FFMI drops during a diet, you are losing muscle. This could mean your calorie deficit is too aggressive or your protein is too low. Adjust using the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</li>
+                    <li><strong>Track FFMI During a Cut:</strong> If your FFMI drops during a diet, you are losing muscle. This could mean your calorie deficit is too aggressive or your protein is too low. Adjust using the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</li>
                     <li><strong>Combine with Strength Metrics:</strong> A rising FFMI should correlate with increased strength. If you're getting more muscular (higher FFMI) but not stronger, you might be overemphasizing hypertrophy work at the expense of strength.</li>
                     <li><strong>Use FFMI to Set Realistic Goals:</strong> Knowing the natural limits (around 25 for men) can help you set achievable goals and avoid the disappointment of chasing an unnatural physique.</li>
                 </ul>
@@ -387,7 +387,7 @@ export default function FfmiPage() {
                 </AccordionItem>
                 <AccordionItem value="item-4">
                     <AccordionTrigger>Can I increase my FFMI? How?</AccordionTrigger>
-                    <AccordionContent>Yes. Increasing FFMI means gaining muscle. This requires consistent resistance training and a calorie surplus with adequate protein. Use our <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine the right surplus for you.</AccordionContent>
+                    <AccordionContent>Yes. Increasing FFMI means gaining muscle. This requires consistent resistance training and a calorie surplus with adequate protein. Use our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine the right surplus for you.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
                     <AccordionTrigger>What does "normalized FFMI" mean?</AccordionTrigger>
@@ -437,7 +437,7 @@ export default function FfmiPage() {
                         <TableRow>
                             <TableCell>Fitness Coaches</TableCell>
                             <TableCell>Objectively measure a client's muscular progress.</TableCell>
-                             <TableCell><Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                             <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>General Users</TableCell>
@@ -476,7 +476,7 @@ export default function FfmiPage() {
               </p>
             </Link>
             <Link
-              href="/calorie-needs"
+              href="/daily-calorie-needs"
               className="p-4 border rounded-lg hover:bg-muted"
             >
               <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>

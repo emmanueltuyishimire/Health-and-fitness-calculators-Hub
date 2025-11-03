@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Ruler } from 'lucide-react';
@@ -125,7 +126,7 @@ export default function WaistToHeightRatioPage() {
         name: 'How do I lower my Waist-to-Height Ratio?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'To lower your WHtR, you need to reduce your waist circumference by losing abdominal fat. This is achieved through a combination of a calorie deficit and exercise. Use the <a href="/calorie-needs">Daily Calorie Needs Calculator</a> to determine a sustainable deficit.',
+          text: 'To lower your WHtR, you need to reduce your waist circumference by losing abdominal fat. This is achieved through a combination of a calorie deficit and exercise. Use the <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a> to determine a sustainable deficit.',
         },
       },
       {
@@ -268,8 +269,8 @@ export default function WaistToHeightRatioPage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
-                  <TableCell>This person has a healthy waist size for their height. To maintain this, they can calculate their maintenance calories with the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</TableCell>
-                  <TableCell>This person carries excess abdominal fat, increasing health risk. The next step would be to aim for fat loss by creating a sustainable calorie deficit, which can be planned using the <Link href="/calorie-needs" className="text-primary hover:underline">Calorie Needs</Link> tool.</TableCell>
+                  <TableCell>This person has a healthy waist size for their height. To maintain this, they can calculate their maintenance calories with the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</TableCell>
+                  <TableCell>This person carries excess abdominal fat, increasing health risk. The next step would be to aim for fat loss by creating a sustainable calorie deficit, which can be planned using the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> tool.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -318,7 +319,7 @@ export default function WaistToHeightRatioPage() {
               </TableBody>
             </Table>
             <p className="mt-4">
-              If your WHtR is 0.5 or above, it's a strong signal to prioritize lifestyle changes aimed at reducing abdominal fat. This doesn't just mean doing sit-ups; it means focusing on overall fat loss through a proper diet, which starts with understanding your energy balance via the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>, and a consistent exercise routine.
+              If your WHtR is 0.5 or above, it's a strong signal to prioritize lifestyle changes aimed at reducing abdominal fat. This doesn't just mean doing sit-ups; it means focusing on overall fat loss through a proper diet, which starts with understanding your energy balance via the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>, and a consistent exercise routine.
             </p>
           </CardContent>
         </Card>
@@ -378,7 +379,7 @@ export default function WaistToHeightRatioPage() {
               </AccordionItem>
               <AccordionItem value="item-6">
                 <AccordionTrigger>How do I lower my Waist-to-Height Ratio?</AccordionTrigger>
-                <AccordionContent>To lower your WHtR, you need to reduce your waist circumference by losing abdominal fat. This is achieved through a combination of a calorie deficit and exercise. Use the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine a sustainable deficit.</AccordionContent>
+                <AccordionContent>To lower your WHtR, you need to reduce your waist circumference by losing abdominal fat. This is achieved through a combination of a calorie deficit and exercise. Use the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine a sustainable deficit.</AccordionContent>
               </AccordionItem>
                <AccordionItem value="item-7">
                 <AccordionTrigger>Is WHtR the same as Waist-to-Hip Ratio?</AccordionTrigger>
@@ -422,7 +423,7 @@ export default function WaistToHeightRatioPage() {
                 <TableRow>
                   <TableCell>General Users</TableCell>
                   <TableCell>Get a simple, clear indicator of abdominal fat and health risk.</TableCell>
-                  <TableCell><Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                  <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Fitness Coaches</TableCell>
@@ -467,7 +468,7 @@ export default function WaistToHeightRatioPage() {
               </p>
             </Link>
              <Link
-              href="/calorie-needs"
+              href="/daily-calorie-needs"
               className="p-4 border rounded-lg hover:bg-muted"
             >
               <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>

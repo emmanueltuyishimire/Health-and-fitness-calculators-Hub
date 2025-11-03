@@ -118,7 +118,7 @@ export default function WaistToHipRatioPage() {
         name: 'Can I improve my Waist-to-Hip Ratio?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Improving your WHR involves reducing abdominal fat through a calorie deficit and exercise. You cannot "spot reduce" fat, but overall fat loss will shrink your waist. Determine your calorie needs with the <a href="/calorie-needs">Daily Calorie Needs Calculator</a>.',
+          text: 'Yes. Improving your WHR involves reducing abdominal fat through a calorie deficit and exercise. You cannot "spot reduce" fat, but overall fat loss will shrink your waist. Determine your calorie needs with the <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a>.',
         },
       },
       {
@@ -276,7 +276,7 @@ export default function WaistToHipRatioPage() {
                  <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
                   <TableCell>This individual has a "pear-shaped" fat distribution, which is associated with lower health risk. The next step could be to calculate <Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight</Link>.</TableCell>
-                  <TableCell>This individual has an "apple-shaped" fat distribution, indicating a higher risk. To improve this, a focus on overall fat loss is needed, guided by the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> calculator.</TableCell>
+                  <TableCell>This individual has an "apple-shaped" fat distribution, indicating a higher risk. To improve this, a focus on overall fat loss is needed, guided by the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> calculator.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -329,7 +329,7 @@ export default function WaistToHipRatioPage() {
               Improving your WHR means reducing your waist circumference relative to your hips, which is primarily achieved by losing overall body fat. You cannot "spot reduce" fat from your stomach, but a comprehensive fat loss plan will naturally reduce abdominal fat.
             </p>
              <ol className="list-decimal list-inside space-y-2">
-                <li><strong>Calorie Deficit:</strong> This is the cornerstone of fat loss. Use the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine your maintenance calories, and then consume slightly less than that amount.</li>
+                <li><strong>Calorie Deficit:</strong> This is the cornerstone of fat loss. Use the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine your maintenance calories, and then consume slightly less than that amount.</li>
                 <li><strong>Resistance Training:</strong> Building muscle increases your metabolic rate. As you build muscle, your <Link href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass</Link> increases, which boosts the calories you burn at rest (your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>).</li>
                 <li><strong>Cardiovascular Exercise:</strong> Regular cardio helps burn calories and improves heart health.</li>
                 <li><strong>Balanced Diet:</strong> Focus on whole foods, adequate protein, and fiber to support fat loss and satiety.</li>
@@ -385,7 +385,7 @@ export default function WaistToHipRatioPage() {
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>Can I improve my Waist-to-Hip Ratio?</AccordionTrigger>
-                <AccordionContent>Yes. Improving WHR involves reducing abdominal fat through a calorie deficit and exercise. You cannot "spot reduce" fat, but overall fat loss will shrink your waist. Find your calorie needs with the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</AccordionContent>
+                <AccordionContent>Yes. Improving WHR involves reducing abdominal fat through a calorie deficit and exercise. You cannot "spot reduce" fat, but overall fat loss will shrink your waist. Find your calorie needs with the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>How does WHR differ from Waist-to-Height Ratio (WHtR)?</AccordionTrigger>
@@ -437,7 +437,7 @@ export default function WaistToHipRatioPage() {
                 <TableRow>
                   <TableCell>General Users</TableCell>
                   <TableCell>Understand body shape and associated health implications.</TableCell>
-                  <TableCell><Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                  <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Fitness Coaches</TableCell>
@@ -472,7 +472,7 @@ export default function WaistToHipRatioPage() {
                 Get a general weight status assessment to compare with your WHR.
               </p>
             </Link>
-            <Link href="/calorie-needs" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/daily-calorie-needs" className="p-4 border rounded-lg hover:bg-muted">
               <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
               <p className="text-sm text-muted-foreground">
                 Create a diet plan to help improve your WHR.

@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Square } from 'lucide-react';
@@ -149,7 +150,7 @@ export default function BsaPage() {
         name: 'Why is BSA used for drug dosages?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'BSA is used because it provides a better estimate of metabolic mass than body weight alone, which can be skewed by fat. This allows for more precise dosing of sensitive medications, especially in oncology. This relates to how your body uses energy, a concept explored in our <a href="/calorie-needs">Daily Calorie Needs Calculator</a>.',
+          text: 'BSA is used because it provides a better estimate of metabolic mass than body weight alone, which can be skewed by fat. This allows for more precise dosing of sensitive medications, especially in oncology. This relates to how your body uses energy, a concept explored in our <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a>.',
         },
       },
       {
@@ -261,7 +262,7 @@ export default function BsaPage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
-                  <TableCell>This person has a BSA of 1.94 m², typical for an average adult male. This larger surface area is a factor in their total energy expenditure, which can be estimated with the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</TableCell>
+                  <TableCell>This person has a BSA of 1.94 m², typical for an average adult male. This larger surface area is a factor in their total energy expenditure, which can be estimated with the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</TableCell>
                   <TableCell>The result of 1.93 m² is very similar. While BSA is a clinical measure, for fitness, a more useful next step is to calculate <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> to understand body composition.</TableCell>
                 </TableRow>
               </TableBody>
@@ -362,7 +363,7 @@ export default function BsaPage() {
               </AccordionItem>
               <AccordionItem value="item-9">
                 <AccordionTrigger>Why is BSA used for drug dosages?</AccordionTrigger>
-                <AccordionContent>BSA is used because it provides a better estimate of metabolic mass than body weight alone, which can be skewed by fat. This allows for more precise dosing of sensitive medications, especially in oncology. This relates to how your body uses energy, a concept explored in our <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</AccordionContent>
+                <AccordionContent>BSA is used because it provides a better estimate of metabolic mass than body weight alone, which can be skewed by fat. This allows for more precise dosing of sensitive medications, especially in oncology. This relates to how your body uses energy, a concept explored in our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger>Does age or gender affect the BSA formula?</AccordionTrigger>
