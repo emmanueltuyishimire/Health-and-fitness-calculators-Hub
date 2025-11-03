@@ -165,12 +165,12 @@ export default function DailyActivityLevelEstimatorPage() {
                 <TableRow>
                   <TableCell className="font-semibold">Sedentary</TableCell>
                   <TableCell>1.2</TableCell>
-                  <TableCell>Little to no formal exercise. A typical desk job with minimal walking.</TableCell>
+                  <TableCell>Little to no formal exercise. A typical desk job with minimal walking. Spends most of the day sitting.</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-semibold">Lightly Active</TableCell>
                   <TableCell>1.375</TableCell>
-                  <TableCell>Light exercise or sports 1-3 days per week (e.g., brisk walking, light jogging, yoga).</TableCell>
+                  <TableCell>Light exercise or sports 1-3 days per week (e.g., brisk walking, light jogging, yoga). A job with some standing or light activity.</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-semibold">Moderately Active</TableCell>
@@ -180,7 +180,7 @@ export default function DailyActivityLevelEstimatorPage() {
                 <TableRow>
                   <TableCell className="font-semibold">Very Active</TableCell>
                   <TableCell>1.725</TableCell>
-                  <TableCell>Hard exercise or sports 6-7 days per week. Also applies to individuals with a physically demanding job.</TableCell>
+                  <TableCell>Hard exercise or sports 6-7 days per week. Also applies to individuals with a physically demanding job (e.g., construction, landscaping).</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-semibold">Extra Active</TableCell>
@@ -208,6 +208,11 @@ export default function DailyActivityLevelEstimatorPage() {
                     <br />
                     <span className="font-semibold text-foreground">Choose: Lightly Active or Moderately Active.</span> Being on your feet all day is a significant amount of activity. If your step count is consistently high (10k+), "Moderately Active" might be more accurate.
                 </li>
+                 <li>
+                    <strong>"I'm a teacher who stands most of the day and I walk my dog for 45 minutes daily."</strong>
+                    <br />
+                    <span className="font-semibold text-foreground">Choose: Moderately Active.</span> The combination of an active job and daily moderate exercise fits this category well.
+                </li>
                 <li>
                     <strong>"I walk my dog for 30 minutes every day and do yoga twice a week."</strong>
                     <br />
@@ -218,6 +223,38 @@ export default function DailyActivityLevelEstimatorPage() {
                     <br />
                     <span className="font-semibold text-foreground">Choose: Moderately Active.</span> Weight lifting burns calories and builds muscle, which boosts your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>, but it's important not to overestimate the calorie burn from the lifting session itself.
                 </li>
+                 <li>
+                    <strong>"I work from home and only do household chores. No formal exercise."</strong>
+                    <br />
+                    <span className="font-semibold text-foreground">Choose: Sedentary.</span> Even with chores, if you don't have dedicated exercise sessions and are mostly sitting, this is the most accurate choice.
+                </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Common Mistakes When Choosing an Activity Level</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Overestimating Workout Calories:</strong> Many people overestimate how many calories they burn at the gym. An hour of lifting weights doesn't offset being sedentary for the other 23 hours as much as you might think.</li>
+              <li><strong>Forgetting About NEAT:</strong> Don't just think about your workouts. Consider your job, daily errands, and general movement. Your Non-Exercise Activity Thermogenesis (NEAT) is a huge factor. Use the <Link href="/steps-to-calories" className="text-primary hover:underline">Steps to Calories Calculator</Link> to quantify it.</li>
+              <li><strong>Choosing Your "Best" Day:</strong> The multiplier should reflect your average week, not your most active day. If you work out hard 3 days a week and are sedentary on the other 4, you are likely "Moderately Active," not "Very Active."</li>
+              <li><strong>Not Being Honest:</strong> It's tempting to choose a higher level, but this will only lead to an inaccurate <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> and stalled progress. Be realistic about your lifestyle.</li>
+            </ul>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips for Accuracy</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Use a Step Counter:</strong> Wear a fitness tracker for a week to get an average daily step count. Below 5,000 is generally sedentary, 5,000-10,000 is lightly active, and 10,000+ can push you into moderately active, even without formal exercise.</li>
+              <li><strong>When in Doubt, Underestimate:</strong> If you are torn between two levels, it's almost always better to choose the lower one. You can then adjust your calories based on your real-world weight change.</li>
+              <li><strong>Track Your Results:</strong> The only way to know for sure is to test it. Eat at the maintenance calories from your <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> for 2-3 weeks. If your weight is stable, you chose correctly. If not, adjust. The <Link href="/weight-change-tracker" className="text-primary hover:underline">Weekly Weight Change Tracker</Link> is perfect for this.</li>
             </ul>
           </CardContent>
         </Card>
@@ -230,7 +267,7 @@ export default function DailyActivityLevelEstimatorPage() {
             <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                     <AccordionTrigger>Why is choosing the right activity level so important?</AccordionTrigger>
-                    <AccordionContent>Choosing the right activity level is the most critical step for an accurate TDEE calculation. Overestimating your activity is a very common mistake that leads to setting a calorie target that is too high, which can stall weight loss. Our <a href="/tdee">TDEE Calculator</a> depends on this value.</AccordionContent>
+                    <AccordionContent>Choosing the right activity level is the most critical step for an accurate TDEE calculation. Overestimating your activity is a very common mistake that leads to setting a calorie target that is too high, which can stall weight loss. Our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> depends on this value.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                     <AccordionTrigger>What if I have a desk job but work out hard 5 days a week?</AccordionTrigger>
@@ -238,7 +275,7 @@ export default function DailyActivityLevelEstimatorPage() {
                 </AccordionItem>
                  <AccordionItem value="item-3">
                     <AccordionTrigger>Does Non-Exercise Activity Thermogenesis (NEAT) count?</AccordionTrigger>
-                    <AccordionContent>Yes, absolutely. NEAT (calories burned from activities that are not formal exercise, like walking, fidgeting, or chores) is a huge part of your activity level. Someone with a high step count but no formal exercise might be more active than someone who works out but is sedentary otherwise. Estimate your NEAT burn with the <a href="/steps-to-calories">Steps to Calories Calculator</a>.</AccordionContent>
+                    <AccordionContent>Yes, absolutely. NEAT (calories burned from activities that are not formal exercise, like walking, fidgeting, or chores) is a huge part of your activity level. Someone with a high step count but no formal exercise might be more active than someone who works out but is sedentary otherwise. Estimate your NEAT burn with the <Link href="/steps-to-calories" className="text-primary hover:underline">Steps to Calories Calculator</Link>.</AccordionContent>
                 </AccordionItem>
                  <AccordionItem value="item-4">
                     <AccordionTrigger>Should I use a different activity level on rest days?</AccordionTrigger>
@@ -246,7 +283,11 @@ export default function DailyActivityLevelEstimatorPage() {
                 </AccordionItem>
                  <AccordionItem value="item-5">
                     <AccordionTrigger>How do I know if I chose the right level?</AccordionTrigger>
-                    <AccordionContent>The best way is to track your results. Eat at the maintenance calories suggested by the <a href="/tdee">TDEE Calculator</a> for 2-3 weeks. If your weight is stable, you chose correctly. If you are gaining or losing weight, adjust your intake or activity level accordingly. Use the <a href="/weekly-weight-change-tracker">Weekly Weight Change Tracker</a> for accurate monitoring.</AccordionContent>
+                    <AccordionContent>The best way is to track your results. Eat at the maintenance calories suggested by the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> for 2-3 weeks. If your weight is stable, you chose correctly. If you are gaining or losing weight, adjust your intake or activity level accordingly. Use the <Link href="/weight-change-tracker" className="text-primary hover:underline">Weekly Weight Change Tracker</Link> for accurate monitoring.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-6">
+                    <AccordionTrigger>My fitness tracker gives me a calorie burn number. Should I use that instead?</AccordionTrigger>
+                    <AccordionContent>Fitness trackers are great for monitoring activity but often overestimate calorie burn. The TDEE multiplier method is a more time-tested and reliable starting point. It's often best to use the TDEE formula and use your tracker's calorie burn as a secondary, interesting data point rather than the basis for your diet.</AccordionContent>
                 </AccordionItem>
             </Accordion>
           </CardContent>
@@ -280,3 +321,4 @@ export default function DailyActivityLevelEstimatorPage() {
     </>
   );
 }
+
