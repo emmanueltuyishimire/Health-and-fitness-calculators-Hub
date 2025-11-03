@@ -284,6 +284,15 @@ export const WorkoutCalorieTrackerSchema = z.object({
 
 export type WorkoutCalorieTrackerFormValues = z.infer<typeof WorkoutCalorieTrackerSchema>;
 
+export const WeeklyWorkoutLoadSchema = z.object({
+  sessionsPerWeek: z.string().min(1, { message: 'Number of sessions is required.' }),
+  durationPerSession: z.string().min(1, { message: 'Duration is required.' }),
+  averageRpe: z.string().min(1, { message: 'RPE is required.' }).refine(val => parseInt(val, 10) >= 1 && parseInt(val, 10) <= 10, { message: 'RPE must be between 1 and 10.'}),
+});
+
+export type WeeklyWorkoutLoadFormValues = z.infer<typeof WeeklyWorkoutLoadSchema>;
+
+
 export const MetValueSchema = z.object({
   activity: z.string().min(1, { message: 'Please select an activity.' }),
 });
