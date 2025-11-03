@@ -45,6 +45,7 @@ type State = {
   bodyWeight: string;
   liftedWeight: string;
   restingHeartRate: string;
+  steps: string;
   bodyFat?: number;
   bmi?: number;
   idealWeight?: string;
@@ -102,6 +103,7 @@ const initialState: State = {
   bodyWeight: '70',
   liftedWeight: '100',
   restingHeartRate: '60',
+  steps: '10000',
 };
 
 const CalculatorContext = createContext<{

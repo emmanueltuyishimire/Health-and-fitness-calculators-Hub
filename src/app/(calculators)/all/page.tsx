@@ -57,7 +57,7 @@ const calculatorGroups = [
       { name: 'VO2 Max Estimator', href: '/vo2-max' },
       { name: 'Resting Metabolic Rate (RMR)', href: '/rmr' },
       { name: 'Activity MET Value Calculator', href: '/met-value' },
-      { name: 'Energy Expenditure per Step Calculator', href: '/steps-to-calories' },
+      { name: 'Steps to Calories Calculator', href: '/steps-to-calories' },
       { name: 'Walking/Running Calorie Calculator', href: '/walking-running-calories' },
       { name: 'Daily Activity Level Estimator', href: '/activity-level-estimator' },
       { name: 'Workout Calorie Tracker', href: '/workout-calorie-tracker' },

@@ -328,3 +328,11 @@ export const Vo2MaxSchema = z.object({
 });
 
 export type Vo2MaxFormValues = z.infer<typeof Vo2MaxSchema>;
+
+export const StepsToCaloriesSchema = z.object({
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  steps: z.string().min(1, { message: 'Number of steps is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type StepsToCaloriesFormValues = z.infer<typeof StepsToCaloriesSchema>;
