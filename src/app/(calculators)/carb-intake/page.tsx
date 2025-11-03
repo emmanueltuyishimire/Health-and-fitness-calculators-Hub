@@ -102,7 +102,7 @@ export default function CarbIntakePage() {
         name: 'Should I eat carbs to lose weight?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, for most people. While low-carb diets can be effective, carbs are not inherently fattening. Weight loss is determined by a <a href="/calorie-deficit">calorie deficit</a>, not the absence of carbs. Carbs can fuel workouts, helping you burn more calories and preserve muscle.',
+          text: 'Yes, for most people. While low-carb diets can be effective, carbs are not inherently fattening. Weight loss is determined by a <a href="/calorie-adjustment-for-weight-loss">calorie deficit</a>, not the absence of carbs. Carbs can fuel workouts, helping you burn more calories and preserve muscle.',
         },
       },
       {
@@ -290,7 +290,7 @@ export default function CarbIntakePage() {
             </ul>
           </CardContent>
         </Card>
-
+        
         <Card>
             <CardHeader><CardTitle>Pro Tips & Quick Hacks</CardTitle></CardHeader>
             <CardContent>
@@ -298,7 +298,7 @@ export default function CarbIntakePage() {
                     <li><strong>Time Your Carbs Around Workouts:</strong> Consume a carb-rich meal 1-3 hours before your workout for energy, and another within 2 hours after to replenish glycogen stores.</li>
                     <li><strong>Choose High-Fiber Carbs:</strong> Fiber slows digestion, providing a more sustained energy release and promoting gut health. Oats, beans, and whole-wheat bread are great choices.</li>
                     <li><strong>Use Simple Carbs Strategically:</strong> Quick-digesting carbs like a banana or a sports drink can be beneficial immediately before or during a long, intense workout for fast energy.</li>
-                    <li><strong>Listen to Your Body:</strong> The right carb intake is individual. If you feel sluggish and your performance is suffering, you may need more carbs. If you're gaining unwanted fat, you might need to slightly reduce them within your calorie budget from the <Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit Calculator</Link>.</li>
+                    <li><strong>Listen to Your Body:</strong> The right carb intake is individual. If you feel sluggish and your performance is suffering, you may need more carbs. If you're gaining unwanted fat, you might need to slightly reduce them within your calorie budget from the <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment for Weight Loss</Link>.</li>
                 </ul>
             </CardContent>
         </Card>
@@ -319,7 +319,7 @@ export default function CarbIntakePage() {
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Should I eat carbs to lose weight?</AccordionTrigger>
-                <AccordionContent>Yes, for most people. While low-carb diets can be effective, carbs are not inherently fattening. Weight loss is determined by a <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>, not the absence of carbs. Carbs can fuel workouts, helping you burn more calories and preserve muscle.</AccordionContent>
+                <AccordionContent>Yes, for most people. While low-carb diets can be effective, carbs are not inherently fattening. Weight loss is determined by a <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">calorie deficit</Link>, not the absence of carbs. Carbs can fuel workouts, helping you burn more calories and preserve muscle.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>What are "good" vs. "bad" carbs?</AccordionTrigger>
@@ -350,7 +350,7 @@ export default function CarbIntakePage() {
                 <TableRow>
                   <TableCell>Endurance Athletes</TableCell>
                   <TableCell>Ensure adequate glycogen stores for long runs, rides, or swims.</TableCell>
-                  <TableCell><Link href="/calorie-surplus" className="text-primary hover:underline">Calorie Surplus</Link></TableCell>
+                  <TableCell><Link href="/calorie-adjustment-for-weight-gain" className="text-primary hover:underline">Calorie Adjustment (Gain)</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Bodybuilders</TableCell>
@@ -384,8 +384,8 @@ export default function CarbIntakePage() {
               <h3 className="font-semibold">Protein Intake Calculator</h3>
               <p className="text-sm text-muted-foreground">Calculate your protein needs to complement your carb intake.</p>
             </Link>
-            <Link href="/calorie-deficit" className="p-4 border rounded-lg hover:bg-muted">
-              <h3 className="font-semibold">Calorie Deficit Calculator</h3>
+            <Link href="/calorie-adjustment-for-weight-loss" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Calorie Adjustment (Loss)</h3>
               <p className="text-sm text-muted-foreground">If fat loss is the goal, set your total calorie target here.</p>
             </Link>
           </CardContent>

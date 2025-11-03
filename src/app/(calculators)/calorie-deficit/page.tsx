@@ -266,7 +266,7 @@ export default function CalorieDeficitPage() {
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Being Too Aggressive:</strong> A massive deficit leads to muscle loss, nutrient deficiencies, and burnout. Start with a 10-15% deficit.</li>
-              <li><strong>Forgetting Protein:</strong> Not eating enough protein during a deficit can accelerate muscle loss, which lowers your metabolism. Use the Protein Intake Calculator to find your target.</li>
+              <li><strong>Forgetting Protein:</strong> Not eating enough protein during a deficit can accelerate muscle loss, which lowers your metabolism. Use the <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link> to find your target.</li>
               <li><strong>Not Adjusting TDEE:</strong> As you lose weight, your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> will decrease. You must recalculate it every 10-15 lbs to keep your deficit accurate.</li>
               <li><strong>Ignoring Food Quality:</strong> 500 calories of junk food is not the same as 500 calories of whole foods. Prioritize nutrient-dense foods for better health and satiety.</li>
             </ul>
@@ -339,7 +339,7 @@ export default function CalorieDeficitPage() {
                 <TableRow>
                   <TableCell>Fitness Coaches</TableCell>
                   <TableCell>Set precise calorie targets for clients' fat loss phases.</TableCell>
-                  <TableCell>Weekly Weight Change Tracker</TableCell>
+                  <TableCell><Link href="/weight-change-tracker" className="text-primary hover:underline">Weekly Weight Change Tracker</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Bodybuilders</TableCell>

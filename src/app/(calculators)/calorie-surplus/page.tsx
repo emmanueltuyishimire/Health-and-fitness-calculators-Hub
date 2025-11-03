@@ -232,7 +232,7 @@ export default function CalorieSurplusPage() {
                 <TableRow>
                   <TableCell>Interpretation</TableCell>
                   <TableCell>A slow, controlled "lean bulk" to maximize muscle gain while minimizing fat. Progress should be tracked with the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link>.</TableCell>
-                  <TableCell>A standard bulking phase for steady muscle and strength gains. This person should ensure they are lifting heavy and eating enough protein, calculated with the Protein Intake Calculator.</TableCell>
+                  <TableCell>A standard bulking phase for steady muscle and strength gains. This person should ensure they are lifting heavy and eating enough protein, calculated with the <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link>.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -261,7 +261,7 @@ export default function CalorieSurplusPage() {
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Being Too Aggressive:</strong> A huge surplus will lead to excessive fat gain, not more muscle. Stick to a 10-20% surplus for lean gains.</li>
-              <li><strong>Not Eating Enough Protein:</strong> A calorie surplus without enough protein means you're just gaining fat. Use a Protein Intake Calculator to find your target.</li>
+              <li><strong>Not Eating Enough Protein:</strong> A calorie surplus without enough protein means you're just gaining fat. Use a <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link> to find your target.</li>
               <li><strong>Not Training Hard Enough:</strong> A calorie surplus without a stimulus (resistance training) will result in fat storage. You must give your body a reason to build muscle.</li>
               <li><strong>"Dirty Bulking":</strong> Relying on junk food for calories leads to poor health, nutrient deficiencies, and excessive fat gain. Focus on calorie-dense whole foods.</li>
             </ul>
@@ -344,7 +344,7 @@ export default function CalorieSurplusPage() {
                 </Table>
             </CardContent>
         </Card>
-
+        
         <Card>
           <CardHeader>
             <CardTitle>Related Calculators</CardTitle>

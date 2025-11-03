@@ -128,7 +128,7 @@ export default function HydrationTrackerPage() {
         name: 'How does tracking water intake help with weight loss?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Staying hydrated can boost your metabolism, as estimated by the <a href="/bmr">BMR Calculator</a>, and help you feel full, reducing the likelihood of overeating. Replacing sugary drinks with water is a simple way to cut calories from your diet, helping you achieve a <a href="/calorie-deficit">calorie deficit</a>.',
+          text: 'Staying hydrated can boost your metabolism, as estimated by the <a href="/bmr">BMR Calculator</a>, and help you feel full, reducing the likelihood of overeating. Replacing sugary drinks with water is a simple way to cut calories from your diet, helping you achieve a <a href="/calorie-adjustment-for-weight-loss">calorie deficit</a>.',
         },
       },
       {
@@ -276,7 +276,7 @@ export default function HydrationTrackerPage() {
               </AccordionItem>
               <AccordionItem value="item-6">
                 <AccordionTrigger>How does tracking water intake help with weight loss?</AccordionTrigger>
-                <AccordionContent>Staying hydrated can boost your metabolism, as estimated by the <a href="/bmr">BMR Calculator</a>, and help you feel full, reducing the likelihood of overeating. Replacing sugary drinks with water is a simple way to cut calories from your diet, helping you achieve a <a href="/calorie-deficit">calorie deficit</a>.</AccordionContent>
+                <AccordionContent>Staying hydrated can boost your metabolism, as estimated by the <a href="/bmr">BMR Calculator</a>, and help you feel full, reducing the likelihood of overeating. Replacing sugary drinks with water is a simple way to cut calories from your diet, helping you achieve a <a href="/calorie-adjustment-for-weight-loss">calorie deficit</a>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-7">
                 <AccordionTrigger>Does my hydration goal change if I'm more active?</AccordionTrigger>
@@ -313,7 +313,7 @@ export default function HydrationTrackerPage() {
                 <TableRow>
                   <TableCell>Anyone on a Diet</TableCell>
                   <TableCell>Use the tracker to ensure they are drinking enough water to manage hunger and support metabolism.</TableCell>
-                  <TableCell><Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit</Link></TableCell>
+                  <TableCell><Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment (Loss)</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -332,6 +332,14 @@ export default function HydrationTrackerPage() {
             <Link href="/daily-calorie-needs" className="p-4 border rounded-lg hover:bg-muted">
               <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
               <p className="text-sm text-muted-foreground">Hydration is a key component of overall energy and metabolism management.</p>
+            </Link>
+            <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Calorie Burn by Activity</h3>
+              <p className="text-sm text-muted-foreground">Estimate how much more you need to drink based on your workout intensity.</p>
+            </Link>
+            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">BMR Calculator</h3>
+              <p className="text-sm text-muted-foreground">Understand your baseline metabolic rate, which is influenced by hydration.</p>
             </Link>
           </CardContent>
         </Card>

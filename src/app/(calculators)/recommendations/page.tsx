@@ -109,7 +109,7 @@ export default function RecommendationsPage() {
                 {!state.bodyFat && ' Body Fat,'}
                 {!state.idealWeight && ' Ideal Weight,'}
                 {!state.bmr && ' BMR,'}
-                {!state.dailyCalorieNeeds && ' Calorie Needs'}
+                {!state.calorieNeeds && ' Calorie Needs'}
             </span>.
              Go to <Link href="/bmi" className="font-semibold underline">BMI Calculator</Link> to start.
           </AlertDescription>

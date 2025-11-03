@@ -77,7 +77,7 @@ export default function BmiPage() {
       {
         '@type': 'HowToStep',
         name: 'Calculate',
-        text: 'Click the "Calculate BMI" button to see your result, including your BMI value and weight category.',
+        text: 'Click the "Calculate BMI" button to see your result, including your BMI value and your weight category.',
       },
     ],
   };
@@ -335,7 +335,7 @@ export default function BmiPage() {
               To truly understand your health, you need to look at your body composition—the proportion of fat, muscle, bone, and water in your body. While BMI provides a two-dimensional view (height and weight), a holistic approach is three-dimensional.
             </p>
             <p>
-             Start by calculating your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>, which is the number of calories your body burns at rest. This is the foundation of your energy expenditure. From there, you can use the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to estimate your Total Daily Energy Expenditure (TDEE) based on your activity level. Understanding your TDEE is the key to managing your weight. To lose weight, you need a <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>; to gain muscle, you need a <Link href="/calorie-surplus" className="text-primary hover:underline">calorie surplus</Link>.
+             Start by calculating your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>, which is the number of calories your body burns at rest. This is the foundation of your energy expenditure. From there, you can use the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to estimate your Total Daily Energy Expenditure (TDEE) based on your activity level. Understanding your TDEE is the key to managing your weight. To lose weight, you need a <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">calorie deficit</Link>; to gain muscle, you need a <Link href="/calorie-adjustment-for-weight-gain" className="text-primary hover:underline">calorie surplus</Link>.
             </p>
              <p>By combining insights from the BMI, Body Fat, BMR, and Daily Calorie Needs calculators, you create a powerful, personalized health dashboard that empowers you to make informed decisions about your diet and exercise.
             </p>

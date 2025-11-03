@@ -108,7 +108,7 @@ export default function FatIntakePage() {
         name: 'Are low-fat diets good for weight loss?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'While low-fat diets can work for weight loss, fat itself is not inherently "fattening." The most important factor for weight loss is being in a <a href="/calorie-deficit">calorie deficit</a>. Extremely low-fat diets can be detrimental to hormone health and satiety.',
+          text: 'While low-fat diets can work for weight loss, fat itself is not inherently "fattening." The most important factor for weight loss is being in a <a href="/calorie-adjustment-for-weight-loss">calorie deficit</a>. Extremely low-fat diets can be detrimental to hormone health and satiety.',
         },
       },
       {
@@ -244,7 +244,7 @@ export default function FatIntakePage() {
                 <li><strong>Hormone Production:</strong> Cholesterol, a type of fat, is the precursor to steroid hormones like estrogen and testosterone. Very low-fat diets can negatively impact hormone levels.</li>
                 <li><strong>Vitamin Absorption:</strong> Fat-soluble vitamins (A, D, E, and K) require fat to be absorbed and utilized by the body.</li>
                 <li><strong>Cell Structure:</strong> Fats are a fundamental component of every cell membrane in your body.</li>
-                <li><strong>Satiety:</strong> Fat slows down digestion, which can help you feel fuller for longer between meals, a useful tool when in a <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>.</li>
+                <li><strong>Satiety:</strong> Fat slows down digestion, which can help you feel fuller for longer between meals, a useful tool when in a <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">calorie deficit</Link>.</li>
             </ul>
 
             <h3 className="font-semibold text-lg text-foreground">Types of Fats</h3>
@@ -285,7 +285,7 @@ export default function FatIntakePage() {
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Going Too Low-Fat:</strong> Severely restricting fat intake (below 20% of total calories) can impair hormone function and vitamin absorption.</li>
               <li><strong>Ignoring Fat Quality:</strong> The type of fat matters. Prioritize unsaturated fats from whole-food sources over saturated and trans fats.</li>
-              <li><strong>Forgetting About Calorie Density:</strong> Since fat is high in calories (9 kcal/gram), portion sizes of high-fat foods like nuts and oils should be managed, especially during a <Link href="/calorie-deficit" className="text-primary hover:underline">fat loss phase</Link>.</li>
+              <li><strong>Forgetting About Calorie Density:</strong> Since fat is high in calories (9 kcal/gram), portion sizes of high-fat foods like nuts and oils should be managed, especially during a <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">fat loss phase</Link>.</li>
               <li><strong>Choosing Processed Low-Fat Foods:</strong> Many "low-fat" or "fat-free" products are highly processed and loaded with sugar and artificial ingredients to compensate for the lack of flavor.</li>
             </ul>
           </CardContent>
@@ -321,7 +321,7 @@ export default function FatIntakePage() {
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Are low-fat diets good for weight loss?</AccordionTrigger>
-                <AccordionContent>While low-fat diets can work, fat itself is not "fattening." The most important factor for weight loss is a <a href="/calorie-deficit">calorie deficit</a>. Extremely low-fat diets can be detrimental to hormone health.</AccordionContent>
+                <AccordionContent>While low-fat diets can work, fat itself is not "fattening." The most important factor for weight loss is a <a href="/calorie-adjustment-for-weight-loss">calorie deficit</a>. Extremely low-fat diets can be detrimental to hormone health.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>What are "good" vs. "bad" fats?</AccordionTrigger>
@@ -362,7 +362,7 @@ export default function FatIntakePage() {
                 <TableRow>
                   <TableCell>People on a Diet</TableCell>
                   <TableCell>Incorporate enough fat for satiety and health, even in a calorie deficit.</TableCell>
-                  <TableCell><Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit</Link></TableCell>
+                  <TableCell><Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment (Loss)</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>

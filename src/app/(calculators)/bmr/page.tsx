@@ -235,7 +235,7 @@ export default function BmrPage() {
               <li><strong>Enter Your Age:</strong> Your metabolic rate changes over your lifespan.</li>
               <li><strong>Enter Your Height and Weight:</strong> These are key variables in determining your body mass.</li>
               <li><strong>Calculate BMR:</strong> Click the button to see the number of calories your body would burn in a day if you were at complete rest.</li>
-              <li><strong>Your Next Step:</strong> Your BMR is just the beginning. To plan your diet, you must account for your activity level. Take your BMR result and plug it into the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to find your Total Daily Energy Expenditure (TDEE).</li>
+              <li><strong>Your Next Step:</strong> Your BMR is just the beginning. To plan your diet, you must account for your activity level. Take your BMR result and plug it into the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to find your Total Daily Energy Expenditure (TDEE).</li>
             </ol>
           </CardContent>
         </Card>
@@ -310,7 +310,7 @@ export default function BmrPage() {
             </ul>
 
              <h3 className="font-semibold text-lg text-foreground">From BMR to TDEE: The Key to Weight Management</h3>
-             <p>Your BMR is a powerful piece of data, but it's only part of the equation. To effectively manage your weight, you need to know your Total Daily Energy Expenditure (TDEE), which is the total number of calories you burn in a 24-hour period. TDEE is calculated by multiplying your BMR by an activity factor. This is exactly what our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> does.</p>
+             <p>Your BMR is a powerful piece of data, but it's only part of the equation. To effectively manage your weight, you need to know your Total Daily Energy Expenditure (TDEE), which is the total number of calories you burn in a 24-hour period. TDEE is calculated by multiplying your BMR by an activity factor. This is exactly what our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> does.</p>
              <p>TDEE = BMR × Activity Multiplier</p>
             <p>Once you know your TDEE (your "maintenance calories"), the path to your goal becomes clear:</p>
             <ul className="list-disc list-inside space-y-1">
@@ -326,7 +326,7 @@ export default function BmrPage() {
             <CardHeader><CardTitle>Common Mistakes When Calculating BMR</CardTitle></CardHeader>
             <CardContent>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li><strong>Confusing BMR with TDEE:</strong> Using your BMR as your daily calorie target is a major error. BMR doesn't include activity. Always use your BMR to calculate your TDEE in our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</li>
+                    <li><strong>Confusing BMR with TDEE:</strong> Using your BMR as your daily calorie target is a major error. BMR doesn't include activity. Always use your BMR to calculate your TDEE in our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.</li>
                     <li><strong>Overestimating Activity Level:</strong> Many people choose a higher activity multiplier than is accurate, leading to an inflated TDEE and slower-than-expected weight loss. Be honest with your activity level for a better estimate.</li>
                     <li><strong>Not Updating Your BMR:</strong> As you lose or gain weight, your BMR will change. You should recalculate it after every 5-10 lbs (or 2-5 kg) of weight change to keep your calorie targets accurate.</li>
                     <li><strong>Using It as a Rigid Rule:</strong> BMR is an estimate. Use it as a starting point, monitor your weight and <Link href="/body-fat" className="text-primary hover:underline">body composition</Link> over 2-4 weeks, and adjust your calorie intake up or down as needed.</li>
@@ -338,9 +338,9 @@ export default function BmrPage() {
             <CardHeader><CardTitle>Pro Tips & Quick Hacks</CardTitle></CardHeader>
             <CardContent>
                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li><strong>Prioritize Protein to Protect BMR:</strong> When in a calorie deficit, a higher protein intake helps preserve muscle mass, which in turn helps keep your BMR from dropping as much. Use a Protein Intake Calculator to find your target.</li>
+                    <li><strong>Prioritize Protein to Protect BMR:</strong> When in a calorie deficit, a higher protein intake helps preserve muscle mass, which in turn helps keep your BMR from dropping as much. Use a <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link> to find your target.</li>
                     <li><strong>Use BMR to Set Your "Non-Negotiable" Floor:</strong> As a general rule, avoid dieting on calorie levels at or below your BMR for extended periods, as this can negatively impact metabolism and lead to nutrient deficiencies.</li>
-                    <li><strong>Reverse Dieting with BMR:</strong> After a long diet, you can use your BMR and TDEE from the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Calorie Needs Calculator</Link> to slowly increase calories back to a new, higher maintenance level, which helps restore metabolic rate.</li>
+                    <li><strong>Reverse Dieting with BMR:</strong> After a long diet, you can use your TDEE from the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to slowly increase calories back to a new, higher maintenance level, which helps restore metabolic rate.</li>
                     <li><strong>Cycle Your Calories:</strong> Instead of eating the same deficit every day, try eating closer to your TDEE on training days and a larger deficit on rest days. This can help with workout performance and adherence.</li>
                 </ul>
             </CardContent>
@@ -354,7 +354,7 @@ export default function BmrPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>What is the difference between BMR and RMR?</AccordionTrigger>
-                <AccordionContent>BMR is measured in a strict, fasted state, while RMR (Resting Metabolic Rate) is less strict. They are very close, and for diet planning, the estimate from our BMR calculator is the perfect starting point for the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</AccordionContent>
+                <AccordionContent>BMR is measured in a strict, fasted state, while RMR (Resting Metabolic Rate) is less strict. They are very close, and for diet planning, the estimate from our BMR calculator is the perfect starting point for the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>How can I increase my BMR?</AccordionTrigger>
@@ -370,7 +370,7 @@ export default function BmrPage() {
               </AccordionItem>
                <AccordionItem value="item-5">
                 <AccordionTrigger>How do I use my BMR for weight loss?</AccordionTrigger>
-                <AccordionContent>BMR is your first step. Your second step is to use it in our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to find your TDEE. To lose weight, eat fewer calories than your TDEE.</AccordionContent>
+                <AccordionContent>BMR is your first step. Your second step is to use it in our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to find your TDEE. To lose weight, eat fewer calories than your TDEE.</AccordionContent>
               </AccordionItem>
                <AccordionItem value="item-6">
                 <AccordionTrigger>Is this calculator accurate?</AccordionTrigger>
@@ -378,19 +378,19 @@ export default function BmrPage() {
               </AccordionItem>
                <AccordionItem value="item-7">
                 <AccordionTrigger>Can eating too few calories lower my BMR?</AccordionTrigger>
-                <AccordionContent>Yes. Drastically cutting calories for a long time can cause "metabolic adaptation," where your body slows your BMR to conserve energy. This is why a moderate deficit below your calculated <Link href="/daily-calorie-needs" className="text-primary hover:underline">TDEE</Link> is recommended.</AccordionContent>
+                <AccordionContent>Yes. Drastically cutting calories for a long time can cause "metabolic adaptation," where your body slows your BMR to conserve energy. This is why a moderate deficit below your calculated <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> is recommended.</AccordionContent>
               </AccordionItem>
                <AccordionItem value="item-8">
                 <AccordionTrigger>Does exercise change my BMR?</AccordionTrigger>
-                <AccordionContent>Directly, no. BMR is your resting burn. However, consistent exercise, especially strength training, builds muscle, which permanently increases your BMR over time. The calories you burn *during* exercise are accounted for in your <Link href="/daily-calorie-needs" className="text-primary hover:underline">TDEE (Total Daily Energy Expenditure)</Link>.</AccordionContent>
+                <AccordionContent>Directly, no. BMR is your resting burn. However, consistent exercise, especially strength training, builds muscle, which permanently increases your BMR over time. The calories you burn *during* exercise are accounted for in your <Link href="/tdee" className="text-primary hover:underline">TDEE (Total Daily Energy Expenditure)</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-9">
                 <AccordionTrigger>Why is knowing BMR better than using a generic 2000-calorie diet?</AccordionTrigger>
-                <AccordionContent>A 2000-calorie diet is a generic guideline that doesn't fit everyone. Your personal BMR and <Link href="/daily-calorie-needs" className="text-primary hover:underline">TDEE</Link> could be much higher or lower. Personalizing your intake is the key to effective weight management.</AccordionContent>
+                <AccordionContent>A 2000-calorie diet is a generic guideline that doesn't fit everyone. Your personal BMR and <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> could be much higher or lower. Personalizing your intake is the key to effective weight management.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger>Should I eat my BMR in calories?</AccordionTrigger>
-                <AccordionContent>No, you should eat according to your TDEE, not your BMR. Your BMR is your "coma" calories. Your TDEE, found with the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>, is what you actually burn in a day. Eating only your BMR is likely too low for most active people.</AccordionContent>
+                <AccordionContent>No, you should eat according to your TDEE, not your BMR. Your BMR is your "coma" calories. Your TDEE, found with the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>, is what you actually burn in a day. Eating only your BMR is likely too low for most active people.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -416,12 +416,12 @@ export default function BmrPage() {
                         <TableRow>
                             <TableCell>Fitness Coaches</TableCell>
                             <TableCell>Create precise, individualized calorie targets for clients.</TableCell>
-                             <TableCell>Macronutrient Ratio Calculator</TableCell>
+                             <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio Calculator</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Nutritionists</TableCell>
                             <TableCell>Formulate meal plans based on a client's specific metabolic rate.</TableCell>
-                            <TableCell>Meal Calorie Split Calculator</TableCell>
+                            <TableCell><Link href="/meal-calorie-split" className="text-primary hover:underline">Meal Calorie Split Calculator</Link></TableCell>
                         </TableRow>
                          <TableRow>
                             <TableCell>Health Enthusiasts</TableCell>

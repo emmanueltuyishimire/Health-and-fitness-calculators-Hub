@@ -98,7 +98,7 @@ export default function FatLossTrackerPage() {
         name: 'My lean body mass went down. Is that bad?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Losing a small amount of lean body mass during a diet is normal. However, if you are losing a lot of lean mass, it may be a sign that your calorie deficit is too large or your protein intake is too low. Re-evaluate your plan using the <a href="/calorie-deficit">Calorie Deficit Calculator</a> and Protein Intake Calculator.',
+          text: 'Losing a small amount of lean body mass during a diet is normal. However, if you are losing a lot of lean mass, it may be a sign that your calorie deficit is too large or your protein intake is too low. Re-evaluate your plan using the <a href="/calorie-adjustment-for-weight-loss">Calorie Adjustment for Weight Loss</a> and <a href="/protein-intake">Protein Intake Calculator</a>.',
         },
       },
       {
@@ -246,7 +246,7 @@ export default function FatLossTrackerPage() {
             <h3 className="font-semibold text-lg text-foreground">The Goal: Preserve Muscle, Lose Fat</h3>
             <p>During a weight loss phase, the primary goal should always be to lose as much fat as possible while preserving (or even gaining) lean body mass. Lean mass is your metabolic engine; losing it will lower your <Link href="/bmr" className="text-primary hover:underline">BMR</Link> and make long-term weight maintenance harder. To preserve muscle during a diet:</p>
             <ul className="list-disc list-inside space-y-2">
-              <li><strong>Maintain a Moderate Deficit:</strong> A huge calorie deficit can cause muscle loss. Use the <Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit Calculator</Link> to set a sustainable target.</li>
+              <li><strong>Maintain a Moderate Deficit:</strong> A huge calorie deficit can cause muscle loss. Use the <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment for Weight Loss</Link> to set a sustainable target.</li>
               <li><strong>Prioritize Protein:</strong> Eating enough protein provides the building blocks to repair and maintain muscle tissue.</li>
               <li><strong>Continue Resistance Training:</strong> Lifting weights signals to your body that your muscle is needed and should be preserved.</li>
             </ul>
@@ -269,7 +269,7 @@ export default function FatLossTrackerPage() {
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>My lean body mass went down. Is that bad?</AccordionTrigger>
-                <AccordionContent>Losing a small amount of lean mass in a diet is normal. However, significant loss suggests your calorie deficit is too large or protein is too low. Re-evaluate with the <a href="/calorie-deficit">Calorie Deficit Calculator</a> and Protein Intake Calculator.</AccordionContent>
+                <AccordionContent>Losing a small amount of lean mass in a diet is normal. However, significant loss suggests your calorie deficit is too large or protein is too low. Re-evaluate with the <a href="/calorie-adjustment-for-weight-loss">Calorie Adjustment for Weight Loss</a> and <a href="/protein-intake">Protein Intake Calculator</a>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>How do I get an accurate body fat percentage?</AccordionTrigger>

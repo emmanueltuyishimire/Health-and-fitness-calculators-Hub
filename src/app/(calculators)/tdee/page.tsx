@@ -100,7 +100,7 @@ export default function TdeePage() {
         name: 'How do I use my TDEE for weight loss?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'To lose weight, you need to consume fewer calories than your TDEE. This is called a calorie deficit. A common deficit is 500 calories per day to lose about 1 pound per week. You can plan this with the <a href="/calorie-deficit">Calorie Deficit Calculator</a>.',
+          text: 'To lose weight, you need to consume fewer calories than your TDEE. This is called a calorie deficit. A common deficit is 500 calories per day to lose about 1 pound per week. You can plan this with the <a href="/calorie-adjustment-for-weight-loss">Calorie Adjustment for Weight Loss</a>.',
         },
       },
       {
@@ -108,7 +108,7 @@ export default function TdeePage() {
         name: 'How do I use my TDEE for muscle gain?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'To gain muscle, you need to consume more calories than your TDEE (a <a href="/calorie-surplus">calorie surplus</a>) and engage in resistance training. A surplus of 250-500 calories is a good starting point to promote muscle growth while minimizing fat gain. You can track muscle growth with the <a href="/ffmi">FFMI Calculator</a>.',
+          text: 'To gain muscle, you need to consume more calories than your TDEE (a <a href="/calorie-adjustment-for-weight-gain">calorie surplus</a>) and engage in resistance training. A surplus of 250-500 calories is a good starting point to promote muscle growth while minimizing fat gain. You can track muscle growth with the <a href="/ffmi">FFMI Calculator</a>.',
         },
       },
       {
@@ -300,8 +300,8 @@ export default function TdeePage() {
             <h3 className="font-semibold text-lg text-foreground">The Law of Energy Balance</h3>
             <p>Your TDEE is the cornerstone of the law of energy balance, which governs weight change:</p>
             <ul className="list-disc list-inside space-y-1">
-                <li><strong>Calorie Deficit:</strong> If you consistently consume fewer calories than your TDEE, you will lose weight. This can be planned with the <Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit Calculator</Link>.</li>
-                <li><strong>Calorie Surplus:</strong> If you consistently consume more calories than your TDEE, you will gain weight. This can be planned with the <Link href="/calorie-surplus" className="text-primary hover:underline">Calorie Surplus Calculator</Link>.</li>
+                <li><strong>Calorie Deficit:</strong> If you consistently consume fewer calories than your TDEE, you will lose weight. This can be planned with the <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment for Weight Loss</Link>.</li>
+                <li><strong>Calorie Surplus:</strong> If you consistently consume more calories than your TDEE, you will gain weight. This can be planned with the <Link href="/calorie-adjustment-for-weight-gain" className="text-primary hover:underline">Calorie Adjustment for Weight Gain</Link>.</li>
                 <li><strong>Energy Balance:</strong> If you consistently consume the same number of calories as your TDEE, your weight will remain stable. This is your goal with the <Link href="/calorie-maintenance" className="text-primary hover:underline">Calorie Maintenance Calculator</Link>.</li>
             </ul>
             <p>By getting an accurate TDEE estimate, you transform weight management from a guessing game into a predictable science. You can then create a precise plan to reach your goal, whether it's shedding fat, building muscle by targeting a specific <Link href="/ideal-weight" className="text-primary hover:underline">ideal weight</Link>, or simply maintaining a healthy body composition, which you can track with the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Calculator</Link>.</p>
@@ -326,7 +326,7 @@ export default function TdeePage() {
             <CardHeader><CardTitle>Pro Tips &amp; Quick Hacks</CardTitle></CardHeader>
             <CardContent>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li><strong>Prioritize Protein to Protect BMR:</strong> When in a calorie deficit, a higher protein intake helps preserve muscle mass, which in turn helps keep your BMR from dropping as much. Use a Protein Intake Calculator to find your target.</li>
+                    <li><strong>Prioritize Protein to Protect BMR:</strong> When in a calorie deficit, a higher protein intake helps preserve muscle mass, which in turn helps keep your BMR from dropping as much. Use a <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link> to find your target.</li>
                     <li><strong>Use BMR to Set Your "Non-Negotiable" Floor:</strong> As a general rule, avoid dieting on calorie levels at or below your BMR for extended periods, as this can negatively impact metabolism and lead to nutrient deficiencies.</li>
                     <li><strong>Reverse Dieting with BMR:</strong> After a long diet, you can use your TDEE to slowly increase calories back to a new, higher maintenance level, which helps restore metabolic rate.</li>
                     <li><strong>Cycle Your Calories:</strong> Instead of eating the same deficit every day, try eating closer to your TDEE on training days and a larger deficit on rest days. This can help with workout performance and adherence.</li>
@@ -346,7 +346,7 @@ export default function TdeePage() {
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>How do I use my TDEE for weight loss?</AccordionTrigger>
-                <AccordionContent>To lose weight, create a calorie deficit by eating fewer calories than your TDEE. A 500-calorie deficit per day typically leads to about 1 pound of weight loss per week. You can plan this with the <Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit Calculator</Link>.</AccordionContent>
+                <AccordionContent>To lose weight, create a calorie deficit by eating fewer calories than your TDEE. A 500-calorie deficit per day typically leads to about 1 pound of weight loss per week. You can plan this with the <Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment for Weight Loss</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>How do I use my TDEE for muscle gain?</AccordionTrigger>
@@ -379,7 +379,7 @@ export default function TdeePage() {
                         <TableRow>
                             <TableCell>General Users</TableCell>
                             <TableCell>Determine daily maintenance calories to prevent unintentional weight gain or loss.</TableCell>
-                            <TableCell><Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit Calculator</Link></TableCell>
+                            <TableCell><Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment (Loss)</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Fitness Coaches</TableCell>
@@ -389,7 +389,7 @@ export default function TdeePage() {
                         <TableRow>
                             <TableCell>Nutritionists</TableCell>
                             <TableCell>Design meal plans that are perfectly aligned with a client's energy needs.</TableCell>
-                            <TableCell>Meal Calorie Split Calculator</TableCell>
+                            <TableCell><Link href="/meal-calorie-split" className="text-primary hover:underline">Meal Calorie Split</Link></TableCell>
                         </TableRow>
                          <TableRow>
                             <TableCell>Athletes</TableCell>
@@ -416,10 +416,10 @@ export default function TdeePage() {
               </p>
             </Link>
             <Link
-              href="/calorie-deficit"
+              href="/calorie-adjustment-for-weight-loss"
               className="p-4 border rounded-lg hover:bg-muted"
             >
-              <h3 className="font-semibold">Calorie Deficit Calculator</h3>
+              <h3 className="font-semibold">Calorie Adjustment (Loss)</h3>
               <p className="text-sm text-muted-foreground">
                 Plan your weight loss journey with precise deficit targets.
               </p>
