@@ -233,6 +233,50 @@ export default function BodyShapePage() {
 
         <Card>
           <CardHeader>
+            <CardTitle>Worked Examples</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Variable</TableHead>
+                  <TableHead>Example 1</TableHead>
+                  <TableHead>Example 2</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Bust</TableCell>
+                  <TableCell>34 in</TableCell>
+                  <TableCell>40 in</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Waist</TableCell>
+                  <TableCell>26 in</TableCell>
+                  <TableCell>38 in</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Hip</TableCell>
+                  <TableCell>38 in</TableCell>
+                  <TableCell>42 in</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-bold">Calculated Shape</TableCell>
+                  <TableCell className="font-bold">Triangle (Pear)</TableCell>
+                  <TableCell className="font-bold">Rectangle</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Interpretation & Next Step</TableCell>
+                  <TableCell>This person has wider hips than bust, a classic "pear" shape. For fitness, they might focus on building upper body muscle. Their <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">WHR</Link> would be low.</TableCell>
+                  <TableCell>This person's measurements are relatively similar, indicating a "rectangle" shape. Their next step might be checking their <Link href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</Link> to assess health risk.</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
             <CardTitle>Understanding the Body Shapes</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
@@ -272,6 +316,33 @@ export default function BodyShapePage() {
             </Table>
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Inaccurate Measurements:</strong> Not measuring at the fullest part of the bust/hips or the narrowest part of the waist can change the result.</li>
+              <li><strong>Loose Tape:</strong> Ensure the measuring tape is snug against the body but not compressing the skin.</li>
+              <li><strong>Taking it as a Final Verdict:</strong> Body shape is a general classification. Many people are a combination of types.</li>
+              <li><strong>Ignoring Overall Health:</strong> Don't forget that metrics like <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> and cardiovascular fitness are more important than your shape category.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Fitness Planning:</strong> Use your shape to guide workouts. Pear shapes might focus on upper body workouts, while Inverted Triangles might build their glutes to create a more balanced look.</li>
+              <li><strong>Fashion Choices:</strong> Knowing your shape can make clothes shopping easier, as you can look for styles that flatter your natural proportions.</li>
+              <li><strong>Combine with WHR:</strong> Use this calculator for your general shape and the <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link> calculator for a more specific health risk assessment.</li>
+            </ul>
+          </CardContent>
+        </Card>
         
         <Card>
           <CardHeader>
@@ -305,6 +376,40 @@ export default function BodyShapePage() {
 
         <Card>
           <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>General Users</TableCell>
+                  <TableCell>Understand their body's natural proportions for self-awareness and fashion.</TableCell>
+                  <TableCell><Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Fitness Enthusiasts</TableCell>
+                  <TableCell>Tailor workout programs to create a more balanced physique.</TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Personal Stylists</TableCell>
+                  <TableCell>Advise clients on clothing that flatters their body shape.</TableCell>
+                  <TableCell>N/A</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -330,3 +435,5 @@ export default function BodyShapePage() {
     </>
   );
 }
+
+    
