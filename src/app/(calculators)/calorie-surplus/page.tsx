@@ -255,11 +255,11 @@ export default function CalorieSurplusPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>Common Mistakes</CardTitle>
+            <CardTitle>Common Mistakes When Creating a Surplus</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Being Too Aggressive:</strong> A huge surplus will lead to excessive fat gain, not more muscle. Stick to a 10-20% surplus.</li>
+              <li><strong>Being Too Aggressive:</strong> A huge surplus will lead to excessive fat gain, not more muscle. Stick to a 10-20% surplus for lean gains.</li>
               <li><strong>Not Eating Enough Protein:</strong> A surplus without enough protein means you're just gaining fat. Use a Protein Intake Calculator to find your target.</li>
               <li><strong>Not Training Hard Enough:</strong> A calorie surplus without a stimulus (resistance training) will result in fat storage. You must give your body a reason to build muscle.</li>
               <li><strong>"Dirty Bulking":</strong> Relying on junk food for calories leads to poor health, nutrient deficiencies, and excessive fat gain. Focus on calorie-dense whole foods.</li>
@@ -313,6 +313,38 @@ export default function CalorieSurplusPage() {
         </Card>
 
         <Card>
+            <CardHeader><CardTitle>Real-Life Applications</CardTitle></CardHeader>
+            <CardContent>
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead>Audience</TableHead>
+                            <TableHead>Use Case</TableHead>
+                            <TableHead>Next Step (Tool)</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        <TableRow>
+                            <TableCell>Bodybuilders / Athletes</TableCell>
+                            <TableCell>Plan a "bulking" phase to build muscle mass effectively.</TableCell>
+                            <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>Underweight Individuals</TableCell>
+                            <TableCell>Create a structured plan for healthy weight gain.</TableCell>
+                             <TableCell><Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link></TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>Fitness Enthusiasts</TableCell>
+                            <TableCell>Fuel strength gains and improve workout performance.</TableCell>
+                            <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio Calculator</Link></TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+            </CardContent>
+        </Card>
+
+        <Card>
           <CardHeader>
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
@@ -339,3 +371,5 @@ export default function CalorieSurplusPage() {
     </>
   );
 }
+
+    
