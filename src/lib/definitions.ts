@@ -1,3 +1,4 @@
+
 // src/lib/definitions.ts
 import { z } from 'zod';
 
@@ -132,3 +133,14 @@ export const BodyDensitySchema = z.object({
 });
 
 export type BodyDensityFormValues = z.infer<typeof BodyDensitySchema>;
+
+export const CalorieDeficitSchema = z.object({
+  tdee: z.string().min(1, { message: 'TDEE is required. Please calculate it first.' }),
+  deficit: z.enum([
+    'mild',
+    'standard',
+    'aggressive',
+  ]),
+});
+
+export type CalorieDeficitFormValues = z.infer<typeof CalorieDeficitSchema>;

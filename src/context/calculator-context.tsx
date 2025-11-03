@@ -1,3 +1,4 @@
+
 // src/context/calculator-context.tsx
 'use client';
 
@@ -22,6 +23,8 @@ type State = {
     | 'moderately_active'
     | 'very_active'
     | 'extra_active';
+  deficit: 'mild' | 'standard' | 'aggressive';
+  tdee: string;
   bodyFat?: number;
   bmi?: number;
   idealWeight?: string;
@@ -53,6 +56,8 @@ const initialState: State = {
   bust: '90',
   activityLevel: 'sedentary',
   bodyFat: 15,
+  deficit: 'standard',
+  tdee: '',
 };
 
 const CalculatorContext = createContext<{
