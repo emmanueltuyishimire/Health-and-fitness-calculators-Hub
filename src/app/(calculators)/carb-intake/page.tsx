@@ -350,17 +350,17 @@ export default function CarbIntakePage() {
                 <TableRow>
                   <TableCell>Endurance Athletes</TableCell>
                   <TableCell>Ensure adequate glycogen stores for long runs, rides, or swims.</TableCell>
-                  <TableCell><Link href="/calorie-adjustment-for-weight-gain" className="text-primary hover:underline">Calorie Adjustment (Gain)</Link></TableCell>
+                  <TableCell><Link href="/calorie-adjustment-for-weight-gain" className="text-primary hover:underline" aria-label="Calorie Adjustment for Weight Gain">Calorie Adjustment (Gain)</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Bodybuilders</TableCell>
                   <TableCell>Fuel intense lifting sessions and replenish glycogen to maximize muscle growth.</TableCell>
-                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link></TableCell>
                 </TableRow>
                  <TableRow>
                   <TableCell>General Fitness Enthusiast</TableCell>
                   <TableCell>Optimize energy levels for workouts and daily life.</TableCell>
-                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline" aria-label="Macronutrient Ratio Calculator">Macronutrient Ratio</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -372,19 +372,19 @@ export default function CarbIntakePage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/macronutrient-ratio" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/macronutrient-ratio" className="p-4 border rounded-lg hover:bg-muted" aria-label="Macronutrient Ratio Calculator">
               <h3 className="font-semibold">Macronutrient Ratio Calculator</h3>
               <p className="text-sm text-muted-foreground">Integrate your carb goal into a full macronutrient plan.</p>
             </Link>
-            <Link href="/daily-calorie-needs" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/daily-calorie-needs" className="p-4 border rounded-lg hover:bg-muted" aria-label="Daily Calorie Needs Calculator">
               <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
               <p className="text-sm text-muted-foreground">Ensure your carb and protein intake fits within your total calorie budget.</p>
             </Link>
-            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted" aria-label="Protein Intake Calculator">
               <h3 className="font-semibold">Protein Intake Calculator</h3>
               <p className="text-sm text-muted-foreground">Calculate your protein needs to complement your carb intake.</p>
             </Link>
-            <Link href="/calorie-adjustment-for-weight-loss" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/calorie-adjustment-for-weight-loss" className="p-4 border rounded-lg hover:bg-muted" aria-label="Calorie Adjustment for Weight Loss">
               <h3 className="font-semibold">Calorie Adjustment (Loss)</h3>
               <p className="text-sm text-muted-foreground">If fat loss is the goal, set your total calorie target here.</p>
             </Link>

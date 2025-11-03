@@ -352,17 +352,17 @@ export default function FatIntakePage() {
                 <TableRow>
                   <TableCell>General Users</TableCell>
                   <TableCell>Ensure a balanced diet that supports overall health and hormone function.</TableCell>
-                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline" aria-label="Macronutrient Ratio Calculator">Macronutrient Ratio</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Keto Dieters</TableCell>
                   <TableCell>Calculate the high fat intake required to stay in ketosis.</TableCell>
-                   <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                   <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline" aria-label="Macronutrient Ratio Calculator">Macronutrient Ratio</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>People on a Diet</TableCell>
                   <TableCell>Incorporate enough fat for satiety and health, even in a calorie deficit.</TableCell>
-                  <TableCell><Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline">Calorie Adjustment (Loss)</Link></TableCell>
+                  <TableCell><Link href="/calorie-adjustment-for-weight-loss" className="text-primary hover:underline" aria-label="Calorie Adjustment for Weight Loss">Calorie Adjustment (Loss)</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -374,19 +374,19 @@ export default function FatIntakePage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/macronutrient-ratio" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/macronutrient-ratio" className="p-4 border rounded-lg hover:bg-muted" aria-label="Macronutrient Ratio Calculator">
               <h3 className="font-semibold">Macronutrient Ratio Calculator</h3>
               <p className="text-sm text-muted-foreground">Integrate your fat goal into a full macronutrient plan with protein and carbs.</p>
             </Link>
-            <Link href="/daily-calorie-needs" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/daily-calorie-needs" className="p-4 border rounded-lg hover:bg-muted" aria-label="Daily Calorie Needs Calculator">
               <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
               <p className="text-sm text-muted-foreground">The essential first step. Get the total calorie target you need for this calculator.</p>
             </Link>
-            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted" aria-label="Protein Intake Calculator">
               <h3 className="font-semibold">Protein Intake Calculator</h3>
               <p className="text-sm text-muted-foreground">Calculate your protein needs, the other key part of your macronutrient split.</p>
             </Link>
-            <Link href="/carb-intake" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/carb-intake" className="p-4 border rounded-lg hover:bg-muted" aria-label="Carb Intake Calculator">
               <h3 className="font-semibold">Carb Intake Calculator</h3>
               <p className="text-sm text-muted-foreground">Determine your carbohydrate needs to fuel your performance.</p>
             </Link>

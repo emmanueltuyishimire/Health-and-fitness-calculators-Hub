@@ -223,7 +223,7 @@ export default function WalkingRunningCaloriesPage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
-                  <TableCell>A 45-minute run at this pace burns a substantial number of calories. This expenditure is a key component of the user's <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> and helps create a <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link> for fat loss.</TableCell>
+                  <TableCell>A 45-minute run at this pace burns a substantial number of calories. This expenditure is a key component of the user's <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link> and helps create a <Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">calorie deficit</Link> for fat loss.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -250,7 +250,7 @@ export default function WalkingRunningCaloriesPage() {
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Inaccurate Speed Selection:</strong> Choosing a faster running speed than you actually maintained will overestimate your calorie burn.</li>
-              <li><strong>"Eating Back" Exercise Calories:</strong> A common dieting mistake. Your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> already accounts for your activity level. Use this tool for information, not to justify eating more.</li>
+              <li><strong>"Eating Back" Exercise Calories:</strong> A common dieting mistake. Your <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link> already accounts for your activity level. Use this tool for information, not to justify eating more.</li>
               <li><strong>Ignoring Inclines:</strong> This calculator assumes you are on a flat surface. Walking or running uphill significantly increases calorie burn.</li>
             </ul>
           </CardContent>
@@ -263,8 +263,8 @@ export default function WalkingRunningCaloriesPage() {
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Incorporate Intervals:</strong> Alternating between high-speed running and slower walking (HIIT) can boost your calorie burn and improve cardiovascular fitness more than steady-state cardio.</li>
-              <li><strong>Fuel Your Runs:</strong> Ensure you have enough energy for your workouts by eating a carbohydrate-rich meal 1-2 hours beforehand. Use the <Link href="/carb-intake" className="text-primary hover:underline">Carb Intake Calculator</Link> to find your needs.</li>
-              <li><strong>Track Your Fitness:</strong> As your cardiovascular fitness improves, your resting heart rate may decrease. You can track this progress with our <Link href="/vo2-max" className="text-primary hover:underline">VO2 Max Estimator</Link>.</li>
+              <li><strong>Fuel Your Runs:</strong> Ensure you have enough energy for your workouts by eating a carbohydrate-rich meal 1-2 hours beforehand. Use the <Link href="/carb-intake" className="text-primary hover:underline" aria-label="Carb Intake Calculator">Carb Intake Calculator</Link> to find your needs.</li>
+              <li><strong>Track Your Fitness:</strong> As your cardiovascular fitness improves, your resting heart rate may decrease. You can track this progress with our <Link href="/vo2-max" className="text-primary hover:underline" aria-label="VO2 Max Estimator">VO2 Max Estimator</Link>.</li>
             </ul>
           </CardContent>
         </Card>
@@ -284,7 +284,7 @@ export default function WalkingRunningCaloriesPage() {
               <AccordionItem value="item-2">
                 <AccordionTrigger>Should I "eat back" the calories I burn?</AccordionTrigger>
                 <AccordionContent>
-                  Generally, no. Your activity level in the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> already accounts for exercise. Use this tool for information, not as a license to eat more.
+                  Generally, no. Your activity level in the <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> already accounts for exercise. Use this tool for information, not as a license to eat more.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
@@ -326,17 +326,17 @@ export default function WalkingRunningCaloriesPage() {
                 <TableRow>
                   <TableCell>Runners</TableCell>
                   <TableCell>Estimate the energy cost of their training runs to better plan their nutrition and fueling strategy.</TableCell>
-                  <TableCell><Link href="/carb-intake" className="text-primary hover:underline">Carb Intake Calculator</Link></TableCell>
+                  <TableCell><Link href="/carb-intake" className="text-primary hover:underline" aria-label="Carb Intake Calculator">Carb Intake Calculator</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>People on a Diet</TableCell>
-                  <TableCell>Quantify the calorie burn from their daily walk to help them achieve their <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>.</TableCell>
-                  <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
+                  <TableCell>Quantify the calorie burn from their daily walk to help them achieve their <Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">calorie deficit</Link>.</TableCell>
+                  <TableCell><Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Fitness Planners</TableCell>
                   <TableCell>Compare the calorie burn of different running speeds or durations to design an effective cardio plan.</TableCell>
-                  <TableCell><Link href="/vo2-max" className="text-primary hover:underline">VO2 Max Estimator</Link></TableCell>
+                  <TableCell><Link href="/vo2-max" className="text-primary hover:underline" aria-label="VO2 Max Estimator">VO2 Max Estimator</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -348,19 +348,19 @@ export default function WalkingRunningCaloriesPage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted" aria-label="Calorie Burn by Activity Calculator">
               <h3 className="font-semibold">Calorie Burn by Activity</h3>
               <p className="text-sm text-muted-foreground">For a much wider range of activities beyond walking and running.</p>
             </Link>
-            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted" aria-label="TDEE Calculator">
               <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">See how your workouts contribute to your total daily calorie needs.</p>
             </Link>
-            <Link href="/vo2-max" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/vo2-max" className="p-4 border rounded-lg hover:bg-muted" aria-label="VO2 Max Estimator">
               <h3 className="font-semibold">VO2 Max Estimator</h3>
               <p className="text-sm text-muted-foreground">Track your cardiovascular fitness improvements from your running/walking routine.</p>
             </Link>
-            <Link href="/steps-to-calories" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/steps-to-calories" className="p-4 border rounded-lg hover:bg-muted" aria-label="Steps to Calories Calculator">
               <h3 className="font-semibold">Steps to Calories</h3>
               <p className="text-sm text-muted-foreground">Estimate the burn from your general daily activity, not just specific workouts.</p>
             </Link>

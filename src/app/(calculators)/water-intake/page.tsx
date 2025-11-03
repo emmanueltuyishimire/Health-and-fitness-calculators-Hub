@@ -219,7 +219,7 @@ export default function WaterIntakePage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
-                  <TableCell>This person needs about 124 oz of water to support their active lifestyle. The next step is to make a plan to meet this goal, perhaps by using a marked water bottle or setting reminders. To track hydration in more detail, they can use the <Link href="/hydration-tracker" className="text-primary hover:underline">Hydration Tracker</Link>.</TableCell>
+                  <TableCell>This person needs about 124 oz of water to support their active lifestyle. The next step is to make a plan to meet this goal, perhaps by using a marked water bottle or setting reminders. To track hydration in more detail, they can use the <Link href="/hydration-tracker" className="text-primary hover:underline" aria-label="Hydration Tracker">Hydration Tracker</Link>.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -328,7 +328,7 @@ export default function WaterIntakePage() {
                 <TableRow>
                   <TableCell>Athletes</TableCell>
                   <TableCell>Calculate baseline fluid needs and plan for increased intake around training.</TableCell>
-                  <TableCell><Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity</Link></TableCell>
+                  <TableCell><Link href="/calorie-burn-by-activity" className="text-primary hover:underline" aria-label="Calorie Burn by Activity Calculator">Calorie Burn by Activity</Link></TableCell>
                 </TableRow>
                  <TableRow>
                   <TableCell>Office Workers</TableCell>
@@ -345,19 +345,19 @@ export default function WaterIntakePage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/hydration-tracker" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/hydration-tracker" className="p-4 border rounded-lg hover:bg-muted" aria-label="Hydration Tracker">
               <h3 className="font-semibold">Hydration Tracker</h3>
               <p className="text-sm text-muted-foreground">Actively track your fluid intake throughout the day to meet your goal.</p>
             </Link>
-            <Link href="/daily-calorie-needs" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/daily-calorie-needs" className="p-4 border rounded-lg hover:bg-muted" aria-label="Daily Calorie Needs Calculator">
               <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
               <p className="text-sm text-muted-foreground">Your hydration and energy needs are closely linked. Plan both together.</p>
             </Link>
-            <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted" aria-label="Calorie Burn by Activity Calculator">
               <h3 className="font-semibold">Calorie Burn by Activity</h3>
               <p className="text-sm text-muted-foreground">Estimate how much more you need to drink based on your workout intensity.</p>
             </Link>
-            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted" aria-label="BMR Calculator">
               <h3 className="font-semibold">BMR Calculator</h3>
               <p className="text-sm text-muted-foreground">Understand your baseline metabolic rate, which is influenced by hydration.</p>
             </Link>

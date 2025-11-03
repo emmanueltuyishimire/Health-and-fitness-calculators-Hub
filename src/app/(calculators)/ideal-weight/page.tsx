@@ -360,7 +360,7 @@ export default function IdealWeightPage() {
               </AccordionItem>
               <AccordionItem value="item-6">
                  <AccordionTrigger>How does body frame size affect ideal weight?</AccordionTrigger>
-                 <AccordionContent>A larger frame means a higher ideal weight. While our calculator provides a range, tools like the <Link href="/waist-to-height-ratio" className="text-primary hover:underline" aria-label="Waist-to-Height Ratio Calculator">Waist-to-Height Ratio</Link> can add more context to your body shape and health risk.</AccordionContent>
+                 <AccordionContent>A larger frame means a higher ideal weight. While our calculator provides a range, tools like the <Link href="/waist-to-height-ratio" className="text-primary hover:underline" aria-label="Waist-to-Height Ratio Calculator">Waist-to-Height Ratio Calculator</Link> can add more context to your body shape and health risk.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-7">
                 <AccordionTrigger>Is it unhealthy to be outside my ideal weight range?</AccordionTrigger>

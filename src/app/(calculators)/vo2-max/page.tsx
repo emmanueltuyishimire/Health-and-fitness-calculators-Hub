@@ -210,7 +210,7 @@ export default function Vo2MaxPage() {
                 <TableRow><TableCell className="font-bold">Estimated VO2 Max</TableCell><TableCell className="font-bold">45.9 ml/kg/min</TableCell></TableRow>
                 <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
-                  <TableCell>A VO2 max of 45.9 places this 40-year-old male in the "Good" category. To improve further, he could incorporate more high-intensity training into his routine. This increased fitness would also be reflected in the <Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity</Link> calculator.</TableCell>
+                  <TableCell>A VO2 max of 45.9 places this 40-year-old male in the "Good" category. To improve further, he could incorporate more high-intensity training into his routine. This increased fitness would also be reflected in the <Link href="/calorie-burn-by-activity" className="text-primary hover:underline" aria-label="Calorie Burn by Activity Calculator">Calorie Burn by Activity Calculator</Link>.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -286,7 +286,7 @@ export default function Vo2MaxPage() {
                     <li><strong>Focus on Lowering RHR:</strong> The most actionable way to improve your estimated VO2 max is to lower your resting heart rate through consistent cardio.</li>
                     <li><strong>Incorporate HIIT:</strong> High-Intensity Interval Training (e.g., 30 seconds sprint, 1 minute rest, repeat) is one of the most effective ways to boost VO2 max.</li>
                     <li><strong>Don't Neglect Low-Intensity Cardio:</strong> Long, slow-distance training also builds your aerobic base and improves heart efficiency. A good program includes both high and low-intensity work.</li>
-                    <li><strong>Fuel Your Workouts:</strong> Ensure you have enough energy for endurance training by calculating your needs with the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.</li>
+                    <li><strong>Fuel Your Workouts:</strong> Ensure you have enough energy for endurance training by calculating your needs with the <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link>.</li>
                 </ul>
             </CardContent>
         </Card>
@@ -303,7 +303,7 @@ export default function Vo2MaxPage() {
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>How can I improve my VO2 max?</AccordionTrigger>
-                <AccordionContent>The best way to improve your VO2 max is through consistent cardiovascular exercise. High-Intensity Interval Training (HIIT) and sustained endurance activities like running, cycling, and swimming are particularly effective. Improving your VO2 max will also lower the calories you burn for a given activity, which you can see in the <Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity Calculator</Link>.</AccordionContent>
+                <AccordionContent>The best way to improve your VO2 max is through consistent cardiovascular exercise. High-Intensity Interval Training (HIIT) and sustained endurance activities like running, cycling, and swimming are particularly effective. Improving your VO2 max will also lower the calories you burn for a given activity, which you can see in the <Link href="/calorie-burn-by-activity" className="text-primary hover:underline" aria-label="Calorie Burn by Activity Calculator">Calorie Burn by Activity Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>How accurate is this calculator?</AccordionTrigger>
@@ -336,12 +336,12 @@ export default function Vo2MaxPage() {
                         <TableRow>
                             <TableCell>Runners/Cyclists</TableCell>
                             <TableCell>Track aerobic fitness improvements over a training cycle.</TableCell>
-                            <TableCell><Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity</Link></TableCell>
+                            <TableCell><Link href="/calorie-burn-by-activity" className="text-primary hover:underline" aria-label="Calorie Burn by Activity Calculator">Calorie Burn by Activity</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>General Health</TableCell>
                             <TableCell>Monitor cardiovascular health and see the impact of starting a new exercise routine.</TableCell>
-                             <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
+                             <TableCell><Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Fitness Coaches</TableCell>
@@ -358,19 +358,19 @@ export default function Vo2MaxPage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted" aria-label="Calorie Burn by Activity Calculator">
               <h3 className="font-semibold">Calorie Burn by Activity</h3>
               <p className="text-sm text-muted-foreground">Estimate calories burned during your cardio workouts.</p>
             </Link>
-            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted" aria-label="TDEE Calculator">
               <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">Ensure you're eating enough to fuel your endurance training.</p>
             </Link>
-            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted" aria-label="BMR Calculator">
                 <h3 className="font-semibold">BMR Calculator</h3>
                 <p className="text-sm text-muted-foreground">A lower resting heart rate from improved fitness can impact your BMR.</p>
             </Link>
-            <Link href="/body-fat" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/body-fat" className="p-4 border rounded-lg hover:bg-muted" aria-label="Body Fat Percentage Calculator">
                 <h3 className="font-semibold">Body Fat Calculator</h3>
                 <p className="text-sm text-muted-foreground">Lowering excess body fat can improve VO2 max.</p>
             </Link>

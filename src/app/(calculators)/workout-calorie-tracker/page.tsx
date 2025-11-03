@@ -171,7 +171,7 @@ export default function WorkoutCalorieTrackerPage() {
                   Workout Calorie Tracker
                 </h1>
                 <p className="text-muted-foreground">
-                  Estimate the number of calories burned during your workout. This tool uses MET values to provide a scientific estimate of your energy expenditure, helping you better understand your overall <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>.
+                  Estimate the number of calories burned during your workout. This tool uses MET values to provide a scientific estimate of your energy expenditure, helping you better understand your overall <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link>.
                 </p>
               </div>
             </div>
@@ -229,7 +229,7 @@ export default function WorkoutCalorieTrackerPage() {
                 </TableRow>
                  <TableRow>
                   <TableCell>Interpretation & Next Step</TableCell>
-                  <TableCell>A 60-minute vigorous weight lifting session burns a significant number of calories. This expenditure is a component of the user's <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>. Knowing this helps in creating an accurate <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link> for fat loss.</TableCell>
+                  <TableCell>A 60-minute vigorous weight lifting session burns a significant number of calories. This expenditure is a component of the user's <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link>. Knowing this helps in creating an accurate <Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">calorie deficit</Link> for fat loss.</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -244,7 +244,7 @@ export default function WorkoutCalorieTrackerPage() {
             <h3 className="font-semibold text-lg text-foreground">What is a MET?</h3>
             <p>MET stands for Metabolic Equivalent of Task. It's a standardized measure used to express the energy cost of physical activities. One MET is defined as the amount of oxygen consumed while sitting at rest, which is approximately 3.5 milliliters of oxygen per kilogram of body weight per minute. In simpler terms:</p>
             <ul className="list-disc list-inside space-y-2">
-                <li><strong>1 MET:</strong> The energy you use when you are at complete rest. This is your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>.</li>
+                <li><strong>1 MET:</strong> The energy you use when you are at complete rest. This is your <Link href="/bmr" className="text-primary hover:underline" aria-label="BMR Calculator">BMR</Link>.</li>
                 <li><strong>6 METs:</strong> The activity requires six times the energy of resting.</li>
             </ul>
             <p>The MET value is a convenient way to compare the intensity of different activities. For example, light weight lifting has a MET of 3.0, while vigorous lifting has a MET of 6.0.</p>
@@ -252,7 +252,7 @@ export default function WorkoutCalorieTrackerPage() {
             <h3 className="font-semibold text-lg text-foreground">The Calculation Formula</h3>
             <p>This calculator uses a standard scientific formula to estimate calorie burn:</p>
             <p className="font-mono text-center p-4 bg-muted rounded-md">Total Calories Burned = Duration (min) × [(MET × 3.5 × Weight (kg)) / 200]</p>
-            <p>This formula accurately converts the oxygen consumption represented by the MET value into the calories burned for a person of a specific weight over a specific time. While it's a powerful estimation, remember that individual factors like age, gender, and <Link href="/body-fat" className="text-primary hover:underline">body composition</Link> can cause slight variations.</p>
+            <p>This formula accurately converts the oxygen consumption represented by the MET value into the calories burned for a person of a specific weight over a specific time. While it's a powerful estimation, remember that individual factors like age, gender, and <Link href="/body-fat" className="text-primary hover:underline" aria-label="Body Fat Percentage Calculator">body composition</Link> can cause slight variations.</p>
           </CardContent>
         </Card>
 
@@ -264,7 +264,7 @@ export default function WorkoutCalorieTrackerPage() {
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Overestimating Intensity:</strong> Choosing "vigorous" weight lifting for a session with long rest periods and low effort will overestimate your calorie burn. Be honest with your intensity.</li>
               <li><strong>Including Rest Time:</strong> The duration should only be the time you were actively performing the exercise, not the total time spent in the gym.</li>
-              <li><strong>"Eating Back" Workout Calories:</strong> Your exercise is already factored into your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> if you selected an appropriate activity level. Use this tool for information, not as a license to eat more.</li>
+              <li><strong>"Eating Back" Workout Calories:</strong> Your exercise is already factored into your <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link> if you selected an appropriate activity level. Use this tool for information, not as a license to eat more.</li>
               <li><strong>Ignoring the "Afterburn" Effect:</strong> Intense workouts, especially resistance training, can slightly elevate your metabolism for hours afterward (EPOC). This calculator does not account for that, so the total burn may be slightly higher.</li>
             </ul>
           </CardContent>
@@ -278,8 +278,8 @@ export default function WorkoutCalorieTrackerPage() {
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li><strong>Prioritize Compound Lifts:</strong> Exercises like squats, deadlifts, and bench presses use multiple muscle groups and burn more calories than isolation exercises.</li>
               <li><strong>Increase Density:</strong> To burn more calories in the same amount of time, reduce your rest periods between sets or use supersets.</li>
-              <li><strong>Focus on NEAT:</strong> Remember that calories burned outside of your workout (Non-Exercise Activity Thermogenesis) are also a huge part of your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>. Track your daily steps with the <Link href="/steps-to-calories" className="text-primary hover:underline">Steps to Calories Calculator</Link>.</li>
-              <li><strong>Fuel Your Workouts:</strong> To perform well and burn more calories, ensure you're adequately fueled. Use the <Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio Calculator</Link> to plan your pre-workout nutrition.</li>
+              <li><strong>Focus on NEAT:</strong> Remember that calories burned outside of your workout (Non-Exercise Activity Thermogenesis) are also a huge part of your <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE</Link>. Track your daily steps with the <Link href="/steps-to-calories" className="text-primary hover:underline" aria-label="Steps to Calories Calculator">Steps to Calories Calculator</Link>.</li>
+              <li><strong>Fuel Your Workouts:</strong> To perform well and burn more calories, ensure you're adequately fueled. Use the <Link href="/macronutrient-ratio" className="text-primary hover:underline" aria-label="Macronutrient Ratio Calculator">Macronutrient Ratio Calculator</Link> to plan your pre-workout nutrition.</li>
             </ul>
           </CardContent>
         </Card>
@@ -297,7 +297,7 @@ export default function WorkoutCalorieTrackerPage() {
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Should I "eat back" calories burned from exercise?</AccordionTrigger>
-                <AccordionContent>Generally, no. If you use a <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> with an activity multiplier, your exercise is already factored in. "Eating back" calories can cancel out a <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>.</AccordionContent>
+                <AccordionContent>Generally, no. If you use a <Link href="/tdee" className="text-primary hover:underline" aria-label="TDEE Calculator">TDEE Calculator</Link> with an activity multiplier, your exercise is already factored in. "Eating back" calories can cancel out a <Link href="/calorie-deficit" className="text-primary hover:underline" aria-label="Calorie Deficit Calculator">calorie deficit</Link>.</AccordionContent>
               </AccordionItem>
                <AccordionItem value="item-3">
                 <AccordionTrigger>How does this differ from my fitness tracker?</AccordionTrigger>
@@ -332,17 +332,17 @@ export default function WorkoutCalorieTrackerPage() {
                 <TableRow>
                   <TableCell>Weight Lifters</TableCell>
                   <TableCell>Estimate the energy expenditure of their training sessions to fine-tune their calorie surplus or deficit.</TableCell>
-                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline" aria-label="FFMI Calculator">FFMI Calculator</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>People on a Diet</TableCell>
                   <TableCell>Quantify how much a workout contributes to their daily energy burn and weight loss goals.</TableCell>
-                  <TableCell><Link href="/weight-loss-goal" className="text-primary hover:underline">Weight Loss Goal</Link></TableCell>
+                  <TableCell><Link href="/weight-loss-goal" className="text-primary hover:underline" aria-label="Weight Loss Goal Calculator">Weight Loss Goal</Link></TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Fitness Planners</TableCell>
                   <TableCell>Compare different workout types to create an effective calorie-burning training plan.</TableCell>
-                  <TableCell><Link href="/weekly-workout-load" className="text-primary hover:underline">Weekly Workout Load</Link></TableCell>
+                  <TableCell><Link href="/weekly-workout-load" className="text-primary hover:underline" aria-label="Weekly Workout Load Calculator">Weekly Workout Load</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -354,19 +354,19 @@ export default function WorkoutCalorieTrackerPage() {
             <CardTitle>Related Calculators</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted" aria-label="Calorie Burn by Activity Calculator">
               <h3 className="font-semibold">Calorie Burn by Activity</h3>
               <p className="text-sm text-muted-foreground">The same powerful tool, but with a focus on all daily activities, not just workouts.</p>
             </Link>
-            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted" aria-label="TDEE Calculator">
               <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">See how your workouts fit into your total daily energy expenditure.</p>
             </Link>
-            <Link href="/one-rep-max" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/one-rep-max" className="p-4 border rounded-lg hover:bg-muted" aria-label="One Rep Max Calculator">
               <h3 className="font-semibold">One Rep Max (1RM) Calculator</h3>
               <p className="text-sm text-muted-foreground">Estimate your strength to better gauge workout intensity.</p>
             </Link>
-            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted">
+            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted" aria-label="Protein Intake Calculator">
               <h3 className="font-semibold">Protein Intake Calculator</h3>
               <p className="text-sm text-muted-foreground">Ensure you're eating enough protein to recover from your workouts.</p>
             </Link>
@@ -377,4 +377,3 @@ export default function WorkoutCalorieTrackerPage() {
     </>
   );
 }
-
