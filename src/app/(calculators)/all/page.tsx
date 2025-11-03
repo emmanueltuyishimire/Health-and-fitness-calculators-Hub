@@ -10,9 +10,9 @@ const calculatorGroups = [
     calculators: [
       { name: 'BMI Calculator', href: '/bmi' },
       { name: 'Body Fat Percentage Calculator', href: '/body-fat' },
+      { name: 'Ideal Body Weight (IBW)', href: '/ideal-weight' },
       { name: 'Lean Body Mass Calculator', href: '/lean-body-mass' },
       { name: 'Fat-Free Mass Index (FFMI)', href: '/ffmi' },
-      { name: 'Ideal Body Weight (IBW)', href: '/ideal-weight' },
       { name: 'Body Surface Area (BSA)', href: '/bsa' },
       { name: 'Waist-to-Height Ratio', href: '/waist-to-height-ratio' },
       { name: 'Waist-to-Hip Ratio', href: '/waist-to-hip-ratio' },
@@ -23,13 +23,13 @@ const calculatorGroups = [
   {
     title: 'Weight Management & Goal Setting',
     calculators: [
+      { name: 'BMR Calculator', href: '/bmr' },
+      { name: 'TDEE Calculator', href: '/tdee' },
       { name: 'Calorie Deficit Calculator', href: '/calorie-deficit' },
       { name: 'Calorie Surplus Calculator', href: '/calorie-surplus' },
-      { name: 'TDEE Calculator', href: '/tdee' },
-      { name: 'BMR Calculator', href: '/bmr' },
+      { name: 'Calorie Maintenance Calculator', href: '/calorie-maintenance' },
       { name: 'Weight Loss Goal Calculator', href: '/weight-loss-goal' },
       { name: 'Weight Gain Goal Calculator', href: '/weight-gain-goal' },
-      { name: 'Calorie Maintenance Calculator', href: '/calorie-maintenance' },
       { name: 'Weekly Weight Change Tracker', href: '/weight-change-tracker' },
       { name: 'Fat Loss Progress Tracker', href: '/fat-loss-tracker' },
       { name: 'Goal Weight Estimator by Date', href: '/goal-weight-estimator' },
@@ -102,7 +102,7 @@ export default function AllCalculatorsPage() {
                     key={calc.name}
                     className="flex justify-between items-center"
                   >
-                    <Link href={calc.href || '#'} className="hover:text-primary hover:underline">
+                    <Link href={calc.href} className="hover:text-primary hover:underline">
                       {calc.name}
                     </Link>
                   </li>
