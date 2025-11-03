@@ -1,0 +1,62 @@
+// src/lib/definitions.ts
+import { z } from 'zod';
+
+export const BmiSchema = z.object({
+  height: z.string().min(1, { message: 'Height is required.' }),
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type BmiFormValues = z.infer<typeof BmiSchema>;
+
+export const BodyFatSchema = z.object({
+  gender: z.enum(['male', 'female']),
+  height: z.string().min(1, { message: 'Height is required.' }),
+  waist: z.string().min(1, { message: 'Waist measurement is required.' }),
+  neck: z.string().min(1, { message: 'Neck measurement is required.' }),
+  hip: z.string().optional(),
+  unitSystem: z.enum(['metric', 'imperial']),
+}).refine(data => data.gender === 'female' ? !!data.hip && data.hip.length > 0 : true, {
+  message: 'Hip measurement is required for females.',
+  path: ['hip'],
+});
+
+export type BodyFatFormValues = z.infer<typeof BodyFatSchema>;
+
+
+export const IdealWeightSchema = z.object({
+  gender: z.enum(['male', 'female']),
+  height: z.string().min(1, { message: 'Height is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type IdealWeightFormValues = z.infer<typeof IdealWeightSchema>;
+
+export const BmrSchema = z.object({
+  gender: z.enum(['male', 'female']),
+  age: z.string().min(1, { message: 'Age is required.' }),
+  height: z.string().min(1, { message: 'Height is required.' }),
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type BmrFormValues = z.infer<typeof BmrSchema>;
+
+export const CalorieNeedsSchema = z.object({
+  bmr: z.string().min(1, { message: 'BMR is required. Please calculate it first.' }),
+  activityLevel: z.enum([
+    'sedentary',
+    'lightly_active',
+    'moderately_active',
+    'very_active',
+    'extra_active',
+  ]),
+});
+
+export type CalorieNeedsFormValues = z.infer<typeof CalorieNeedsSchema>;
+
+export const RecommendationsSchema = z.object({
+  preferences: z.string().min(10, { message: 'Please describe your preferences in at least 10 characters.' }),
+});
+
+export type RecommendationsFormValues = z.infer<typeof RecommendationsSchema>;
