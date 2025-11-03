@@ -24,6 +24,7 @@ type State = {
     | 'very_active'
     | 'extra_active';
   carbActivityLevel: 'light' | 'moderate' | 'high' | 'very_high';
+  fatPercentage: number;
   deficit: 'mild' | 'standard' | 'aggressive';
   surplus: 'mild' | 'standard' | 'aggressive';
   tdee: string;
@@ -67,6 +68,7 @@ const initialState: State = {
   bust: '90',
   activityLevel: 'sedentary',
   carbActivityLevel: 'moderate',
+  fatPercentage: 30,
   bodyFat: 15,
   deficit: 'standard',
   surplus: 'standard',

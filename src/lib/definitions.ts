@@ -244,3 +244,10 @@ export const CarbIntakeSchema = z.object({
 });
 
 export type CarbIntakeFormValues = z.infer<typeof CarbIntakeSchema>;
+
+export const FatIntakeSchema = z.object({
+    calories: z.string().min(1, { message: 'Calorie target is required.' }),
+    fatPercentage: z.number().min(10).max(50),
+});
+
+export type FatIntakeFormValues = z.infer<typeof FatIntakeSchema>;

@@ -26,6 +26,7 @@ import {
   CalendarClock,
   PieChart,
   Egg,
+  Droplets,
 } from 'lucide-react';
 import { PiPersonArmsSpread } from "react-icons/pi";
 
@@ -67,6 +68,7 @@ const links = [
   { href: '/macronutrient-ratio', label: 'Macronutrient Ratio', icon: PieChart },
   { href: '/protein-intake', label: 'Protein Intake', icon: Egg },
   { href: '/carb-intake', label: 'Carb Intake', icon: BrainCircuit },
+  { href: '/fat-intake', label: 'Fat Intake', icon: Droplets },
   { href: '/weight-loss-goal', label: 'Weight Loss Goal', icon: Flag },
   { href: '/weight-gain-goal', label: 'Weight Gain Goal', icon: Flag },
   { href: '/goal-weight-estimator', label: 'Goal Weight Estimator', icon: CalendarClock },
