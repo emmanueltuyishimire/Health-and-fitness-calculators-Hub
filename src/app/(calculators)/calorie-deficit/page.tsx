@@ -215,18 +215,18 @@ export default function CalorieDeficitPage() {
                 </TableRow>
                 <TableRow>
                   <TableCell>Chosen Deficit</TableCell>
-                  <TableCell>Mild (250 kcal)</TableCell>
-                  <TableCell>Standard (500 kcal)</TableCell>
+                  <TableCell>Mild (10%)</TableCell>
+                  <TableCell>Standard (15%)</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-bold">Daily Calorie Target</TableCell>
-                  <TableCell className="font-bold">2150 kcal/day</TableCell>
-                  <TableCell className="font-bold">1600 kcal/day</TableCell>
+                  <TableCell className="font-bold">2160 kcal/day</TableCell>
+                  <TableCell className="font-bold">1785 kcal/day</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Expected Weekly Loss</TableCell>
                   <TableCell>~0.5 lb/week</TableCell>
-                  <TableCell>~1.0 lb/week</TableCell>
+                  <TableCell>~0.9 lb/week</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Interpretation</TableCell>
@@ -261,6 +261,34 @@ export default function CalorieDeficitPage() {
 
         <Card>
           <CardHeader>
+            <CardTitle>Common Mistakes When Creating a Deficit</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Being Too Aggressive:</strong> A massive deficit leads to muscle loss, nutrient deficiencies, and burnout. Start with a 10-15% deficit.</li>
+              <li><strong>Forgetting Protein:</strong> Not eating enough protein during a deficit can accelerate muscle loss, which lowers your metabolism. Use the Protein Intake Calculator to find your target.</li>
+              <li><strong>Not Adjusting TDEE:</strong> As you lose weight, your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> will decrease. You must recalculate it every 10-15 lbs to keep your deficit accurate.</li>
+              <li><strong>Ignoring Food Quality:</strong> 500 calories of junk food is not the same as 500 calories of whole foods. Prioritize nutrient-dense foods for better health and satiety.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Use Calorie Cycling:</strong> Eat in a larger deficit on rest days and a smaller deficit (or at maintenance) on training days to fuel performance.</li>
+              <li><strong>Schedule Diet Breaks:</strong> After 8-12 weeks in a deficit, consider taking 1-2 weeks to eat at your maintenance TDEE. This can help normalize hormones and provide a psychological break.</li>
+              <li><strong>Focus on High-Volume Foods:</strong> Vegetables, fruits, and lean proteins are less calorie-dense, allowing you to eat more food and feel fuller while staying in your deficit.</li>
+              <li><strong>Stay Hydrated:</strong> Drinking plenty of water can help with satiety and overall metabolic function. Use the <Link href="/water-intake" className="text-primary hover:underline">Water Intake Calculator</Link> to find your target.</li>
+            </ul>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
           </CardHeader>
           <CardContent>
@@ -286,6 +314,40 @@ export default function CalorieDeficitPage() {
                 <AccordionContent>This is called a plateau. It's normal. It may happen because your TDEE has decreased as you've lost weight. It's time to recalculate your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> and adjust your deficit accordingly.</AccordionContent>
               </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>General Users</TableCell>
+                  <TableCell>Create a simple, effective plan for steady weight loss.</TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Fitness Coaches</TableCell>
+                  <TableCell>Set precise calorie targets for clients' fat loss phases.</TableCell>
+                  <TableCell>Weekly Weight Change Tracker</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Bodybuilders</TableCell>
+                  <TableCell>Plan a "cutting" phase to reduce body fat while preserving muscle.</TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
 
