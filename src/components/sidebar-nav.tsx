@@ -1,3 +1,4 @@
+
 'use client';
 
 import { usePathname } from 'next/navigation';
@@ -10,6 +11,7 @@ import {
   Scale,
   Sparkles,
   Target,
+  Weight
 } from 'lucide-react';
 
 import {
@@ -33,6 +35,7 @@ const links = [
   { href: '/bmi', label: 'BMI Calculator', icon: Scale },
   { href: '/body-fat', label: 'Body Fat %', icon: Percent },
   { href: '/ideal-weight', label: 'Ideal Weight', icon: Target },
+  { href: '/lean-body-mass', label: 'Lean Body Mass', icon: Weight },
   { href: '/bmr', label: 'BMR Calculator', icon: Flame },
   { href: '/calorie-needs', label: 'Calorie Needs', icon: Calculator },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },

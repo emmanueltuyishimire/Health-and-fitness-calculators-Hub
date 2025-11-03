@@ -1,3 +1,4 @@
+
 // src/lib/definitions.ts
 import { z } from 'zod';
 
@@ -60,3 +61,12 @@ export const RecommendationsSchema = z.object({
 });
 
 export type RecommendationsFormValues = z.infer<typeof RecommendationsSchema>;
+
+export const LeanBodyMassSchema = z.object({
+    gender: z.enum(['male', 'female']),
+    height: z.string().min(1, { message: 'Height is required.' }),
+    weight: z.string().min(1, { message: 'Weight is required.' }),
+    unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type LeanBodyMassFormValues = z.infer<typeof LeanBodyMassSchema>;

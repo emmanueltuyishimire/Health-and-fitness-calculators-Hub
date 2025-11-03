@@ -1,3 +1,4 @@
+
 'use client';
 
 import type { ReactNode } from 'react';
@@ -25,6 +26,7 @@ type State = {
   idealWeight?: string;
   bmr?: number;
   calorieNeeds?: number;
+  leanBodyMass?: number;
 };
 
 type Action =
