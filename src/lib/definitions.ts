@@ -161,3 +161,13 @@ export const CalorieMaintenanceSchema = z.object({
 });
 
 export type CalorieMaintenanceFormValues = z.infer<typeof CalorieMaintenanceSchema>;
+
+export const WeightLossGoalSchema = z.object({
+    tdee: z.string().min(1, { message: 'TDEE is required. Please calculate it first.' }),
+    currentWeight: z.string().min(1, { message: 'Current weight is required.' }),
+    goalWeight: z.string().min(1, { message: 'Goal weight is required.' }),
+    weeklyLoss: z.string(),
+    unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type WeightLossGoalFormValues = z.infer<typeof WeightLossGoalSchema>;

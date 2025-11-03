@@ -26,6 +26,8 @@ type State = {
   deficit: 'mild' | 'standard' | 'aggressive';
   surplus: 'mild' | 'standard' | 'aggressive';
   tdee: string;
+  goalWeight: string;
+  weeklyLoss: string;
   bodyFat?: number;
   bmi?: number;
   idealWeight?: string;
@@ -60,6 +62,8 @@ const initialState: State = {
   deficit: 'standard',
   surplus: 'standard',
   tdee: '',
+  goalWeight: '',
+  weeklyLoss: '1',
 };
 
 const CalculatorContext = createContext<{
