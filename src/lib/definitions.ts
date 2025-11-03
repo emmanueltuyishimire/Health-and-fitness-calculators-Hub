@@ -267,3 +267,16 @@ export const MealCalorieSplitSchema = z.object({
 });
 
 export type MealCalorieSplitFormValues = z.infer<typeof MealCalorieSplitSchema>;
+
+export const WaterIntakeSchema = z.object({
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  activityLevel: z.enum([
+    'sedentary',
+    'lightly_active',
+    'moderately_active',
+    'very_active',
+  ]),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type WaterIntakeFormValues = z.infer<typeof WaterIntakeSchema>;

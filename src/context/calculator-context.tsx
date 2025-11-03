@@ -52,6 +52,7 @@ type State = {
   waistToHipRatio?: number;
   bodyShape?: string;
   bodyDensity?: number;
+  waterIntake?: number;
 };
 
 type Action =
@@ -111,6 +112,7 @@ function calculatorReducer(state: State, action: Action): State {
         waistToHipRatio,
         bodyShape,
         bodyDensity,
+        waterIntake,
         ...userData
       } = state;
       return {
