@@ -216,3 +216,18 @@ export const MacronutrientRatioSchema = z.object({
 });
 
 export type MacronutrientRatioFormValues = z.infer<typeof MacronutrientRatioSchema>;
+
+export const ProteinIntakeSchema = z.object({
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  activityLevel: z.enum([
+    'sedentary',
+    'lightly_active',
+    'moderately_active',
+    'very_active',
+    'extra_active',
+  ]),
+  goal: z.enum(['fat_loss', 'maintenance', 'muscle_gain']),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type ProteinIntakeFormValues = z.infer<typeof ProteinIntakeSchema>;

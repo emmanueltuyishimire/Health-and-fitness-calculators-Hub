@@ -34,6 +34,7 @@ type State = {
   carbs: number;
   fat: number;
   calories: string;
+  goal: 'fat_loss' | 'maintenance' | 'muscle_gain';
   bodyFat?: number;
   bmi?: number;
   idealWeight?: string;
@@ -76,6 +77,7 @@ const initialState: State = {
   carbs: 40,
   fat: 30,
   calories: '2000',
+  goal: 'maintenance',
 };
 
 const CalculatorContext = createContext<{

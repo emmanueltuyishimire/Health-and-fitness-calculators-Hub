@@ -24,6 +24,7 @@ import {
   AreaChart,
   CalendarClock,
   PieChart,
+  Egg,
 } from 'lucide-react';
 import { PiPersonArmsSpread } from "react-icons/pi";
 
@@ -63,6 +64,7 @@ const links = [
   { href: '/calorie-surplus', label: 'Calorie Surplus', icon: TrendingUp },
   { href: '/calorie-maintenance', label: 'Calorie Maintenance', icon: Anchor },
   { href: '/macronutrient-ratio', label: 'Macronutrient Ratio', icon: PieChart },
+  { href: '/protein-intake', label: 'Protein Intake', icon: Egg },
   { href: '/weight-loss-goal', label: 'Weight Loss Goal', icon: Flag },
   { href: '/weight-gain-goal', label: 'Weight Gain Goal', icon: Flag },
   { href: '/goal-weight-estimator', label: 'Goal Weight Estimator', icon: CalendarClock },
