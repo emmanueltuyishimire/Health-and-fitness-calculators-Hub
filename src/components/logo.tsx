@@ -1,10 +1,9 @@
-import { HeartPulse } from 'lucide-react';
-import type { SVGProps } from 'react';
+import Image from 'next/image';
 
-export function Logo(props: SVGProps<SVGSVGElement>) {
+export function Logo() {
   return (
     <div className="flex items-center gap-2" aria-label="Body Balance Logo">
-      <HeartPulse className="h-8 w-8 text-primary" />
+      <Image src="/logo.png" alt="Body Balance Logo" width={32} height={32} />
       <span className="text-xl font-bold tracking-tight text-foreground">
         Body Balance
       </span>

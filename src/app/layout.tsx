@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: 'Body Balance',
   description: 'Body Composition & Weight Management Calculators Hub',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
