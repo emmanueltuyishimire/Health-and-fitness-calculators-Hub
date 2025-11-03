@@ -7,8 +7,6 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Logo } from '@/components/logo';
-import { calculatorGroups } from '@/lib/calculator-groups';
-import { CalculatorCard } from '@/components/calculator-card';
 
 const ptSans = PT_Sans({
   subsets: ['latin'],
