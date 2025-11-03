@@ -300,6 +300,64 @@ export default function OneRepMaxPage() {
             </Accordion>
           </CardContent>
         </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Bodybuilders</TableCell>
+                  <TableCell>Set precise loads for hypertrophy training (e.g., 75% of 1RM) to maximize muscle growth.</TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Powerlifters</TableCell>
+                  <TableCell>Structure a strength-focused program with specific percentages for peaking for a competition.</TableCell>
+                  <TableCell>N/A</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>General Fitness</TableCell>
+                  <TableCell>Track strength progress objectively over time to ensure a program is effective.</TableCell>
+                  <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Related Calculators</CardTitle>
+          </CardHeader>
+          <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Link href="/ffmi" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">FFMI Calculator</h3>
+              <p className="text-sm text-muted-foreground">Track how your strength gains are translating to increased muscularity.</p>
+            </Link>
+            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Protein Intake Calculator</h3>
+              <p className="text-sm text-muted-foreground">Ensure you're eating enough protein to support strength and muscle gains.</p>
+            </Link>
+            <Link href="/calorie-surplus" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Calorie Surplus Calculator</h3>
+              <p className="text-sm text-muted-foreground">Calculate the calorie surplus needed to fuel your strength training and build muscle.</p>
+            </Link>
+            <Link href="/weight-change-tracker" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Weekly Weight Tracker</h3>
+              <p className="text-sm text-muted-foreground">Monitor your weight trend to ensure you're gaining at a controlled pace.</p>
+            </Link>
+          </CardContent>
+        </Card>
       </div>
     </>
   );
