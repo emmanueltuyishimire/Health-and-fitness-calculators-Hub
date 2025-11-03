@@ -3,248 +3,207 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://health.calculation.site/</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/all</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/bmi</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/body-fat</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/ideal-weight</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/lean-body-mass</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/ffmi</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/bsa</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/waist-to-height-ratio</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/waist-to-hip-ratio</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/body-shape</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/body-density</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/bmr</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/rmr</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/tdee</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/daily-calorie-needs</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/activity-level-estimator</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/calorie-deficit</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/calorie-surplus</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/calorie-maintenance</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/macronutrient-ratio</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/protein-intake</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/carb-intake</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/fat-intake</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/water-intake</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/hydration-tracker</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/calorie-burn-by-activity</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/workout-calorie-tracker</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/weekly-workout-load</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/met-value</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/steps-to-calories</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/walking-running-calories</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/meal-calorie-split</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/weight-loss-goal</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/weight-gain-goal</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/goal-weight-estimator</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/weight-change-tracker</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/fat-loss-tracker</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/one-rep-max</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/strength-to-weight-ratio</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://health.calculation.site/vo2-max</loc>
-    <lastmod>2024-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.80</priority>
   </url>
 </urlset>
