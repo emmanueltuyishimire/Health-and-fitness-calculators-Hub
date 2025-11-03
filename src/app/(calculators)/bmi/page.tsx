@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
 };
 
-const BmiPage = () => {
+export default function BmiPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
@@ -213,7 +213,7 @@ const BmiPage = () => {
                 </h1>
                 <p className="text-muted-foreground">
                   Calculate your Body Mass Index (BMI) based on your height and
-                  weight.
+                  weight. It's a quick way to gauge if your weight is healthy, but it's most powerful when used with other tools like the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Calculator</Link>.
                 </p>
               </div>
             </div>
@@ -446,7 +446,7 @@ const BmiPage = () => {
                 <TableRow>
                   <TableCell>Fitness Coaches</TableCell>
                   <TableCell>Benchmark a new client's starting point before creating a fitness plan.</TableCell>
-                  <TableCell><Link href="/body-fat" className="text-primary hover:underline">Body Fat % Tracker</Link></TableCell>
+                  <TableCell><Link href="/body-fat" className="text-primary hover:underline">Body Fat % Calculator</Link></TableCell>
                 </TableRow>
                  <TableRow>
                   <TableCell>Nutritionists</TableCell>
@@ -511,5 +511,3 @@ const BmiPage = () => {
     </>
   );
 };
-
-export default BmiPage;
