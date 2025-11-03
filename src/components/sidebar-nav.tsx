@@ -35,6 +35,7 @@ import {
   Dumbbell,
   Medal,
   Activity,
+  BedDouble,
 } from 'lucide-react';
 import { PiPersonArmsSpread } from "react-icons/pi";
 
@@ -68,6 +69,7 @@ const links = [
   { href: '/body-shape', label: 'Body Shape', icon: PersonStanding },
   { href: '/body-density', label: 'Body Density', icon: Database },
   { href: '/bmr', label: 'BMR Calculator', icon: Flame },
+  { href: '/rmr', label: 'RMR Calculator', icon: BedDouble },
   { href: '/tdee', label: 'TDEE Calculator', icon: Bike },
   { href: '/daily-calorie-needs', label: 'Daily Calorie Needs', icon: Calculator },
   { href: '/calorie-adjustment-for-weight-loss', label: 'Calorie Adjustment (Loss)', icon: TrendingDown },

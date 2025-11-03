@@ -43,6 +43,16 @@ export const BmrSchema = z.object({
 
 export type BmrFormValues = z.infer<typeof BmrSchema>;
 
+export const RmrSchema = z.object({
+  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
+  age: z.string().min(1, { message: 'Age is required.' }),
+  height: z.string().min(1, { message: 'Height is required.' }),
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type RmrFormValues = z.infer<typeof RmrSchema>;
+
 export const TdeeSchema = z.object({
   bmr: z.string().min(1, { message: 'BMR is required. Please calculate it first.' }),
   activityLevel: z.enum([

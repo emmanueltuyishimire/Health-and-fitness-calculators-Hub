@@ -49,6 +49,7 @@ type State = {
   bmi?: number;
   idealWeight?: string;
   bmr?: number;
+  rmr?: number;
   calorieNeeds?: number;
   leanBodyMass?: number;
   ffmi?: number;
@@ -117,6 +118,7 @@ function calculatorReducer(state: State, action: Action): State {
         bodyFat,
         idealWeight,
         bmr,
+        rmr,
         calorieNeeds,
         leanBodyMass,
         ffmi,
