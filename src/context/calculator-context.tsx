@@ -29,6 +29,11 @@ type State = {
   goalWeight: string;
   weeklyLoss: string;
   weeklyGain: string;
+  dietPlan: 'balanced' | 'high_protein' | 'low_carb' | 'keto' | 'custom';
+  protein: number;
+  carbs: number;
+  fat: number;
+  calories: string;
   bodyFat?: number;
   bmi?: number;
   idealWeight?: string;
@@ -66,6 +71,11 @@ const initialState: State = {
   goalWeight: '',
   weeklyLoss: '1',
   weeklyGain: '0.5',
+  dietPlan: 'balanced',
+  protein: 30,
+  carbs: 40,
+  fat: 30,
+  calories: '2000',
 };
 
 const CalculatorContext = createContext<{

@@ -1,3 +1,4 @@
+
 // src/lib/definitions.ts
 import { z } from 'zod';
 
@@ -202,3 +203,16 @@ export const GoalWeightEstimatorSchema = z.object({
 });
 
 export type GoalWeightEstimatorFormValues = z.infer<typeof GoalWeightEstimatorSchema>;
+
+export const MacronutrientRatioSchema = z.object({
+  calories: z.string().min(1, { message: 'Calorie target is required.' }),
+  dietPlan: z.enum(['balanced', 'high_protein', 'low_carb', 'keto', 'custom']),
+  protein: z.number(),
+  carbs: z.number(),
+  fat: z.number(),
+}).refine(data => data.protein + data.carbs + data.fat === 100, {
+    message: 'Percentages must add up to 100.',
+    path: ['protein'],
+});
+
+export type MacronutrientRatioFormValues = z.infer<typeof MacronutrientRatioSchema>;
