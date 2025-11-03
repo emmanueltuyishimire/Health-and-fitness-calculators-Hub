@@ -36,7 +36,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3042243846300811"
           crossOrigin="anonymous"></script>
       </head>
-      <body className={`${ptSans.variable} font-body antialiased`}>
+      <body className={`${ptSans.variable} font-body antialiased`} suppressHydrationWarning>
         <div className="flex flex-col min-h-screen bg-background">
           <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
