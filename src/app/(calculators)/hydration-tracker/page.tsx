@@ -18,6 +18,15 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { HydrationTrackerForm } from '@/components/hydration-tracker-form';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
+
 
 export const metadata: Metadata = {
   title: 'Hydration Tracker – Monitor Your Daily Water Intake',
@@ -114,6 +123,22 @@ export default function HydrationTrackerPage() {
           text: 'This is a simple, client-side tracker. Your progress will be saved as long as you keep the browser tab open, but it will reset if you close it or refresh the page. It is designed for daily use.',
         },
       },
+       {
+        '@type': 'Question',
+        name: 'How does tracking water intake help with weight loss?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Staying hydrated can boost your metabolism, as estimated by the <a href="/bmr">BMR Calculator</a>, and help you feel full, reducing the likelihood of overeating. Replacing sugary drinks with water is a simple way to cut calories from your diet, helping you achieve a <a href="/calorie-deficit">calorie deficit</a>.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does my hydration goal change if I\'m more active?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. The more you sweat, the more water you need to replace. Our <a href="/water-intake">Water Intake Calculator</a> accounts for activity level, but you should also listen to your body and drink more during and after exercise.',
+        },
+      }
     ],
   };
 
@@ -194,6 +219,34 @@ export default function HydrationTrackerPage() {
              <p>Just as tracking calories with the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> calculator is key for weight management, tracking water is key for hydration management. What gets measured gets managed.</p>
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Forgetting to Log:</strong> The biggest challenge with any tracker is consistency. Try to log your water immediately after drinking it.</li>
+              <li><strong>One Size Fits All:</strong> Using a generic goal like "8 glasses a day" might not be right for you. Use the <Link href="/water-intake" className="text-primary hover:underline">Water Intake Calculator</Link> for a personalized target.</li>
+              <li><strong>Ignoring Thirst:</strong> While tracking is great, don't forget to listen to your body. If you're thirsty, drink, even if you've already met your goal.</li>
+              <li><strong>Only Tracking at the End of the Day:</strong> Trying to remember everything you drank at the end of the day is inaccurate. Log as you go for best results.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Keep it Visible:</strong> Keep this tracker open in a pinned tab in your browser so it's always one click away.</li>
+              <li><strong>Link it to a Habit:</strong> Drink and log a glass of water every time you check your email, or before every meal.</li>
+              <li><strong>Use a Marked Bottle:</strong> Use a water bottle with time or volume markings. Each time you finish a section, log that amount in the tracker.</li>
+              <li><strong>Challenge a Friend:</strong> Share your hydration goal with a friend and hold each other accountable.</li>
+            </ul>
+          </CardContent>
+        </Card>
         
         <Card>
           <CardHeader>
@@ -221,7 +274,49 @@ export default function HydrationTrackerPage() {
                 <AccordionTrigger>Does this tracker save my progress?</AccordionTrigger>
                 <AccordionContent>This is a simple, client-side tracker. Your progress will be saved as long as you keep the browser tab open, but it will reset if you close it or refresh the page. It is designed for daily use.</AccordionContent>
               </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger>How does tracking water intake help with weight loss?</AccordionTrigger>
+                <AccordionContent>Staying hydrated can boost your metabolism, as estimated by the <a href="/bmr">BMR Calculator</a>, and help you feel full, reducing the likelihood of overeating. Replacing sugary drinks with water is a simple way to cut calories from your diet, helping you achieve a <a href="/calorie-deficit">calorie deficit</a>.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger>Does my hydration goal change if I'm more active?</AccordionTrigger>
+                <AccordionContent>Yes. The more you sweat, the more water you need to replace. Our <a href="/water-intake">Water Intake Calculator</a> accounts for activity level, but you should also listen to your body and drink more during and after exercise.</AccordionContent>
+              </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Office Workers</TableCell>
+                  <TableCell>Use the tracker to combat afternoon fatigue by ensuring consistent hydration.</TableCell>
+                  <TableCell>N/A</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Athletes</TableCell>
+                  <TableCell>Monitor fluid intake to ensure peak performance and prevent dehydration during training.</TableCell>
+                  <TableCell><Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Anyone on a Diet</TableCell>
+                  <TableCell>Use the tracker to ensure they are drinking enough water to manage hunger and support metabolism.</TableCell>
+                  <TableCell><Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
 
