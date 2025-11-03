@@ -21,6 +21,7 @@ import {
   TrendingDown,
   TrendingUp,
   Flag,
+  AreaChart,
 } from 'lucide-react';
 import { PiPersonArmsSpread } from "react-icons/pi";
 
@@ -60,6 +61,8 @@ const links = [
   { href: '/calorie-maintenance', label: 'Calorie Maintenance', icon: Anchor },
   { href: '/weight-loss-goal', label: 'Weight Loss Goal', icon: Flag },
   { href: '/weight-gain-goal', label: 'Weight Gain Goal', icon: Flag },
+  { href: '/weight-change-tracker', label: 'Weekly Weight Tracker', icon: AreaChart },
+  { href: '/fat-loss-tracker', label: 'Fat Loss Tracker', icon: Target },
   { href: '/calorie-needs', label: 'Calorie Needs', icon: Calculator },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },
   { href: '/all', label: 'All Calculators', icon: List },

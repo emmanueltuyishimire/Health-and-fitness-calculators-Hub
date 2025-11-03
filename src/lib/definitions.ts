@@ -181,3 +181,13 @@ export const WeightGainGoalSchema = z.object({
 });
 
 export type WeightGainGoalFormValues = z.infer<typeof WeightGainGoalSchema>;
+
+export const FatLossTrackerSchema = z.object({
+    startingWeight: z.string().min(1, { message: 'Starting weight is required.' }),
+    startingBodyFat: z.string().min(1, { message: 'Starting body fat % is required.' }),
+    currentWeight: z.string().min(1, { message: 'Current weight is required.' }),
+    currentBodyFat: z.string().min(1, { message: 'Current body fat % is required.' }),
+    unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type FatLossTrackerFormValues = z.infer<typeof FatLossTrackerSchema>;
