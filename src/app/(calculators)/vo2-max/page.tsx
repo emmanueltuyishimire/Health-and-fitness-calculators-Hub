@@ -1,7 +1,7 @@
 
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Lung } from 'lucide-react';
+import { Activity } from 'lucide-react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -61,8 +61,13 @@ export default function Vo2MaxPage() {
     step: [
       {
         '@type': 'HowToStep',
+        name: 'Measure Resting Heart Rate',
+        text: 'Measure your resting heart rate (RHR) in beats per minute, ideally in the morning after waking up.',
+      },
+      {
+        '@type': 'HowToStep',
         name: 'Enter Your Details',
-        text: 'Input your age, gender, and resting heart rate (beats per minute).',
+        text: 'Input your gender, age, and RHR into the calculator.',
       },
       {
         '@type': 'HowToStep',
@@ -89,7 +94,7 @@ export default function Vo2MaxPage() {
         name: 'How can I improve my VO2 max?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The best way to improve your VO2 max is through consistent cardiovascular exercise. High-Intensity Interval Training (HIIT) and sustained endurance activities like running, cycling, and swimming are particularly effective.',
+          text: 'The best way to improve your VO2 max is through consistent cardiovascular exercise. High-Intensity Interval Training (HIIT) and sustained endurance activities like running, cycling, and swimming are particularly effective. This will also help lower your calorie burn for a given activity, which you can see in the <a href="/calorie-burn-by-activity">Calorie Burn by Activity Calculator</a>.',
         },
       },
       {
@@ -97,7 +102,23 @@ export default function Vo2MaxPage() {
         name: 'How accurate is this calculator?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'This calculator provides an estimation based on population averages. True VO2 max testing requires specialized equipment in a lab setting. However, this tool is useful for tracking your progress over time.',
+          text: 'This calculator provides a reasonable estimation based on population averages derived from resting heart rate. However, true VO2 max testing requires specialized equipment in a lab setting. This tool is most useful for tracking your progress over time as your resting heart rate improves.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why does resting heart rate relate to VO2 max?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A lower resting heart rate is often a sign of a stronger, more efficient heart. A heart that can pump more blood with each beat (higher stroke volume) doesn\'t need to beat as often at rest. This efficiency is closely linked to higher aerobic capacity (VO2 max).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does age affect VO2 max?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'VO2 max naturally declines with age, typically by about 10% per decade after the age of 30. However, regular endurance training can significantly slow this decline.',
         },
       },
     ],
@@ -138,7 +159,7 @@ export default function Vo2MaxPage() {
           <CardHeader>
             <div className="flex items-start gap-4">
               <div className="bg-primary/10 text-primary p-3 rounded-lg">
-                <Lung className="h-8 w-8" />
+                <Activity className="h-8 w-8" />
               </div>
               <div>
                 <h1 className="text-2xl md:text-3xl font-bold">
@@ -152,6 +173,47 @@ export default function Vo2MaxPage() {
           </CardHeader>
           <CardContent>
             <Vo2MaxCalculatorForm />
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>How to Use the VO2 Max Estimator</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4 text-muted-foreground">
+            <p>This calculator provides a simple way to estimate your VO2 max without a lab test. For the most accurate resting heart rate:</p>
+            <ol className="list-decimal list-inside space-y-2">
+                <li><strong>Measure in the Morning:</strong> The best time to measure your resting heart rate is right after you wake up, before getting out of bed.</li>
+                <li><strong>Be Relaxed:</strong> Lie down for a few minutes before measuring. Don't measure after consuming caffeine or exercising.</li>
+                <li><strong>Count for 30-60 Seconds:</strong> Place two fingers on your wrist or neck, count the beats for a full minute, or for 30 seconds and multiply by two.</li>
+                <li><strong>Enter Your Data:</strong> Input your gender, age, and this resting heart rate into the form to get your estimate.</li>
+            </ol>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Worked Example</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Variable</TableHead>
+                  <TableHead>Example Data</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow><TableCell>Gender</TableCell><TableCell>Male</TableCell></TableRow>
+                <TableRow><TableCell>Age</TableCell><TableCell>40</TableCell></TableRow>
+                <TableRow><TableCell>Resting Heart Rate</TableCell><TableCell>60 bpm</TableCell></TableRow>
+                <TableRow><TableCell className="font-bold">Estimated VO2 Max</TableCell><TableCell className="font-bold">45.9 ml/kg/min</TableCell></TableRow>
+                <TableRow>
+                  <TableCell>Interpretation & Next Step</TableCell>
+                  <TableCell>A VO2 max of 45.9 places this 40-year-old male in the "Good" category. To improve further, he could incorporate more high-intensity training into his routine. This increased fitness would also be reflected in the <Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity</Link> calculator.</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
 
@@ -205,6 +267,29 @@ export default function Vo2MaxPage() {
             </Table>
           </CardContent>
         </Card>
+        
+        <Card>
+            <CardHeader><CardTitle>Common Mistakes</CardTitle></CardHeader>
+            <CardContent>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li><strong>Inaccurate Resting Heart Rate:</strong> Measuring your heart rate after coffee, exercise, or a stressful event will inflate the number and lead to an inaccurate VO2 max estimate.</li>
+                    <li><strong>Treating the Estimate as Exact:</strong> This is a non-exercise-based prediction. A true VO2 max test involves maximal effort on a treadmill or bike. Use this as a convenient way to track trends.</li>
+                    <li><strong>Not Re-calculating:</strong> As your fitness improves, your resting heart rate will likely decrease. You should recalculate your VO2 max every 1-2 months to reflect your new fitness level.</li>
+                </ul>
+            </CardContent>
+        </Card>
+        
+        <Card>
+            <CardHeader><CardTitle>Pro Tips & Quick Hacks</CardTitle></CardHeader>
+            <CardContent>
+                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li><strong>Focus on Lowering RHR:</strong> The most actionable way to improve your estimated VO2 max is to lower your resting heart rate through consistent cardio.</li>
+                    <li><strong>Incorporate HIIT:</strong> High-Intensity Interval Training (e.g., 30 seconds sprint, 1 minute rest, repeat) is one of the most effective ways to boost VO2 max.</li>
+                    <li><strong>Don't Neglect Low-Intensity Cardio:</strong> Long, slow-distance training also builds your aerobic base and improves heart efficiency. A good program includes both high and low-intensity work.</li>
+                    <li><strong>Fuel Your Workouts:</strong> Ensure you have enough energy for endurance training by calculating your needs with the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.</li>
+                </ul>
+            </CardContent>
+        </Card>
 
         <Card>
           <CardHeader>
@@ -224,8 +309,48 @@ export default function Vo2MaxPage() {
                 <AccordionTrigger>How accurate is this calculator?</AccordionTrigger>
                 <AccordionContent>This calculator provides an estimation based on population averages using a formula that relates resting and maximal heart rates. True VO2 max testing requires specialized equipment in a laboratory setting. However, this tool is very useful for tracking your progress over time as your resting heart rate improves.</AccordionContent>
               </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger>Why does resting heart rate relate to VO2 max?</AccordionTrigger>
+                <AccordionContent>A lower resting heart rate is often a sign of a stronger, more efficient heart. A heart that can pump more blood with each beat (higher stroke volume) doesn't need to beat as often at rest. This efficiency is closely linked to higher aerobic capacity (VO2 max).</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger>Does age affect VO2 max?</AccordionTrigger>
+                <AccordionContent>VO2 max naturally declines with age, typically by about 10% per decade after the age of 30. However, regular endurance training can significantly slow this decline.</AccordionContent>
+              </AccordionItem>
             </Accordion>
           </CardContent>
+        </Card>
+        
+        <Card>
+            <CardHeader><CardTitle>Real-Life Applications</CardTitle></CardHeader>
+            <CardContent>
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead>Audience</TableHead>
+                            <TableHead>Use Case</TableHead>
+                            <TableHead>Next Step (Tool)</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        <TableRow>
+                            <TableCell>Runners/Cyclists</TableCell>
+                            <TableCell>Track aerobic fitness improvements over a training cycle.</TableCell>
+                            <TableCell><Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity</Link></TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>General Health</TableCell>
+                            <TableCell>Monitor cardiovascular health and see the impact of starting a new exercise routine.</TableCell>
+                             <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>Fitness Coaches</TableCell>
+                            <TableCell>Get a baseline metric for a new client's cardiovascular fitness.</TableCell>
+                            <TableCell>N/A</TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+            </CardContent>
         </Card>
         
         <Card>
@@ -235,11 +360,19 @@ export default function Vo2MaxPage() {
           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link href="/calorie-burn-by-activity" className="p-4 border rounded-lg hover:bg-muted">
               <h3 className="font-semibold">Calorie Burn by Activity</h3>
-              <p className="text-sm text-muted-foreground">Estimate calories burned during your workouts.</p>
+              <p className="text-sm text-muted-foreground">Estimate calories burned during your cardio workouts.</p>
             </Link>
             <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
               <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">Ensure you're eating enough to fuel your endurance training.</p>
+            </Link>
+            <Link href="/bmr" className="p-4 border rounded-lg hover:bg-muted">
+                <h3 className="font-semibold">BMR Calculator</h3>
+                <p className="text-sm text-muted-foreground">A lower resting heart rate from improved fitness can impact your BMR.</p>
+            </Link>
+            <Link href="/body-fat" className="p-4 border rounded-lg hover:bg-muted">
+                <h3 className="font-semibold">Body Fat Calculator</h3>
+                <p className="text-sm text-muted-foreground">Lowering excess body fat can improve VO2 max.</p>
             </Link>
           </CardContent>
         </Card>

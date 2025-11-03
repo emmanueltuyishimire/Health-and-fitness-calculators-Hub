@@ -34,7 +34,7 @@ import {
   ListChecks,
   Dumbbell,
   Medal,
-  Lung,
+  Activity,
 } from 'lucide-react';
 import { PiPersonArmsSpread } from "react-icons/pi";
 
@@ -88,7 +88,7 @@ const links = [
   { href: '/fat-loss-tracker', label: 'Fat Loss Tracker', icon: Target },
   { href: '/one-rep-max', label: 'One Rep Max (1RM)', icon: Dumbbell },
   { href: '/strength-to-weight-ratio', label: 'Strength-to-Weight Ratio', icon: Medal },
-  { href: '/vo2-max', label: 'VO2 Max Estimator', icon: Lung },
+  { href: '/vo2-max', label: 'VO2 Max Estimator', icon: Activity },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },
   { href: '/all', label: 'All Calculators', icon: List },
 ];
