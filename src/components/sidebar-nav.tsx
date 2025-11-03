@@ -1,4 +1,3 @@
-
 'use client';
 
 import { usePathname } from 'next/navigation';
@@ -10,6 +9,7 @@ import {
   Percent,
   Scale,
   Sparkles,
+  Square,
   Target,
   Weight
 } from 'lucide-react';
@@ -39,6 +39,7 @@ const links = [
   { href: '/ideal-weight', label: 'Ideal Weight', icon: Target },
   { href: '/lean-body-mass', label: 'Lean Body Mass', icon: Weight },
   { href: '/ffmi', label: 'FFMI Calculator', icon: PiPersonArmsSpread },
+  { href: '/bsa', label: 'Body Surface Area', icon: Square },
   { href: '/bmr', label: 'BMR Calculator', icon: Flame },
   { href: '/calorie-needs', label: 'Calorie Needs', icon: Calculator },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },

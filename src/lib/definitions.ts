@@ -1,4 +1,3 @@
-
 // src/lib/definitions.ts
 import { z } from 'zod';
 
@@ -80,3 +79,11 @@ export const FfmiSchema = z.object({
 });
 
 export type FfmiFormValues = z.infer<typeof FfmiSchema>;
+
+export const BsaSchema = z.object({
+  height: z.string().min(1, { message: 'Height is required.' }),
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type BsaFormValues = z.infer<typeof BsaSchema>;

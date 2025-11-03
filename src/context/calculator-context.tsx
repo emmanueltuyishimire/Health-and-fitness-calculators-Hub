@@ -1,4 +1,3 @@
-
 'use client';
 
 import type { ReactNode } from 'react';
@@ -21,13 +20,14 @@ type State = {
     | 'moderately_active'
     | 'very_active'
     | 'extra_active';
-  bmi?: number;
   bodyFat?: number;
+  bmi?: number;
   idealWeight?: string;
   bmr?: number;
   calorieNeeds?: number;
   leanBodyMass?: number;
   ffmi?: number;
+  bsa?: number;
 };
 
 type Action =
