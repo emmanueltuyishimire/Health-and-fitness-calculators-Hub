@@ -100,7 +100,6 @@ const links = [
   { href: '/one-rep-max', label: 'One Rep Max (1RM)', icon: Dumbbell },
   { href: '/strength-to-weight-ratio', label: 'Strength-to-Weight Ratio', icon: Medal },
   { href: '/vo2-max', label: 'VO2 Max Estimator', icon: Activity },
-  { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },
   { href: '/all', label: 'All Calculators', icon: List },
 ];
 

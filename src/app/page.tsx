@@ -97,39 +97,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* AI Recommendations Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Get Personalized, AI-Powered Insights
-              </h2>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Use our full suite of calculators and let our AI assistant provide you with tailored health and weight management recommendations based on your unique data and preferences.
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 min-h-[200px]">
-              <div className="flex items-start rounded-lg bg-background p-4 text-sm shadow-sm">
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 mr-4">
-                  <Sparkles className="h-5 w-5 text-primary" />
-                </div>
-                <div className="flex-1 space-y-1">
-                  <p className="font-medium">AI Recommendation Example</p>
-                  <div className="text-muted-foreground">
-                    "Based on your BMR of 1650 and TDEE of 2269 calories, a daily intake of around 1800 calories will create a sustainable deficit for fat loss. Since you prefer low-impact exercise, consider incorporating 3-4 weekly sessions of swimming or cycling..."
-                  </div>
-                </div>
-              </div>
-               <Link href="/recommendations" className="mx-auto">
-                <Button variant="outline" className="mt-4">
-                    Get Your Recommendations <ArrowRight className="ml-2" />
-                </Button>
-               </Link>
-            </div>
-          </div>
-        </section>
-
       </main>
 
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
