@@ -286,6 +286,21 @@ export default function FatIntakePage() {
               <li><strong>Going Too Low-Fat:</strong> Severely restricting fat intake (below 20% of total calories) can impair hormone function and vitamin absorption.</li>
               <li><strong>Ignoring Fat Quality:</strong> The type of fat matters. Prioritize unsaturated fats from whole-food sources over saturated and trans fats.</li>
               <li><strong>Forgetting About Calorie Density:</strong> Since fat is high in calories (9 kcal/gram), portion sizes of high-fat foods like nuts and oils should be managed, especially during a <Link href="/calorie-deficit" className="text-primary hover:underline">fat loss phase</Link>.</li>
+              <li><strong>Choosing Processed Low-Fat Foods:</strong> Many "low-fat" or "fat-free" products are highly processed and loaded with sugar and artificial ingredients to compensate for the lack of flavor.</li>
+            </ul>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <li><strong>Prioritize Whole-Food Fats:</strong> Get the majority of your fats from sources like avocados, nuts, seeds, and fatty fish to ensure you're also getting fiber and micronutrients.</li>
+                <li><strong>Use Oils Sparingly:</strong> Be mindful of cooking oils, dressings, and sauces, as their calories can add up quickly. A tablespoon of olive oil contains about 120 calories.</li>
+                <li><strong>Balance Omega-3 and Omega-6:</strong> Most modern diets are too high in omega-6 fats. Increase your intake of omega-3s from sources like salmon, sardines, and flaxseeds for a better balance.</li>
+                <li><strong>Fat for Satiety:</strong> Add a source of healthy fat to your meals, like a handful of almonds or a slice of avocado, to help you stay full and prevent overeating later.</li>
             </ul>
           </CardContent>
         </Card>
@@ -319,6 +334,40 @@ export default function FatIntakePage() {
             </Accordion>
           </CardContent>
         </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>General Users</TableCell>
+                  <TableCell>Ensure a balanced diet that supports overall health and hormone function.</TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Keto Dieters</TableCell>
+                  <TableCell>Calculate the high fat intake required to stay in ketosis.</TableCell>
+                   <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>People on a Diet</TableCell>
+                  <TableCell>Incorporate enough fat for satiety and health, even in a calorie deficit.</TableCell>
+                  <TableCell><Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
 
          <Card>
           <CardHeader>
@@ -337,9 +386,9 @@ export default function FatIntakePage() {
               <h3 className="font-semibold">Protein Intake Calculator</h3>
               <p className="text-sm text-muted-foreground">Calculate your protein needs, the other key part of your macronutrient split.</p>
             </Link>
-            <Link href="/calorie-deficit" className="p-4 border rounded-lg hover:bg-muted">
-              <h3 className="font-semibold">Calorie Deficit Calculator</h3>
-              <p className="text-sm text-muted-foreground">If fat loss is the goal, set your total calorie target here first.</p>
+            <Link href="/carb-intake" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Carb Intake Calculator</h3>
+              <p className="text-sm text-muted-foreground">Determine your carbohydrate needs to fuel your performance.</p>
             </Link>
           </CardContent>
         </Card>
