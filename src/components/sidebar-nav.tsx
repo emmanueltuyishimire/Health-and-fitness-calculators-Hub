@@ -29,6 +29,7 @@ import {
   Egg,
   Droplets,
   Zap,
+  Soup,
 } from 'lucide-react';
 import { PiPersonArmsSpread } from "react-icons/pi";
 
@@ -72,6 +73,7 @@ const links = [
   { href: '/carb-intake', label: 'Carb Intake', icon: BrainCircuit },
   { href: '/fat-intake', label: 'Fat Intake', icon: Droplets },
   { href: '/calorie-burn-by-activity', label: 'Calorie Burn by Activity', icon: Zap },
+  { href: '/meal-calorie-split', label: 'Meal Calorie Split', icon: Soup },
   { href: '/weight-loss-goal', label: 'Weight Loss Goal', icon: Flag },
   { href: '/weight-gain-goal', label: 'Weight Gain Goal', icon: Flag },
   { href: '/goal-weight-estimator', label: 'Goal Weight Estimator', icon: CalendarClock },

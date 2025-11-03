@@ -44,6 +44,7 @@ const calculatorGroups = [
       { name: 'Carb Intake Calculator', href: '/carb-intake' },
       { name: 'Fat Intake Calculator', href: '/fat-intake' },
       { name: 'Calorie Burn by Activity Calculator', href: '/calorie-burn-by-activity' },
+      { name: 'Meal Calorie Split Calculator', href: '/meal-calorie-split' },
       { name: 'Water Intake Calculator', href: '/water-intake' },
       { name: 'Hydration Tracker', href: '/hydration-tracker' },
     ],
