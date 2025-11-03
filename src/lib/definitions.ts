@@ -155,3 +155,9 @@ export const CalorieSurplusSchema = z.object({
 });
 
 export type CalorieSurplusFormValues = z.infer<typeof CalorieSurplusSchema>;
+
+export const CalorieMaintenanceSchema = z.object({
+  tdee: z.string().min(1, { message: 'TDEE is required. Please calculate it first.' }),
+});
+
+export type CalorieMaintenanceFormValues = z.infer<typeof CalorieMaintenanceSchema>;

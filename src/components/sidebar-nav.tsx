@@ -3,6 +3,7 @@
 
 import { usePathname } from 'next/navigation';
 import {
+  Anchor,
   Calculator,
   Flame,
   GitCommitHorizontal,
@@ -55,6 +56,7 @@ const links = [
   { href: '/tdee', label: 'TDEE Calculator', icon: Bike },
   { href: '/calorie-deficit', label: 'Calorie Deficit', icon: TrendingDown },
   { href: '/calorie-surplus', label: 'Calorie Surplus', icon: TrendingUp },
+  { href: '/calorie-maintenance', label: 'Calorie Maintenance', icon: Anchor },
   { href: '/calorie-needs', label: 'Calorie Needs', icon: Calculator },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },
   { href: '/all', label: 'All Calculators', icon: List },
