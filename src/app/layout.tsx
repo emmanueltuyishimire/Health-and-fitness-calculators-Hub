@@ -30,9 +30,9 @@ export default function RootLayout({
       <head>
         <script async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3042243846300811"
-          crossorigin="anonymous"></script>
+          crossOrigin="anonymous"></script>
       </head>
-      <body className={`${ptSans.variable} font-body antialiased`} suppressHydrationWarning>
+      <body className={`${ptSans.variable} font-body antialiased`}>
         {children}
         <Toaster />
       </body>
