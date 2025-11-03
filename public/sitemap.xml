@@ -3,166 +3,242 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://calculation.site/</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://calculation.site/all</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://calculation.site/bmi</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://calculation.site/body-fat</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://calculation.site/ideal-weight</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/lean-body-mass</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/ffmi</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/bsa</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/waist-to-height-ratio</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/waist-to-hip-ratio</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/body-shape</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/body-density</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://calculation.site/bmr</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/rmr</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://calculation.site/tdee</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://calculation.site/daily-calorie-needs</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://calculation.site/activity-level-estimator</loc>
-    <lastmod>2024-07-29</lastmod>
+    <loc>https://calculation.site/lean-body-mass</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/ffmi</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/bsa</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/waist-to-height-ratio</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/waist-to-hip-ratio</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/body-shape</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/body-density</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://calculation.site/calorie-deficit</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
-  <url>
+    <url>
     <loc>https://calculation.site/calorie-surplus</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://calculation.site/calorie-maintenance</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/macronutrient-ratio</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/protein-intake</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/carb-intake</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/fat-intake</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/water-intake</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/hydration-tracker</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/calorie-burn-by-activity</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/workout-calorie-tracker</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/weekly-workout-load</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/met-value</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/steps-to-calories</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/walking-running-calories</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/meal-calorie-split</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://calculation.site/weight-loss-goal</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://calculation.site/weight-gain-goal</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/goal-weight-estimator</loc>
-    <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://calculation.site/weight-change-tracker</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://calculation.site/fat-loss-tracker</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/goal-weight-estimator</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/macronutrient-ratio</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/protein-intake</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/carb-intake</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/fat-intake</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/water-intake</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/hydration-tracker</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/calorie-burn-by-activity</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://calculation.site/one-rep-max</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://calculation.site/strength-to-weight-ratio</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://calculation.site/vo2-max</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/rmr</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/meal-calorie-split</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/met-value</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/weekly-workout-load</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/steps-to-calories</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/walking-running-calories</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/activity-level-estimator</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculation.site/workout-calorie-tracker</loc>
+    <lastmod>2024-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
