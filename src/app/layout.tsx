@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <script async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3042243846300811"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3042223846300811"
           crossOrigin="anonymous"></script>
       </head>
       <body className={`${ptSans.variable} font-body antialiased`} suppressHydrationWarning>
@@ -43,7 +43,7 @@ export default function RootLayout({
             <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
               <Logo />
               <Link href="/all">
-                <Button>
+                <Button variant="outline">
                   View All Calculators <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
