@@ -127,6 +127,22 @@ export default function MealCalorieSplitPage() {
           text: 'Consistency is helpful, but don\'t worry about small daily variations. Your weekly average intake is what matters most for long-term progress. Use the <a href="/weekly-weight-change-tracker">Weekly Weight Change Tracker</a> to monitor your trend over time.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'Is it better to eat 3 large meals or 6 small meals?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'There is no "better" way; it depends on your personal preference, schedule, and hunger cues. As long as your total daily calories from the <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a> are the same, both approaches can be equally effective for weight management.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I split my macros for each meal?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A simple approach is to divide your total daily protein, carbs, and fat from the <a href="/macronutrient-ratio">Macronutrient Ratio Calculator</a> by the number of meals. Aim to include a protein source in each meal to promote satiety and muscle maintenance.',
+        },
+      },
     ],
   };
 
@@ -255,6 +271,34 @@ export default function MealCalorieSplitPage() {
 
         <Card>
           <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Ignoring Total Calories:</strong> Focusing on meal size without ensuring your total daily intake aligns with your goal from the <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</li>
+              <li><strong>Being Too Rigid:</strong> It's okay if your meals aren't perfectly even. Some people prefer a larger breakfast and a smaller dinner, or vice-versa. Flexibility is key.</li>
+              <li><strong>Not Planning Ahead:</strong> Without a plan, it's easy to misjudge portion sizes and end up over or under your target for the day.</li>
+              <li><strong>Forgetting About Snacks:</strong> If you include snacks, remember to count them as "meals" in the calculator to get an accurate split.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Plan a "Protein-Plus" Structure:</strong> Use this calculator for your overall calorie split, then use the <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link> to ensure each meal contains an adequate serving of protein (e.g., 20-40g).</li>
+              <li><strong>Customize Your Split:</strong> Use the "even split" as a baseline. If you're hungrier in the evenings, allocate more calories to your dinner. The daily total is what matters.</li>
+              <li><strong>Use for Meal Prep:</strong> Once you have your per-meal calorie target, you can batch-prepare meals that fit this goal, making your week much easier.</li>
+              <li><strong>Liquid Calories Count:</strong> Don't forget to account for calories from drinks, sauces, and oils when planning your meals.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
           </CardHeader>
           <CardContent>
@@ -279,7 +323,49 @@ export default function MealCalorieSplitPage() {
                 <AccordionTrigger>What if I eat more meals one day and fewer the next?</AccordionTrigger>
                 <AccordionContent>Consistency is helpful, but don't worry about small daily variations. Your weekly average intake is what matters most for long-term progress. Use the <a href="/weekly-weight-change-tracker">Weekly Weight Change Tracker</a> to monitor your trend over time.</AccordionContent>
               </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger>Is it better to eat 3 large meals or 6 small meals?</AccordionTrigger>
+                <AccordionContent>There is no "better" way; it depends on your personal preference, schedule, and hunger cues. As long as your total daily calories from the <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a> are the same, both approaches can be equally effective for weight management.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger>How do I split my macros for each meal?</AccordionTrigger>
+                <AccordionContent>A simple approach is to divide your total daily protein, carbs, and fat from the <a href="/macronutrient-ratio">Macronutrient Ratio Calculator</a> by the number of meals. Aim to include a protein source in each meal to promote satiety and muscle maintenance.</AccordionContent>
+              </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Meal Preppers</TableCell>
+                  <TableCell>Create perfectly portioned meals for the week to ensure consistency.</TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>People with Busy Schedules</TableCell>
+                  <TableCell>Plan quick, calorie-appropriate meals and snacks to fit their day.</TableCell>
+                  <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Athletes</TableCell>
+                  <TableCell>Structure meals and snacks around training sessions to optimize fueling and recovery.</TableCell>
+                  <TableCell><Link href="/carb-intake" className="text-primary hover:underline">Carb Intake Calculator</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
         
