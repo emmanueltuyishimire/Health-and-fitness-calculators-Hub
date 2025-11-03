@@ -2,81 +2,82 @@
 import { CalculatorCard } from '@/components/calculator-card';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { List } from 'lucide-react';
+import Link from 'next/link';
 
 const calculatorGroups = [
   {
     title: 'Core Body Composition',
     calculators: [
-      { name: 'BMI Calculator' },
-      { name: 'Body Fat Percentage Calculator' },
-      { name: 'Lean Body Mass Calculator' },
-      { name: 'Fat-Free Mass Index (FFMI)' },
-      { name: 'Ideal Body Weight (IBW)' },
-      { name: 'Body Surface Area (BSA)' },
-      { name: 'Waist-to-Height Ratio' },
-      { name: 'Waist-to-Hip Ratio' },
-      { name: 'Body Shape Type Calculator' },
-      { name: 'Body Density Calculator' },
+      { name: 'BMI Calculator', href: '/bmi' },
+      { name: 'Body Fat Percentage Calculator', href: '/body-fat' },
+      { name: 'Lean Body Mass Calculator', href: '/lean-body-mass' },
+      { name: 'Fat-Free Mass Index (FFMI)', href: '/ffmi' },
+      { name: 'Ideal Body Weight (IBW)', href: '/ideal-weight' },
+      { name: 'Body Surface Area (BSA)', href: '/bsa' },
+      { name: 'Waist-to-Height Ratio', href: '/waist-to-height-ratio' },
+      { name: 'Waist-to-Hip Ratio', href: '/waist-to-hip-ratio' },
+      { name: 'Body Shape Type Calculator', href: '/body-shape' },
+      { name: 'Body Density Calculator', href: '/body-density' },
     ],
   },
   {
     title: 'Weight Management & Goal Setting',
     calculators: [
-      { name: 'Calorie Deficit Calculator' },
-      { name: 'Calorie Surplus Calculator' },
-      { name: 'TDEE Calculator' },
-      { name: 'BMR Calculator' },
-      { name: 'Weight Loss Goal Calculator' },
-      { name: 'Weight Gain Goal Calculator' },
-      { name: 'Calorie Maintenance Calculator' },
-      { name: 'Weekly Weight Change Tracker' },
-      { name: 'Fat Loss Progress Tracker' },
-      { name: 'Goal Weight Estimator by Date' },
+      { name: 'Calorie Deficit Calculator', href: '/calorie-deficit' },
+      { name: 'Calorie Surplus Calculator', href: '/calorie-surplus' },
+      { name: 'TDEE Calculator', href: '/tdee' },
+      { name: 'BMR Calculator', href: '/bmr' },
+      { name: 'Weight Loss Goal Calculator', href: '/weight-loss-goal' },
+      { name: 'Weight Gain Goal Calculator', href: '/weight-gain-goal' },
+      { name: 'Calorie Maintenance Calculator', href: '/calorie-maintenance' },
+      { name: 'Weekly Weight Change Tracker', href: '/weight-change-tracker' },
+      { name: 'Fat Loss Progress Tracker', href: '/fat-loss-tracker' },
+      { name: 'Goal Weight Estimator by Date', href: '/goal-weight-estimator' },
     ],
   },
   {
     title: 'Nutrition & Energy Balance',
     calculators: [
-      { name: 'Daily Calorie Needs' },
-      { name: 'Macronutrient Ratio Calculator' },
-      { name: 'Protein Intake Calculator' },
-      { name: 'Carb Intake Calculator' },
-      { name: 'Fat Intake Calculator' },
-      { name: 'Calorie Burn by Activity Calculator' },
-      { name: 'Calorie Adjustment for Weight Goals' },
-      { name: 'Meal Calorie Split Calculator' },
-      { name: 'Water Intake Calculator' },
-      { name: 'Hydration Tracker' },
+      { name: 'Daily Calorie Needs', href: '/calorie-needs' },
+      { name: 'Macronutrient Ratio Calculator', href: '/macronutrient-ratio' },
+      { name: 'Protein Intake Calculator', href: '/protein-intake' },
+      { name: 'Carb Intake Calculator', href: '/carb-intake' },
+      { name: 'Fat Intake Calculator', href: '/fat-intake' },
+      { name: 'Calorie Burn by Activity Calculator', href: '/calorie-burn-by-activity' },
+      { name: 'Calorie Adjustment for Weight Goals', href: '/calorie-adjustment' },
+      { name: 'Meal Calorie Split Calculator', href: '/meal-calorie-split' },
+      { name: 'Water Intake Calculator', href: '/water-intake' },
+      { name: 'Hydration Tracker', href: '/hydration-tracker' },
     ],
   },
   {
     title: 'Fitness & Performance',
     calculators: [
-      { name: 'One Rep Max (1RM) Calculator' },
-      { name: 'Strength-to-Weight Ratio' },
-      { name: 'VO2 Max Estimator' },
-      { name: 'Resting Metabolic Rate (RMR)' },
-      { name: 'Activity MET Value Calculator' },
-      { name: 'Energy Expenditure per Step Calculator' },
-      { name: 'Walking/Running Calorie Calculator' },
-      { name: 'Daily Activity Level Estimator' },
-      { name: 'Workout Calorie Tracker' },
-      { name: 'Weekly Workout Load Calculator' },
+      { name: 'One Rep Max (1RM) Calculator', href: '/one-rep-max' },
+      { name: 'Strength-to-Weight Ratio', href: '/strength-to-weight-ratio' },
+      { name: 'VO2 Max Estimator', href: '/vo2-max' },
+      { name: 'Resting Metabolic Rate (RMR)', href: '/rmr' },
+      { name: 'Activity MET Value Calculator', href: '/met-value' },
+      { name: 'Energy Expenditure per Step Calculator', href: '/steps-to-calories' },
+      { name: 'Walking/Running Calorie Calculator', href: '/walking-running-calories' },
+      { name: 'Daily Activity Level Estimator', href: '/activity-level-estimator' },
+      { name: 'Workout Calorie Tracker', href: '/workout-calorie-tracker' },
+      { name: 'Weekly Workout Load Calculator', href: '/weekly-workout-load' },
     ],
   },
   {
     title: 'Health Risk Assessment',
     calculators: [
-      { name: 'Obesity Risk Calculator' },
-      { name: 'Metabolic Age Calculator' },
-      { name: 'Heart Disease Risk (based on BMI)' },
-      { name: 'Diabetes Risk by BMI' },
-      { name: 'Body Fat Health Zone Classifier' },
-      { name: 'Body Type Visualizer' },
-      { name: 'Calorie-to-Weight Conversion' },
-      { name: 'BMI Percentile for Age (Teens)' },
-      { name: 'Pregnancy BMI Calculator' },
-      { name: 'Postpartum Weight Recovery Calculator' },
+      { name: 'Obesity Risk Calculator', href: '/obesity-risk' },
+      { name: 'Metabolic Age Calculator', href: '/metabolic-age' },
+      { name: 'Heart Disease Risk (based on BMI)', href: '/heart-disease-risk' },
+      { name: 'Diabetes Risk by BMI', href: '/diabetes-risk' },
+      { name: 'Body Fat Health Zone Classifier', href: '/body-fat-zone' },
+      { name: 'Body Type Visualizer', href: '/body-type-visualizer' },
+      { name: 'Calorie-to-Weight Conversion', href: '/calorie-to-weight' },
+      { name: 'BMI Percentile for Age (Teens)', href: '/bmi-percentile-teens' },
+      { name: 'Pregnancy BMI Calculator', href: '/pregnancy-bmi' },
+      { name: 'Postpartum Weight Recovery Calculator', href: '/postpartum-weight-recovery' },
     ],
   },
 ];
@@ -101,7 +102,9 @@ export default function AllCalculatorsPage() {
                     key={calc.name}
                     className="flex justify-between items-center"
                   >
-                    <span>{calc.name}</span>
+                    <Link href={calc.href || '#'} className="hover:text-primary hover:underline">
+                      {calc.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
