@@ -287,3 +287,11 @@ export const HydrationTrackerSchema = z.object({
 });
 
 export type HydrationTrackerFormValues = z.infer<typeof HydrationTrackerSchema>;
+
+export const OneRepMaxSchema = z.object({
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  reps: z.string().min(1, { message: 'Reps are required.' }).refine(val => parseInt(val, 10) <= 12, { message: 'Reps should not exceed 12 for an accurate estimate.'}),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type OneRepMaxFormValues = z.infer<typeof OneRepMaxSchema>;

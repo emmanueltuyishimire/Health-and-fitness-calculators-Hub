@@ -41,6 +41,7 @@ type State = {
   goal: 'fat_loss' | 'maintenance' | 'muscle_gain';
   meals: string;
   hydrationGoal: string;
+  reps: string;
   bodyFat?: number;
   bmi?: number;
   idealWeight?: string;
@@ -54,6 +55,7 @@ type State = {
   bodyShape?: string;
   bodyDensity?: number;
   waterIntake?: number;
+  oneRepMax?: number;
 };
 
 type Action =
@@ -90,6 +92,7 @@ const initialState: State = {
   goal: 'maintenance',
   meals: '4',
   hydrationGoal: '',
+  reps: '5',
 };
 
 const CalculatorContext = createContext<{
@@ -115,6 +118,7 @@ function calculatorReducer(state: State, action: Action): State {
         bodyShape,
         bodyDensity,
         waterIntake,
+        oneRepMax,
         ...userData
       } = state;
       return {

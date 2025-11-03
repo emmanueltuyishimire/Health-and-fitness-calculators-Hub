@@ -32,6 +32,7 @@ import {
   Soup,
   GlassWater,
   ListChecks,
+  Dumbbell,
 } from 'lucide-react';
 import { PiPersonArmsSpread } from "react-icons/pi";
 
@@ -83,6 +84,7 @@ const links = [
   { href: '/goal-weight-estimator', label: 'Goal Weight Estimator', icon: CalendarClock },
   { href: '/weight-change-tracker', label: 'Weekly Weight Tracker', icon: AreaChart },
   { href: '/fat-loss-tracker', label: 'Fat Loss Tracker', icon: Target },
+  { href: '/one-rep-max', label: 'One Rep Max (1RM)', icon: Dumbbell },
   { href: '/recommendations', label: 'AI Recommendations', icon: Sparkles },
   { href: '/all', label: 'All Calculators', icon: List },
 ];
