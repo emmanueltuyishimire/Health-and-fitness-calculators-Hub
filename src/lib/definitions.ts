@@ -280,3 +280,10 @@ export const WaterIntakeSchema = z.object({
 });
 
 export type WaterIntakeFormValues = z.infer<typeof WaterIntakeSchema>;
+
+export const HydrationTrackerSchema = z.object({
+  goal: z.string().min(1, { message: 'Hydration goal is required.' }),
+  currentIntake: z.number().min(0),
+});
+
+export type HydrationTrackerFormValues = z.infer<typeof HydrationTrackerSchema>;
