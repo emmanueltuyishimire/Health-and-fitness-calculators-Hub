@@ -10,7 +10,7 @@ export const BmiSchema = z.object({
 export type BmiFormValues = z.infer<typeof BmiSchema>;
 
 export const BodyFatSchema = z.object({
-  gender: z.enum(['male', 'female']),
+  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
   height: z.string().min(1, { message: 'Height is required.' }),
   waist: z.string().min(1, { message: 'Waist measurement is required.' }),
   neck: z.string().min(1, { message: 'Neck measurement is required.' }),
@@ -25,7 +25,7 @@ export type BodyFatFormValues = z.infer<typeof BodyFatSchema>;
 
 
 export const IdealWeightSchema = z.object({
-  gender: z.enum(['male', 'female']),
+  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
   height: z.string().min(1, { message: 'Height is required.' }),
   unitSystem: z.enum(['metric', 'imperial']),
 });
@@ -33,7 +33,7 @@ export const IdealWeightSchema = z.object({
 export type IdealWeightFormValues = z.infer<typeof IdealWeightSchema>;
 
 export const BmrSchema = z.object({
-  gender: z.enum(['male', 'female']),
+  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
   age: z.string().min(1, { message: 'Age is required.' }),
   height: z.string().min(1, { message: 'Height is required.' }),
   weight: z.string().min(1, { message: 'Weight is required.' }),
@@ -75,7 +75,7 @@ export const RecommendationsSchema = z.object({
 export type RecommendationsFormValues = z.infer<typeof RecommendationsSchema>;
 
 export const LeanBodyMassSchema = z.object({
-    gender: z.enum(['male', 'female']),
+    gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
     height: z.string().min(1, { message: 'Height is required.' }),
     weight: z.string().min(1, { message: 'Weight is required.' }),
     unitSystem: z.enum(['metric', 'imperial']),
@@ -84,7 +84,7 @@ export const LeanBodyMassSchema = z.object({
 export type LeanBodyMassFormValues = z.infer<typeof LeanBodyMassSchema>;
 
 export const FfmiSchema = z.object({
-  gender: z.enum(['male', 'female']),
+  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
   height: z.string().min(1, { message: 'Height is required.' }),
   weight: z.string().min(1, { message: 'Weight is required.' }),
   bodyFat: z.string().min(1, { message: 'Body fat percentage is required.' }),
@@ -110,7 +110,7 @@ export const WaistToHeightRatioSchema = z.object({
 export type WaistToHeightRatioFormValues = z.infer<typeof WaistToHeightRatioSchema>;
 
 export const WaistToHipRatioSchema = z.object({
-  gender: z.enum(['male', 'female']),
+  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
   waist: z.string().min(1, { message: 'Waist is required.' }),
   hip: z.string().min(1, { message: 'Hip is required.' }),
   unitSystem: z.enum(['metric', 'imperial']),

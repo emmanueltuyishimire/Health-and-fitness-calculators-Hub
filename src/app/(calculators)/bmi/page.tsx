@@ -123,7 +123,7 @@ export default function BmiPage() {
         name: 'Does a high BMI mean I am unhealthy?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Not necessarily. A high BMI is a risk indicator, not a diagnosis. Factors like muscle mass and fat distribution matter. Use the <a href="/body-fat">Body Fat Percentage Calculator</a> and Waist-to-Hip Ratio calculator to get a more complete picture.',
+          text: 'Not necessarily. A high BMI is a risk indicator, not a diagnosis. Factors like muscle mass and fat distribution matter. Use the <a href="/body-fat">Body Fat Percentage Calculator</a> and <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio calculator</a> to get a more complete picture.',
         },
       },
       {
@@ -155,7 +155,7 @@ export default function BmiPage() {
         name: 'Can I be "overweight" but still healthy?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, it\'s possible, especially for individuals with high muscle mass. This is why it\'s crucial to look beyond BMI. Check your <a href="/body-fat">Body Fat Percentage</a> and Waist-to-Height Ratio to better assess your health risks.',
+          text: 'Yes, it\'s possible, especially for individuals with high muscle mass. This is why it\'s crucial to look beyond BMI. Check your <a href="/body-fat">Body Fat Percentage</a> and <a href="/waist-to-height-ratio">Waist-to-Height Ratio</a> to better assess your health risks.',
         },
       },
       {
@@ -327,7 +327,7 @@ export default function BmiPage() {
               <li><strong>30.0 and Above:</strong> Obese</li>
             </ul>
             <p>
-              It’s important to remember these are population-level categories. An individual's health depends on many factors, including genetics, lifestyle, and diet. If your BMI falls into the overweight or obese category, it’s a signal to investigate further. A good next step is to measure your waist circumference, which can be assessed with the Waist-to-Hip Ratio Calculator. Central obesity (excess fat around the abdomen) is a stronger predictor of health risk than BMI alone.
+              It’s important to remember these are population-level categories. An individual's health depends on many factors, including genetics, lifestyle, and diet. If your BMI falls into the overweight or obese category, it’s a signal to investigate further. A good next step is to measure your waist circumference, which can be assessed with the <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio Calculator</Link>. Central obesity (excess fat around the abdomen) is a stronger predictor of health risk than BMI alone.
             </p>
 
             <h3 className="font-semibold text-lg text-foreground">Beyond BMI: A Holistic Approach to Body Composition</h3>
@@ -335,7 +335,7 @@ export default function BmiPage() {
               To truly understand your health, you need to look at your body composition—the proportion of fat, muscle, bone, and water in your body. While BMI provides a two-dimensional view (height and weight), a holistic approach is three-dimensional.
             </p>
             <p>
-             Start by calculating your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>, which is the number of calories your body burns at rest. This is the foundation of your energy expenditure. From there, you can use the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to estimate your Total Daily Energy Expenditure (TDEE) based on your activity level. Understanding your TDEE is the key to managing your weight. To lose weight, you need a calorie deficit; to gain muscle, you need a calorie surplus.
+             Start by calculating your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>, which is the number of calories your body burns at rest. This is the foundation of your energy expenditure. From there, you can use the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to estimate your Total Daily Energy Expenditure (TDEE) based on your activity level. Understanding your TDEE is the key to managing your weight. To lose weight, you need a <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>; to gain muscle, you need a <Link href="/calorie-surplus" className="text-primary hover:underline">calorie surplus</Link>.
             </p>
              <p>By combining insights from the BMI, Body Fat, BMR, and Calorie Needs calculators, you create a powerful, personalized health dashboard that empowers you to make informed decisions about your diet and exercise.
             </p>
@@ -364,7 +364,7 @@ export default function BmiPage() {
           </CardHeader>
           <CardContent className="space-y-2">
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Combine with Waist Measurement:</strong> A high BMI and a large waist circumference significantly increase health risk. Use our Waist-to-Hip Ratio tool to check.</li>
+              <li><strong>Combine with Waist Measurement:</strong> A high BMI and a large waist circumference significantly increase health risk. Use our <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link> tool to check.</li>
               <li><strong>Context is Key:</strong> Use your BMI result to guide your next step. If it's high, focus on creating a sustainable calorie deficit with the help of our <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</li>
               <li><strong>Track Over Time:</strong> Don't obsess over daily fluctuations. Measure your BMI monthly to see long-term trends.</li>
               <li><strong>Look Beyond the Scale:</strong> Pay attention to how you feel, your energy levels, and how your clothes fit. These are often better indicators of progress than BMI alone.</li>
@@ -397,7 +397,7 @@ export default function BmiPage() {
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>Does a high BMI mean I am unhealthy?</AccordionTrigger>
-                <AccordionContent>Not necessarily. A high BMI is a risk indicator, not a diagnosis. Factors like muscle mass and fat distribution matter. Use the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link> and Waist-to-Hip Ratio calculator to get a more complete picture.</AccordionContent>
+                <AccordionContent>Not necessarily. A high BMI is a risk indicator, not a diagnosis. Factors like muscle mass and fat distribution matter. Use the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link> and <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio calculator</Link> to get a more complete picture.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
                  <AccordionTrigger>Is the BMI calculation different for men and women?</AccordionTrigger>
@@ -413,7 +413,7 @@ export default function BmiPage() {
               </AccordionItem>
               <AccordionItem value="item-9">
                  <AccordionTrigger>Can I be "overweight" but still healthy?</AccordionTrigger>
-                 <AccordionContent>Yes, it's possible, especially for individuals with high muscle mass. This is why it's crucial to look beyond BMI. Check your <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> and Waist-to-Height Ratio to better assess your health risks.</AccordionContent>
+                 <AccordionContent>Yes, it's possible, especially for individuals with high muscle mass. This is why it's crucial to look beyond BMI. Check your <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> and <Link href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</Link> to better assess your health risks.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
                  <AccordionTrigger>Where does the BMI formula come from?</AccordionTrigger>
@@ -456,7 +456,7 @@ export default function BmiPage() {
                 <TableRow>
                   <TableCell>Medical Professionals</TableCell>
                   <TableCell>Screen for potential weight-related health issues like obesity.</TableCell>
-                  <TableCell>Waist-to-Hip Ratio Calculator</TableCell>
+                  <TableCell><Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -497,10 +497,10 @@ export default function BmiPage() {
               </p>
             </Link>
             <Link
-              href="/calorie-needs"
+              href="/tdee"
               className="p-4 border rounded-lg hover:bg-muted"
             >
-              <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
+              <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">
                 Determine your total daily calorie needs to maintain, lose, or gain weight.
               </p>

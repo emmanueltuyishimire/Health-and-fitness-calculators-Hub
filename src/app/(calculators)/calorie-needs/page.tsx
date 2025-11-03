@@ -69,7 +69,7 @@ export default function CalorieNeedsPage() {
     });
     
     dispatch({ type: 'SET_USER_DATA', payload: { activityLevel: data.activityLevel } });
-    dispatch({ type: 'SET_RESULTS', payload: { calorieNeeds: maintenance } });
+    dispatch({ type: 'SET_RESULTS', payload: { calorieNeeds: maintenance, tdee: String(maintenance) } });
   }
 
   const handleSelectChange = (name: keyof CalorieNeedsFormValues) => (value: string) => {
@@ -81,7 +81,7 @@ export default function CalorieNeedsPage() {
     <CalculatorCard
       icon={<Calculator className="h-8 w-8" />}
       title="Daily Calorie Needs Calculator"
-      description="Estimate your daily calorie needs for weight maintenance, loss, or gain based on your BMR and activity level."
+      description="Estimate your daily calorie needs for weight maintenance, loss, or gain based on your BMR and activity level. This is also known as your TDEE."
       result={
         calorieNeedsResult && (
           <div className="space-y-4">

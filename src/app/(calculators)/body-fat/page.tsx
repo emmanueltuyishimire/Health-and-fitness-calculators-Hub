@@ -115,7 +115,7 @@ export default function BodyFatPage() {
         name: 'How can I lower my body fat percentage?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Lowering body fat requires a combination of a calorie deficit and exercise, particularly strength training to preserve muscle mass. Use the <a href="/calorie-needs">Daily Calorie Needs Calculator</a> to find your maintenance calories and create a deficit, and consider using the <a href="/bmr">BMR Calculator</a> to understand your baseline metabolic rate.',
+          text: 'Lowering body fat requires a combination of a calorie deficit and exercise, particularly strength training to preserve muscle mass. Use the <a href="/tdee">TDEE Calculator</a> to find your maintenance calories and create a deficit, and consider using the <a href="/bmr">BMR Calculator</a> to understand your baseline metabolic rate.',
         },
       },
       {
@@ -300,7 +300,7 @@ export default function BodyFatPage() {
                 </TableRow>
                 <TableRow>
                     <TableCell>Next Step</TableCell>
-                    <TableCell>Calculate <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> to maintain or improve.</TableCell>
+                    <TableCell>Calculate <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> to maintain or improve.</TableCell>
                     <TableCell>Use the <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link> to understand resting energy use.</TableCell>
                     <TableCell>Compare with the <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link> to see why BFP is superior for athletes.</TableCell>
                 </TableRow>
@@ -315,7 +315,7 @@ export default function BodyFatPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <h3 className="font-semibold text-lg text-foreground">What is Body Fat Percentage?</h3>
-            <p>Body fat percentage (BFP) is a measure of body composition that tells you what percentage of your total weight is fat. It's the most accurate way to assess your body composition without clinical equipment. Unlike the <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link>, which only considers height and weight, BFP distinguishes between fat mass and lean body mass (muscles, bones, organs, and water).</p>
+            <p>Body fat percentage (BFP) is a measure of body composition that tells you what percentage of your total weight is fat. It's the most accurate way to assess your body composition without clinical equipment. Unlike the <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link>, which only considers height and weight, BFP distinguishes between fat mass and <Link href="/lean-body-mass" className="text-primary hover:underline">lean body mass</Link> (muscles, bones, organs, and water).</p>
             <p>This distinction is crucial. An athlete and a sedentary individual could have the same height and weight, and therefore the same BMI, but vastly different body compositions. The athlete's weight is mostly lean muscle, while the other person's is more fat. BFP reveals this difference, making it a superior metric for assessing health and fitness.</p>
 
             <h3 className="font-semibold text-lg text-foreground">The U.S. Navy Method Explained</h3>
@@ -328,7 +328,7 @@ export default function BodyFatPage() {
 
              <h3 className="font-semibold text-lg text-foreground">Why Body Fat Percentage Matters More Than Weight</h3>
              <p>Your scale weight can be deceptive. It fluctuates daily due to water retention, food intake, and other factors. More importantly, it doesn’t tell you the quality of that weight. Losing 5 lbs could mean you lost fat, water, or precious muscle. Gaining 5 lbs could be fat or hard-earned muscle.</p>
-             <p>Tracking your BFP helps you understand the real changes in your body. A decreasing BFP, even if weight is stable, means you're likely gaining muscle and losing fat—a process called body recomposition. This is the ultimate goal for many fitness enthusiasts. Once you know your BFP, you can calculate your <a href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</a>, which is the foundation of your metabolism. From there, the <a href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</a> will help you create a precise nutrition plan.</p>
+             <p>Tracking your BFP helps you understand the real changes in your body. A decreasing BFP, even if weight is stable, means you're likely gaining muscle and losing fat—a process called body recomposition. This is the ultimate goal for many fitness enthusiasts. Once you know your BFP, you can calculate your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>, which is the foundation of your metabolism. From there, the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> will help you create a precise nutrition plan.</p>
             
             <h3 className="font-semibold text-lg text-foreground">Healthy Body Fat Ranges</h3>
             <p>
@@ -395,7 +395,7 @@ export default function BodyFatPage() {
                     <li><strong>Combine with BMI:</strong> While BFP is superior, using it with the <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link> gives a more complete story, especially for clinical settings.</li>
                     <li><strong>Track Progress Photos:</strong> Take monthly photos. Sometimes the visual changes are more motivating than the numbers.</li>
                     <li><strong>Don't Aim for "Essential Fat" Levels:</strong> Unless you are a competitive bodybuilder, dipping into essential fat levels is unhealthy and unsustainable. Aim for the "Fitness" or "Acceptable" ranges.</li>
-                    <li><strong>Losing Fat is a Marathon:</strong> Sustainable fat loss is about 1% of body fat per month. Use the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to aim for a small, consistent deficit of 300-500 calories.</li>
+                    <li><strong>Losing Fat is a Marathon:</strong> Sustainable fat loss is about 1% of body fat per month. Use the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to aim for a small, consistent deficit of 300-500 calories.</li>
                 </ul>
             </CardContent>
         </Card>
@@ -416,7 +416,7 @@ export default function BodyFatPage() {
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>How do I lower my body fat percentage?</AccordionTrigger>
-                <AccordionContent>To lower body fat, you need a sustained calorie deficit and resistance training. Determine your needs with our <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</AccordionContent>
+                <AccordionContent>To lower body fat, you need a sustained calorie deficit and resistance training. Determine your needs with our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>How accurate is this calculator?</AccordionTrigger>
@@ -444,7 +444,7 @@ export default function BodyFatPage() {
               </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger>Is it possible to lose fat and gain muscle at the same time?</AccordionTrigger>
-                <AccordionContent>Yes, this is called body recomposition. It is most common in beginners to strength training or those returning after a break. It requires a high protein intake and a calorie intake close to maintenance, which you can estimate with the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</AccordionContent>
+                <AccordionContent>Yes, this is called body recomposition. It is most common in beginners to strength training or those returning after a break. It requires a high protein intake and a calorie intake close to maintenance, which you can estimate with the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -465,22 +465,22 @@ export default function BodyFatPage() {
                         <TableRow>
                             <TableCell>General Users</TableCell>
                             <TableCell>Track true body composition changes, not just weight.</TableCell>
-                            <TableCell><Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                            <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Fitness Coaches</TableCell>
                             <TableCell>Set realistic fat loss goals for clients.</TableCell>
-                             <TableCell>Weight Loss Goal Calculator</TableCell>
+                             <TableCell><Link href="/weight-loss-goal" className="text-primary hover:underline">Weight Loss Goal</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Nutritionists</TableCell>
                             <TableCell>Assess if a client's weight is healthy despite a high BMI.</TableCell>
-                            <TableCell>Macronutrient Ratio Calculator</TableCell>
+                            <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
                         </TableRow>
                          <TableRow>
                             <TableCell>Athletes</TableCell>
                             <TableCell>Monitor body composition to optimize for performance.</TableCell>
-                            <TableCell>Fat-Free Mass Index (FFMI)</TableCell>
+                            <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>
@@ -504,8 +504,8 @@ export default function BodyFatPage() {
               <h3 className="font-semibold">BMR Calculator</h3>
               <p className="text-sm text-muted-foreground">Find out your baseline calorie burn, the foundation of your metabolism.</p>
             </Link>
-            <Link href="/calorie-needs" className="p-4 border rounded-lg hover:bg-muted">
-              <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">Turn your BMR into an actionable daily calorie target for your goals.</p>
             </Link>
           </CardContent>

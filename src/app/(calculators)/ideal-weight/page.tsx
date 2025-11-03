@@ -99,7 +99,7 @@ export default function IdealWeightPage() {
         name: 'Does ideal weight account for muscle mass?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No, these formulas do not account for body composition (muscle vs. fat). An athlete with high muscle mass might weigh more than their calculated "ideal weight" but be perfectly healthy. This is why combining this result with a <a href="/body-fat">Body Fat Percentage</a> or FFMI calculation is crucial.',
+          text: 'No, these formulas do not account for body composition (muscle vs. fat). An athlete with high muscle mass might weigh more than their calculated "ideal weight" but be perfectly healthy. This is why combining this result with a <a href="/body-fat">Body Fat Percentage</a> or <a href="/ffmi">FFMI</a> calculation is crucial.',
         },
       },
       {
@@ -107,7 +107,7 @@ export default function IdealWeightPage() {
         name: 'Should I use ideal weight to set my weight loss goal?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Ideal weight can be a useful starting point, but it\'s not a rigid target. Use it to set a realistic goal range, then focus on sustainable habits. Our <a href="/calorie-needs">Daily Calorie Needs Calculator</a> can help you create a plan to reach that goal.',
+          text: 'Ideal weight can be a useful starting point, but it\'s not a rigid target. Use it to set a realistic goal range, then focus on sustainable habits. Our <a href="/tdee">TDEE Calculator</a> can help you create a plan to reach that goal.',
         },
       },
       {
@@ -131,7 +131,7 @@ export default function IdealWeightPage() {
         name: 'How does body frame size affect ideal weight?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Body frame size (small, medium, large) can influence your ideal weight. Someone with a larger frame will naturally have a higher ideal weight. While our calculator doesn\'t explicitly ask for frame size, the range provided by the different formulas implicitly accounts for some of this variability. Tools like the Waist-to-Height Ratio can add more context.',
+          text: 'Body frame size (small, medium, large) can influence your ideal weight. Someone with a larger frame will naturally have a higher ideal weight. While our calculator doesn\'t explicitly ask for frame size, the range provided by the different formulas implicitly accounts for some of this variability. Tools like the <a href="/waist-to-height-ratio">Waist-to-Height Ratio</a> can add more context.',
         },
       },
       {
@@ -155,7 +155,7 @@ export default function IdealWeightPage() {
         name: 'What if my current weight is far from my ideal weight?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Don\'t be discouraged. Use this as a long-term reference. Start by calculating your <a href="/calorie-needs">Daily Calorie Needs</a> to create a small, manageable calorie deficit or surplus. Focus on gradual, sustainable changes.',
+          text: 'Don\'t be discouraged. Use this as a long-term reference. Start by calculating your <a href="/tdee">TDEE Calculator</a> to create a small, manageable calorie deficit or surplus.',
         },
       },
       {
@@ -233,7 +233,7 @@ export default function IdealWeightPage() {
               <li><strong>Select Your Gender:</strong> The formulas used are different for males and females due to typical differences in body composition.</li>
               <li><strong>Choose Your Units:</strong> Pick "Metric" (cm) or "Imperial" (inches) for your height.</li>
               <li><strong>Enter Your Height:</strong> Input your height accurately. Stand straight without shoes for the best measurement.</li>
-              <li><strong>Calculate:</strong> Click the button to see your ideal weight range. The result is not a single number but a healthy range to account for individual differences. Once you have this, see how many calories you need with our <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</li>
+              <li><strong>Calculate:</strong> Click the button to see your ideal weight range. The result is not a single number but a healthy range to account for individual differences. Once you have this, see how many calories you need with our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.</li>
             </ol>
           </CardContent>
         </Card>
@@ -301,7 +301,7 @@ export default function IdealWeightPage() {
                 <li><strong>Assess Your Body Composition:</strong> Use the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link>. This is a far more important metric for health than total weight.</li>
                 <li><strong>Check Your BMI:</strong> The <Link href="/bmi" className="text-primary hover:underline">BMI Calculator</Link> provides another quick screening tool. If your BMI is high but your body fat is low, you are likely in good health. If both are high, it's a signal to take action.</li>
                 <li><strong>Understand Your Metabolism:</strong> Calculate your <Link href="/bmr" className="text-primary hover:underline">BMR (Basal Metabolic Rate)</Link> to find out how many calories your body burns at rest.</li>
-                <li><strong>Set Your Calorie Goals:</strong> Use your BMR and activity level in the <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to determine how many calories you should eat to maintain, lose, or gain weight.</li>
+                <li><strong>Set Your Calorie Goals:</strong> Use your BMR and activity level in the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to determine how many calories you should eat to maintain, lose, or gain weight.</li>
             </ol>
              <p>By combining these tools, you move from a simple weight number to a comprehensive understanding of your body's health and energy needs.
             </p>
@@ -325,8 +325,8 @@ export default function IdealWeightPage() {
             <CardContent>
                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                     <li><strong>Use the 10% Rule:</strong> The range provided is roughly ±10% of the formula's result. This is a good way to account for frame size and muscle mass variations.</li>
-                    <li><strong>Focus on Fat Loss, Not Just Weight Loss:</strong> When you're near your ideal weight, your goal should shift from losing "weight" to losing "fat." This requires adequate protein and strength training. Calculate your needs with our Protein Intake and <Link href="/calorie-needs" className="text-primary hover:underline">Calorie Needs</Link> calculators.</li>
-                    <li><strong>Pair with Waist Measurements:</strong> A healthy weight with a high waist circumference can still be a health risk. Use the Waist-to-Height Ratio calculator for more insight.</li>
+                    <li><strong>Focus on Fat Loss, Not Just Weight Loss:</strong> When you're near your ideal weight, your goal should shift from losing "weight" to losing "fat." This requires adequate protein and strength training. Calculate your needs with our Protein Intake and <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> calculators.</li>
+                    <li><strong>Pair with Waist Measurements:</strong> A healthy weight with a high waist circumference can still be a health risk. Use the <Link href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</Link> calculator for more insight.</li>
                     <li><strong>Recalculate Periodically:</strong> Your ideal weight range won't change unless your height does, but it's good to re-evaluate your goals and progress with other tools like the <Link href="/bmr" className="text-primary hover:underline">BMR Calculator</Link> as your weight changes.</li>
                 </ul>
             </CardContent>
@@ -344,11 +344,11 @@ export default function IdealWeightPage() {
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Does ideal weight account for muscle mass?</AccordionTrigger>
-                <AccordionContent>No, it does not. An athlete might weigh more than their "ideal weight" but be perfectly healthy. This is why combining it with a <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> calculation is crucial.</AccordionContent>
+                <AccordionContent>No, it does not. An athlete might weigh more than their "ideal weight" but be perfectly healthy. This is why combining it with a <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> or <Link href="/ffmi" className="text-primary hover:underline">FFMI</Link> calculation is crucial.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Should I use ideal weight to set my weight loss goal?</AccordionTrigger>
-                <AccordionContent>It can be a useful starting point, but it's not a rigid target. Use it to set a realistic goal range, then use our <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link> to create a plan.</AccordionContent>
+                <AccordionContent>It can be a useful starting point, but it's not a rigid target. Use it to set a realistic goal range, then use our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to create a plan.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>Why is there a range for ideal weight?</AccordionTrigger>
@@ -360,7 +360,7 @@ export default function IdealWeightPage() {
               </AccordionItem>
               <AccordionItem value="item-6">
                  <AccordionTrigger>How does body frame size affect ideal weight?</AccordionTrigger>
-                 <AccordionContent>A larger frame means a higher ideal weight. While our calculator provides a range, tools like the Waist-to-Height Ratio can add more context to your body shape and health risk.</AccordionContent>
+                 <AccordionContent>A larger frame means a higher ideal weight. While our calculator provides a range, tools like the <Link href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</Link> can add more context to your body shape and health risk.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-7">
                 <AccordionTrigger>Is it unhealthy to be outside my ideal weight range?</AccordionTrigger>
@@ -372,7 +372,7 @@ export default function IdealWeightPage() {
               </AccordionItem>
               <AccordionItem value="item-9">
                 <AccordionTrigger>What if my current weight is far from my ideal weight?</AccordionTrigger>
-                <AccordionContent>Use this as a long-term reference. Start by calculating your <Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link> to create a small, manageable calorie deficit.</AccordionContent>
+                <AccordionContent>Use this as a long-term reference. Start by calculating your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> to create a small, manageable calorie deficit.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger>Why do men and women have different ideal weight formulas?</AccordionTrigger>
@@ -397,17 +397,17 @@ export default function IdealWeightPage() {
                         <TableRow>
                             <TableCell>General Users</TableCell>
                             <TableCell>Set a healthy, long-term weight goal.</TableCell>
-                            <TableCell><Link href="/calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                            <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Fitness Coaches</TableCell>
                             <TableCell>Provide clients with a realistic target weight range.</TableCell>
-                             <TableCell>Weight Loss Goal Calculator</TableCell>
+                             <TableCell><Link href="/weight-loss-goal" className="text-primary hover:underline">Weight Loss Goal</Link></TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell>Nutritionists</TableCell>
                             <TableCell>Establish a baseline for creating a nutrition plan.</TableCell>
-                            <TableCell>Macronutrient Ratio Calculator</TableCell>
+                            <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
                         </TableRow>
                          <TableRow>
                             <TableCell>Medical Professionals</TableCell>
@@ -436,8 +436,8 @@ export default function IdealWeightPage() {
               <h3 className="font-semibold">BMR Calculator</h3>
               <p className="text-sm text-muted-foreground">Find out your baseline calorie burn to plan your diet.</p>
             </Link>
-            <Link href="/calorie-needs" className="p-4 border rounded-lg hover:bg-muted">
-              <h3 className="font-semibold">Daily Calorie Needs Calculator</h3>
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">TDEE Calculator</h3>
               <p className="text-sm text-muted-foreground">Turn your BMR into an actionable daily calorie target.</p>
             </Link>
           </CardContent>
@@ -446,5 +446,3 @@ export default function IdealWeightPage() {
     </>
   );
 }
-
-    
