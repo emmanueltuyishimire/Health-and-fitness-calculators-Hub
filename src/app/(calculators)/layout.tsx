@@ -1,3 +1,4 @@
+
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
 import { SidebarNav } from '@/components/sidebar-nav';
 import { CalculatorProvider } from '@/context/calculator-context';
