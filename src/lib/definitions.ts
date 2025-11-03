@@ -295,3 +295,11 @@ export const OneRepMaxSchema = z.object({
 });
 
 export type OneRepMaxFormValues = z.infer<typeof OneRepMaxSchema>;
+
+export const StrengthToWeightRatioSchema = z.object({
+  bodyWeight: z.string().min(1, { message: 'Body weight is required.' }),
+  liftedWeight: z.string().min(1, { message: 'Lifted weight is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type StrengthToWeightRatioFormValues = z.infer<typeof StrengthToWeightRatioSchema>;
