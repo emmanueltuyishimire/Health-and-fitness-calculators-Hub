@@ -156,7 +156,7 @@ export default function WeightLossGoalPage() {
         name: 'Can I set a goal date instead of a weekly loss rate?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'This calculator works by setting a pace (e.g., 1 lb/week). While we don\'t have a date-based goal calculator yet, you can work backward. If you want to lose 10 lbs in 10 weeks, you would set the weekly loss rate to 1 lb/week to find the required calorie deficit.',
+          text: 'This calculator works by setting a pace (e.g., 1 lb/week). To set a goal by a specific date, use our <a href="/goal-weight-estimator">Goal Weight Estimator by Date</a> calculator. You can work backward to find the required rate of loss.',
         },
       },
       {
@@ -354,6 +354,10 @@ export default function WeightLossGoalPage() {
               <AccordionItem value="item-5">
                 <AccordionTrigger>Is it better to focus on weight loss or fat loss?</AccordionTrigger>
                 <AccordionContent>The ultimate goal should be fat loss. Combine your calorie deficit with adequate protein and resistance training. Track your progress with the <a href="/body-fat">Body Fat Percentage Calculator</a>.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger>Can I set a goal date instead of a weekly loss rate?</AccordionTrigger>
+                <AccordionContent>This calculator works by setting a pace (e.g., 1 lb/week). To set a goal by a specific date, use our <a href="/goal-weight-estimator">Goal Weight Estimator by Date</a> calculator. You can work backward to find the required rate of loss.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
