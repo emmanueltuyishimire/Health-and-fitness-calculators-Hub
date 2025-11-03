@@ -127,6 +127,46 @@ export default function WeightLossGoalPage() {
           text: 'While this tool focuses on total weight, the ultimate goal should be fat loss while preserving muscle. To do this, combine your calorie deficit with adequate protein and resistance training. Track your progress with the <a href="/body-fat">Body Fat Percentage Calculator</a>.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'My weight loss has stalled. What should I do?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Weight loss plateaus are normal. It usually means your body has adapted and your TDEE has decreased. The first step is to recalculate your <a href="/tdee">TDEE</a> with your new, lower weight. You may need to slightly decrease your calorie intake or increase your activity level to start losing weight again.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Should I ever eat below my BMR?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'It is generally not recommended to eat below your <a href="/bmr">Basal Metabolic Rate (BMR)</a> for an extended period. Doing so can lead to muscle loss and a significant drop in metabolism. Your calorie target from this calculator should ideally stay above your BMR.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How important is exercise for my goal?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Exercise is crucial. While diet creates the calorie deficit, resistance training helps preserve muscle mass, ensuring that the weight you lose is primarily fat. Cardio helps increase your total daily energy expenditure (TDEE).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I set a goal date instead of a weekly loss rate?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'This calculator works by setting a pace (e.g., 1 lb/week). While we don\'t have a date-based goal calculator yet, you can work backward. If you want to lose 10 lbs in 10 weeks, you would set the weekly loss rate to 1 lb/week to find the required calorie deficit.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What\'s the difference between this and the Calorie Deficit Calculator?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The <a href="/calorie-deficit">Calorie Deficit Calculator</a> helps you find a calorie target based on a percentage deficit (e.g., 15% below TDEE). This Weight Loss Goal Calculator is more goal-oriented, as it calculates the deficit needed to achieve a specific rate of weight loss (e.g., 1 lb/week) and provides a timeline.',
+        },
+      },
     ],
   };
 
@@ -263,6 +303,34 @@ export default function WeightLossGoalPage() {
 
         <Card>
           <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Being Too Aggressive:</strong> Setting a weekly loss goal of more than 1-2% of your body weight can lead to muscle loss and is hard to sustain.</li>
+              <li><strong>Not Adjusting for a New TDEE:</strong> As you lose weight, your body needs fewer calories. You must recalculate your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> every 10-15 lbs and adjust your calorie target.</li>
+              <li><strong>Ignoring Protein Intake:</strong> During weight loss, adequate protein is vital to preserve muscle mass. A low-protein diet will result in more muscle loss.</li>
+              <li><strong>Forgetting About "Diet Breaks":</strong> Staying in a deficit for too long can lead to burnout. Planning a one-week break at your maintenance calories every 8-12 weeks can improve adherence.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Use a Food Scale:</strong> Accurately tracking your calorie intake is much easier and more effective with a food scale.</li>
+              <li><strong>Plan Your Meals:</strong> Use a tool like the Meal Calorie Split Calculator to plan your meals around your daily calorie target, making it easier to stay on track.</li>
+              <li><strong>Focus on High-Satiety Foods:</strong> Prioritize protein and fiber from whole foods (vegetables, lean meats, legumes) to feel fuller on fewer calories.</li>
+              <li><strong>Don't Drink Your Calories:</strong> Sugary drinks, juices, and specialty coffees can add hundreds of calories without providing much satiety. Stick to water, black coffee, or tea.</li>
+            </ul>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
             <CardTitle>Frequently Asked Questions</CardTitle>
           </CardHeader>
           <CardContent>
@@ -288,6 +356,64 @@ export default function WeightLossGoalPage() {
                 <AccordionContent>The ultimate goal should be fat loss. Combine your calorie deficit with adequate protein and resistance training. Track your progress with the <a href="/body-fat">Body Fat Percentage Calculator</a>.</AccordionContent>
               </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>General Users</TableCell>
+                  <TableCell>Create a clear, motivating timeline and daily target for a weight loss journey.</TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Fitness Coaches</TableCell>
+                  <TableCell>Map out a phased fat loss plan for a client, complete with calorie targets and duration.</TableCell>
+                  <TableCell>Weekly Weight Change Tracker</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Event Preparation</TableCell>
+                  <TableCell>Plan a timeline to reach a specific weight for an event like a wedding or competition.</TableCell>
+                  <TableCell><Link href="/body-fat" className="text-primary hover:underline">Body Fat % Calculator</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Related Calculators</CardTitle>
+          </CardHeader>
+          <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">TDEE Calculator</h3>
+              <p className="text-sm text-muted-foreground">The essential first step. Find the maintenance calories this calculator needs.</p>
+            </Link>
+            <Link href="/calorie-deficit" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Calorie Deficit Calculator</h3>
+              <p className="text-sm text-muted-foreground">Explore different deficit strategies (e.g., percentage-based) for your goal.</p>
+            </Link>
+            <Link href="/body-fat" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Body Fat Percentage Calculator</h3>
+              <p className="text-sm text-muted-foreground">Track your progress to ensure the weight you're losing is primarily fat.</p>
+            </Link>
+            <Link href="/ideal-weight" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Ideal Weight Calculator</h3>
+              <p className="text-sm text-muted-foreground">Get a general idea of a healthy weight range to help set your goal.</p>
+            </Link>
           </CardContent>
         </Card>
 
