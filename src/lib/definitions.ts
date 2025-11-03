@@ -1,4 +1,3 @@
-
 // src/lib/definitions.ts
 import { z } from 'zod';
 
@@ -105,3 +104,12 @@ export const WaistToHipRatioSchema = z.object({
 });
 
 export type WaistToHipRatioFormValues = z.infer<typeof WaistToHipRatioSchema>;
+
+export const BodyShapeSchema = z.object({
+  bust: z.string().min(1, { message: 'Bust measurement is required.' }),
+  waist: z.string().min(1, { message: 'Waist measurement is required.' }),
+  hip: z.string().min(1, { message: 'Hip measurement is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type BodyShapeFormValues = z.infer<typeof BodyShapeSchema>;

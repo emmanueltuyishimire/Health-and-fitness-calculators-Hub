@@ -15,6 +15,7 @@ type State = {
   waist: string;
   hip: string;
   neck: string;
+  bust: string;
   activityLevel:
     | 'sedentary'
     | 'lightly_active'
@@ -31,6 +32,7 @@ type State = {
   bsa?: number;
   waistToHeightRatio?: number;
   waistToHipRatio?: number;
+  bodyShape?: string;
 };
 
 type Action =
@@ -47,6 +49,7 @@ const initialState: State = {
   waist: '80',
   hip: '95',
   neck: '38',
+  bust: '90',
   activityLevel: 'sedentary',
   bodyFat: 15,
 };
@@ -60,7 +63,7 @@ function calculatorReducer(state: State, action: Action): State {
   switch (action.type) {
     case 'SET_UNIT_SYSTEM':
       // Keep user data but clear results when switching units
-      const { bmi, bodyFat, idealWeight, bmr, calorieNeeds, leanBodyMass, ffmi, bsa, waistToHeightRatio, waistToHipRatio, ...userData } = state;
+      const { bmi, bodyFat, idealWeight, bmr, calorieNeeds, leanBodyMass, ffmi, bsa, waistToHeightRatio, waistToHipRatio, bodyShape, ...userData } = state;
       return {
         ...userData,
         height: '',
@@ -68,6 +71,7 @@ function calculatorReducer(state: State, action: Action): State {
         waist: '',
         hip: '',
         neck: '',
+        bust: '',
         unitSystem: action.payload,
       };
     case 'SET_USER_DATA':
