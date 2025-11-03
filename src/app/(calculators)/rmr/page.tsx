@@ -92,7 +92,7 @@ export default function RmrPage() {
         name: 'What is the difference between RMR and BMR?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'RMR (Resting Metabolic Rate) is the calories your body needs at rest. BMR (Basal Metabolic Rate) is similar but measured under stricter, clinical conditions. For practical purposes, RMR and BMR are very close and can be used interchangeably in tools like the <a href="/tdee">TDEE Calculator</a>.',
+          text: 'RMR (Resting Metabolic Rate) is the calories your body needs at rest. <a href="/bmr">BMR (Basal Metabolic Rate)</a> is similar but measured under stricter, clinical conditions. For practical purposes, RMR and BMR are very close and can be used interchangeably in tools like the <a href="/tdee">TDEE Calculator</a>.',
         },
       },
       {
@@ -124,7 +124,23 @@ export default function RmrPage() {
         name: 'How do I use my RMR for weight loss?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Your RMR is the first step. Next, use it in the <a href="/tdee">TDEE Calculator</a> to find your total daily energy expenditure (TDEE). To lose weight, you need to consume fewer calories than your TDEE (a calorie deficit).',
+          text: 'Your RMR is the first step. Next, use it in the <a href="/tdee">TDEE Calculator</a> to find your total daily energy expenditure (TDEE). To lose weight, you need to consume fewer calories than your TDEE (a <a href="/calorie-deficit">calorie deficit</a>).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is the Mifflin-St Jeor formula accurate for RMR?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, the Mifflin-St Jeor equation is considered one of the most accurate formulas for estimating both BMR and RMR in the general population. It provides a reliable baseline for planning your diet with the <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a>.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does RMR account for exercise?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, RMR is your calorie burn strictly at rest. To account for exercise and other daily activities, you must use your RMR to calculate your <a href="/tdee">TDEE (Total Daily Energy Expenditure)</a>.',
         },
       }
     ],
@@ -200,6 +216,55 @@ export default function RmrPage() {
             </ol>
           </CardContent>
         </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Worked Examples</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Variable</TableHead>
+                  <TableHead>Example 1 (Female)</TableHead>
+                  <TableHead>Example 2 (Male)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Gender</TableCell>
+                  <TableCell>Female</TableCell>
+                  <TableCell>Male</TableCell>
+                </TableRow>
+                 <TableRow>
+                  <TableCell>Age</TableCell>
+                  <TableCell>35 years</TableCell>
+                  <TableCell>45 years</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Height</TableCell>
+                  <TableCell>165 cm</TableCell>
+                  <TableCell>180 cm</TableCell>
+                </TableRow>
+                 <TableRow>
+                  <TableCell>Weight</TableCell>
+                  <TableCell>60 kg</TableCell>
+                  <TableCell>85 kg</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-bold">Calculated RMR</TableCell>
+                  <TableCell className="font-bold">1,300 kcal/day</TableCell>
+                  <TableCell className="font-bold">1,760 kcal/day</TableCell>
+                </TableRow>
+                 <TableRow>
+                    <TableCell>Interpretation & Next Step</TableCell>
+                    <TableCell>Her body burns 1,300 calories at rest. Her next step is to use the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to find her TDEE.</TableCell>
+                    <TableCell>His body burns 1,760 calories at rest. He can use this to understand his baseline before accounting for exercise with the <Link href="/tdee" className="text-primary hover:underline">TDEE calculator</Link>.</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
 
         <Card>
           <CardHeader>
@@ -207,11 +272,41 @@ export default function RmrPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <h3 className="font-semibold text-lg text-foreground">What is RMR?</h3>
-            <p>Your Resting Metabolic Rate (RMR) is the amount of energy your body expends while at rest. This energy is used for vital functions like breathing, circulating blood, and controlling body temperature. It is the largest component of your total daily energy expenditure (TDEE), typically accounting for 60-75% of the calories you burn each day.</p>
+            <p>Your Resting Metabolic Rate (RMR) is the amount of energy your body expends while at rest in a comfortable, neutral environment. This energy is used for vital functions like breathing, circulating blood, and controlling body temperature. It is the largest component of your total daily energy expenditure (TDEE), typically accounting for 60-75% of the calories you burn each day.</p>
             <p>RMR is very similar to <Link href="/bmr" className="text-primary hover:underline">BMR (Basal Metabolic Rate)</Link>, but is measured under less strict conditions. For most practical purposes, the two are interchangeable and provide a foundational understanding of your metabolism.</p>
+            <h3 className="font-semibold text-lg text-foreground">Factors Influencing RMR</h3>
+            <p>Your RMR is determined by several factors, including:</p>
+            <ul className="list-disc list-inside space-y-2 pl-4">
+                <li><strong>Body Composition:</strong> Lean muscle mass burns more calories at rest than fat mass. The more muscle you have, the higher your RMR.</li>
+                <li><strong>Age:</strong> RMR tends to decrease with age, largely due to a natural loss of muscle mass.</li>
+                <li><strong>Gender:</strong> Men typically have a higher RMR than women because they generally have more muscle mass.</li>
+                <li><strong>Genetics:</strong> Some people are born with a naturally higher or lower metabolism.</li>
+            </ul>
           </CardContent>
         </Card>
         
+        <Card>
+            <CardHeader><CardTitle>Common Mistakes</CardTitle></CardHeader>
+            <CardContent>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li><strong>Confusing RMR with TDEE:</strong> Using your RMR as your daily calorie target is a major error. RMR doesn't include activity. Always use your RMR to calculate your TDEE in our <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link>.</li>
+                    <li><strong>Not Updating Your RMR:</strong> As you lose or gain weight, your RMR will change. You should recalculate it after every 5-10 lbs (or 2-5 kg) of weight change to keep your calorie targets accurate.</li>
+                    <li><strong>Using It as a Rigid Rule:</strong> RMR is an estimate. Use it as a starting point, monitor your weight and <Link href="/body-fat" className="text-primary hover:underline">body composition</Link> over 2-4 weeks, and adjust your calorie intake up or down as needed.</li>
+                </ul>
+            </CardContent>
+        </Card>
+        
+        <Card>
+            <CardHeader><CardTitle>Pro Tips & Quick Hacks</CardTitle></CardHeader>
+            <CardContent>
+                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li><strong>Prioritize Protein:</strong> When in a calorie deficit, a higher protein intake helps preserve muscle mass, which in turn helps keep your RMR from dropping as much. Use a <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link> to find your target.</li>
+                    <li><strong>Focus on Building Muscle:</strong> The best long-term strategy to boost your RMR is to increase your lean body mass through consistent resistance training.</li>
+                    <li><strong>Stay Hydrated:</strong> Proper hydration is necessary for all metabolic processes. Use the <Link href="/water-intake" className="text-primary hover:underline">Water Intake Calculator</Link> to estimate your needs.</li>
+                </ul>
+            </CardContent>
+        </Card>
+
         <Card>
           <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
@@ -230,8 +325,48 @@ export default function RmrPage() {
                 <AccordionTrigger>Does RMR decrease with age?</AccordionTrigger>
                 <AccordionContent>Yes, RMR generally decreases with age, primarily due to a natural decline in muscle mass. Staying active and doing strength training is important throughout life.</AccordionContent>
               </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger>How do I use my RMR for weight loss?</AccordionTrigger>
+                <AccordionContent>Your RMR is the first step. Next, use it in the <Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link> to find your total daily energy expenditure (TDEE). To lose weight, you need to consume fewer calories than your TDEE (a <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>).</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger>Does RMR account for exercise?</AccordionTrigger>
+                <AccordionContent>No, RMR is your calorie burn strictly at rest. To account for exercise and other daily activities, you must use your RMR to calculate your <Link href="/tdee" className="text-primary hover:underline">TDEE (Total Daily Energy Expenditure)</Link>.</AccordionContent>
+              </AccordionItem>
             </Accordion>
           </CardContent>
+        </Card>
+
+        <Card>
+            <CardHeader><CardTitle>Real-Life Applications</CardTitle></CardHeader>
+            <CardContent>
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead>Audience</TableHead>
+                            <TableHead>Use Case</TableHead>
+                            <TableHead>Next Step (Tool)</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        <TableRow>
+                            <TableCell>General Users</TableCell>
+                            <TableCell>Establish a baseline for a new diet or fitness plan.</TableCell>
+                            <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>Fitness Coaches</TableCell>
+                            <TableCell>Create precise, individualized calorie targets for clients.</TableCell>
+                             <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio Calculator</Link></TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>Health Enthusiasts</TableCell>
+                            <TableCell>Understand how changes in muscle mass affect their resting metabolism.</TableCell>
+                            <TableCell><Link href="/body-fat" className="text-primary hover:underline">Body Fat % Calculator</Link></TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+            </CardContent>
         </Card>
 
         <Card>
