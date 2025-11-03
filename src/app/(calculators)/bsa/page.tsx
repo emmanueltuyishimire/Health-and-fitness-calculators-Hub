@@ -363,7 +363,7 @@ export default function BsaPage() {
               </AccordionItem>
               <AccordionItem value="item-9">
                 <AccordionTrigger>Why is BSA used for drug dosages?</AccordionTrigger>
-                <AccordionContent>BSA is used because it provides a better estimate of metabolic mass than body weight alone, which can be skewed by fat. This allows for more precise dosing of sensitive medications, especially in oncology. This relates to how your body uses energy, a concept explored in our <Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs Calculator</Link>.</AccordionContent>
+                <AccordionContent>BSA is used because it provides a better estimate of metabolic mass than body weight alone, which can be skewed by fat. This allows for more precise dosing of sensitive medications, especially in oncology. This relates to how your body uses energy, a concept explored in our <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger>Does age or gender affect the BSA formula?</AccordionTrigger>
