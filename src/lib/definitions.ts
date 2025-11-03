@@ -251,3 +251,12 @@ export const FatIntakeSchema = z.object({
 });
 
 export type FatIntakeFormValues = z.infer<typeof FatIntakeSchema>;
+
+export const CalorieBurnByActivitySchema = z.object({
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  activity: z.string().min(1, { message: 'Please select an activity.' }),
+  duration: z.string().min(1, { message: 'Duration is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type CalorieBurnByActivityFormValues = z.infer<typeof CalorieBurnByActivitySchema>;

@@ -1,3 +1,4 @@
+
 // src/context/calculator-context.tsx
 'use client';
 
@@ -24,6 +25,8 @@ type State = {
     | 'extra_active';
   carbActivityLevel: 'light' | 'moderate' | 'high' | 'very_high';
   fatPercentage: number;
+  activity: string;
+  duration: string;
   deficit: 'mild' | 'standard' | 'aggressive';
   surplus: 'mild' | 'standard' | 'aggressive';
   tdee: string;
@@ -68,7 +71,8 @@ const initialState: State = {
   activityLevel: 'sedentary',
   carbActivityLevel: 'moderate',
   fatPercentage: 30,
-  bodyFat: 15,
+  activity: '',
+  duration: '30',
   deficit: 'standard',
   surplus: 'standard',
   tdee: '',
