@@ -15,13 +15,11 @@ const ptSans = PT_Sans({
   variable: '--font-pt-sans',
 });
 
-const assetPrefix = process.env.NODE_ENV === 'production' ? '' : '';
-
 export const metadata: Metadata = {
   title: 'Health and Fitness Calculators Hub',
   description: 'Body Composition & Weight Management Calculators Hub',
   icons: {
-    icon: `${assetPrefix}/favicon.ico`,
+    icon: `/favicon.ico`,
   },
 };
 
