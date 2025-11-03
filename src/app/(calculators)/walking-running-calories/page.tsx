@@ -245,12 +245,38 @@ export default function WalkingRunningCaloriesPage() {
 
         <Card>
           <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Inaccurate Speed Selection:</strong> Choosing a faster running speed than you actually maintained will overestimate your calorie burn.</li>
+              <li><strong>"Eating Back" Exercise Calories:</strong> A common dieting mistake. Your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> already accounts for your activity level. Use this tool for information, not to justify eating more.</li>
+              <li><strong>Ignoring Inclines:</strong> This calculator assumes you are on a flat surface. Walking or running uphill significantly increases calorie burn.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Incorporate Intervals:</strong> Alternating between high-speed running and slower walking (HIIT) can boost your calorie burn and improve cardiovascular fitness more than steady-state cardio.</li>
+              <li><strong>Fuel Your Runs:</strong> Ensure you have enough energy for your workouts by eating a carbohydrate-rich meal 1-2 hours beforehand. Use the <Link href="/carb-intake" className="text-primary hover:underline">Carb Intake Calculator</Link> to find your needs.</li>
+              <li><strong>Track Your Fitness:</strong> As your cardiovascular fitness improves, your resting heart rate may decrease. You can track this progress with our <Link href="/vo2-max" className="text-primary hover:underline">VO2 Max Estimator</Link>.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
           </CardHeader>
           <CardContent>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
-                <AccordionTrigger>Is this more accurate than a step counter?</AccordionTrigger>
+                <AccordionTrigger>Is this calculator more accurate than a step counter?</AccordionTrigger>
                 <AccordionContent>
                   It can be, because it accounts for intensity (speed). Our <a href="/steps-to-calories">Steps to Calories Calculator</a> is great for general daily activity, but this tool is better for specific workouts.
                 </AccordionContent>
@@ -280,6 +306,40 @@ export default function WalkingRunningCaloriesPage() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Runners</TableCell>
+                  <TableCell>Estimate the energy cost of their training runs to better plan their nutrition and fueling strategy.</TableCell>
+                  <TableCell><Link href="/carb-intake" className="text-primary hover:underline">Carb Intake Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>People on a Diet</TableCell>
+                  <TableCell>Quantify the calorie burn from their daily walk to help them achieve their <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>.</TableCell>
+                  <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Fitness Planners</TableCell>
+                  <TableCell>Compare the calorie burn of different running speeds or durations to design an effective cardio plan.</TableCell>
+                  <TableCell><Link href="/vo2-max" className="text-primary hover:underline">VO2 Max Estimator</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
         
