@@ -244,6 +244,34 @@ export default function CalorieMaintenancePage() {
         
         <Card>
           <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Confusing Maintenance with BMR:</strong> Eating only your BMR is significant undereating for anyone who is not bed-ridden. Your maintenance calories are your TDEE, not your <Link href="/bmr" className="text-primary hover:underline">BMR</Link>.</li>
+              <li><strong>Not Recalculating:</strong> Your maintenance calories will decrease as you lose weight and increase as you gain muscle. Recalculate your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link> after every 10-15 lbs of weight change.</li>
+              <li><strong>Treating the Number as Exact:</strong> TDEE is an estimate. Use it as a starting point, monitor your weight for 2-3 weeks, and adjust your intake if your weight is not stable.</li>
+              <li><strong>Ignoring Body Composition:</strong> You can stay at the same weight but change your body composition (lose fat, gain muscle). Use the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> calculator to track this.</li>
+            </ul>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Use for "Reverse Dieting":</strong> After a diet, don't jump back to old habits. Slowly increase your intake towards your new maintenance level over several weeks to help your metabolism adapt.</li>
+              <li><strong>Fuel for Performance:</strong> On days with heavy workouts, eating at or slightly above your maintenance TDEE can improve performance and recovery.</li>
+              <li><strong>Find Your True Maintenance:</strong> The most accurate way to find your maintenance is to track your weight and calorie intake for 2-3 weeks. If your weight is stable, your average daily intake is your true maintenance level.</li>
+              <li><strong>Practice Makes Perfect:</strong> Spend time eating at maintenance. It teaches you what a "normal" amount of food feels like for your body, a skill crucial for long-term weight management.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
           </CardHeader>
           <CardContent>
@@ -269,6 +297,40 @@ export default function CalorieMaintenancePage() {
                 <AccordionContent>Yes. As your weight, age, or activity level changes, so will your TDEE. It is wise to recalculate your <a href="/tdee" className="text-primary hover:underline">TDEE</a> every few months or after a significant change in weight (10-15 lbs) to ensure your targets are still accurate.</AccordionContent>
               </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>General Users</TableCell>
+                  <TableCell>Find a baseline calorie intake to avoid unintentional weight changes.</TableCell>
+                  <TableCell><Link href="/macronutrient-ratio" className="text-primary hover:underline">Macronutrient Ratio</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Athletes</TableCell>
+                  <TableCell>Ensure adequate energy intake for peak performance without gaining excess weight.</TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>People Post-Diet</TableCell>
+                  <TableCell>Establish a new, stable calorie target to maintain weight loss results.</TableCell>
+                  <TableCell><Link href="/body-fat" className="text-primary hover:underline">Body Fat % Calculator</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
 
