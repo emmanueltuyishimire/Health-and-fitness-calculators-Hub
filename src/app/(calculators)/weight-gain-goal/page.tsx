@@ -263,6 +263,34 @@ export default function WeightGainGoalPage() {
         
         <Card>
           <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>"Dirty Bulking":</strong> Eating a huge surplus from junk food leads to excessive fat gain and poor health. Focus on nutrient-dense foods.</li>
+              <li><strong>Not Eating Enough Protein:</strong> A calorie surplus without enough protein will primarily result in fat gain, not muscle. Use the Protein Intake Calculator to find your target.</li>
+              <li><strong>Skipping Resistance Training:</strong> You must provide a stimulus for muscle growth. Without lifting weights, a surplus just leads to fat storage.</li>
+              <li><strong>Fearing Any Fat Gain:</strong> A small amount of fat gain during a muscle-building phase is normal and unavoidable. Don't be afraid of it.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Liquid Calories:</strong> If you struggle to eat enough, add shakes with protein powder, oats, and healthy fats (like peanut butter) to easily increase your calorie intake.</li>
+              <li><strong>Track Your Lifts:</strong> Your strength in the gym should be consistently increasing. If it's not, you may not be eating enough or recovering properly.</li>
+              <li><strong>Be Patient:</strong> Building significant muscle is a slow process. Trust your plan and stay consistent for months, not just weeks.</li>
+              <li><strong>Don't Forget Carbs:</strong> Carbohydrates are crucial for fueling intense workouts. Ensure you're eating enough around your training sessions.</li>
+            </ul>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
             <CardTitle>Frequently Asked Questions</CardTitle>
           </CardHeader>
           <CardContent>
@@ -288,6 +316,64 @@ export default function WeightGainGoalPage() {
                 <AccordionContent>This requires consistent resistance training to stimulate muscle growth and adequate protein intake. Use our Protein Intake Calculator to find your target. Also, track your progress with the <a href="/ffmi">FFMI Calculator</a>.</AccordionContent>
               </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Bodybuilders</TableCell>
+                  <TableCell>Plan a "bulking" phase with a clear timeline and calorie target.</TableCell>
+                  <TableCell><Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Underweight Individuals</TableCell>
+                  <TableCell>Create a structured, healthy plan to reach a target weight.</TableCell>
+                  <TableCell><Link href="/ideal-weight" className="text-primary hover:underline">Ideal Weight Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Athletes</TableCell>
+                  <TableCell>Plan an off-season mass-building phase to improve strength and performance.</TableCell>
+                  <TableCell>Strength-to-Weight Ratio</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Related Calculators</CardTitle>
+          </CardHeader>
+          <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Link href="/tdee" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">TDEE Calculator</h3>
+              <p className="text-sm text-muted-foreground">The essential first step. Find your maintenance calories here.</p>
+            </Link>
+            <Link href="/calorie-surplus" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Calorie Surplus Calculator</h3>
+              <p className="text-sm text-muted-foreground">Explore different surplus strategies (e.g., percentage-based) for your goal.</p>
+            </Link>
+            <Link href="/ffmi" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">FFMI Calculator</h3>
+              <p className="text-sm text-muted-foreground">Track the quality of your weight gain by monitoring your muscularity.</p>
+            </Link>
+            <Link href="/protein-intake" className="p-4 border rounded-lg hover:bg-muted">
+              <h3 className="font-semibold">Protein Intake Calculator</h3>
+              <p className="text-sm text-muted-foreground">Ensure you're eating enough protein to build muscle.</p>
+            </Link>
           </CardContent>
         </Card>
 
