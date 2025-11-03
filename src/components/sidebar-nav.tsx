@@ -36,6 +36,7 @@ import {
   Medal,
   Activity,
   BedDouble,
+  ClipboardList,
 } from 'lucide-react';
 import { PiPersonArmsSpread } from "react-icons/pi";
 
@@ -82,6 +83,7 @@ const links = [
   { href: '/water-intake', label: 'Water Intake', icon: GlassWater },
   { href: '/hydration-tracker', label: 'Hydration Tracker', icon: ListChecks },
   { href: '/calorie-burn-by-activity', label: 'Calorie Burn by Activity', icon: Zap },
+  { href: '/met-value', label: 'Activity MET Value', icon: ClipboardList },
   { href: '/meal-calorie-split', label: 'Meal Calorie Split', icon: Soup },
   { href: '/weight-loss-goal', label: 'Weight Loss Goal', icon: Flag },
   { href: '/weight-gain-goal', label: 'Weight Gain Goal', icon: Flag },

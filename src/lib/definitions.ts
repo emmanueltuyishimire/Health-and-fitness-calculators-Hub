@@ -271,6 +271,13 @@ export const CalorieBurnByActivitySchema = z.object({
 
 export type CalorieBurnByActivityFormValues = z.infer<typeof CalorieBurnByActivitySchema>;
 
+export const MetValueSchema = z.object({
+  activity: z.string().min(1, { message: 'Please select an activity.' }),
+});
+
+export type MetValueFormValues = z.infer<typeof MetValueSchema>;
+
+
 export const MealCalorieSplitSchema = z.object({
   calories: z.string().min(1, { message: 'Calorie target is required.' }),
   meals: z.string().min(1, { message: 'Number of meals is required.' }).refine(val => parseInt(val, 10) > 0, { message: 'Number of meals must be greater than 0.'}),
