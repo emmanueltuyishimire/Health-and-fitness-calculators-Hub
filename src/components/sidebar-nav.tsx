@@ -85,6 +85,7 @@ const links = [
   { href: '/water-intake', label: 'Water Intake', icon: GlassWater },
   { href: '/hydration-tracker', label: 'Hydration Tracker', icon: ListChecks },
   { href: '/calorie-burn-by-activity', label: 'Calorie Burn by Activity', icon: Zap },
+  { href: '/workout-calorie-tracker', label: 'Workout Calorie Tracker', icon: Zap },
   { href: '/met-value', label: 'Activity MET Value', icon: ClipboardList },
   { href: '/steps-to-calories', label: 'Steps to Calories', icon: Footprints },
   { href: '/walking-running-calories', label: 'Walking/Running Calories', icon: Footprints },

@@ -275,6 +275,15 @@ export const CalorieBurnByActivitySchema = z.object({
 
 export type CalorieBurnByActivityFormValues = z.infer<typeof CalorieBurnByActivitySchema>;
 
+export const WorkoutCalorieTrackerSchema = z.object({
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  activity: z.string().min(1, { message: 'Please select a workout.' }),
+  duration: z.string().min(1, { message: 'Duration is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type WorkoutCalorieTrackerFormValues = z.infer<typeof WorkoutCalorieTrackerSchema>;
+
 export const MetValueSchema = z.object({
   activity: z.string().min(1, { message: 'Please select an activity.' }),
 });
