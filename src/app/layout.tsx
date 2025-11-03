@@ -1,7 +1,16 @@
 
 import type {Metadata} from 'next';
+import { PT_Sans } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+
+const ptSans = PT_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-pt-sans',
+});
+
 
 export const metadata: Metadata = {
   title: 'Health and Fitness Calculators Hub',
@@ -19,14 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
         <script async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3042243846300811"
-          crossOrigin="anonymous"></script>
+          crossorigin="anonymous"></script>
       </head>
-      <body className="font-body antialiased" suppressHydrationWarning>
+      <body className={`${ptSans.variable} font-body antialiased`} suppressHydrationWarning>
         {children}
         <Toaster />
       </body>
