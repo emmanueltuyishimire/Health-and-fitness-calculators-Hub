@@ -1,4 +1,3 @@
-
 // src/context/calculator-context.tsx
 'use client';
 
