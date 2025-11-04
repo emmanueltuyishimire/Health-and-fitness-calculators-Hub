@@ -18,9 +18,6 @@ const ptSans = PT_Sans({
 export const metadata: Metadata = {
   title: 'Health and Fitness Calculators Hub',
   description: 'Body Composition & Weight Management Calculators Hub',
-  icons: {
-    icon: `/favicon.ico`,
-  },
 };
 
 export default function RootLayout({
@@ -61,7 +58,7 @@ export default function RootLayout({
               <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/contact" target="_blank" rel="nofollow noopener noreferrer">
                 Contact
               </a>
-              <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/privacy-policy" target="_blank" rel="nofollow noopener noreferrer">
+              <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/privacy-policy" target_blank" rel="nofollow noopener noreferrer">
                 Privacy Policy
               </a>
               <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/terms-and-conditions" target="_blank" rel="nofollow noopener noreferrer">
@@ -70,7 +67,7 @@ export default function RootLayout({
               <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/disclaimer" target="_blank" rel="nofollow noopener noreferrer">
                 Disclaimer
               </a>
-              <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site" target="_blank" rel="noopener noreferrer">
+              <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site" target_blank" rel="noopener noreferrer">
                 Central Hub
               </a>
             </nav>
