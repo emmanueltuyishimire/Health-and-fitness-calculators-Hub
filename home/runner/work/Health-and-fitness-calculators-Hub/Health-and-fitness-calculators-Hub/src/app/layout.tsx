@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import { PT_Sans } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Link from 'next/link';
@@ -7,11 +7,9 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Logo } from '@/components/logo';
 
-const ptSans = PT_Sans({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  variable: '--font-pt-sans',
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
@@ -31,7 +29,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3042223846300811"
           crossOrigin="anonymous"></script>
       </head>
-      <body className={`${ptSans.variable} font-body antialiased`} suppressHydrationWarning>
+      <body className={`${inter.variable} font-body antialiased`} suppressHydrationWarning>
         <div className="flex flex-col min-h-screen bg-background">
           <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
