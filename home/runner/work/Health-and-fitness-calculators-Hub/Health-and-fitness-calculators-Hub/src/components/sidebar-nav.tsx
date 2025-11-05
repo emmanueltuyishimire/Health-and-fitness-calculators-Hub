@@ -63,6 +63,7 @@ import Link from 'next/link';
 
 const links = [
   { href: '/bmi', label: 'BMI Calculator', icon: Scale },
+  { href: '/bmi-percentile-teen', label: 'BMI Percentile for Age (Teens)', icon: PersonStanding },
   { href: '/body-fat', label: 'Body Fat %', icon: Percent },
   { href: '/ideal-weight', label: 'Ideal Weight', icon: Target },
   { href: '/lean-body-mass', label: 'Lean Body Mass', icon: Weight },
@@ -80,6 +81,7 @@ const links = [
   { href: '/calorie-deficit', label: 'Calorie Adjustment (Loss)', icon: TrendingDown },
   { href: '/calorie-surplus', label: 'Calorie Adjustment (Gain)', icon: TrendingUp },
   { href: '/calorie-maintenance', label: 'Calorie Maintenance', icon: Anchor },
+  { href: '/calorie-to-weight', label: 'Calorie-to-Weight Conversion', icon: GitCommitHorizontal },
   { href: '/macronutrient-ratio', label: 'Macronutrient Ratio', icon: PieChart },
   { href: '/protein-intake', label: 'Protein Intake', icon: Egg },
   { href: '/carb-intake', label: 'Carb Intake', icon: BrainCircuit },
@@ -176,5 +178,3 @@ export function SidebarNav() {
     </>
   );
 }
-
-    

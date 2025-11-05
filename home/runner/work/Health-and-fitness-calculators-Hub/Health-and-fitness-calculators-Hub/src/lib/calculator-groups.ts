@@ -4,6 +4,7 @@ export const calculatorGroups = [
     title: 'Core Body Composition',
     calculators: [
       { name: 'BMI Calculator', href: '/bmi' },
+      { name: 'BMI Percentile for Age (Teens)', href: '/bmi-percentile-teen' },
       { name: 'Body Fat Percentage Calculator', href: '/body-fat' },
       { name: 'Ideal Body Weight (IBW)', href: '/ideal-weight' },
       { name: 'Lean Body Mass Calculator', href: '/lean-body-mass' },
@@ -29,6 +30,7 @@ export const calculatorGroups = [
       { name: 'Weekly Weight Change Tracker', href: '/weight-change-tracker' },
       { name: 'Fat Loss Progress Tracker', href: '/fat-loss-tracker' },
       { name: 'Goal Weight Estimator by Date', href: '/goal-weight-estimator' },
+      { name: 'Calorie-to-Weight Conversion', href: '/calorie-to-weight' },
     ],
   },
   {
@@ -71,5 +73,3 @@ export const calculatorGroups = [
     ],
   },
 ];
-
-    
