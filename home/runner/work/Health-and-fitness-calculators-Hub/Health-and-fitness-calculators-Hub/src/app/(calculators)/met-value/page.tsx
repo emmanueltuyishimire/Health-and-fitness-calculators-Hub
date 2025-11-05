@@ -122,6 +122,46 @@ export default function MetValuePage() {
           text: '1 MET is roughly equivalent to your <a href="/bmr">Basal Metabolic Rate (BMR)</a>. The MET values of your daily activities are a component of your <a href="/tdee">Total Daily Energy Expenditure (TDEE)</a>, which is your total calorie burn for the day.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'Is the MET value the same for everyone?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The MET value for an activity is standardized, but the actual calorie burn is not. A heavier person will burn more calories than a lighter person doing the same activity for the same amount of time. That\'s why our <a href="/calorie-burn-by-activity">Calorie Burn by Activity Calculator</a> requires your weight.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I use METs to calculate my daily activity level for TDEE?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'While you could theoretically log every activity and its MET value, it is much simpler to use an activity multiplier. Our <a href="/activity-level-estimator">Daily Activity Level Estimator</a> helps you choose the right multiplier for your <a href="/tdee">TDEE calculation</a>.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What\'s the difference between METs and calories?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A MET is a measure of intensity (a ratio), not a measure of energy. Calories are a unit of energy. The MET value is a key variable used to calculate the calories burned, which you can do with our <a href="/calorie-burn-by-activity">Calorie Burn by Activity Calculator</a>.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do METs account for body composition?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, METs are a standardized measure and do not account for individual differences in body composition. A person with more muscle mass (a higher <a href="/lean-body-mass">Lean Body Mass</a>) may burn slightly more calories than someone of the same weight with less muscle.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do METs help with planning a workout week?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'By knowing the MET values, you can compare the intensity of different activities. This allows you to plan a balanced week with a mix of high-intensity and low-intensity days. You can quantify this overall stress using the <a href="/weekly-workout-load">Weekly Workout Load Calculator</a>.',
+        },
+      },
     ],
   };
 
@@ -179,6 +219,69 @@ export default function MetValuePage() {
 
         <Card>
           <CardHeader>
+            <CardTitle>How to Use the MET Value Calculator</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4 text-muted-foreground">
+            <p>
+              This tool serves as a quick reference to find the standardized energy cost of various physical activities.
+            </p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li><strong>Search for an Activity:</strong> Use the search box to find a specific activity like "cycling" or "weight lifting."</li>
+              <li><strong>Select the Activity:</strong> Click on the desired activity from the list.</li>
+              <li><strong>View the MET Value:</strong> The tool will display the MET value for that activity.</li>
+              <li><strong>Use the Value:</strong> You can now take this MET value to the <Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity Calculator</Link> to estimate your energy expenditure.</li>
+            </ol>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Worked Example</CardTitle>
+          </CardHeader>
+          <CardContent>
+              <Table>
+                  <TableHeader>
+                      <TableRow>
+                          <TableHead>Variable</TableHead>
+                          <TableHead>Value</TableHead>
+                      </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                      <TableRow>
+                          <TableCell>Selected Activity</TableCell>
+                          <TableCell>Running, 6 mph (10 min/mile)</TableCell>
+                      </TableRow>
+                      <TableRow>
+                          <TableCell className="font-bold">MET Value</TableCell>
+                          <TableCell className="font-bold">9.8</TableCell>
+                      </TableRow>
+                      <TableRow>
+                          <TableCell>User's Weight</TableCell>
+                          <TableCell>155 lbs (70.3 kg)</TableCell>
+                      </TableRow>
+                      <TableRow>
+                          <TableCell>Workout Duration</TableCell>
+                          <TableCell>30 minutes</TableCell>
+                      </TableRow>
+                      <TableRow>
+                          <TableCell>Formula</TableCell>
+                          <TableCell className="font-mono text-xs">Calories = (9.8 * 3.5 * 70.3) / 200 * 30</TableCell>
+                      </TableRow>
+                      <TableRow>
+                          <TableCell className="font-bold">Estimated Calories Burned</TableCell>
+                          <TableCell className="font-bold">~362 kcal</TableCell>
+                      </TableRow>
+                      <TableRow>
+                         <TableCell>Next Step</TableCell>
+                         <TableCell>This user can now go to the <Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity Calculator</Link> to automatically perform this calculation for any activity.</TableCell>
+                      </TableRow>
+                  </TableBody>
+              </Table>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
             <CardTitle>Understanding METs and Calorie Expenditure</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
@@ -215,49 +318,65 @@ export default function MetValuePage() {
             </Table>
           </CardContent>
         </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Misjudging Intensity:</strong> Selecting "vigorous" when your effort was moderate. Be honest about your intensity to get a useful number for the <Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn Calculator</Link>.</li>
+              <li><strong>Applying it to All Body Types:</strong> MET values are standardized and don't account for individual differences in fitness level or body composition. A very fit person will burn fewer calories than a less fit person doing the same activity.</li>
+              <li><strong>Confusing METs with Calories:</strong> A MET value is a multiplier, not a direct measure of calories burned. It is a variable used to calculate calories.</li>
+            </ul>
+          </CardContent>
+        </Card>
 
         <Card>
-            <CardHeader><CardTitle>Worked Example</CardTitle></CardHeader>
-            <CardContent>
-                <Table>
-                    <TableHeader>
-                        <TableRow>
-                            <TableHead>Variable</TableHead>
-                            <TableHead>Value</TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        <TableRow>
-                            <TableCell>Selected Activity</TableCell>
-                            <TableCell>Running, 6 mph (10 min/mile)</TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell className="font-bold">MET Value</TableCell>
-                            <TableCell className="font-bold">9.8</TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell>User's Weight</TableCell>
-                            <TableCell>155 lbs (70.3 kg)</TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell>Workout Duration</TableCell>
-                            <TableCell>30 minutes</TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell>Formula</TableCell>
-                            <TableCell className="font-mono text-xs">Calories = (9.8 * 3.5 * 70.3) / 200 * 30</TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell className="font-bold">Estimated Calories Burned</TableCell>
-                            <TableCell className="font-bold">~362 kcal</TableCell>
-                        </TableRow>
-                        <TableRow>
-                           <TableCell>Next Step</TableCell>
-                           <TableCell>This user can now go to the <Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity Calculator</Link> to automatically perform this calculation for any activity.</TableCell>
-                        </TableRow>
-                    </TableBody>
-                </Table>
-            </CardContent>
+          <CardHeader>
+            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Compare Activities:</strong> Use this tool to compare the relative intensity of different workouts to help you plan your week. For example, you'll see that 30 minutes of vigorous swimming (MET 10.0) burns more calories than 30 minutes of casual volleyball (MET 4.0).</li>
+              <li><strong>Understand NEAT:</strong> Look up MET values for non-exercise activities like "walking for pleasure" (3.5 METs) to understand how much daily movement contributes to your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>.</li>
+              <li><strong>Contextualize Your Workouts:</strong> Knowing the MET value helps you understand why a 30-minute HIIT class (e.g., 8-12 METs) feels much harder and burns more calories than a 30-minute walk (3-4 METs).</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Fitness Enthusiasts</TableCell>
+                  <TableCell>Compare the intensity of different workouts to plan a varied training week.</TableCell>
+                  <TableCell><Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Health Professionals</TableCell>
+                  <TableCell>Prescribe exercise of a certain intensity level to patients.</TableCell>
+                  <TableCell>N/A</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Curious Individuals</TableCell>
+                  <TableCell>Understand how much more energy daily activities like cleaning or gardening burn compared to sitting.</TableCell>
+                  <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
         </Card>
         
         <Card>
@@ -266,35 +385,45 @@ export default function MetValuePage() {
           </CardHeader>
           <CardContent>
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-1">
+               <AccordionItem value="item-1">
                 <AccordionTrigger>What is a MET?</AccordionTrigger>
-                <AccordionContent>
-                  MET stands for Metabolic Equivalent of Task. It's a unit that estimates the amount of energy used by the body during physical activity. 1 MET is the energy expenditure of sitting at rest. An activity with a MET of 5 requires five times the energy of sitting still.
-                </AccordionContent>
+                <AccordionContent>MET stands for Metabolic Equivalent of Task. It's a unit that estimates the amount of energy used by the body during physical activity. 1 MET is the energy expenditure of sitting at rest. An activity with a MET of 5 requires five times the energy of sitting still.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>How are MET values used?</AccordionTrigger>
-                <AccordionContent>
-                  MET values are used in a formula along with your body weight and the duration of an activity to estimate the calories burned. You can use the MET value from this tool in our <Link href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity Calculator</Link>.
-                </AccordionContent>
+                <AccordionContent>MET values are used in a formula along with your body weight and the duration of an activity to estimate the calories burned. You can use the MET value from this tool in our <a href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity Calculator</a>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Where do these MET values come from?</AccordionTrigger>
-                <AccordionContent>
-                  The values are derived from the Compendium of Physical Activities, a standardized system developed by researchers to classify activities by energy intensity.
-                </AccordionContent>
+                <AccordionContent>The values are derived from the Compendium of Physical Activities, a standardized system developed by researchers to classify activities by energy intensity. It's a widely accepted scientific standard.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>How does MET relate to my BMR or TDEE?</AccordionTrigger>
-                <AccordionContent>
-                  1 MET is roughly equivalent to your <Link href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</Link>. The MET values of your daily activities are a component of your <Link href="/tdee" className="text-primary hover:underline">Total Daily Energy Expenditure (TDEE)</Link>.
-                </AccordionContent>
+                <AccordionContent>1 MET is roughly equivalent to your <a href="/bmr" className="text-primary hover:underline">Basal Metabolic Rate (BMR)</a>. The MET values of your daily activities are a component of your <a href="/tdee" className="text-primary hover:underline">Total Daily Energy Expenditure (TDEE)</a>.</AccordionContent>
               </AccordionItem>
                <AccordionItem value="item-5">
                 <AccordionTrigger>Why do some activities have multiple MET values?</AccordionTrigger>
-                <AccordionContent>
-                  The energy cost of an activity often depends on its intensity. For example, "running" can range from a slow jog (low MET) to a fast sprint (high MET). This calculator lists different intensities to provide a more accurate value.
-                </AccordionContent>
+                <AccordionContent>The energy cost of an activity often depends on its intensity. For example, "running" can range from a slow jog (low MET) to a fast sprint (high MET). This calculator lists different intensities to provide a more accurate value.</AccordionContent>
+              </AccordionItem>
+               <AccordionItem value="item-6">
+                <AccordionTrigger>Is the MET value the same for everyone?</AccordionTrigger>
+                <AccordionContent>The MET value for an activity is standardized, but the actual calorie burn is not. A heavier person will burn more calories than a lighter person doing the same activity for the same amount of time. That's why our <a href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity Calculator</a> requires your weight.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger>Can I use METs to calculate my daily activity level for TDEE?</AccordionTrigger>
+                <AccordionContent>While you could theoretically log every activity and its MET value, it is much simpler to use an activity multiplier. Our <a href="/activity-level-estimator" className="text-primary hover:underline">Daily Activity Level Estimator</a> helps you choose the right multiplier for your <a href="/tdee" className="text-primary hover:underline">TDEE calculation</a>.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-8">
+                <AccordionTrigger>What's the difference between METs and calories?</AccordionTrigger>
+                <AccordionContent>A MET is a measure of intensity (a ratio), not a measure of energy. Calories are a unit of energy. The MET value is a key variable used to calculate the calories burned, which you can do with our <a href="/calorie-burn-by-activity" className="text-primary hover:underline">Calorie Burn by Activity Calculator</a>.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-9">
+                <AccordionTrigger>Do METs account for body composition?</AccordionTrigger>
+                <AccordionContent>No, METs are a standardized measure and do not account for individual differences in body composition. A person with more muscle mass (a higher <a href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass</a>) may burn slightly more calories than someone of the same weight with less muscle.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-10">
+                <AccordionTrigger>How do METs help with planning a workout week?</AccordionTrigger>
+                <AccordionContent>By knowing the MET values, you can compare the intensity of different activities. This allows you to plan a balanced week with a mix of high-intensity and low-intensity days. You can quantify this overall stress using the <a href="/weekly-workout-load" className="text-primary hover:underline">Weekly Workout Load Calculator</a>.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
@@ -327,3 +456,5 @@ export default function MetValuePage() {
     </>
   );
 }
+
+    
