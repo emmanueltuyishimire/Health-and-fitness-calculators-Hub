@@ -237,41 +237,14 @@ export default function MetabolicAgePage() {
         
         <Card>
           <CardHeader>
-            <CardTitle>Common Mistakes</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Treating it as a Diagnostic Tool:</strong> Metabolic age is a wellness concept, not a medical diagnosis. Use it for motivation and tracking, not to diagnose a health condition.</li>
-              <li><strong>Ignoring Body Composition:</strong> The number is only useful when you understand *why* it is what it is. A high metabolic age is a symptom of poor body composition (low muscle, high fat).</li>
-              <li><strong>Focusing Only on Cardio:</strong> While cardio is great for heart health, building muscle through resistance training is the most direct way to lower your metabolic age.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Prioritize Protein:</strong> Eating enough protein is essential for building and maintaining the muscle that drives your metabolism. Use the <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link> to find your target.</li>
-              <li><strong>Lift Heavy Things:</strong> Progressive resistance training is the number one signal to your body to build or maintain muscle, which is the key to lowering metabolic age.</li>
-              <li><strong>Don't Crash Diet:</strong> Severe calorie restriction can cause your body to lose muscle and slow down your metabolism, increasing your metabolic age. Aim for a sustainable <Link href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</Link>.</li>
-              <li><strong>Stay Active (NEAT):</strong> All movement counts. Increasing your daily steps is an easy way to boost your overall calorie burn. Track it with the <Link href="/steps-to-calories" className="text-primary hover:underline">Steps to Calories Calculator</Link>.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
           </CardHeader>
           <CardContent>
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-1"><AccordionTrigger>What does metabolic age mean?</AccordionTrigger><AccordionContent>Metabolic age is a comparison of your Basal Metabolic Rate (BMR) to the average BMR of people in your chronological age group. A metabolic age lower than your actual age suggests your metabolism is faster than average for your age group, which is often a positive sign. You can calculate your BMR separately with our <a href="/bmr">BMR Calculator</a>.</AccordionContent></AccordionItem>
-              <AccordionItem value="item-2"><AccordionTrigger>How can I lower my metabolic age?</AccordionTrigger><AccordionContent>Lowering your metabolic age involves increasing your BMR. The most effective way to do this is by building more muscle mass through resistance training. A higher <a href="/lean-body-mass">Lean Body Mass</a> burns more calories at rest, leading to a "younger" metabolism.</AccordionContent></AccordionItem>
-              <AccordionItem value="item-3"><AccordionTrigger>Is metabolic age a scientifically validated metric?</AccordionTrigger><AccordionContent>Metabolic age is more of a wellness concept than a clinical diagnostic tool. While it's based on your BMR, a real medical metric, the "age" part is an interpretation. It's a useful way to conceptualize your metabolic health, but metrics like <a href="/body-fat">Body Fat Percentage</a> are more concrete health indicators.</AccordionContent></AccordionItem>
-              <AccordionItem value="item-4"><AccordionTrigger>My metabolic age is higher than my real age. Should I be worried?</AccordionTrigger><AccordionContent>It's not a cause for alarm, but it can be a useful wake-up call. It suggests your metabolism is slower than average for your age, which could be due to low muscle mass or a higher body fat percentage. Improving your body composition through diet and exercise will lower it. Our <a href="/ffmi">FFMI Calculator</a> can help you track muscularity.</AccordionContent></AccordionItem>
+              <AccordionItem value="item-1"><AccordionTrigger>What does metabolic age mean?</AccordionTrigger><AccordionContent>Metabolic age is a comparison of your Basal Metabolic Rate (BMR) to the average BMR of people in your chronological age group. A metabolic age lower than your actual age suggests your metabolism is faster than average for your age group, which is often a positive sign. You can calculate your BMR separately with our <Link href="/bmr">BMR Calculator</Link>.</AccordionContent></AccordionItem>
+              <AccordionItem value="item-2"><AccordionTrigger>How can I lower my metabolic age?</AccordionTrigger><AccordionContent>Lowering your metabolic age involves increasing your BMR. The most effective way to do this is by building more muscle mass through resistance training. A higher <Link href="/lean-body-mass">Lean Body Mass</Link> burns more calories at rest, leading to a "younger" metabolism.</AccordionContent></AccordionItem>
+              <AccordionItem value="item-3"><AccordionTrigger>Is metabolic age a scientifically validated metric?</AccordionTrigger><AccordionContent>Metabolic age is more of a wellness concept than a clinical diagnostic tool. While it's based on your BMR, a real medical metric, the "age" part is an interpretation. It's a useful way to conceptualize your metabolic health, but metrics like <Link href="/body-fat">Body Fat Percentage</Link> are more concrete health indicators.</AccordionContent></AccordionItem>
+              <AccordionItem value="item-4"><AccordionTrigger>My metabolic age is higher than my real age. Should I be worried?</AccordionTrigger><AccordionContent>It's not a cause for alarm, but it can be a useful wake-up call. It suggests your metabolism is slower than average for your age, which could be due to low muscle mass or a higher body fat percentage. Improving your body composition through diet and exercise will lower it. Our <Link href="/ffmi">FFMI Calculator</Link> can help you track muscularity.</AccordionContent></AccordionItem>
               <AccordionItem value="item-5"><AccordionTrigger>Why does this calculator ask for my age if it's calculating a new one?</AccordionTrigger><AccordionContent>Your chronological age is needed to calculate your BMR accurately using the Mifflin-St Jeor formula. The calculator then uses this BMR to find the average age of a person with that same BMR, which becomes your metabolic age.</AccordionContent></AccordionItem>
             </Accordion>
           </CardContent>
@@ -300,7 +273,6 @@ export default function MetabolicAgePage() {
             </Link>
           </CardContent>
         </Card>
-
       </div>
     </>
   );

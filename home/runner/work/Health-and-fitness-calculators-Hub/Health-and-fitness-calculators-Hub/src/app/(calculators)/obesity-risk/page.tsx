@@ -121,47 +121,7 @@ export default function ObesityRiskPage() {
                 text: 'Slow and steady weight loss of 1-2 lbs per week is almost always better. It helps preserve muscle mass and is more sustainable long-term. You can plan your timeline with our <a href="/weight-loss-goal">Weight Loss Goal Calculator</a>.',
             }
         },
-        {
-            '@type': 'Question',
-            name: 'Does my body shape affect my risk?',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'Absolutely. Carrying excess weight around your abdomen ("apple shape") is more dangerous than carrying it on your hips and thighs ("pear shape"). Use the <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio Calculator</a> to understand your body fat distribution.',
-            }
-        },
-        {
-            '@type': 'Question',
-            name: 'How does obesity affect metabolism?',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'Obesity is often linked with insulin resistance, which impairs how your body uses energy. While a heavier body has a higher <a href="/bmr">BMR</a>, the metabolic processes can become dysfunctional. Improving body composition is key to restoring metabolic health.',
-            }
-        },
-        {
-            '@type': 'Question',
-            name: 'What role does exercise play in reducing risk?',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'Exercise plays two roles: it burns calories, helping with weight loss, and it builds/maintains muscle. Resistance training is particularly important for improving your <a href="/lean-body-mass">Lean Body Mass</a>, which boosts your metabolism.',
-            }
-        },
-        {
-            '@type': 'Question',
-            name: 'If my risk is low, does that mean I\'m healthy?',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'Not necessarily. A low BMI can indicate being underweight, which has its own risks. Also, someone can have a "normal" BMI but still have unhealthy habits. Use this as one data point in a larger health picture. Check your <a href="/ideal-weight">Ideal Weight</a> to see a healthy range for your height.',
-            }
-        },
-        {
-            '@type': 'Question',
-            name: 'How often should I check my obesity risk?',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'You don\'t need to check this daily. Re-assessing your BMI and risk every 1-2 months during a weight change journey is sufficient to track progress. A more useful tool for frequent monitoring is the <a href="/weekly-weight-change-tracker">Weekly Weight Change Tracker</a>.',
-            }
-        }
-    ]
+    ],
   };
 
   return (
@@ -290,32 +250,6 @@ export default function ObesityRiskPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>Common Mistakes</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Relying Only on BMI:**</strong> It's a screening tool, not a diagnostic one. Always consider other factors like body fat percentage and waist circumference.</li>
-              <li><strong>Ignoring Muscle Mass:**</strong> If you are athletic and have a high BMI, don't panic. Use the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Calculator</Link> to get a clearer picture of your health.</li>
-              <li><strong>Seeking a Quick Fix:**</strong> Reducing obesity risk requires sustainable lifestyle changes, not crash diets. Use the <Link href="/weight-loss-goal" className="text-primary hover:underline">Weight Loss Goal Calculator</Link> to create a realistic timeline.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Focus on NEAT:</strong> Increase your Non-Exercise Activity Thermogenesis (daily movement) to boost your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>. The <Link href="/steps-to-calories" className="text-primary hover:underline">Steps to Calories Calculator</Link> can help quantify this.</li>
-              <li><strong>Prioritize Protein:</strong> A higher protein intake helps preserve muscle mass during weight loss and keeps you feeling full. Find your target with the <Link href="/protein-intake" className="text-primary hover:underline">Protein Intake Calculator</Link>.</li>
-              <li><strong>Track Your Progress Holistically:</strong> Don't just watch the scale. Track your waist measurement, body fat percentage, and how your clothes fit to see the real progress.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
           </CardHeader>
           <CardContent>
@@ -341,36 +275,6 @@ export default function ObesityRiskPage() {
                 <AccordionContent>Slow and steady weight loss of 1-2 lbs per week is almost always better. It helps preserve muscle mass and is more sustainable long-term. You can plan your timeline with our <Link href="/weight-loss-goal" className='text-primary hover:underline'>Weight Loss Goal Calculator</Link>.</AccordionContent>
               </AccordionItem>
             </Accordion>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Real-Life Applications</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <Table>
-              <TableHeader>
-                <TableRow><TableHead>Audience</TableHead><TableHead>Use Case</TableHead><TableHead>Next Step (Tool)</TableHead></TableRow>
-              </TableHeader>
-              <TableBody>
-                <TableRow>
-                  <TableCell>General Users</TableCell>
-                  <TableCell>Get a quick, initial assessment of their weight-related health risk.</TableCell>
-                  <TableCell><Link href="/daily-calorie-needs" className="text-primary hover:underline">Daily Calorie Needs</Link></TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Medical Professionals</TableCell>
-                  <TableCell>Screen patients for potential obesity to guide further testing and counseling.</TableCell>
-                  <TableCell><Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link></TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Public Health Planners</TableCell>
-                  <TableCell>Assess weight status trends at a population level.</TableCell>
-                  <TableCell>N/A</TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
           </CardContent>
         </Card>
 

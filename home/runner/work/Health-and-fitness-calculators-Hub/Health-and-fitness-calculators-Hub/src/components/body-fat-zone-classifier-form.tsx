@@ -31,40 +31,17 @@ import { Terminal } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const getZone = (gender: 'male' | 'female', age: number, bfp: number): string => {
+    // Using ACE standards for simplicity
     if (gender === 'female') {
-        if (age <= 39) {
-            if (bfp < 21) return 'Athlete';
-            if (bfp <= 24) return 'Fitness';
-            if (bfp <= 31) return 'Acceptable';
-            return 'Obese';
-        } else if (age <= 59) {
-            if (bfp < 23) return 'Athlete';
-            if (bfp <= 27) return 'Fitness';
-            if (bfp <= 33) return 'Acceptable';
-            return 'Obese';
-        } else {
-            if (bfp < 24) return 'Athlete';
-            if (bfp <= 30) return 'Fitness';
-            if (bfp <= 36) return 'Acceptable';
-            return 'Obese';
-        }
+        if (bfp < 14) return 'Athlete';
+        if (bfp <= 24) return 'Fitness';
+        if (bfp <= 31) return 'Acceptable';
+        return 'Obese';
     } else { // male
-        if (age <= 39) {
-            if (bfp < 8) return 'Athlete';
-            if (bfp <= 14) return 'Fitness';
-            if (bfp <= 19) return 'Acceptable';
-            return 'Obese';
-        } else if (age <= 59) {
-            if (bfp < 11) return 'Athlete';
-            if (bfp <= 17) return 'Fitness';
-            if (bfp <= 22) return 'Acceptable';
-            return 'Obese';
-        } else {
-            if (bfp < 13) return 'Athlete';
-            if (bfp <= 19) return 'Fitness';
-            if (bfp <= 24) return 'Acceptable';
-            return 'Obese';
-        }
+        if (bfp < 6) return 'Athlete';
+        if (bfp <= 17) return 'Fitness';
+        if (bfp <= 24) return 'Acceptable';
+        return 'Obese';
     }
 };
 
