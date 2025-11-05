@@ -109,7 +109,6 @@ const links = [
   { href: '/heart-disease-risk', label: 'Heart Disease Risk', icon: HeartPulse },
   { href: '/diabetes-risk', label: 'Diabetes Risk by BMI', icon: ShieldAlert },
   { href: '/body-fat-zone', label: 'Body Fat Health Zone Classifier', icon: ShieldAlert },
-  { href: '/body-type-visualizer', label: 'Body Type Visualizer', icon: PersonStanding },
   { href: '/all', label: 'All Calculators', icon: List },
 ];
 
