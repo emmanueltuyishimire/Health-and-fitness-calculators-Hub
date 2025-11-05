@@ -322,43 +322,43 @@ export default function ObesityRiskPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>Why does this calculator use BMI?</AccordionTrigger>
-                <AccordionContent>This calculator uses BMI as it is the most widely accepted screening tool for assessing weight status and obesity risk at a population level. While it has limitations, it provides a quick and easy starting point. For a more nuanced view, you should also check your <a href="/body-fat">Body Fat Percentage</a>.</AccordionContent>
+                <AccordionContent>This calculator uses BMI as it is the most widely accepted screening tool for assessing weight status and obesity risk at a population level. While it has limitations, it provides a quick and easy starting point. For a more nuanced view, you should also check your <a href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</a>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>What does "obese" mean in a clinical sense?</AccordionTrigger>
-                <AccordionContent>Clinically, obesity is defined as having excess body fat to the extent that it may have a negative effect on health. The <a href="/bmi">BMI Calculator</a> classifies a BMI of 30 or greater as obese, which is associated with a higher risk for many chronic diseases.</AccordionContent>
+                <AccordionContent>Clinically, obesity is defined as having excess body fat to the extent that it may have a negative effect on health. The <a href="/bmi" className="text-primary hover:underline">BMI Calculator</a> classifies a BMI of 30 or greater as obese, which is associated with a higher risk for many chronic diseases.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Can I be "overweight" but still healthy?</AccordionTrigger>
-                <AccordionContent>Yes, particularly if you have a lot of muscle mass. This is why it's crucial to look beyond a single metric. If your BMI is high, your next step should be to use the <a href="/ffmi">FFMI Calculator</a> to assess your muscularity or the <a href="/waist-to-height-ratio">Waist-to-Height Ratio</a> to check for abdominal fat.</AccordionContent>
+                <AccordionContent>Yes, particularly if you have a lot of muscle mass. This is why it's crucial to look beyond a single metric. If your BMI is high, your next step should be to use the <a href="/ffmi" className="text-primary hover:underline">FFMI Calculator</a> to assess your muscularity or the <a href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</a> to check for abdominal fat.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>How do I lower my obesity risk?</AccordionTrigger>
-                <AccordionContent>Lowering your risk involves losing excess body fat. This is achieved by creating a sustainable <a href="/calorie-deficit">calorie deficit</a> through a combination of diet and exercise. Our <a href="/tdee">TDEE Calculator</a> can help you find the right calorie target.</AccordionContent>
+                <AccordionContent>Lowering your risk involves losing excess body fat. This is achieved by creating a sustainable <a href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</a> through a combination of diet and exercise. Our <a href="/tdee" className="text-primary hover:underline">TDEE Calculator</a> can help you find the right calorie target.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>Is it better to lose weight quickly or slowly?</AccordionTrigger>
-                <AccordionContent>Slow and steady weight loss of 1-2 lbs per week is almost always better. It helps preserve muscle mass and is more sustainable long-term. You can plan your timeline with our <a href="/weight-loss-goal">Weight Loss Goal Calculator</a>.</AccordionContent>
+                <AccordionContent>Slow and steady weight loss of 1-2 lbs per week is almost always better. It helps preserve muscle mass and is more sustainable long-term. You can plan your timeline with our <a href="/weight-loss-goal" className="text-primary hover:underline">Weight Loss Goal Calculator</a>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
                 <AccordionTrigger>Does my body shape affect my risk?</AccordionTrigger>
-                <AccordionContent>Absolutely. Carrying excess weight around your abdomen ("apple shape") is more dangerous than carrying it on your hips and thighs ("pear shape"). Use the <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio Calculator</a> to understand your body fat distribution.</AccordionContent>
+                <AccordionContent>Absolutely. Carrying excess weight around your abdomen ("apple shape") is more dangerous than carrying it on your hips and thighs ("pear shape"). Use the <a href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio Calculator</a> to understand your body fat distribution.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-7">
                 <AccordionTrigger>How does obesity affect metabolism?</AccordionTrigger>
-                <AccordionContent>Obesity is often linked with insulin resistance, which impairs how your body uses energy. While a heavier body has a higher <a href="/bmr">BMR</a>, the metabolic processes can become dysfunctional. Improving body composition is key to restoring metabolic health.</AccordionContent>
+                <AccordionContent>Obesity is often linked with insulin resistance, which impairs how your body uses energy. While a heavier body has a higher <a href="/bmr" className="text-primary hover:underline">BMR</a>, the metabolic processes can become dysfunctional. Improving body composition is key to restoring metabolic health.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-8">
                 <AccordionTrigger>What role does exercise play in reducing risk?</AccordionTrigger>
-                <AccordionContent>Exercise plays two roles: it burns calories, helping with weight loss, and it builds/maintains muscle. Resistance training is particularly important for improving your <a href="/lean-body-mass">Lean Body Mass</a>, which boosts your metabolism.</AccordionContent>
+                <AccordionContent>Exercise plays two roles: it burns calories, helping with weight loss, and it builds/maintains muscle. Resistance training is particularly important for improving your <a href="/lean-body-mass" className="text-primary hover:underline">Lean Body Mass</a>, which boosts your metabolism.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-9">
                 <AccordionTrigger>If my risk is low, does that mean I'm healthy?</AccordionTrigger>
-                <AccordionContent>Not necessarily. A low BMI can indicate being underweight, which has its own risks. Also, someone can have a "normal" BMI but still have unhealthy habits. Use this as one data point in a larger health picture. Check your <a href="/ideal-weight">Ideal Weight</a> to see a healthy range for your height.</AccordionContent>
+                <AccordionContent>Not necessarily. A low BMI can indicate being underweight, which has its own risks. Also, someone can have a "normal" BMI but still have unhealthy habits. Use this as one data point in a larger health picture. Check your <a href="/ideal-weight" className="text-primary hover:underline">Ideal Weight</a> to see a healthy range for your height.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger>How often should I check my obesity risk?</AccordionTrigger>
-                <AccordionContent>You don't need to check this daily. Re-assessing your BMI and risk every 1-2 months during a weight change journey is sufficient to track progress. A more useful tool for frequent monitoring is the <a href="/weekly-weight-change-tracker">Weekly Weight Change Tracker</a>.</AccordionContent>
+                <AccordionContent>You don't need to check this daily. Re-assessing your BMI and risk every 1-2 months during a weight change journey is sufficient to track progress. A more useful tool for frequent monitoring is the <a href="/weekly-weight-change-tracker" className="text-primary hover:underline">Weekly Weight Change Tracker</a>.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
