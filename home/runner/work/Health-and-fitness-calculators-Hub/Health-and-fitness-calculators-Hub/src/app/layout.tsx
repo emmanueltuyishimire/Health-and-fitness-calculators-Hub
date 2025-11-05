@@ -1,7 +1,7 @@
 
 import type {Metadata} from 'next';
 import { PT_Sans } from 'next/font/google';
-import './globals.css';
+import '@/app/globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
