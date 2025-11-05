@@ -21,7 +21,6 @@ import { cn } from '@/lib/utils';
 import { Alert, AlertDescription, AlertTitle } from './ui/alert';
 import { Terminal } from 'lucide-react';
 import Link from 'next/link';
-import { z } from 'zod';
 
 export function HeartDiseaseRiskCalculatorForm() {
   const { state, dispatch } = useCalculator();
@@ -111,7 +110,7 @@ export function HeartDiseaseRiskCalculatorForm() {
           <div className="space-y-2 text-center md:text-left">
             <h3 className="font-semibold text-foreground">Your Heart Disease Risk (BMI-Based)</h3>
             <p className="text-4xl font-bold text-primary">
-              {riskResult.bmi.toFixed(1)}
+              BMI: {riskResult.bmi.toFixed(1)}
             </p>
             <p
               className={cn(

@@ -15,7 +15,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { useCalculator } from '@/context/calculator-context';
 import { BodyShapeSchema, type BodyShapeFormValues } from '@/lib/definitions';
-import { Separator } from './ui/separator';
 
 function getBodyShape(bust: number, waist: number, hip: number): string {
     if (!bust || !waist || !hip) return '';
