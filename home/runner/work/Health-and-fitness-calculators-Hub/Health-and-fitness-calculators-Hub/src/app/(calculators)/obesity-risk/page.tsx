@@ -358,7 +358,7 @@ export default function ObesityRiskPage() {
               </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger>How often should I check my obesity risk?</AccordionTrigger>
-                <AccordionContent>You don't need to check this daily. Re-assessing your BMI and risk every 1-2 months during a weight change journey is sufficient to track progress. A more useful tool for frequent monitoring is the <a href="/weekly-weight-change-tracker" className="text-primary hover:underline">Weekly Weight Change Tracker</a>.</AccordionContent>
+                <AccordionContent>You don't need to check this daily. Re-assessing your BMI and risk every 1-2 months during a weight change journey is sufficient to track progress. A more useful tool for frequent monitoring is the <a href="/weekly-weight-change-tracker">Weekly Weight Change Tracker</a>.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
