@@ -226,7 +226,7 @@ export default function BodyFatZonePage() {
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Why do I need my body fat percentage for this?</AccordionTrigger>
-                <AccordionContent>This calculator provides context to your body fat percentage. First you need the number itself, which you can get from our <a href="/body-fat">Body Fat Percentage Calculator</a>. This tool then tells you what that number means.</AccordionContent>
+                <AccordionContent>This calculator provides context to your body fat percentage. First you need the number itself, which you can get from our <Link href="/body-fat" className='text-primary hover:underline'>Body Fat Percentage Calculator</Link>. This tool then tells you what that number means.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Is it bad to have "Essential Fat" levels?</AccordionTrigger>
@@ -234,11 +234,11 @@ export default function BodyFatZonePage() {
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>How is this different from the Obesity Risk Calculator?</AccordionTrigger>
-                <AccordionContent>The <a href="/obesity-risk">Obesity Risk Calculator</a> uses BMI, which is a measure of weight relative to height. This calculator uses body fat percentage, which is a more accurate measure of body composition. You can have a "Normal" BMI but still be in the "Obese" body fat zone.</AccordionContent>
+                <AccordionContent>The <Link href="/obesity-risk" className='text-primary hover:underline'>Obesity Risk Calculator</Link> uses BMI, which is a measure of weight relative to height. This calculator uses body fat percentage, which is a more accurate measure of body composition. You can have a "Normal" BMI but still be in the "Obese" body fat zone.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>How can I move from the "Obese" or "Acceptable" zone to the "Fitness" zone?</AccordionTrigger>
-                <AccordionContent>To lower your body fat percentage, you need to create a sustainable <a href="/calorie-deficit">calorie deficit</a> and engage in regular exercise, particularly resistance training to build or maintain muscle. Use our <a href="/tdee">TDEE Calculator</a> to find your starting calorie target.</AccordionContent>
+                <AccordionContent>To lower your body fat percentage, you need to create a sustainable <Link href="/calorie-deficit" className='text-primary hover:underline'>calorie deficit</Link> and engage in regular exercise, particularly resistance training to build or maintain muscle. Use our <Link href="/tdee" className='text-primary hover:underline'>TDEE Calculator</Link> to find your starting calorie target.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>

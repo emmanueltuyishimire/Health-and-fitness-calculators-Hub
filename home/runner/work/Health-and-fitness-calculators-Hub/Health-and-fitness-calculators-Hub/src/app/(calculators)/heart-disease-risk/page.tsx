@@ -239,7 +239,7 @@ export default function HeartDiseaseRiskPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>Why is BMI linked to heart disease risk?</AccordionTrigger>
-                <AccordionContent>A high BMI often indicates excess body fat, a major risk factor for heart disease. It can lead to high blood pressure, high cholesterol, and insulin resistance. The <a href="/obesity-risk">Obesity Risk Calculator</a> offers a direct assessment.</AccordionContent>
+                <AccordionContent>A high BMI often indicates excess body fat, a major risk factor for heart disease. It can lead to high blood pressure, high cholesterol, and insulin resistance. The <Link href="/obesity-risk" className='text-primary hover:underline'>Obesity Risk Calculator</Link> offers a direct assessment.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Is this calculator a diagnosis?</AccordionTrigger>
@@ -247,15 +247,15 @@ export default function HeartDiseaseRiskPage() {
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Can I be "overweight" but still have a low risk?</AccordionTrigger>
-                <AccordionContent>Yes, especially for athletes with high muscle mass. If you have a high BMI but low body fat, your risk is likely much lower. Use the <a href="/ffmi">FFMI Calculator</a> to assess muscularity.</AccordionContent>
+                <AccordionContent>Yes, especially for athletes with high muscle mass. If you have a high BMI but low body fat, your risk is likely much lower. Use the <Link href="/ffmi" className='text-primary hover:underline'>FFMI Calculator</Link> to assess muscularity.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>How can I lower my heart disease risk?</AccordionTrigger>
-                <AccordionContent>Lifestyle changes are key: achieve a healthy weight through a <a href="/calorie-deficit">calorie deficit</a>, get regular cardiovascular exercise, and eat a balanced diet. Our <a href="/tdee">TDEE Calculator</a> can help you find the right calorie target.</AccordionContent>
+                <AccordionContent>Lifestyle changes are key: achieve a healthy weight through a <Link href="/calorie-deficit" className='text-primary hover:underline'>calorie deficit</Link>, get regular cardiovascular exercise, and eat a balanced diet. Our <Link href="/tdee" className='text-primary hover:underline'>TDEE Calculator</Link> can help you find the right calorie target.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>What other metrics are important for heart health?</AccordionTrigger>
-                <AccordionContent>Your <a href="/waist-to-height-ratio">Waist-to-Height Ratio</a> and <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio</a> are crucial, as they measure abdominal fat, a key risk factor. Blood pressure and cholesterol levels are also vital.</AccordionContent>
+                <AccordionContent>Your <Link href="/waist-to-height-ratio" className='text-primary hover:underline'>Waist-to-Height Ratio</Link> and <Link href="/waist-to-hip-ratio" className='text-primary hover:underline'>Waist-to-Hip Ratio</Link> are crucial, as they measure abdominal fat, a key risk factor. Blood pressure and cholesterol levels are also vital.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>

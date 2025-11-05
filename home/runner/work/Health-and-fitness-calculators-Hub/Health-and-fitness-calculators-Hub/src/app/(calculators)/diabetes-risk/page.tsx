@@ -203,7 +203,7 @@ export default function DiabetesRiskPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>Why is BMI linked to type 2 diabetes risk?</AccordionTrigger>
-                <AccordionContent>A high BMI, particularly when associated with high levels of abdominal fat, is a primary risk factor for developing insulin resistance, which is the precursor to type 2 diabetes. You can assess your abdominal fat with the <a href="/waist-to-height-ratio">Waist-to-Height Ratio Calculator</a>.</AccordionContent>
+                <AccordionContent>A high BMI, particularly when associated with high levels of abdominal fat, is a primary risk factor for developing insulin resistance, which is the precursor to type 2 diabetes. You can assess your abdominal fat with the <Link href="/waist-to-height-ratio" className='text-primary hover:underline'>Waist-to-Height Ratio Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Is this calculator a diagnosis?</AccordionTrigger>
@@ -211,15 +211,15 @@ export default function DiabetesRiskPage() {
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Can I have a high BMI and not be at risk?</AccordionTrigger>
-                <AccordionContent>It's less likely, but possible, especially for athletes with high muscle mass. BMI doesn't distinguish muscle from fat. However, even muscular individuals can have insulin resistance. It is always best to combine BMI with other metrics like the <a href="/body-fat">Body Fat Percentage Calculator</a>.</AccordionContent>
+                <AccordionContent>It's less likely, but possible, especially for athletes with high muscle mass. BMI doesn't distinguish muscle from fat. However, even muscular individuals can have insulin resistance. It is always best to combine BMI with other metrics like the <Link href="/body-fat" className='text-primary hover:underline'>Body Fat Percentage Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>How can I lower my diabetes risk?</AccordionTrigger>
-                <AccordionContent>Lowering risk primarily involves lifestyle changes: achieving a healthy weight through a <a href="/calorie-deficit">calorie deficit</a>, engaging in regular physical activity, and eating a balanced diet rich in fiber and low in processed foods. Our <a href="/tdee">TDEE Calculator</a> can help you find your calorie target.</AccordionContent>
+                <AccordionContent>Lowering risk primarily involves lifestyle changes: achieving a healthy weight through a <Link href="/calorie-deficit" className='text-primary hover:underline'>calorie deficit</Link>, engaging in regular physical activity, and eating a balanced diet rich in fiber and low in processed foods. Our <Link href="/tdee" className='text-primary hover:underline'>TDEE Calculator</Link> can help you find your calorie target.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>What other metrics are important for diabetes risk?</AccordionTrigger>
-                <AccordionContent>Beyond BMI, your <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio</a> is crucial, as it measures abdominal fat. Blood glucose levels, blood pressure, and cholesterol are also vital clinical markers.</AccordionContent>
+                <AccordionContent>Beyond BMI, your <Link href="/waist-to-hip-ratio" className='text-primary hover:underline'>Waist-to-Hip Ratio</Link> is crucial, as it measures abdominal fat. Blood glucose levels, blood pressure, and cholesterol are also vital clinical markers.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>

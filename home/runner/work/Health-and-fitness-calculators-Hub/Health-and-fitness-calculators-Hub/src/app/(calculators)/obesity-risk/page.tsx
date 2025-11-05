@@ -322,23 +322,23 @@ export default function ObesityRiskPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>Why does this calculator use BMI?</AccordionTrigger>
-                <AccordionContent>This calculator uses BMI as it is the most widely accepted screening tool for assessing weight status and obesity risk at a population level. While it has limitations, it provides a quick and easy starting point. For a more nuanced view, you should also check your <a href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</a>.</AccordionContent>
+                <AccordionContent>This calculator uses BMI as it is the most widely accepted screening tool for assessing weight status and obesity risk at a population level. While it has limitations, it provides a quick and easy starting point. For a more nuanced view, you should also check your <Link href="/body-fat" className='text-primary hover:underline'>Body Fat Percentage</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>What does "obese" mean in a clinical sense?</AccordionTrigger>
-                <AccordionContent>Clinically, obesity is defined as having excess body fat to the extent that it may have a negative effect on health. The <a href="/bmi" className="text-primary hover:underline">BMI Calculator</a> classifies a BMI of 30 or greater as obese, which is associated with a higher risk for many chronic diseases.</AccordionContent>
+                <AccordionContent>Clinically, obesity is defined as having excess body fat to the extent that it may have a negative effect on health. The <Link href="/bmi" className='text-primary hover:underline'>BMI Calculator</Link> classifies a BMI of 30 or greater as obese, which is associated with a higher risk for many chronic diseases.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>Can I be "overweight" but still healthy?</AccordionTrigger>
-                <AccordionContent>Yes, particularly if you have a lot of muscle mass. This is why it's crucial to look beyond a single metric. If your BMI is high, your next step should be to use the <a href="/ffmi" className="text-primary hover:underline">FFMI Calculator</a> to assess your muscularity or the <a href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</a> to check for abdominal fat.</AccordionContent>
+                <AccordionContent>Yes, particularly if you have a lot of muscle mass. This is why it's crucial to look beyond a single metric. If your BMI is high, your next step should be to use the <Link href="/ffmi" className='text-primary hover:underline'>FFMI Calculator</Link> to assess your muscularity or the <Link href="/waist-to-height-ratio" className='text-primary hover:underline'>Waist-to-Height Ratio</Link> to check for abdominal fat.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>How do I lower my obesity risk?</AccordionTrigger>
-                <AccordionContent>Lowering your risk involves losing excess body fat. This is achieved by creating a sustainable <a href="/calorie-deficit" className="text-primary hover:underline">calorie deficit</a> through a combination of diet and exercise. Our <a href="/tdee" className="text-primary hover:underline">TDEE Calculator</a> can help you find the right calorie target.</AccordionContent>
+                <AccordionContent>Lowering your risk involves losing excess body fat. This is achieved by creating a sustainable <Link href="/calorie-deficit" className='text-primary hover:underline'>calorie deficit</Link> through a combination of diet and exercise. Our <Link href="/tdee" className='text-primary hover:underline'>TDEE Calculator</Link> can help you find the right calorie target.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>Is it better to lose weight quickly or slowly?</AccordionTrigger>
-                <AccordionContent>Slow and steady weight loss of 1-2 lbs per week is almost always better. It helps preserve muscle mass and is more sustainable long-term. You can plan your timeline with our <a href="/weight-loss-goal" className="text-primary hover:underline">Weight Loss Goal Calculator</a>.</AccordionContent>
+                <AccordionContent>Slow and steady weight loss of 1-2 lbs per week is almost always better. It helps preserve muscle mass and is more sustainable long-term. You can plan your timeline with our <Link href="/weight-loss-goal" className='text-primary hover:underline'>Weight Loss Goal Calculator</Link>.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>

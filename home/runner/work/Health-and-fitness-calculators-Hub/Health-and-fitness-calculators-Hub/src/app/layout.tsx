@@ -35,7 +35,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3042223846300811"
           crossOrigin="anonymous"></script>
       </head>
-      <body className={`${ptSans.variable} font-body antialiased`} suppressHydrationWarning>
+      <body className={`font-body antialiased`} suppressHydrationWarning>
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-[999] focus:p-4 focus:bg-background focus:text-foreground">
           Skip to main content
         </a>
@@ -64,7 +64,7 @@ export default function RootLayout({
               <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/contact" target="_blank" rel="nofollow noopener noreferrer" aria-label="Contact calculation.site">
                 Contact
               </a>
-              <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/privacy-policy" target_blank="true" rel="nofollow noopener noreferrer" aria-label="Privacy Policy for calculation.site">
+              <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/privacy-policy" target="_blank" rel="nofollow noopener noreferrer" aria-label="Privacy Policy for calculation.site">
                 Privacy Policy
               </a>
               <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/terms-and-conditions" target="_blank" rel="nofollow noopener noreferrer" aria-label="Terms and Conditions for calculation.site">
@@ -73,7 +73,7 @@ export default function RootLayout({
               <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site/disclaimer" target="_blank" rel="nofollow noopener noreferrer" aria-label="Disclaimer for calculation.site">
                 Disclaimer
               </a>
-              <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site" target_blank="true" rel="noopener noreferrer" aria-label="Visit the calculation.site Central Hub">
+              <a className="text-xs hover:underline underline-offset-4" href="https://calculation.site" target="_blank" rel="noopener noreferrer" aria-label="Visit the calculation.site Central Hub">
                 Central Hub
               </a>
             </nav>

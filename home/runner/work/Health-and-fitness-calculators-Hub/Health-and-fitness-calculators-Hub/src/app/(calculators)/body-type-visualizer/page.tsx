@@ -148,15 +148,15 @@ export default function BodyTypeVisualizerPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>Is this calculator scientifically accurate?</AccordionTrigger>
-                <AccordionContent>This visualizer uses common proportional definitions to classify body shapes. While the classifications are standard, the visualization is a simplified, stylized representation. For a more detailed health risk assessment, use the <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio Calculator</a>.</AccordionContent>
+                <AccordionContent>This visualizer uses common proportional definitions to classify body shapes. While the classifications are standard, the visualization is a simplified, stylized representation. For a more detailed health risk assessment, use the <Link href="/waist-to-hip-ratio" className='text-primary hover:underline'>Waist-to-Hip Ratio Calculator</Link>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Can I change my body shape?</AccordionTrigger>
-                <AccordionContent>While your bone structure is genetic, you can significantly alter your body shape through targeted exercise and nutrition. For example, a "Pear" shape can build upper body muscle to create a more balanced silhouette. Use the <a href="/ffmi">FFMI Calculator</a> to track muscle gains.</AccordionContent>
+                <AccordionContent>While your bone structure is genetic, you can significantly alter your body shape through targeted exercise and nutrition. For example, a "Pear" shape can build upper body muscle to create a more balanced silhouette. Use the <Link href="/ffmi" className='text-primary hover:underline'>FFMI Calculator</Link> to track muscle gains.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>What does my body shape say about my health?</AccordionTrigger>
-                <AccordionContent>Body shape can indicate where you tend to store fat. An "Apple" shape (more abdominal fat) is associated with higher health risks than a "Pear" shape. The <a href="/waist-to-height-ratio">Waist-to-Height Ratio Calculator</a> is an excellent tool for assessing this risk.</AccordionContent>
+                <AccordionContent>Body shape can indicate where you tend to store fat. An "Apple" shape (more abdominal fat) is associated with higher health risks than a "Pear" shape. The <Link href="/waist-to-height-ratio" className='text-primary hover:underline'>Waist-to-Height Ratio Calculator</Link> is an excellent tool for assessing this risk.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
