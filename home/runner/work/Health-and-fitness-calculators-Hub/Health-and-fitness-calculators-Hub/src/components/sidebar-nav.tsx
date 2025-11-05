@@ -104,6 +104,7 @@ const links = [
   { href: '/obesity-risk', label: 'Obesity Risk Calculator', icon: ShieldAlert },
   { href: '/metabolic-age', label: 'Metabolic Age Calculator', icon: BrainCircuit },
   { href: '/heart-disease-risk', label: 'Heart Disease Risk', icon: HeartPulse },
+  { href: '/diabetes-risk', label: 'Diabetes Risk by BMI', icon: ShieldAlert },
   { href: '/all', label: 'All Calculators', icon: List },
 ];
 

@@ -65,6 +65,7 @@ export const calculatorGroups = [
       { name: 'Obesity Risk Calculator', href: '/obesity-risk' },
       { name: 'Metabolic Age Calculator', href: '/metabolic-age' },
       { name: 'Heart Disease Risk Calculator', href: '/heart-disease-risk' },
+      { name: 'Diabetes Risk by BMI', href: '/diabetes-risk' },
     ],
   },
 ];

@@ -24,6 +24,12 @@ export const HeartDiseaseRiskSchema = z.object({
 
 export type HeartDiseaseRiskFormValues = z.infer<typeof HeartDiseaseRiskSchema>;
 
+export const DiabetesRiskSchema = z.object({
+  bmi: z.string().min(1, { message: 'BMI is required.' }),
+});
+
+export type DiabetesRiskFormValues = z.infer<typeof DiabetesRiskSchema>;
+
 
 export const BodyFatSchema = z.object({
   gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
