@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Logo } from '@/components/logo';
+import { cn } from '@/lib/utils';
 
 const ptSans = PT_Sans({
   subsets: ['latin'],
@@ -35,7 +36,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3042223846300811"
           crossOrigin="anonymous"></script>
       </head>
-      <body className={`font-body antialiased`} suppressHydrationWarning>
+      <body className={cn('font-body antialiased', ptSans.variable)} suppressHydrationWarning>
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-[999] focus:p-4 focus:bg-background focus:text-foreground">
           Skip to main content
         </a>
