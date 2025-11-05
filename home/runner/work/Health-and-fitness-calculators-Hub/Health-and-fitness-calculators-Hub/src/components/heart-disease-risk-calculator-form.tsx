@@ -15,20 +15,13 @@ import {
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useCalculator } from '@/context/calculator-context';
-import { BmiSchema } from '@/lib/definitions'; // Using BMI schema as it's the base
+import { HeartDiseaseRiskSchema, type HeartDiseaseRiskFormValues } from '@/lib/definitions';
 import { Separator } from './ui/separator';
 import { cn } from '@/lib/utils';
 import { Alert, AlertDescription, AlertTitle } from './ui/alert';
 import { Terminal } from 'lucide-react';
 import Link from 'next/link';
-
-type BmiFormValues = {
-    bmi: string;
-}
-
-const BmiRiskSchema = z.object({
-    bmi: z.string().min(1, { message: 'BMI is required.' }),
-});
+import { z } from 'zod';
 
 export function HeartDiseaseRiskCalculatorForm() {
   const { state, dispatch } = useCalculator();
@@ -37,8 +30,8 @@ export function HeartDiseaseRiskCalculatorForm() {
     category: string;
   } | null>(null);
 
-  const form = useForm<BmiFormValues>({
-    resolver: zodResolver(BmiRiskSchema),
+  const form = useForm<HeartDiseaseRiskFormValues>({
+    resolver: zodResolver(HeartDiseaseRiskSchema),
     defaultValues: {
       bmi: state.bmi?.toFixed(1) || '',
     },
@@ -50,7 +43,7 @@ export function HeartDiseaseRiskCalculatorForm() {
       }
   }, [state.bmi, form]);
 
-  function onSubmit(data: BmiFormValues) {
+  function onSubmit(data: HeartDiseaseRiskFormValues) {
     const bmi = parseFloat(data.bmi);
 
     setRiskResult({ bmi, category: getRiskCategory(bmi) });
