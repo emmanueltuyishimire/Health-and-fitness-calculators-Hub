@@ -29,6 +29,7 @@ export const calculatorGroups = [
       { name: 'Weekly Weight Change Tracker', href: '/weight-change-tracker' },
       { name: 'Fat Loss Progress Tracker', href: '/fat-loss-tracker' },
       { name: 'Goal Weight Estimator by Date', href: '/goal-weight-estimator' },
+      { name: 'Calorie-to-Weight Conversion', href: '/calorie-to-weight' },
     ],
   },
   {
@@ -64,14 +65,10 @@ export const calculatorGroups = [
     calculators: [
       { name: 'Obesity Risk Calculator', href: '/obesity-risk' },
       { name: 'Metabolic Age Calculator', href: '/metabolic-age' },
-      { name: 'Heart Disease Risk (based on BMI)', href: '/heart-disease-risk' },
+      { name: 'Heart Disease Risk Calculator', href: '/heart-disease-risk' },
       { name: 'Diabetes Risk by BMI', href: '/diabetes-risk' },
       { name: 'Body Fat Health Zone Classifier', href: '/body-fat-zone' },
       { name: 'Body Type Visualizer', href: '/body-type-visualizer' },
-      { name: 'Calorie-to-Weight Conversion', href: '/calorie-to-weight' },
-      { name: 'BMI Percentile for Age (Teens)', href: '/bmi-percentile-teens' },
-      { name: 'Pregnancy BMI Calculator', href: '/pregnancy-bmi' },
-      { name: 'Postpartum Weight Recovery Calculator', href: '/postpartum-weight-recovery' },
     ],
   },
 ];

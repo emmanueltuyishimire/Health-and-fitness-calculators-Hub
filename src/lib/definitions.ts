@@ -10,6 +10,34 @@ export const BmiSchema = z.object({
 
 export type BmiFormValues = z.infer<typeof BmiSchema>;
 
+export const ObesityRiskSchema = z.object({
+  bmi: z.string().min(1, { message: 'BMI is required.' }),
+});
+
+export type ObesityRiskFormValues = z.infer<typeof ObesityRiskSchema>;
+
+
+export const HeartDiseaseRiskSchema = z.object({
+  bmi: z.string().min(1, { message: 'BMI is required.' }),
+});
+
+export type HeartDiseaseRiskFormValues = z.infer<typeof HeartDiseaseRiskSchema>;
+
+export const DiabetesRiskSchema = z.object({
+  bmi: z.string().min(1, { message: 'BMI is required.' }),
+});
+
+export type DiabetesRiskFormValues = z.infer<typeof DiabetesRiskSchema>;
+
+export const BodyFatZoneSchema = z.object({
+  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
+  age: z.string().min(1, { message: 'Age is required.' }),
+  bodyFat: z.string().min(1, { message: 'Body fat percentage is required.' }),
+});
+
+export type BodyFatZoneFormValues = z.infer<typeof BodyFatZoneSchema>;
+
+
 export const BodyFatSchema = z.object({
   gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
   height: z.string().min(1, { message: 'Height is required.' }),
@@ -367,3 +395,19 @@ export const WalkingRunningCaloriesSchema = z.object({
 });
 
 export type WalkingRunningCaloriesFormValues = z.infer<typeof WalkingRunningCaloriesSchema>;
+
+export const MetabolicAgeSchema = z.object({
+  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
+  age: z.string().min(1, { message: 'Age is required.' }),
+  height: z.string().min(1, { message: 'Height is required.' }),
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type MetabolicAgeFormValues = z.infer<typeof MetabolicAgeSchema>;
+
+export const CalorieToWeightConversionSchema = z.object({
+    calories: z.string().min(1, { message: 'Calories are required.' }),
+});
+
+export type CalorieToWeightConversionFormValues = z.infer<typeof CalorieToWeightConversionSchema>;

@@ -39,6 +39,8 @@ import {
   ClipboardList,
   Footprints,
   Webhook,
+  ShieldAlert,
+  HeartPulse,
 } from 'lucide-react';
 
 
@@ -75,9 +77,10 @@ const links = [
   { href: '/tdee', label: 'TDEE Calculator', icon: Bike },
   { href: '/daily-calorie-needs', label: 'Daily Calorie Needs', icon: Calculator },
   { href: '/activity-level-estimator', label: 'Daily Activity Level Estimator', icon: Bike },
-  { href: '/calorie-adjustment-for-weight-loss', label: 'Calorie Adjustment (Loss)', icon: TrendingDown },
-  { href: '/calorie-adjustment-for-weight-gain', label: 'Calorie Adjustment (Gain)', icon: TrendingUp },
+  { href: '/calorie-deficit', label: 'Calorie Adjustment (Loss)', icon: TrendingDown },
+  { href: '/calorie-surplus', label: 'Calorie Adjustment (Gain)', icon: TrendingUp },
   { href: '/calorie-maintenance', label: 'Calorie Maintenance', icon: Anchor },
+  { href: '/calorie-to-weight', label: 'Calorie-to-Weight Conversion', icon: GitCommitHorizontal },
   { href: '/macronutrient-ratio', label: 'Macronutrient Ratio', icon: PieChart },
   { href: '/protein-intake', label: 'Protein Intake', icon: Egg },
   { href: '/carb-intake', label: 'Carb Intake', icon: BrainCircuit },
@@ -99,6 +102,12 @@ const links = [
   { href: '/one-rep-max', label: 'One Rep Max (1RM)', icon: Dumbbell },
   { href: '/strength-to-weight-ratio', label: 'Strength-to-Weight Ratio', icon: Medal },
   { href: '/vo2-max', label: 'VO2 Max Estimator', icon: Activity },
+  { href: '/obesity-risk', label: 'Obesity Risk Calculator', icon: ShieldAlert },
+  { href: '/metabolic-age', label: 'Metabolic Age Calculator', icon: BrainCircuit },
+  { href: '/heart-disease-risk', label: 'Heart Disease Risk', icon: HeartPulse },
+  { href: '/diabetes-risk', label: 'Diabetes Risk by BMI', icon: ShieldAlert },
+  { href: '/body-fat-zone', label: 'Body Fat Health Zone Classifier', icon: ShieldAlert },
+  { href: '/body-type-visualizer', label: 'Body Type Visualizer', icon: PersonStanding },
   { href: '/all', label: 'All Calculators', icon: List },
 ];
 
