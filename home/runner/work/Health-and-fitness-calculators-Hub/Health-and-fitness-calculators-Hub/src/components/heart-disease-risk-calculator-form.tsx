@@ -16,9 +16,9 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useCalculator } from '@/context/calculator-context';
 import { HeartDiseaseRiskSchema, type HeartDiseaseRiskFormValues } from '@/lib/definitions';
-import { Separator } from './ui/separator';
+import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
-import { Alert, AlertDescription, AlertTitle } from './ui/alert';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Terminal } from 'lucide-react';
 import Link from 'next/link';
 
