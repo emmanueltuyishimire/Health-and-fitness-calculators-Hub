@@ -87,7 +87,7 @@ export default function HeartDiseaseRiskPage() {
             name: 'Why is BMI linked to heart disease risk?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'A high BMI is often an indicator of excess body fat, which is a major risk factor for heart disease. It can lead to high blood pressure, high cholesterol, and insulin resistance. Use the <a href="/obesity-risk">Obesity Risk Calculator</a> for a direct assessment of this.',
+                text: 'A high BMI is often an indicator of excess body fat, which is a major risk factor for heart disease. It can lead to high blood pressure, high cholesterol, and insulin resistance. Use the <a href="/obesity-risk" aria-label="Obesity Risk Calculator">Obesity Risk Calculator</a> for a direct assessment of this.',
             }
         },
         {
@@ -103,7 +103,7 @@ export default function HeartDiseaseRiskPage() {
             name: 'Can I be "overweight" but still have a low risk?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, especially for athletes. BMI doesn\'t distinguish between muscle and fat. If you have a high BMI but low body fat, your risk is likely much lower. Use the <a href="/ffmi">FFMI Calculator</a> to assess muscularity.',
+                text: 'Yes, especially for athletes. BMI doesn\'t distinguish between muscle and fat. If you have a high BMI but low body fat, your risk is likely much lower. Use the <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a> to assess muscularity.',
             }
         },
         {
@@ -111,7 +111,7 @@ export default function HeartDiseaseRiskPage() {
             name: 'How can I lower my heart disease risk?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Lowering risk involves lifestyle changes: achieving a healthy weight through a <a href="/calorie-deficit">calorie deficit</a>, regular cardiovascular exercise, a balanced diet, and not smoking. Our <a href="/tdee">TDEE Calculator</a> can help you find the right calorie target.',
+                text: 'Lowering risk involves lifestyle changes: achieving a healthy weight through a <a href="/calorie-deficit" aria-label="Calorie Deficit Calculator">calorie deficit</a>, regular cardiovascular exercise, a balanced diet, and not smoking. Our <a href="/tdee" aria-label="TDEE Calculator">TDEE Calculator</a> can help you find the right calorie target.',
             }
         },
         {
@@ -119,7 +119,7 @@ export default function HeartDiseaseRiskPage() {
             name: 'What other metrics are important for heart health?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Beyond BMI, your <a href="/waist-to-height-ratio">Waist-to-Height Ratio</a> and <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio</a> are crucial, as they measure abdominal fat, a key risk factor. Blood pressure and cholesterol levels are also vital.',
+                text: 'Beyond BMI, your <a href="/waist-to-height-ratio" aria-label="Waist-to-Height Ratio Calculator">Waist-to-Height Ratio</a> and <a href="/waist-to-hip-ratio" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio</a> are crucial, as they measure abdominal fat, a key risk factor. Blood pressure and cholesterol levels are also vital.',
             }
         },
     ],
@@ -143,11 +143,15 @@ export default function HeartDiseaseRiskPage() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/">Home</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/all">Calculators</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/all">Calculators</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

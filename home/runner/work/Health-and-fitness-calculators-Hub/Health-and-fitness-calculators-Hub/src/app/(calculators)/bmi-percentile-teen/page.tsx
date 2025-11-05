@@ -86,7 +86,7 @@ export default function BmiPercentileTeenPage() {
         name: 'Why is BMI percentile used for children instead of just BMI?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Unlike adults, children and teens are still growing. Their body composition changes significantly with age and differs between boys and girls. A BMI percentile compares a child\'s BMI to others of the same age and gender, providing a more accurate assessment of their growth. The standard <a href="/bmi">BMI Calculator</a> is only for adults.',
+          text: 'Unlike adults, children and teens are still growing. Their body composition changes significantly with age and differs between boys and girls. A BMI percentile compares a child\'s BMI to others of the same age and gender, providing a more accurate assessment of their growth. The standard <a href="/bmi" aria-label="BMI Calculator">BMI Calculator</a> is only for adults.',
         },
       },
       {
@@ -117,11 +117,15 @@ export default function BmiPercentileTeenPage() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/">Home</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/all">Calculators</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/all">Calculators</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

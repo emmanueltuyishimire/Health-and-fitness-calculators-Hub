@@ -83,7 +83,7 @@ export default function MetabolicAgePage() {
         name: 'What does metabolic age mean?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Metabolic age is a comparison of your Basal Metabolic Rate (BMR) to the average BMR of people in your chronological age group. A metabolic age lower than your actual age suggests your metabolism is faster than average for your age group, which is often a positive sign. You can calculate your BMR separately with our <a href="/bmr">BMR Calculator</a>.',
+          text: 'Metabolic age is a comparison of your Basal Metabolic Rate (BMR) to the average BMR of people in your chronological age group. A metabolic age lower than your actual age suggests your metabolism is faster than average for your age group, which is often a positive sign. You can calculate your BMR separately with our <a href="/bmr" aria-label="BMR Calculator">BMR Calculator</a>.',
         },
       },
       {
@@ -91,7 +91,7 @@ export default function MetabolicAgePage() {
         name: 'How can I lower my metabolic age?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Lowering your metabolic age involves increasing your BMR. The most effective way to do this is by building more muscle mass through resistance training. A higher <a href="/lean-body-mass">Lean Body Mass</a> burns more calories at rest, leading to a "younger" metabolism.',
+          text: 'Lowering your metabolic age involves increasing your BMR. The most effective way to do this is by building more muscle mass through resistance training. A higher <a href="/lean-body-mass" aria-label="Lean Body Mass Calculator">Lean Body Mass</a> burns more calories at rest, leading to a "younger" metabolism.',
         },
       },
       {
@@ -99,7 +99,7 @@ export default function MetabolicAgePage() {
         name: 'Is metabolic age a scientifically validated metric?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Metabolic age is more of a wellness concept than a clinical diagnostic tool. While it\'s based on your BMR, a real medical metric, the "age" part is an interpretation. It\'s a useful way to conceptualize your metabolic health, but metrics like <a href="/body-fat">Body Fat Percentage</a> are more concrete health indicators.',
+          text: 'Metabolic age is more of a wellness concept than a clinical diagnostic tool. While it\'s based on your BMR, a real medical metric, the "age" part is an interpretation. It\'s a useful way to conceptualize your metabolic health, but metrics like <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage</a> are more concrete health indicators.',
         },
       },
       {
@@ -107,7 +107,7 @@ export default function MetabolicAgePage() {
         name: 'My metabolic age is higher than my real age. Should I be worried?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'It\'s not a cause for alarm, but it can be a useful wake-up call. It suggests your metabolism is slower than average for your age, which could be due to low muscle mass or a higher body fat percentage. Improving your body composition through diet and exercise will lower it. Our <a href="/ffmi">FFMI Calculator</a> can help you track muscularity.',
+          text: 'It\'s not a cause for alarm, but it can be a useful wake-up call. It suggests your metabolism is slower than average for your age, which could be due to low muscle mass or a higher body fat percentage. Improving your body composition through diet and exercise will lower it. Our <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a> can help you track muscularity.',
         },
       },
       {
@@ -139,11 +139,15 @@ export default function MetabolicAgePage() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/">Home</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/all">Calculators</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/all">Calculators</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

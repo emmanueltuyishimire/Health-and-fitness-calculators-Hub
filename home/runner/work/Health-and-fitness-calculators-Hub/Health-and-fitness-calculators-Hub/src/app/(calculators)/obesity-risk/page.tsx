@@ -86,7 +86,7 @@ export default function ObesityRiskPage() {
             name: 'Why does this calculator use BMI?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'This calculator uses BMI as it is the most widely accepted screening tool for assessing weight status and obesity risk at a population level. While it has limitations, it provides a quick and easy starting point. For a more nuanced view, you should also check your <a href="/body-fat">Body Fat Percentage</a>.',
+                text: 'This calculator uses BMI as it is the most widely accepted screening tool for assessing weight status and obesity risk at a population level. While it has limitations, it provides a quick and easy starting point. For a more nuanced view, you should also check your <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage</a>.',
             }
         },
         {
@@ -94,7 +94,7 @@ export default function ObesityRiskPage() {
             name: 'What does "obese" mean in a clinical sense?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Clinically, obesity is defined as having excess body fat to the extent that it may have a negative effect on health. The <a href="/bmi">BMI Calculator</a> classifies a BMI of 30 or greater as obese, which is associated with a higher risk for many chronic diseases.',
+                text: 'Clinically, obesity is defined as having excess body fat to the extent that it may have a negative effect on health. The <a href="/bmi" aria-label="BMI Calculator">BMI Calculator</a> classifies a BMI of 30 or greater as obese, which is associated with a higher risk for many chronic diseases.',
             }
         },
         {
@@ -102,7 +102,7 @@ export default function ObesityRiskPage() {
             name: 'Can I be "overweight" but still healthy?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, particularly if you have a lot of muscle mass. This is why it\'s crucial to look beyond a single metric. If your BMI is high, your next step should be to use the <a href="/ffmi">FFMI Calculator</a> to assess your muscularity or the <a href="/waist-to-height-ratio">Waist-to-Height Ratio</a> to check for abdominal fat.',
+                text: 'Yes, particularly if you have a lot of muscle mass. This is why it\'s crucial to look beyond a single metric. If your BMI is high, your next step should be to use the <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a> to assess your muscularity or the <a href="/waist-to-height-ratio" aria-label="Waist-to-Height Ratio Calculator">Waist-to-Height Ratio</a> to check for abdominal fat.',
             }
         },
         {
@@ -110,7 +110,7 @@ export default function ObesityRiskPage() {
             name: 'How do I lower my obesity risk?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Lowering your risk involves losing excess body fat. This is achieved by creating a sustainable <a href="/calorie-deficit">calorie deficit</a> through a combination of diet and exercise. Our <a href="/tdee">TDEE Calculator</a> can help you find the right calorie target.',
+                text: 'Lowering your risk involves losing excess body fat. This is achieved by creating a sustainable <a href="/calorie-deficit" aria-label="Calorie Deficit Calculator">calorie deficit</a> through a combination of diet and exercise. Our <a href="/tdee" aria-label="TDEE Calculator">TDEE Calculator</a> can help you find the right calorie target.',
             }
         },
         {
@@ -118,7 +118,7 @@ export default function ObesityRiskPage() {
             name: 'Is it better to lose weight quickly or slowly?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Slow and steady weight loss of 1-2 lbs per week is almost always better. It helps preserve muscle mass and is more sustainable long-term. You can plan your timeline with our <a href="/weight-loss-goal">Weight Loss Goal Calculator</a>.',
+                text: 'Slow and steady weight loss of 1-2 lbs per week is almost always better. It helps preserve muscle mass and is more sustainable long-term. You can plan your timeline with our <a href="/weight-loss-goal" aria-label="Weight Loss Goal Calculator">Weight Loss Goal Calculator</a>.',
             }
         },
     ],
@@ -142,11 +142,15 @@ export default function ObesityRiskPage() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/">Home</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/all">Calculators</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/all">Calculators</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

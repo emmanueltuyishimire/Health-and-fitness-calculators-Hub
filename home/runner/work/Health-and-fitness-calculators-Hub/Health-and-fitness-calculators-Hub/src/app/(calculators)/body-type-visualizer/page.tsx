@@ -70,7 +70,7 @@ export default function BodyTypeVisualizerPage() {
         name: 'Is this calculator scientifically accurate?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'This visualizer uses common proportional definitions to classify body shapes. While the classifications are standard, the visualization is a simplified, stylized representation. For a more detailed health risk assessment, use the <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio Calculator</a>.',
+          text: 'This visualizer uses common proportional definitions to classify body shapes. While the classifications are standard, the visualization is a simplified, stylized representation. For a more detailed health risk assessment, use the <a href="/waist-to-hip-ratio" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio Calculator</a>.',
         },
       },
       {
@@ -78,7 +78,7 @@ export default function BodyTypeVisualizerPage() {
         name: 'Can I change my body shape?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'While your bone structure is genetic, you can significantly alter your body shape through targeted exercise and nutrition. For example, a "Pear" shape can build upper body muscle to create a more balanced silhouette. Use the <a href="/ffmi">FFMI Calculator</a> to track muscle gains.',
+          text: 'While your bone structure is genetic, you can significantly alter your body shape through targeted exercise and nutrition. For example, a "Pear" shape can build upper body muscle to create a more balanced silhouette. Use the <a href="/ffmi" aria-label="FFMI Calculator">FFMI Calculator</a> to track muscle gains.',
         },
       },
       {
@@ -86,7 +86,7 @@ export default function BodyTypeVisualizerPage() {
         name: 'What does my body shape say about my health?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Body shape can indicate where you tend to store fat. An "Apple" shape (more abdominal fat) is associated with higher health risks than a "Pear" shape. The <a href="/waist-to-height-ratio">Waist-to-Height Ratio Calculator</a> is an excellent tool for assessing this risk.',
+          text: 'Body shape can indicate where you tend to store fat. An "Apple" shape (more abdominal fat) is associated with higher health risks than a "Pear" shape. The <a href="/waist-to-height-ratio" aria-label="Waist-to-Height Ratio Calculator">Waist-to-Height Ratio Calculator</a> is an excellent tool for assessing this risk.',
         },
       },
     ],
@@ -100,9 +100,17 @@ export default function BodyTypeVisualizerPage() {
       <div className="w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 space-y-8">
         <Breadcrumb>
           <BreadcrumbList>
-            <BreadcrumbItem><BreadcrumbLink href="/">Home</BreadcrumbLink></BreadcrumbItem>
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild>
+                <Link href="/">Home</Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
             <BreadcrumbSeparator />
-            <BreadcrumbItem><BreadcrumbLink href="/all">Calculators</BreadcrumbLink></BreadcrumbItem>
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild>
+                <Link href="/all">Calculators</Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem><BreadcrumbPage>Body Type Visualizer</BreadcrumbPage></BreadcrumbItem>
           </BreadcrumbList>

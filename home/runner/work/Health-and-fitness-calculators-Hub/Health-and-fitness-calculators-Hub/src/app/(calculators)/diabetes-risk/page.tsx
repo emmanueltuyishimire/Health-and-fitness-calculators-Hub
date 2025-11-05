@@ -79,7 +79,7 @@ export default function DiabetesRiskPage() {
             name: 'Why is BMI linked to type 2 diabetes risk?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'A high BMI, particularly when associated with high levels of abdominal fat, is a primary risk factor for developing insulin resistance, which is the precursor to type 2 diabetes. You can assess your abdominal fat with the <a href="/waist-to-height-ratio">Waist-to-Height Ratio Calculator</a>.',
+                text: 'A high BMI, particularly when associated with high levels of abdominal fat, is a primary risk factor for developing insulin resistance, which is the precursor to type 2 diabetes. You can assess your abdominal fat with the <a href="/waist-to-height-ratio" aria-label="Waist-to-Height Ratio Calculator">Waist-to-Height Ratio Calculator</a>.',
             }
         },
         {
@@ -95,7 +95,7 @@ export default function DiabetesRiskPage() {
             name: 'Can I have a high BMI and not be at risk?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'It\'s less likely, but possible, especially for athletes with high muscle mass. BMI doesn\'t distinguish muscle from fat. However, even muscular individuals can have insulin resistance. It is always best to combine BMI with other metrics like the <a href="/body-fat">Body Fat Percentage Calculator</a>.',
+                text: 'It\'s less likely, but possible, especially for athletes with high muscle mass. BMI doesn\'t distinguish muscle from fat. However, even muscular individuals can have insulin resistance. It is always best to combine BMI with other metrics like the <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a>.',
             }
         },
         {
@@ -103,7 +103,7 @@ export default function DiabetesRiskPage() {
             name: 'How can I lower my diabetes risk?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Lowering risk primarily involves lifestyle changes: achieving a healthy weight through a <a href="/calorie-deficit">calorie deficit</a>, engaging in regular physical activity, and eating a balanced diet rich in fiber and low in processed foods. Our <a href="/tdee">TDEE Calculator</a> can help you find your calorie target.',
+                text: 'Lowering risk primarily involves lifestyle changes: achieving a healthy weight through a <a href="/calorie-deficit" aria-label="Calorie Deficit Calculator">calorie deficit</a>, engaging in regular physical activity, and eating a balanced diet rich in fiber and low in processed foods. Our <a href="/tdee" aria-label="TDEE Calculator">TDEE Calculator</a> can help you find your calorie target.',
             }
         },
         {
@@ -111,7 +111,7 @@ export default function DiabetesRiskPage() {
             name: 'What other metrics are important for diabetes risk?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Beyond BMI, your <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio</a> is crucial, as it measures abdominal fat. Blood glucose levels, blood pressure, and cholesterol are also vital clinical markers.',
+                text: 'Beyond BMI, your <a href="/waist-to-hip-ratio" aria-label="Waist-to-Hip Ratio Calculator">Waist-to-Hip Ratio</a> is crucial, as it measures abdominal fat. Blood glucose levels, blood pressure, and cholesterol are also vital clinical markers.',
             }
         },
     ],
@@ -135,11 +135,15 @@ export default function DiabetesRiskPage() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/">Home</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/all">Calculators</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/all">Calculators</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

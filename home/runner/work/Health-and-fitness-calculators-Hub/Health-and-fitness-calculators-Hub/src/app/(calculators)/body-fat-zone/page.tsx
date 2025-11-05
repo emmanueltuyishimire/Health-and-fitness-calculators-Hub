@@ -95,7 +95,7 @@ export default function BodyFatZonePage() {
         name: 'Why do I need my body fat percentage for this?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'This calculator provides context to your body fat percentage. First you need the number itself, which you can get from our <a href="/body-fat">Body Fat Percentage Calculator</a>. This tool then tells you what that number means.',
+          text: 'This calculator provides context to your body fat percentage. First you need the number itself, which you can get from our <a href="/body-fat" aria-label="Body Fat Percentage Calculator">Body Fat Percentage Calculator</a>. This tool then tells you what that number means.',
         },
       },
       {
@@ -111,7 +111,7 @@ export default function BodyFatZonePage() {
         name: 'How can I move from the "Obese" or "Acceptable" zone to the "Fitness" zone?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'To lower your body fat percentage, you need to create a sustainable <a href="/calorie-deficit">calorie deficit</a> and engage in regular exercise, particularly resistance training to build or maintain muscle. Use our <a href="/tdee">TDEE Calculator</a> to find your starting calorie target.',
+          text: 'To lower your body fat percentage, you need to create a sustainable <a href="/calorie-deficit" aria-label="Calorie Deficit Calculator">calorie deficit</a> and engage in regular exercise, particularly resistance training to build or maintain muscle. Use our <a href="/tdee" aria-label="TDEE Calculator">TDEE Calculator</a> to find your starting calorie target.',
         },
       },
     ],
@@ -135,11 +135,15 @@ export default function BodyFatZonePage() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/">Home</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/all">Calculators</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link href="/all">Calculators</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
