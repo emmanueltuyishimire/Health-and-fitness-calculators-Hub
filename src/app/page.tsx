@@ -4,10 +4,41 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Calculator, CheckCircle, HeartPulse, Scale, SlidersHorizontal } from 'lucide-react';
 import { calculatorGroups } from '@/lib/calculator-groups';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Health and Fitness Calculators Hub – Free, Accurate, and Easy',
+  description: 'A comprehensive suite of free, easy-to-use health and fitness calculators designed to help you understand your body, own your health, and achieve your wellness goals.',
+  openGraph: {
+    title: 'Health and Fitness Calculators Hub – Free, Accurate, and Easy',
+    description: 'A comprehensive suite of free, easy-to-use health and fitness calculators designed to help you understand your body, own your health, and achieve your wellness goals.',
+    type: 'website',
+  }
+};
 
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    url: 'https://health.calculation.site/',
+    name: 'Health and Fitness Calculators Hub',
+    description: 'A comprehensive suite of free, easy-to-use health and fitness calculators designed to help you understand your body, own your health, and achieve your wellness goals.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Calculation.site',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://health.calculation.site/logo.png',
+      },
+    },
+  };
+  
   return (
     <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {/* Hero Section */}
         <section className="w-full py-24 md:py-32 lg:py-40">
           <div className="container px-4 md:px-6">
@@ -84,7 +115,7 @@ export default function Home() {
                   <h3 className="text-2xl font-bold mb-6">{group.title}</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                   {group.calculators.map((calc) => (
-                    <Link href={calc.href} key={calc.name} className="group flex items-center gap-3 rounded-md p-3 text-sm font-medium hover:bg-muted">
+                    <Link href={calc.href} key={calc.name} className="group flex items-center gap-3 rounded-md p-3 text-sm font-medium hover:bg-muted" aria-label={`Go to ${calc.name}`}>
                         <Calculator className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
                         <span className="transition-colors group-hover:text-primary">{calc.name}</span>
                     </Link>
