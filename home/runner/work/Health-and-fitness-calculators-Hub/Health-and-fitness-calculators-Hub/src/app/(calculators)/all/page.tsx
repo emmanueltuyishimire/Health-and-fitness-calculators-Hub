@@ -1,5 +1,4 @@
 
-import { CalculatorCard } from '@/components/calculator-card';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Calculator, List } from 'lucide-react';
 import Link from 'next/link';
@@ -7,11 +6,16 @@ import { calculatorGroups } from '@/lib/calculator-groups';
 
 export default function AllCalculatorsPage() {
   return (
-    <CalculatorCard
-      icon={<List className="h-8 w-8" />}
-      title="All Calculators"
-      description="A comprehensive list of all body composition and weight management calculators available."
-    >
+    <div className="w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+      <div className="flex items-center gap-4 mb-8">
+        <div className="bg-primary/10 text-primary p-3 rounded-lg">
+            <List className="h-8 w-8" />
+        </div>
+        <div>
+            <h1 className="text-3xl font-bold">All Calculators</h1>
+            <p className="text-muted-foreground">A comprehensive list of all body composition and weight management calculators available.</p>
+        </div>
+      </div>
       <div className="space-y-8">
         {calculatorGroups.map((group) => (
           <Card key={group.title}>
@@ -34,6 +38,6 @@ export default function AllCalculatorsPage() {
           </Card>
         ))}
       </div>
-    </CalculatorCard>
+    </div>
   );
 }

@@ -16,7 +16,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useCalculator } from '@/context/calculator-context';
 import { BmiSchema, type BmiFormValues } from '@/lib/definitions';
-import { Separator } from './ui/separator';
+import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
 
 export function ObesityRiskCalculatorForm() {

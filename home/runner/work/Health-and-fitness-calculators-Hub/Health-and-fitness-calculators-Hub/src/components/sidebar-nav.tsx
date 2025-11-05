@@ -56,8 +56,8 @@ import {
 } from '@/components/ui/sidebar';
 import { Logo } from '@/components/logo';
 import { useCalculator } from '@/context/calculator-context';
-import { Label } from './ui/label';
-import { RadioGroup, RadioGroupItem } from './ui/radio-group';
+import { Label } from '@/components/ui/label';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import type { UnitSystem } from '@/context/calculator-context';
 import Link from 'next/link';
 

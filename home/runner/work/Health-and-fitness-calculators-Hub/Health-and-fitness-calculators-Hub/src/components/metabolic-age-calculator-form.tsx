@@ -24,7 +24,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { Separator } from './ui/separator';
+import { Separator } from '@/components/ui/separator';
 
 export function MetabolicAgeCalculatorForm() {
   const { state, dispatch } = useCalculator();
