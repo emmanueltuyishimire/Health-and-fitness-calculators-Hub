@@ -40,20 +40,13 @@ export function BmiPercentileTeenCalculatorForm() {
   const form = useForm<BmiPercentileTeenFormValues>({
     resolver: zodResolver(BmiPercentileTeenSchema),
     defaultValues: {
-      gender: state.gender,
+      gender: 'female',
       ageYears: '',
       ageMonths: '',
       height: '',
       weight: '',
       unitSystem: state.unitSystem,
     },
-    values: {
-        ...state,
-        ageYears: '',
-        ageMonths: '',
-        height: '',
-        weight: '',
-    }
   });
   
   function getBmiPercentile(gender: 'male' | 'female', ageInMonths: number, bmi: number): number {

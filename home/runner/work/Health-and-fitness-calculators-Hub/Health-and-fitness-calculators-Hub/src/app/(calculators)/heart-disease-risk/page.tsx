@@ -233,30 +233,6 @@ export default function HeartDiseaseRiskPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>Common Mistakes</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Relying Only on BMI:**</strong> It's a screening tool, not a diagnostic one. Always consider other factors like body fat percentage and waist circumference.</li>
-              <li><strong>Ignoring Muscle Mass:**</strong> If you are athletic and have a high BMI, don't panic. Use the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Calculator</Link> to get a clearer picture of your health.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Pro Tips & Quick Hacks</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Focus on NEAT:</strong> Increase your Non-Exercise Activity Thermogenesis (daily movement) to boost your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>.</li>
-              <li><strong>Prioritize Cardiovascular Exercise:</strong> Activities like brisk walking, running, and cycling directly improve heart health.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
             <CardTitle>Frequently Asked Questions (FAQ)</CardTitle>
           </CardHeader>
           <CardContent>

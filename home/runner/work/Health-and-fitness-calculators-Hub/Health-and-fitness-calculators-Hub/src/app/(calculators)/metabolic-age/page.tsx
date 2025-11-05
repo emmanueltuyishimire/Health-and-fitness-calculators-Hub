@@ -118,46 +118,6 @@ export default function MetabolicAgePage() {
           text: 'Your chronological age is needed to calculate your BMR accurately using the Mifflin-St Jeor formula. The calculator then uses this BMR to find the average age of a person with that same BMR, which becomes your metabolic age.',
         },
       },
-      {
-        '@type': 'Question',
-        name: 'How does diet affect metabolic age?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Diet plays a huge role. Eating enough protein supports muscle mass, and avoiding overly restrictive diets helps prevent your metabolism from slowing down. Plan your diet with our <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a>.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Does cardio or weightlifting have a bigger impact on metabolic age?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Weightlifting generally has a bigger impact because it builds muscle, which directly increases your BMR and lowers metabolic age. Cardio is excellent for heart health and burning calories, which you can track with the <a href="/calorie-burn-by-activity">Calorie Burn by Activity Calculator</a>, but resistance training is key for boosting resting metabolism.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How often should I calculate my metabolic age?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Recalculating every 2-3 months is sufficient. Metabolic changes happen slowly as your body composition changes. More frequent calculations are unlikely to show significant differences.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Does a lower metabolic age mean I can eat more?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, essentially. A lower metabolic age means you have a higher BMR, which in turn means you have a higher <a href="/tdee">TDEE (Total Daily Energy Expenditure)</a>. This gives you a larger calorie budget for your daily needs.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Is there a connection between metabolic age and obesity risk?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, there is a strong connection. A higher metabolic age often correlates with higher body fat and lower muscle mass, which are risk factors for obesity. You can assess your risk more directly with our <a href="/obesity-risk">Obesity Risk Calculator</a>.',
-        },
-      },
     ],
   };
 
@@ -313,11 +273,6 @@ export default function MetabolicAgePage() {
               <AccordionItem value="item-3"><AccordionTrigger>Is metabolic age a scientifically validated metric?</AccordionTrigger><AccordionContent>Metabolic age is more of a wellness concept than a clinical diagnostic tool. While it's based on your BMR, a real medical metric, the "age" part is an interpretation. It's a useful way to conceptualize your metabolic health, but metrics like <a href="/body-fat">Body Fat Percentage</a> are more concrete health indicators.</AccordionContent></AccordionItem>
               <AccordionItem value="item-4"><AccordionTrigger>My metabolic age is higher than my real age. Should I be worried?</AccordionTrigger><AccordionContent>It's not a cause for alarm, but it can be a useful wake-up call. It suggests your metabolism is slower than average for your age, which could be due to low muscle mass or a higher body fat percentage. Improving your body composition through diet and exercise will lower it. Our <a href="/ffmi">FFMI Calculator</a> can help you track muscularity.</AccordionContent></AccordionItem>
               <AccordionItem value="item-5"><AccordionTrigger>Why does this calculator ask for my age if it's calculating a new one?</AccordionTrigger><AccordionContent>Your chronological age is needed to calculate your BMR accurately using the Mifflin-St Jeor formula. The calculator then uses this BMR to find the average age of a person with that same BMR, which becomes your metabolic age.</AccordionContent></AccordionItem>
-              <AccordionItem value="item-6"><AccordionTrigger>How does diet affect metabolic age?</AccordionTrigger><AccordionContent>Diet plays a huge role. Eating enough protein supports muscle mass, and avoiding overly restrictive diets helps prevent your metabolism from slowing down. Plan your diet with our <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a>.</AccordionContent></AccordionItem>
-              <AccordionItem value="item-7"><AccordionTrigger>Does cardio or weightlifting have a bigger impact on metabolic age?</AccordionTrigger><AccordionContent>Weightlifting generally has a bigger impact because it builds muscle, which directly increases your BMR and lowers metabolic age. Cardio is excellent for heart health and burning calories, which you can track with the <a href="/calorie-burn-by-activity">Calorie Burn by Activity Calculator</a>, but resistance training is key for boosting resting metabolism.</AccordionContent></AccordionItem>
-              <AccordionItem value="item-8"><AccordionTrigger>How often should I calculate my metabolic age?</AccordionTrigger><AccordionContent>Recalculating every 2-3 months is sufficient. Metabolic changes happen slowly as your body composition changes. More frequent calculations are unlikely to show significant differences.</AccordionContent></AccordionItem>
-              <AccordionItem value="item-9"><AccordionTrigger>Does a lower metabolic age mean I can eat more?</AccordionTrigger><AccordionContent>Yes, essentially. A lower metabolic age means you have a higher BMR, which in turn means you have a higher <a href="/tdee">TDEE (Total Daily Energy Expenditure)</a>. This gives you a larger calorie budget for your daily needs.</AccordionContent></AccordionItem>
-              <AccordionItem value="item-10"><AccordionTrigger>Is there a connection between metabolic age and obesity risk?</AccordionTrigger><AccordionContent>Yes, there is a strong connection. A higher metabolic age often correlates with higher body fat and lower muscle mass, which are risk factors for obesity. You can assess your risk more directly with our <a href="/obesity-risk">Obesity Risk Calculator</a>.</AccordionContent></AccordionItem>
             </Accordion>
           </CardContent>
         </Card>

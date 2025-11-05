@@ -17,14 +17,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@/components/ui/table';
 import { DiabetesRiskCalculatorForm } from '@/components/diabetes-risk-calculator-form';
 
 export const metadata: Metadata = {
@@ -200,32 +192,6 @@ export default function DiabetesRiskPage() {
             <p>Body Mass Index (BMI) is a primary screening tool for assessing how weight impacts health. A high BMI is one of the strongest predictors for the development of type 2 diabetes. This is because excess body fat, particularly visceral fat around the abdomen, can lead to a condition called <strong className="text-foreground">insulin resistance</strong>.</p>
             <p>Insulin is a hormone that helps your cells use glucose (sugar) from food for energy. In insulin resistance, cells don't respond properly to insulin, causing blood sugar levels to rise. This forces the pancreas to work harder to produce more insulin, and over time, it can become exhausted, leading to prediabetes and eventually type 2 diabetes.</p>
             <p>While BMI is a valuable starting point, other metrics are also crucial. The <Link href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio Calculator</Link> is an excellent tool for specifically assessing abdominal fat, which is more metabolically harmful than fat stored elsewhere.</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Common Mistakes</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Relying Only on BMI:**</strong> It's a screening tool, not a diagnosis. Always consult a healthcare professional for blood tests and personalized advice.</li>
-              <li><strong>Ignoring Other Risk Factors:**</strong> Family history, age, ethnicity, and lifestyle habits (diet, exercise) are also major factors in diabetes risk.</li>
-              <li><strong>Thinking "Normal" BMI Means No Risk:**</strong> You can have a normal BMI and still be at risk, a condition known as "normal weight obesity." This is why checking your <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> is also important.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Pro Tips & Quick Hacks for Risk Reduction</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li><strong>Focus on NEAT:</strong> Increase your Non-Exercise Activity Thermogenesis (daily movement) like walking. Even small increases can improve insulin sensitivity. Track your activity with the <Link href="/steps-to-calories" className="text-primary hover:underline">Steps to Calories Calculator</Link>.</li>
-              <li><strong>Prioritize Resistance Training:</strong> Building muscle improves your body's ability to handle glucose. More muscle provides more storage for glucose, helping to keep blood sugar levels stable. Use the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link> to track muscle gains.</li>
-              <li><strong>Eat More Fiber:</strong> Soluble fiber, found in oats, beans, and vegetables, can help slow down the absorption of sugar and improve blood sugar control.</li>
-            </ul>
           </CardContent>
         </Card>
 

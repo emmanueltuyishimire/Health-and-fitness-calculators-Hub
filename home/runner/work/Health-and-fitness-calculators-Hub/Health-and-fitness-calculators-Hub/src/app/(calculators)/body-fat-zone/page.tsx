@@ -108,58 +108,10 @@ export default function BodyFatZonePage() {
       },
       {
         '@type': 'Question',
-        name: 'How is this different from the Obesity Risk Calculator?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'The <a href="/obesity-risk">Obesity Risk Calculator</a> uses BMI, which is a measure of weight relative to height. This calculator uses body fat percentage, which is a more accurate measure of body composition. You can have a "Normal" BMI but still be in the "Obese" body fat zone.',
-        },
-      },
-      {
-        '@type': 'Question',
         name: 'How can I move from the "Obese" or "Acceptable" zone to the "Fitness" zone?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'To lower your body fat percentage, you need to create a sustainable <a href="/calorie-deficit">calorie deficit</a> and engage in regular exercise, particularly resistance training to build or maintain muscle. Use our <a href="/tdee">TDEE Calculator</a> to find your starting calorie target.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Does my "zone" change as I age?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, the healthy body fat ranges shift slightly higher with age. A body fat percentage that is in the "Fitness" zone for a 25-year-old might be in the "Athlete" zone for a 55-year-old. This calculator accounts for these age-related changes.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'My body fat is in the "Athlete" zone but my FFMI is average. What does this mean?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'This could mean you are lean but don\'t carry a large amount of muscle mass for your frame. The <a href="/ffmi">FFMI Calculator</a> is a specific measure of muscularity. You can be very lean (low body fat) without having a high FFMI.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How often should I check my body fat zone?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'You should re-evaluate your body fat percentage and zone every 4-8 weeks. Body composition changes slowly, and tracking more frequently can be misleading. Use the <a href="/fat-loss-tracker">Fat Loss Tracker</a> to see your progress over time.',
-        },
-      },
-       {
-        '@type': 'Question',
-        name: 'Can I have a "healthy" body fat percentage but an unhealthy lifestyle?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. Body fat percentage is just one metric. A person in the "Fitness" zone who smokes, sleeps poorly, and eats a nutrient-poor diet is not holistically healthy. Use this tool as part of a complete wellness approach.',
-        },
-      },
-       {
-        '@type': 'Question',
-        name: 'What is a good next step after finding my zone?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'If you want to change your body fat zone, the best next step is to calculate your <a href="/daily-calorie-needs">Daily Calorie Needs</a> to create a nutrition plan. From there, you can use the <a href="/macronutrient-ratio">Macronutrient Ratio Calculator</a> to fine-tune your diet.',
         },
       },
     ],
@@ -219,20 +171,6 @@ export default function BodyFatZonePage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>How to Use the Classifier</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4 text-muted-foreground">
-            <p>This tool gives you a clear health classification for your body fat percentage based on your age and gender.</p>
-            <ol className="list-decimal list-inside space-y-2">
-              <li><strong>Calculate Your Body Fat:</strong> First, you need your body fat percentage. Use our <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link> for an accurate estimate.</li>
-              <li><strong>Enter Your Details:</strong> Input your gender, age, and body fat percentage into the form.</li>
-              <li><strong>View Your Zone:</strong> The calculator will instantly display your health zone, from "Athlete" to "Obese", based on widely accepted standards.</li>
-            </ol>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
             <CardTitle>Understanding the Body Fat Zones</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
@@ -243,7 +181,6 @@ export default function BodyFatZonePage() {
                         <TableHead>Classification</TableHead>
                         <TableHead>Women (% Fat)</TableHead>
                         <TableHead>Men (% Fat)</TableHead>
-                        <TableHead>Description</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -251,31 +188,26 @@ export default function BodyFatZonePage() {
                         <TableCell>Essential Fat</TableCell>
                         <TableCell>10-13%</TableCell>
                         <TableCell>2-5%</TableCell>
-                        <TableCell>The minimum fat required for basic physiological health. It is unhealthy to be at or below this level.</TableCell>
                     </TableRow>
                     <TableRow>
                         <TableCell>Athletes</TableCell>
                         <TableCell>14-20%</TableCell>
                         <TableCell>6-13%</TableCell>
-                        <TableCell>Typical range for elite athletes. Low body fat enhances performance in many sports.</TableCell>
                     </TableRow>
                     <TableRow>
                         <TableCell>Fitness</TableCell>
                         <TableCell>21-24%</TableCell>
                         <TableCell>14-17%</TableCell>
-                        <TableCell>A lean and healthy range for most active individuals, associated with good health and fitness.</TableCell>
                     </TableRow>
                     <TableRow>
                         <TableCell>Acceptable</TableCell>
                         <TableCell>25-31%</TableCell>
                         <TableCell>18-24%</TableCell>
-                        <TableCell>Considered an acceptable range for the general population, but could be improved.</TableCell>
                     </TableRow>
                     <TableRow>
                         <TableCell>Obese</TableCell>
                         <TableCell>32%+</TableCell>
                         <TableCell>25%+</TableCell>
-                        <TableCell>Associated with an increased risk for a range of health problems. A good first step is the <Link href="/obesity-risk" className="text-primary hover:underline">Obesity Risk Calculator</Link>.</TableCell>
                     </TableRow>
                 </TableBody>
             </Table>

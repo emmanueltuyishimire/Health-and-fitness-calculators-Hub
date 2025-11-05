@@ -94,7 +94,7 @@ export default function BmiPercentileTeenPage() {
         name: 'What does the BMI percentile mean?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The percentile indicates the relative position of a child\'s BMI among children of the same sex and age. For example, a child at the 75th percentile has a higher BMI than 75 out of 100 of their peers. It is not a percentage of body fat, which can be estimated with a <a href="/body-fat">Body Fat Calculator</a> (for adults).',
+          text: 'The percentile indicates the relative position of a child\'s BMI among children of the same sex and age. For example, a child at the 75th percentile has a higher BMI than 75 out of 100 of their peers. It is not a percentage of body fat.',
         },
       },
       {
@@ -103,22 +103,6 @@ export default function BmiPercentileTeenPage() {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'A healthy weight is typically defined as being between the 5th and 85th percentiles. Below the 5th is underweight, from the 85th to the 95th is overweight, and at or above the 95th is considered obese.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'My child is in the "Overweight" category. What should I do?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Do not put a growing child on a restrictive diet without medical supervision. Instead, focus on building healthy habits: encourage physical activity, provide nutritious meals, and limit sugary drinks and screen time. Consult a pediatrician for personalized advice.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'My teen is an athlete and has a high BMI percentile. Should I be concerned?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Similar to adults, athletes can have a high BMI due to increased muscle mass. If your teen is athletic, has a muscular build, and follows a healthy lifestyle, a high BMI percentile may not be a concern. A pediatrician can provide a more thorough assessment.',
         },
       },
     ],
@@ -216,19 +200,11 @@ export default function BmiPercentileTeenPage() {
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>What does the BMI percentile mean?</AccordionTrigger>
-                <AccordionContent>The percentile indicates the relative position of a child's BMI among children of the same sex and age. For example, a child at the 75th percentile has a higher BMI than 75 out of 100 of their peers. It is not a percentage of body fat, which can be estimated with a <a href="/body-fat">Body Fat Calculator</a> (for adults).</AccordionContent>
+                <AccordionContent>The percentile indicates the relative position of a child's BMI among children of the same sex and age. For example, a child at the 75th percentile has a higher BMI than 75 out of 100 of their peers. It is not a percentage of body fat.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>What is a healthy BMI percentile?</AccordionTrigger>
                 <AccordionContent>A healthy weight is typically defined as being between the 5th and 85th percentiles. Below the 5th is underweight, from the 85th to the 95th is overweight, and at or above the 95th is considered obese.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-4">
-                <AccordionTrigger>My child is in the "Overweight" category. What should I do?</AccordionTrigger>
-                <AccordionContent>Do not put a growing child on a restrictive diet without medical supervision. Instead, focus on building healthy habits: encourage physical activity, provide nutritious meals, and limit sugary drinks and screen time. Consult a pediatrician for personalized advice.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-5">
-                <AccordionTrigger>My teen is an athlete and has a high BMI percentile. Should I be concerned?</AccordionTrigger>
-                <AccordionContent>Similar to adults, athletes can have a high BMI due to increased muscle mass. If your teen is athletic, has a muscular build, and follows a healthy lifestyle, a high BMI percentile may not be a concern. A pediatrician can provide a more thorough assessment.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>

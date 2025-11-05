@@ -17,14 +17,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@/components/ui/table';
 import { BodyTypeVisualizerForm } from '@/components/body-type-visualizer-form';
 
 export const metadata: Metadata = {
@@ -97,22 +89,6 @@ export default function BodyTypeVisualizerPage() {
           text: 'Body shape can indicate where you tend to store fat. An "Apple" shape (more abdominal fat) is associated with higher health risks than a "Pear" shape. The <a href="/waist-to-height-ratio">Waist-to-Height Ratio Calculator</a> is an excellent tool for assessing this risk.',
         },
       },
-      {
-        '@type': 'Question',
-        name: 'How is this different from the Body Shape Calculator?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'This tool provides a visual representation in addition to the classification, which can make it easier to understand your proportions. The underlying logic is similar to the <a href="/body-shape">Body Shape Calculator</a>.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How can I use this for fitness?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Knowing your body shape can help you tailor your workout plan. For example, a "Rectangle" shape might focus on exercises that build both the glutes and shoulders to create more curves. Planning your diet with the <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a> is also crucial.',
-        },
-      },
     ],
   };
 
@@ -151,21 +127,7 @@ export default function BodyTypeVisualizerPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>How to Use the Visualizer</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4 text-muted-foreground">
-            <p>This interactive tool gives you immediate visual feedback on your body's proportions.</p>
-            <ol className="list-decimal list-inside space-y-2">
-              <li><strong>Measure Yourself:</strong> Use a flexible tape to measure your bust (fullest part), waist (narrowest part), and hips (widest part).</li>
-              <li><strong>Enter Your Measurements:</strong> Input the three measurements into the form.</li>
-              <li><strong>See Your Shape:</strong> The visualizer will instantly update to reflect your proportions and provide a body shape classification. This offers a different perspective than purely numerical tools like the <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage Calculator</Link>.</li>
-            </ol>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Understanding Body Shapes and Health</CardTitle>
+            <CardTitle>Understanding Body Shapes</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <p>Body shape is largely determined by your bone structure and where your body tends to store fat. While every body is unique, most can be categorized into a few common types. Understanding your shape is useful not just for fashion, but for health awareness.</p>
@@ -186,23 +148,15 @@ export default function BodyTypeVisualizerPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>Is this calculator scientifically accurate?</AccordionTrigger>
-                <AccordionContent>This visualizer uses common proportional definitions to classify body shapes. While the classifications are standard, the visualization is a simplified, stylized representation. For a more detailed health risk assessment, use the <a href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio Calculator</a>.</AccordionContent>
+                <AccordionContent>This visualizer uses common proportional definitions to classify body shapes. While the classifications are standard, the visualization is a simplified, stylized representation. For a more detailed health risk assessment, use the <a href="/waist-to-hip-ratio">Waist-to-Hip Ratio Calculator</a>.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>Can I change my body shape?</AccordionTrigger>
-                <AccordionContent>While your bone structure is genetic, you can significantly alter your body shape through targeted exercise and nutrition. For example, a "Pear" shape can build upper body muscle to create a more balanced silhouette. Use the <a href="/ffmi" className="text-primary hover:underline">FFMI Calculator</a> to track muscle gains.</AccordionContent>
+                <AccordionContent>While your bone structure is genetic, you can significantly alter your body shape through targeted exercise and nutrition. For example, a "Pear" shape can build upper body muscle to create a more balanced silhouette. Use the <a href="/ffmi">FFMI Calculator</a> to track muscle gains.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>What does my body shape say about my health?</AccordionTrigger>
-                <AccordionContent>Body shape can indicate where you tend to store fat. An "Apple" shape (more abdominal fat) is associated with higher health risks than a "Pear" shape. The <a href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio Calculator</a> is an excellent tool for assessing this risk.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-4">
-                <AccordionTrigger>How is this different from the Body Shape Calculator?</AccordionTrigger>
-                <AccordionContent>This tool provides a visual representation in addition to the classification, which can make it easier to understand your proportions. The underlying logic is similar to the <a href="/body-shape">Body Shape Calculator</a>.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-5">
-                <AccordionTrigger>How can I use this for fitness?</AccordionTrigger>
-                <AccordionContent>Knowing your body shape can help you tailor your workout plan. For example, a "Rectangle" shape might focus on exercises that build both the glutes and shoulders to create more curves. Planning your diet with the <a href="/daily-calorie-needs">Daily Calorie Needs Calculator</a> is also crucial.</AccordionContent>
+                <AccordionContent>Body shape can indicate where you tend to store fat. An "Apple" shape (more abdominal fat) is associated with higher health risks than a "Pear" shape. The <a href="/waist-to-height-ratio">Waist-to-Height Ratio Calculator</a> is an excellent tool for assessing this risk.</AccordionContent>
               </AccordionItem>
             </Accordion>
           </CardContent>
