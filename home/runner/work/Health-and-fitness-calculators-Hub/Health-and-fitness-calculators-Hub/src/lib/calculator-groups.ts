@@ -67,6 +67,9 @@ export const calculatorGroups = [
       { name: 'Heart Disease Risk Calculator', href: '/heart-disease-risk' },
       { name: 'Diabetes Risk by BMI', href: '/diabetes-risk' },
       { name: 'Body Fat Health Zone Classifier', href: '/body-fat-zone' },
+      { name: 'Body Type Visualizer', href: '/body-type-visualizer' },
     ],
   },
 ];
+
+    
