@@ -1,10 +1,13 @@
 import Link from 'next/link';
+import nextConfig from '../../next.config.mjs';
+
+const basePath = nextConfig.basePath || '';
 
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2" aria-label="Health and Fitness Calculators Hub Home">
       <img 
-        src="/logo.png" 
+        src={`${basePath}/logo.png`}
         alt="Health and Fitness Calculators Hub Logo" 
         width="32" 
         height="32" 
