@@ -376,3 +376,13 @@ export const WalkingRunningCaloriesSchema = z.object({
 });
 
 export type WalkingRunningCaloriesFormValues = z.infer<typeof WalkingRunningCaloriesSchema>;
+
+export const MetabolicAgeSchema = z.object({
+  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
+  age: z.string().min(1, { message: 'Age is required.' }),
+  height: z.string().min(1, { message: 'Height is required.' }),
+  weight: z.string().min(1, { message: 'Weight is required.' }),
+  unitSystem: z.enum(['metric', 'imperial']),
+});
+
+export type MetabolicAgeFormValues = z.infer<typeof MetabolicAgeSchema>;

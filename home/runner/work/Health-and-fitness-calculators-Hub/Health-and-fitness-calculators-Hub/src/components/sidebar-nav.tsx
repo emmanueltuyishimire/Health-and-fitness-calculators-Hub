@@ -1,5 +1,4 @@
 
-
 'use client';
 
 import { usePathname } from 'next/navigation';
@@ -101,6 +100,7 @@ const links = [
   { href: '/strength-to-weight-ratio', label: 'Strength-to-Weight Ratio', icon: Medal },
   { href: '/vo2-max', label: 'VO2 Max Estimator', icon: Activity },
   { href: '/obesity-risk', label: 'Obesity Risk Calculator', icon: ShieldAlert },
+  { href: '/metabolic-age', label: 'Metabolic Age Calculator', icon: BrainCircuit },
   { href: '/all', label: 'All Calculators', icon: List },
 ];
 

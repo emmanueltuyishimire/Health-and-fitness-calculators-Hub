@@ -63,6 +63,7 @@ export const calculatorGroups = [
     title: 'Health Risk Assessment',
     calculators: [
       { name: 'Obesity Risk Calculator', href: '/obesity-risk' },
+      { name: 'Metabolic Age Calculator', href: '/metabolic-age' },
     ],
   },
 ];
