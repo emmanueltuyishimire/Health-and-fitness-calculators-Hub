@@ -72,6 +72,7 @@ const links = [
   { href: '/waist-to-height-ratio', label: 'Waist-to-Height Ratio', icon: Ruler },
   { href: '/waist-to-hip-ratio', label: 'Waist-to-Hip Ratio', icon: GitCommitHorizontal },
   { href: '/body-shape', label: 'Body Shape', icon: PersonStanding },
+  { href: '/body-type-visualizer', label: 'Body Type Visualizer', icon: PersonStanding },
   { href: '/body-density', label: 'Body Density', icon: Database },
   { href: '/bmr', label: 'BMR Calculator', icon: Flame },
   { href: '/rmr', label: 'RMR Calculator', icon: BedDouble },
@@ -108,7 +109,6 @@ const links = [
   { href: '/heart-disease-risk', label: 'Heart Disease Risk', icon: HeartPulse },
   { href: '/diabetes-risk', label: 'Diabetes Risk by BMI', icon: ShieldAlert },
   { href: '/body-fat-zone', label: 'Body Fat Health Zone Classifier', icon: ShieldAlert },
-  { href: '/body-type-visualizer', label: 'Body Type Visualizer', icon: PersonStanding },
   { href: '/all', label: 'All Calculators', icon: List },
 ];
 
@@ -140,6 +140,7 @@ export function SidebarNav() {
                 <SidebarMenuButton
                   isActive={pathname === link.href}
                   tooltip={link.label}
+                  aria-label={link.label}
                 >
                   <link.icon />
                   <span>{link.label}</span>
@@ -151,22 +152,23 @@ export function SidebarNav() {
       </SidebarContent>
       <SidebarFooter className="hidden md:flex flex-col gap-4 p-4">
         <div>
-          <Label className="mb-2 block px-2 text-xs text-muted-foreground">
+          <Label id="unit-system-label" className="mb-2 block px-2 text-xs text-muted-foreground">
             Unit System
           </Label>
           <RadioGroup
             value={state.unitSystem}
             onValueChange={handleUnitChange}
             className="flex"
+            aria-labelledby="unit-system-label"
           >
             <div className="flex flex-1 items-center space-x-2 rounded-md border p-2 hover:bg-accent hover:text-accent-foreground has-[[data-state=checked]]:border-primary has-[[data-state=checked]]:bg-primary/10">
-              <RadioGroupItem value="metric" id="metric" />
+              <RadioGroupItem value="metric" id="metric" aria-label="Metric units" />
               <Label htmlFor="metric" className="w-full cursor-pointer">
                 Metric
               </Label>
             </div>
             <div className="flex flex-1 items-center space-x-2 rounded-md border p-2 hover:bg-accent hover:text-accent-foreground has-[[data-state=checked]]:border-primary has-[[data-state=checked]]:bg-primary/10">
-              <RadioGroupItem value="imperial" id="imperial" />
+              <RadioGroupItem value="imperial" id="imperial" aria-label="Imperial units" />
               <Label htmlFor="imperial" className="w-full cursor-pointer">
                 Imperial
               </Label>
