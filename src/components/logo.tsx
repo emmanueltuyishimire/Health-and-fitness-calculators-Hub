@@ -1,11 +1,10 @@
-
 import Link from 'next/link';
 
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2" aria-label="Health and Fitness Calculators Hub Home">
       <img 
-        src="/logo.png" 
+        src="/Health-and-fitness-calculators-Hub/logo.png" 
         alt="Health and Fitness Calculators Hub Logo" 
         width="32" 
         height="32" 
