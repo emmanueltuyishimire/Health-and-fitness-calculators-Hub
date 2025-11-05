@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import { usePathname } from 'next/navigation';
@@ -39,6 +40,7 @@ import {
   Footprints,
   Webhook,
   ShieldAlert,
+  HeartPulse,
 } from 'lucide-react';
 
 
@@ -101,6 +103,7 @@ const links = [
   { href: '/vo2-max', label: 'VO2 Max Estimator', icon: Activity },
   { href: '/obesity-risk', label: 'Obesity Risk Calculator', icon: ShieldAlert },
   { href: '/metabolic-age', label: 'Metabolic Age Calculator', icon: BrainCircuit },
+  { href: '/heart-disease-risk', label: 'Heart Disease Risk', icon: HeartPulse },
   { href: '/all', label: 'All Calculators', icon: List },
 ];
 

@@ -64,6 +64,7 @@ export const calculatorGroups = [
     calculators: [
       { name: 'Obesity Risk Calculator', href: '/obesity-risk' },
       { name: 'Metabolic Age Calculator', href: '/metabolic-age' },
+      { name: 'Heart Disease Risk Calculator', href: '/heart-disease-risk' },
     ],
   },
 ];
