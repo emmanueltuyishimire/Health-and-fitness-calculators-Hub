@@ -213,7 +213,7 @@ export default function ObesityRiskPage() {
                 <TableRow><TableCell className="font-bold">Calculated BMI</TableCell><TableCell className="font-bold">28.7</TableCell><TableCell className="font-bold">37.1</TableCell></TableRow>
                 <TableRow><TableCell className="font-bold">Risk Category</TableCell><TableCell className="font-bold">Overweight (Pre-obese)</TableCell><TableCell className="font-bold">Obese Class II (High Risk)</TableCell></TableRow>
                 <TableRow>
-                  <TableCell>Interpretation & Next Step</TableCell>
+                  <TableCell>Interpretation &amp; Next Step</TableCell>
                   <TableCell>This person is in the "Overweight" category, which indicates an increased risk. A good next step is to use the <Link href="/calorie-deficit" className="text-primary hover:underline">Calorie Deficit Calculator</Link> to plan a sustainable fat loss strategy.</TableCell>
                   <TableCell>A BMI over 35 signifies a high risk for related health conditions. This individual should consult a healthcare professional and use the <Link href="/weight-loss-goal" className="text-primary hover:underline">Weight Loss Goal Calculator</Link> to create a safe, long-term plan.</TableCell>
                 </TableRow>
@@ -237,7 +237,7 @@ export default function ObesityRiskPage() {
                 <TableRow><TableHead>Classification</TableHead><TableHead>BMI (kg/m²)</TableHead><TableHead>Health Risk</TableHead></TableRow>
               </TableHeader>
               <TableBody>
-                <TableRow><TableCell>Underweight</TableCell><TableCell>{"< 18.5"}</TableCell><TableCell>Low (but risk of other issues)</TableCell></TableRow>
+                <TableRow><TableCell>Underweight</TableCell><TableCell>&lt; 18.5</TableCell><TableCell>Low (but risk of other issues)</TableCell></TableRow>
                 <TableRow><TableCell>Normal range</TableCell><TableCell>18.5 – 24.9</TableCell><TableCell>Least risk</TableCell></TableRow>
                 <TableRow><TableCell>Overweight</TableCell><TableCell>25.0 – 29.9</TableCell><TableCell>Increased</TableCell></TableRow>
                 <TableRow><TableCell>Obese Class I</TableCell><TableCell>30.0 – 34.9</TableCell><TableCell>Moderate</TableCell></TableRow>
@@ -249,6 +249,34 @@ export default function ObesityRiskPage() {
             <h3 className="font-semibold text-lg text-foreground mt-4">Beyond BMI: Why Body Composition Matters</h3>
             <p>A high BMI is a red flag, but it's not a diagnosis. The real health risks of obesity come from excess body fat, not weight itself. An athlete may have a high BMI due to muscle mass, which you can assess with the <Link href="/ffmi" className="text-primary hover:underline">FFMI Calculator</Link>. This is why it's critical to use BMI as a starting point, then investigate further with more advanced tools.</p>
             <p>The <Link href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</Link> and <Link href="/waist-to-hip-ratio" className="text-primary hover:underline">Waist-to-Hip Ratio</Link> calculators are excellent next steps, as they assess central adiposity (belly fat), which is a much stronger predictor of metabolic disease than BMI alone.</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Common Mistakes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Relying on BMI Alone:</strong> The biggest mistake is treating BMI as a final diagnosis. An athlete with high muscle mass can be classified as "overweight" but be metabolically healthy. Always combine BMI with a <Link href="/body-fat" className="text-primary hover:underline">Body Fat Percentage</Link> assessment.</li>
+              <li><strong>Ignoring Small Changes:</strong> A small increase in BMI over a year might seem insignificant, but it can signal a trend towards an unhealthy weight. Tracking changes over time is crucial.</li>
+              <li><strong>Unrealistic Goals:</strong> Seeing a high BMI and immediately aiming for a crash diet is counterproductive. Use the <Link href="/weight-loss-goal" className="text-primary hover:underline">Weight Loss Goal Calculator</Link> to set a sustainable, long-term plan.</li>
+              <li><strong>Forgetting About NEAT:</strong> Your Non-Exercise Activity Thermogenesis (daily movement outside of formal exercise) plays a huge role in your <Link href="/tdee" className="text-primary hover:underline">TDEE</Link>. Increasing daily steps can significantly help in managing weight.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Pro Tips &amp; Quick Hacks</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <li><strong>Focus on Trends, Not Single Numbers:</strong> Track your BMI monthly to see the long-term trend rather than getting discouraged by short-term fluctuations.</li>
+              <li><strong>Prioritize Protein and Strength Training:</strong> To improve body composition, focus on eating adequate protein and engaging in resistance training. This helps build muscle, which boosts your metabolism.</li>
+              <li><strong>Increase Daily Steps:</strong> Aim for 7,000-10,000 steps per day. It’s a simple, low-impact way to increase your calorie expenditure.</li>
+              <li><strong>Eat Whole Foods:</strong> A diet rich in whole, unprocessed foods (vegetables, fruits, lean proteins) is more satiating and nutrient-dense, making it easier to manage calorie intake.</li>
+            </ul>
           </CardContent>
         </Card>
 
@@ -279,6 +307,40 @@ export default function ObesityRiskPage() {
                 <AccordionContent>Slow and steady weight loss of 1-2 lbs per week is almost always better. It helps preserve muscle mass and is more sustainable long-term. You can plan your timeline with our <Link href="/weight-loss-goal" className='text-primary hover:underline'>Weight Loss Goal Calculator</Link>.</AccordionContent>
               </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Real-Life Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+             <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Audience</TableHead>
+                  <TableHead>Use Case</TableHead>
+                  <TableHead>Next Step (Tool)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                 <TableRow>
+                  <TableCell>Medical Professionals</TableCell>
+                  <TableCell>Quickly screen patients for weight-related health risks during check-ups.</TableCell>
+                  <TableCell><Link href="/waist-to-height-ratio" className="text-primary hover:underline">Waist-to-Height Ratio</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>General Users</TableCell>
+                  <TableCell>Get a simple, initial assessment of their weight status to decide if lifestyle changes are needed.</TableCell>
+                  <TableCell><Link href="/tdee" className="text-primary hover:underline">TDEE Calculator</Link></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Fitness Coaches</TableCell>
+                  <TableCell>Use BMI as a starting data point for new clients, before diving into more detailed body composition metrics.</TableCell>
+                  <TableCell><Link href="/body-fat" className="text-primary hover:underline">Body Fat % Calculator</Link></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
 
