@@ -25,7 +25,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import { BmiPercentileTeenCalculatorForm } from '@/components/bmi-percentile-teen-calculator-form';
+import { BmiPercentileTeenCalculatorForm } from '@/components/BmiPercentileTeenCalculatorForm';
 
 export const metadata: Metadata = {
   title: 'BMI Percentile Calculator for Teens & Children',
