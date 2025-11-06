@@ -10,18 +10,6 @@ export const BmiSchema = z.object({
 
 export type BmiFormValues = z.infer<typeof BmiSchema>;
 
-export const BmiPercentileTeenSchema = z.object({
-  gender: z.enum(['male', 'female'], { required_error: 'Gender is required.'}),
-  ageYears: z.string().min(1, { message: 'Age in years is required.' }),
-  ageMonths: z.string().min(1, { message: 'Age in months is required.' }),
-  height: z.string().min(1, { message: 'Height is required.' }),
-  weight: z.string().min(1, { message: 'Weight is required.' }),
-  unitSystem: z.enum(['metric', 'imperial']),
-});
-
-export type BmiPercentileTeenFormValues = z.infer<typeof BmiPercentileTeenSchema>;
-
-
 export const ObesityRiskSchema = z.object({
   bmi: z.string().min(1, { message: 'BMI is required.' }),
 });

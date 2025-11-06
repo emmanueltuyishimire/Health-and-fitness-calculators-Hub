@@ -4,7 +4,6 @@ export const calculatorGroups = [
     title: 'Core Body Composition',
     calculators: [
       { name: 'BMI Calculator', href: '/bmi' },
-      { name: 'BMI Percentile for Age (Teens)', href: '/bmi-percentile-teen' },
       { name: 'Body Fat Percentage Calculator', href: '/body-fat' },
       { name: 'Ideal Body Weight (IBW)', href: '/ideal-weight' },
       { name: 'Lean Body Mass Calculator', href: '/lean-body-mass' },
@@ -13,6 +12,7 @@ export const calculatorGroups = [
       { name: 'Waist-to-Height Ratio', href: '/waist-to-height-ratio' },
       { name: 'Waist-to-Hip Ratio', href: '/waist-to-hip-ratio' },
       { name: 'Body Shape Type Calculator', href: '/body-shape' },
+      { name: 'Body Type Visualizer', href: '/body-type-visualizer' },
       { name: 'Body Density Calculator', href: '/body-density' },
     ],
   },
@@ -69,7 +69,6 @@ export const calculatorGroups = [
       { name: 'Heart Disease Risk Calculator', href: '/heart-disease-risk' },
       { name: 'Diabetes Risk by BMI', href: '/diabetes-risk' },
       { name: 'Body Fat Health Zone Classifier', href: '/body-fat-zone' },
-      { name: 'Body Type Visualizer', href: '/body-type-visualizer' },
     ],
   },
 ];

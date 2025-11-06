@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import { usePathname } from 'next/navigation';
@@ -62,7 +63,6 @@ import Link from 'next/link';
 
 const links = [
   { href: '/bmi', label: 'BMI Calculator', icon: Scale },
-  { href: '/bmi-percentile-teen', label: 'BMI Percentile for Age (Teens)', icon: PersonStanding },
   { href: '/body-fat', label: 'Body Fat %', icon: Percent },
   { href: '/ideal-weight', label: 'Ideal Weight', icon: Target },
   { href: '/lean-body-mass', label: 'Lean Body Mass', icon: Weight },
