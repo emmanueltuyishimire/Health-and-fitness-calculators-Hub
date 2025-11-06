@@ -16,14 +16,14 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useCalculator } from '@/context/calculator-context';
 import { BmiPercentileTeenSchema, type BmiPercentileTeenFormValues } from '@/lib/definitions';
-import { Separator } from './ui/separator';
+import { Separator } from '@/components/ui/separator';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from './ui/select';
+} from '@/components/ui/select';
 import { bmiPercentileData } from '@/lib/bmi-percentile-data';
 import { cn } from '@/lib/utils';
 
