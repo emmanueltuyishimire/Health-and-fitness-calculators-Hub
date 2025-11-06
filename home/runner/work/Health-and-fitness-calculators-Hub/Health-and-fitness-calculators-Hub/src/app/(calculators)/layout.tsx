@@ -12,7 +12,7 @@ export default function CalculatorsLayout({
 }) {
   return (
     <CalculatorProvider>
-      <SidebarProvider defaultOpen={false}>
+      <SidebarProvider defaultOpen={true}>
         <SidebarNav />
         <SidebarInset>
             {children}
