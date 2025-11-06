@@ -122,7 +122,7 @@ export function SidebarNav() {
   return (
     <>
     <div className="md:hidden flex items-center p-2 border-b">
-        <SidebarTrigger/>
+        <SidebarTrigger aria-label="Open sidebar navigation"/>
         <div className="mx-auto">
             <Logo />
         </div>
@@ -135,7 +135,7 @@ export function SidebarNav() {
         <SidebarMenu>
           {links.map((link) => (
             <SidebarMenuItem key={link.href}>
-              <Link href={link.href} className="w-full">
+              <Link href={link.href} className="w-full" aria-label={link.label}>
                 <SidebarMenuButton
                   isActive={pathname === link.href}
                   tooltip={link.label}
