@@ -13,6 +13,7 @@ export function Logo() {
         strokeLinecap="round"
         strokeLinejoin="round"
         className="h-8 w-8 text-primary"
+        aria-hidden="true"
       >
         <path d="M4.5 12.5l3-3-3-3" />
         <path d="M19.5 12.5l-3-3 3-3" />

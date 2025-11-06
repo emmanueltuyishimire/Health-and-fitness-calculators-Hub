@@ -48,7 +48,7 @@ const BodyVisual = ({ bust, waist, hip }: { bust: number; waist: number; hip: nu
   ].join(' ');
 
   return (
-    <svg viewBox="0 0 100 100" className="w-full h-48 max-w-xs mx-auto">
+    <svg viewBox="0 0 100 100" className="w-full h-48 max-w-xs mx-auto" aria-hidden="true">
       <polygon points={points} className="fill-primary/20 stroke-primary" strokeWidth="1" />
     </svg>
   );
@@ -68,20 +68,26 @@ export function BodyTypeVisualizerForm() {
     },
   });
 
-  const bust = parseFloat(form.watch('bust'));
-  const waist = parseFloat(form.watch('waist'));
-  const hip = parseFloat(form.watch('hip'));
+  const [shape, setShape] = useState('');
+  const [measurements, setMeasurements] = useState({
+    bust: parseFloat(form.getValues('bust')),
+    waist: parseFloat(form.getValues('waist')),
+    hip: parseFloat(form.getValues('hip')),
+  });
 
-  const bodyShape = getBodyShape(bust, waist, hip);
-  
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    form.setValue(name as keyof BodyShapeFormValues, value);
-    dispatch({ type: 'SET_USER_DATA', payload: { [name]: value } });
-  };
-  
-   useEffect(() => {
-    dispatch({ type: 'SET_USER_DATA', payload: { bust: form.getValues('bust'), waist: form.getValues('waist'), hip: form.getValues('hip') } });
+  useEffect(() => {
+    const subscription = form.watch((value) => {
+      const bust = parseFloat(value.bust || '0');
+      const waist = parseFloat(value.waist || '0');
+      const hip = parseFloat(value.hip || '0');
+      setMeasurements({ bust, waist, hip });
+      setShape(getBodyShape(bust, waist, hip));
+      dispatch({ type: 'SET_USER_DATA', payload: { bust: value.bust, waist: value.waist, hip: value.hip } });
+    });
+    // Set initial shape
+    const { bust, waist, hip } = form.getValues();
+    setShape(getBodyShape(parseFloat(bust), parseFloat(waist), parseFloat(hip)));
+    return () => subscription.unsubscribe();
   }, [form, dispatch]);
 
   return (
@@ -89,7 +95,7 @@ export function BodyTypeVisualizerForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
           <Form {...form}>
-            <form onChange={form.handleSubmit(() => {})} className="space-y-6">
+            <form className="space-y-6">
               <div className="grid grid-cols-1 gap-4">
                 <FormField
                   control={form.control}
@@ -98,7 +104,7 @@ export function BodyTypeVisualizerForm() {
                     <FormItem>
                       <FormLabel>Bust ({state.unitSystem === 'metric' ? 'cm' : 'in'})</FormLabel>
                       <FormControl>
-                        <Input type="number" {...field} onChange={handleInputChange} />
+                        <Input type="number" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -111,7 +117,7 @@ export function BodyTypeVisualizerForm() {
                     <FormItem>
                       <FormLabel>Waist ({state.unitSystem === 'metric' ? 'cm' : 'in'})</FormLabel>
                       <FormControl>
-                        <Input type="number" {...field} onChange={handleInputChange} />
+                        <Input type="number" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -124,7 +130,7 @@ export function BodyTypeVisualizerForm() {
                     <FormItem>
                       <FormLabel>Hip ({state.unitSystem === 'metric' ? 'cm' : 'in'})</FormLabel>
                       <FormControl>
-                        <Input type="number" {...field} onChange={handleInputChange} />
+                        <Input type="number" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -138,10 +144,10 @@ export function BodyTypeVisualizerForm() {
         <div className="space-y-2 text-center md:text-left">
           <h3 className="font-semibold text-foreground">Your Body Shape</h3>
           <div className="p-4 bg-muted rounded-lg flex flex-col items-center justify-center min-h-[240px]">
-            <BodyVisual bust={bust} waist={waist} hip={hip} />
-            {bodyShape && (
-              <p className="text-xl font-bold text-primary mt-4">
-                {bodyShape}
+            <BodyVisual bust={measurements.bust} waist={measurements.waist} hip={measurements.hip} />
+            {shape && (
+              <p className="text-xl font-bold text-primary mt-4" aria-live="polite">
+                {shape}
               </p>
             )}
           </div>
