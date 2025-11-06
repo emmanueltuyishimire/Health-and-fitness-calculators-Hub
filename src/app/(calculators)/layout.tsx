@@ -1,4 +1,6 @@
 
+'use client';
+
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
 import { SidebarNav } from '@/components/sidebar-nav';
 import { CalculatorProvider } from '@/context/calculator-context';
@@ -10,7 +12,7 @@ export default function CalculatorsLayout({
 }) {
   return (
     <CalculatorProvider>
-      <SidebarProvider>
+      <SidebarProvider defaultOpen={false}>
         <SidebarNav />
         <SidebarInset>
             {children}
