@@ -51,7 +51,7 @@ export default function Home() {
               </p>
               <div className="mt-6">
                  <Link href="/all">
-                  <Button size="lg">
+                  <Button size="lg" aria-label="Get started by viewing all calculators">
                     Get Started <ArrowRight className="ml-2" />
                   </Button>
                 </Link>
@@ -115,7 +115,7 @@ export default function Home() {
                   <h3 className="text-2xl font-bold mb-6">{group.title}</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                   {group.calculators.map((calc) => (
-                    <Link href={calc.href} key={calc.name} className="group flex items-center gap-3 rounded-md p-3 text-sm font-medium hover:bg-muted" aria-label={`Go to ${calc.name}`}>
+                    <Link href={calc.href} key={calc.name} className="group flex items-center gap-3 rounded-md p-3 text-sm font-medium border hover:bg-muted" aria-label={`Navigate to ${calc.name}`}>
                         <Calculator className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
                         <span className="transition-colors group-hover:text-primary">{calc.name}</span>
                     </Link>
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
              <div className="text-center">
                 <Link href="/all">
-                    <Button size="lg" variant="outline">
+                    <Button size="lg" variant="outline" aria-label="View all calculators on one page">
                         View All On One Page <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                 </Link>

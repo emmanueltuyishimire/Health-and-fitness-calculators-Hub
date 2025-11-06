@@ -28,7 +28,7 @@ export default function AllCalculatorsPage() {
                   href={calc.href}
                   key={calc.name}
                   className="group flex items-center gap-3 rounded-md p-3 text-sm font-medium border hover:bg-muted"
-                  aria-label={`Go to ${calc.name}`}
+                  aria-label={`Navigate to ${calc.name}`}
                 >
                   <Calculator className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
                   <span className="transition-colors group-hover:text-primary">{calc.name}</span>
