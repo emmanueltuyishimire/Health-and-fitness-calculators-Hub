@@ -29,6 +29,9 @@ function getBodyShape(bust: number, waist: number, hip: number): string {
 }
 
 const BodyVisual = ({ bust, waist, hip }: { bust: number; waist: number; hip: number }) => {
+  if (isNaN(bust) || isNaN(waist) || isNaN(hip)) {
+    return null;
+  }
   const max = Math.max(bust, waist, hip, 1);
   const bustWidth = (bust / max) * 100;
   const waistWidth = (waist / max) * 100;
